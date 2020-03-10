@@ -1,0 +1,208 @@
+@import '../../../variables';
+@import '../../../mixins';
+
+/*------------------Media Queries Start--------------*/
+
+@media screen and (max-width: 1279px) and (min-width: 320px) {
+  
+}
+
+@media screen and (min-width: 1280px) and (max-width:1365px) {
+
+}
+
+@media screen and (min-width: 1366px) and (max-width:1439px) {
+
+}
+
+@media screen and (min-width: 1440px) and (max-width:1679px){
+
+}
+
+@media screen and (min-width: 1680px) and (max-width:1919px) {
+
+}
+@media screen and (min-width: 1920px) {
+
+}
+ /*------------------Media Queries End--------------*/
+
+
+.tckt-lst-edit-drawer {
+    width: 100%;
+    background: transparent;
+    .MuiPaper-root {
+        width: 100%;
+        background: transparent;
+        .editdrawer {
+            height: 100%;
+            .drawer-full-width {
+                width: 100%;
+            }
+        }
+    }
+    .taskListingAttachmentContainer {
+        width: 50%;
+        .edit-tkt-sidebar-container {
+            height: 100%;
+            background: #fff;
+            .uploadButtonAndPreviewWrapper {
+                height: 75%;
+                .attachementFilesContainer {
+                    height: 70%;
+                    overflow: auto;
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    .attached-file-template {
+                        width: 100px;
+                        height: 75px;
+                        margin: 5px;
+                        border-radius: 10px;
+                        position: relative;
+                        .attached-file-remove {
+                          cursor: pointer;
+                          height: 15px;
+                          width: 15px;
+                          position: absolute;
+                          right: 0;
+                          top: -5px;
+                          border: 1px solid white;
+                        }
+                        img {
+                          width: 100%;
+                          height: 100%;
+                          border-radius: 10px;
+                        }
+                      }
+                    
+                }
+                .fielAttachementButton {
+                    height: 20%;
+                    overflow: auto;
+                    width: 90%;
+                    margin: auto;
+                    .create-ticket-file-attach-button {
+                        height: 100%;
+                        margin: auto;
+                        border: 1px dashed #d0cfec;                        ;
+                        background: url('../../../assets/create-habit/Group 11382.svg');
+                        background-repeat: no-repeat;
+                        background-size: 25px 25px;
+                        background-position: 50% 20%;
+                        padding: 0px !important;
+                        cursor: pointer;
+                        position: relative;
+                        width: 100%;
+                        justify-content: center;
+            
+                        .MuiButton-label {
+                            width: 100%;
+                            display: flex !important;
+                            align-items: center !important;
+                            justify-content: center !important;
+                            height: 100%;
+            
+                            .drag-attach-text {
+                                font-size: rem(14px);
+                                font-family: helveticaNeueLight;
+                                color: $color-lightGray;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: 1.14;
+                                letter-spacing: normal;
+                                text-align: center;
+                                text-transform: none;
+                                position: absolute;
+                                margin-top: 10px;
+            
+                                span {
+                                    color: $color-strongPurple;
+                                }
+                            }
+                        }
+                    } 
+                }
+            }
+
+            .AttachmentsCaption {
+                font-family: HelveticaNeue-MediumCond;
+                font-size: rem(16px);
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.13;
+                letter-spacing: 0.32px;
+                text-align: left;
+                color: #c8c8c8;
+                font-weight: normal;
+                padding-left: 15px;
+            }
+
+            .edit-tkt-sidebar-header {
+                display: flex;
+                justify-content: space-between;
+                padding: 3% 0 3% 3%;
+
+                .attchmentsHeading {
+                    font-family: helveticaNeueCondensedBold;
+                    font-size: rem(30px);
+                    font-style: normal;
+                    line-height: 1.27;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #707070;
+                    span {
+                        font-family: helveticaNeueCondensedBold;
+                        color: rgba(78, 88, 169, 0.5);
+                    }
+                }
+            }
+
+
+            .sideDrawerFooter {
+                div {
+                    margin: 0 5%;
+                }
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin: auto;
+                padding: 14px 0;
+                box-shadow: -4px 0 30px 0 rgba(0, 0, 0, 0.09);
+                .update-button {
+                    margin: 0 5%;
+                    background-color: $color-green !important;
+                    border-radius: 41px !important;
+                    color: $color-white !important;
+                    text-transform: capitalize !important;
+                    width: 150px !important;
+                    .MuiButton-label {
+                        font-family: helveticaNeueMedium;
+                        font-size: rem(22px);
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #ffffff;
+                    }
+                }
+                .cancel-button {
+                    border-radius: 41px !important;
+                    text-transform: capitalize !important;
+                    border: 0 !important;
+                    width: 150px !important;
+                    .MuiButton-label {
+                        font-family: helveticaNeueMedium;
+                        font-size: rem(22px);
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #c8c8c8;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+    <defs>
+        <style>
+            .cls-1{fill:#fff1df}.cls-2{fill:#ff8f00}
+        </style>
+    </defs>
+    <g id="Group_11626" data-name="Group 11626" transform="translate(-83.135 -10)">
+        <circle id="Ellipse_3432" cx="18.5" cy="18.5" r="18.5" class="cls-1" data-name="Ellipse 3432" transform="translate(83.135 10)"/>
+        <path id="Icon_material-access-alarm" d="M22.522 6.558l-4.49-3.768-1.259 1.493 4.49 3.768zM8.739 4.283L7.49 2.79 3 6.548l1.259 1.493 4.48-3.758zm4.509 4.5h-1.463v5.857l4.636 2.782.732-1.2-3.9-2.313zm-.488-3.9a8.785 8.785 0 1 0 8.785 8.785 8.785 8.785 0 0 0-8.784-8.789zm0 15.617a6.833 6.833 0 1 1 6.833-6.833 6.828 6.828 0 0 1-6.832 6.833z" class="cls-2" data-name="Icon material-access-alarm" transform="translate(88.752 15.43)"/>
+    </g>
+</svg>

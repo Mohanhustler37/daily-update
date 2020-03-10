@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <style>
+            .cls-1{fill:rgba(78,88,169,.5)}.cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="Group_11594" data-name="Group 11594" transform="translate(-4161 -6280)">
+        <path id="Path_908" d="M14 0A14 14 0 1 1 0 14 14 14 0 0 1 14 0z" class="cls-1" data-name="Path 908" transform="translate(4161 6280)"/>
+        <g id="Icon_feather-plus" data-name="Icon feather-plus" transform="translate(4161.5 6280.5)">
+            <path id="Path_170" d="M18 7.5v12.3" class="cls-2" data-name="Path 170" transform="translate(-4.35)"/>
+            <path id="Path_171" d="M7.5 18h12.3" class="cls-2" data-name="Path 171" transform="translate(0 -4.35)"/>
+        </g>
+    </g>
+</svg>

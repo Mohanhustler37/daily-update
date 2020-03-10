@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke:#707070}.cls-2{clip-path:url(#clip-path)}.cls-3{fill:#fbbb00}.cls-4{fill:#518ef8}.cls-5{fill:#28b446}.cls-6{fill:#f14336}
+        </style>
+        <clipPath id="clip-path">
+            <circle id="Ellipse_3140" cx="19" cy="19" r="19" class="cls-1" data-name="Ellipse 3140" transform="translate(269 796)"/>
+        </clipPath>
+    </defs>
+    <g id="Mask_Group_1" class="cls-2" data-name="Mask Group 1" transform="translate(-269 -796)">
+        <g id="search" transform="translate(269 796)">
+            <path id="Path_135" d="M8.422 26.2L7.1 31.142l-4.835.1A19.033 19.033 0 0 1 2.124 13.5l4.3.789 1.891 4.281a11.339 11.339 0 0 0 .107 7.63z" class="cls-3" data-name="Path 135" transform="translate(0 -3.241)"/>
+            <path id="Path_136" d="M43.8 20.33a18.993 18.993 0 0 1-6.773 18.37l-5.427-.282-.767-4.79a11.324 11.324 0 0 0 4.872-5.782H25.55V20.33H43.8z" class="cls-4" data-name="Path 136" transform="translate(-6.132 -4.879)"/>
+            <path id="Path_137" d="M31.609 41.068a19.006 19.006 0 0 1-28.63-5.813l6.157-5.04A11.3 11.3 0 0 0 25.42 36z" class="cls-5" data-name="Path 137" transform="translate(-.715 -7.252)"/>
+            <path id="Path_138" d="M31.8 4.374l-6.157 5.039a11.3 11.3 0 0 0-16.657 5.916L2.8 10.262a19 19 0 0 1 29-5.888z" class="cls-6" data-name="Path 138" transform="translate(-.671)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.55" height="14.04" viewBox="0 0 17.55 14.04">
+    <defs>
+        <style>
+            .cls-1{fill:#d0cfec}
+        </style>
+    </defs>
+    <path id="Icon_material-delete-sweep" d="M14.407 16.53h3.51v1.755h-3.51zm0-7.02h6.143v1.755h-6.143zm0 3.51h5.265v1.755h-5.265zM3.878 18.285a1.76 1.76 0 0 0 1.754 1.755H10.9a1.76 1.76 0 0 0 1.755-1.755V9.51H3.878zM13.53 6.878H10.9L10.02 6H6.51l-.878.878H3v1.755h10.53z" class="cls-1" data-name="Icon material-delete-sweep" transform="translate(-3 -6)"/>
+</svg>

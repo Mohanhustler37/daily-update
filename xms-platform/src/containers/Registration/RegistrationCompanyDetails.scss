@@ -1,0 +1,433 @@
+@import '../../variables.scss';
+
+@font-face {
+  font-family: 'Helvetica Neue Condensed Bold';
+  src: local('Helvetica Neue Condensed Bold'), url(/HelveticaNeue/HelveticaNeueCondensedBold.ttf) format('truetype');
+}
+
+.registration-company-details-page>.registration-company-details-header-logo>.MuiAppBar-colorPrimary {
+  background-color: $color-lightWhite;
+}
+
+.registration-company-details-page>.registration-company-details-header-logo>.MuiPaper-elevation4 {
+  box-shadow: none;
+}
+
+.registration-company-details-logo {
+  width: 25px;
+}
+
+.registration-company-details-header-logo>.MuiAppBar-root>.MuiToolbar-root {
+  display: flex;
+  justify-content: space-between;
+}
+
+.registration-company-details-page-icons {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.2%;
+}
+
+.registration-company-details-icon-text {
+  color: $color-thickGray;
+  font-size: 10px;
+  // margin-right:0px;
+}
+
+
+
+.registration-details-account-icon,
+.registration-details-company-icon,
+.registration-details-personal-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  margin-left: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.registration-details-account-icon>img,
+.registration-details-company-icon>img,
+.registration-details-personal-icon>img {
+  width: 15px;
+}
+
+.registration-details-account-icon {
+  background-color: $color-green;
+}
+
+.registration-details-company-icon {
+  background-color: $color-orange;
+}
+
+.registration-details-personal-icon {
+  background-color: $color-lightGray;
+}
+
+.registration-company-details-icons {
+  display: inline;
+  align-items: center;
+  margin-right: -20px;
+  margin-top: 3%;
+}
+
+.registration-company-details-container {
+  text-align: center;
+}
+
+.registration-company-details-fields {
+  flex-direction: column;
+}
+
+.registration-company-details-container-text-one {
+  font-size: 30px;
+  font-weight: bolder;
+  color: $color-thickGray;
+  margin-top: 2%;
+  font-family: 'helveticaNeueCondensedBold';
+
+}
+
+.registration-company-details-container-text {
+  align-items: center;
+  margin-right: 0%;
+}
+
+.registration-company-details-container-text-two {
+  font-size: 12px;
+  color: $color-thickGray;
+}
+
+.registration-company-details-container-text>p {
+  margin-bottom: 0rem;
+}
+
+
+.registration-company-details-field-one {
+  margin-top: 1%;
+  width: 100%;
+}
+
+.registration-company-details-fields>.registration-company-details-field-one>.MuiInputBase-root {
+  border: 1px solid $color-lightGray;
+  padding: 9px 100px 9px 30px;
+  border-radius: 30px;
+  font-size: 15px;
+
+}
+
+.registration-company-details-field-two {
+  margin-top: 1%;
+ 
+  margin-left: 0%;
+  width: 100%;
+
+
+}
+
+.registration-company-details-field-two>.button-one>.MuiButton-outlinedPrimary {
+  border: 1px solid $color-lightGray;
+  border-radius: 50px;
+  font-size: 12px;
+  width: 100%;
+  padding: 16px;
+  color: $color-thickGray;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+
+}
+
+.button-one,
+.button-two {
+  margin: 0.5%;
+  width: 159px;
+  font-weight: normal;
+
+}
+
+
+.registration-company-details-field-two>.button-two>.MuiButton-outlinedPrimary {
+  border: 1px solid $color-lightGray;
+  border-radius: 50px;
+  font-size: 12px;
+  width: 100%;
+  padding: 16px 15px 17px 35px;
+  color: $color-thickGray;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+
+.button-one>button>.MuiButton-label>span>img {
+  margin-left: 10px;
+  width: 12px;
+}
+
+.button-two>button>.MuiButton-label>span>img {
+  margin-left: 15px;
+  width: 12px;
+}
+
+.registration-company-details-domain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.registration-company-field-three>span>img {
+  width: 35px;
+  margin-top: 0.5%;
+  vertical-align: middle;
+
+}
+
+.registration-company-field-three>p {
+  padding-top: 15px;
+  font-size: 10px;
+  margin-top: -50px;
+  margin-right: 10px;
+  color: $color-lightGray;
+
+
+}
+
+
+
+.registration-company-field-three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6.3vh;
+  // margin-left: 28%;
+  // margin-left: -36%;
+  height: 50px;
+  // width: 35%;
+  width: 100%;
+  font-weight: normal;
+
+}
+
+.registration-company-field-three>.MuiButton-outlined {
+  width: 100px;
+  height: 53px;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: black;
+  background-color: $color-lightWhite;
+  border-left: none;
+  text-transform: capitalize;
+  font-weight: normal;
+  // margin-right: 7px;
+
+}
+
+
+.registration-company-field-three>.MuiInputBase-root {
+  width: 230px;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  height: 50px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding-left: 30px;
+  font-weight: normal;
+
+}
+
+.registration-company-details-field-four {
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+  padding: 1%;
+}
+
+.registration-company-details-field-four>.button-three>.MuiButton-outlinedPrimary {
+  border: 1px solid lightblue;
+  border-radius: 50px;
+  font-size: 10px;
+  width: 150px;
+  padding: 16px;
+  color: $color-thickGray;
+  margin-top: -1%;
+}
+
+.button-three,
+.button-five {
+  margin: 1%;
+  width: 10%;
+  // color: #ffffff;
+}
+
+.registration-company-details-field-four>.button-five>.MuiButton-outlinedPrimary {
+  border: 1px solid $color-lightGray;
+  border-radius: 50px;
+  font-size: 10px;
+  width: 150px;
+  padding: 16px;
+  color: $color-white;
+  text-align: left;
+  margin-left: 0px;
+}
+
+.button-three>button>.MuiButton-label>span>img {
+  margin-right: 30px;
+  width: 8px;
+  justify-content: space-between;
+}
+
+.button-three {
+  .MuiButton-root {
+    .MuiButton-label {
+      font-size: 12px;
+      font-weight: 600
+    }
+  }
+}
+
+.button-five {
+  .MuiButton-root {
+    .MuiButton-label {
+      font-size: 12px;
+      font-weight: 600
+    }
+  }
+}
+
+.button-five>button>.MuiButton-label>span>img {
+  margin-left: 30px;
+  width: 8px;
+}
+
+.button-three,
+.button-five {
+  margin: 1% 3%;
+}
+
+.button-three>button {
+  margin: 0 20px;
+  width: 12px;
+  color: $color-white;
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.button-five>button {
+  margin: 0 20px;
+  width: 12px;
+  background-color: $color-green;
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.registration-company-details-field-four>button>.MuiButton-label>span>img {
+  width: 26px;
+  padding: 100px;
+}
+
+.registration-company-details-field-four>span>img {
+  width: 35px;
+  padding-left: 5px;
+
+}
+
+.registration-company-details-field-four>.button-five>span>img {
+  width: 35px;
+  // padding-right:-50px;
+  margin-left: 127%;
+  margin-top: -80%
+}
+
+.registration-company-details-field-four>.button-five>p {
+
+  font-size: 10px;
+  color: $color-lightGray;
+  margin-right: -289px;
+  margin-top: -90px;
+}
+
+.button-five>.MuiButton-outlinedPrimary {
+  margin-top: -27px;
+}
+
+
+.companydetailscontainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6%;
+}
+
+.companydetailsleftcontainer>p {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.companydetails-footer-container>.companydetailsrightcontainer>.list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  font-size: 10px;
+}
+
+li {
+  padding-right: 20px;
+}
+
+
+//////////////////////////////////////////////////@at-root
+
+.registration-company-details-account-icon,
+.registration-company-details-company-icon,
+.registration-company-details-personal-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  margin-left: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+
+.registration-company-details-account-icon>img,
+.registration-company-details-company-icon>img,
+.registration-company-details-personal-icon>img {
+  width: 15px;
+  // margin-left:90px;
+}
+
+.registration-company-details-account-icon {
+  background-color: $color-green;
+}
+
+.registration-company-details-company-icon {
+  background-color: $color-orange;
+}
+
+.registration-company-details-personal-icon {
+  background-color: $color-lightGray;
+}
+
+
+.companydetails-footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}

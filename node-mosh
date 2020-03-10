@@ -1,0 +1,113 @@
+NODEJS
+------
+opensource, cross-platform, a run time environment for executing javascript code outside of the browser.
+We use node to build backend services also called API.
+Highly scalable, data-intensive, real-time application
+
+jscode => engine => machine code
+
+Ryan Dhal
+
+googles V8 engine
+
+we dont have document, window objects.
+
+node is not a programming language, node is not a framework. it is  a run time environment for executing javascript code
+
+highly scalable => non-blocking asynchronous nature of node
+
+single thread allocated for multiple requests.when the request is completed it moved to event queue.
+node is continuously monitoring in the background when it is find the event it take it out and process it.
+
+node is for Data-intensive application.
+
+node is not for CPU-intensive apps like video encoding, image manipulation survices.
+
+To run:
+-- ---
+node app.js
+
+Module System:
+------ ------
+os 
+fs
+events
+http
+
+global
+------
+console.log(); // global object
+
+setTimeout();		=> to call a function after a delay
+clearTimeout();		=> 
+setInterval();		=> repeatedly call a function after a delay
+clearInterval();	=> to stop the function that called repeatedly
+
+Every file in a node is a module. functions and variables defined inside the module is module scope or file scope.
+
+console.log(module); // returns object
+
+export and import
+------     ------
+module.exports.log = log;
+
+const logger = require('./logger');
+
+Module Wrapper Function:
+------ ------- --------
+(function (exports, require, module, __filename, __dirname){})
+
+
+
+npm 
+async js
+CRUD operations
+Data Validation
+Authentication and Authorization 
+Handling and logging errors
+Unit and integration testing
+Test-driven development
+deployment
+clean coding and refactoring
+security best practices
+Useful libraries
+
+path.parse(__filename);
+os.totalmem();
+os.freemem();
+fs.readdir('./', (err, files) => console.log(files));
+
+const EventEmitter = require('events');
+const emitter = new EventEmitter();
+
+// Register a listener
+emitter.on('messageLogged', () => console.log('Listener called') )
+
+//Raise an event
+emitter.emit('messageLogged');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

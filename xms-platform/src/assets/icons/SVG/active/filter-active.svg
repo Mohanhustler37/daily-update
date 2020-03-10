@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Group_10464" data-name="Group 10464" transform="translate(-1605 -105)">
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(1605 105)" fill="none" stroke="#4e58a9" stroke-width="1" stroke-dasharray="4 3">
+      <rect width="50" height="50" rx="25" stroke="none"/>
+      <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" fill="none"/>
+    </g>
+    <path id="Icon_feather-filter" data-name="Icon feather-filter" d="M23.321,4.5H3l8.128,9.612v6.645l4.064,2.032V14.112Z" transform="translate(1616.5 117)" fill="none" stroke="#4e58a9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

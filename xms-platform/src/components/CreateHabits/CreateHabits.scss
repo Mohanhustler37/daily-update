@@ -1,0 +1,806 @@
+@import '../../variables';
+
+%border {
+  border: 1px solid red;
+}
+
+%d-flex {
+  display: flex;
+}
+
+%d-flex-align-center {
+  @extend %d-flex;
+  align-items: center;
+}
+
+%d-flex-align-justify-center {
+  @extend %d-flex-align-center;
+  justify-content: center;
+
+}
+
+%d-flex-align-center-space-btwn {
+  @extend %d-flex-align-center;
+  justify-content: space-between;
+}
+
+$borderRadius: 100px;
+
+
+@mixin heighWidth($heigh, $width) {
+  height: $heigh;
+  width: $width;
+}
+
+
+.create-habits-heading-container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  height: 60px;
+  border: 1px solid $color-thickWhite;
+}
+
+.create-habit-heading {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.create-habit-sub-heading {
+  font-size: 0.75rem;
+  color: $color-lightGray;
+}
+
+.create-habit-container {
+  width: 100%;
+  padding: 5px;
+}
+
+.create-habit-body-section {
+  margin: 0 1%;
+  display: flex;
+}
+
+.create-habit-main-section {
+  width: 70%;
+}
+
+.create-habit-create-template {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2% 0;
+}
+
+.create-habit-using-template {
+  width: 49%;
+  height: 40px;
+  border: 1px solid $color-lightGray;
+  border-radius: $borderRadius;
+  display: flex;
+
+  img {
+    margin: auto 14px;
+  }
+
+  p {
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    margin-top: 8px !important;
+    font-size: 15px;
+    color: #656565;
+  }
+}
+
+.create-habit-choose-template-input {
+  width: 50%;
+
+  .MuiFormControl-root {
+    width: 100%;
+
+    .MuiInputLabel-formControl {
+      top: -11px;
+      left: 12px;
+      font-size: 15px;
+      color: #656565;
+    }
+
+    .create-habit-menu-item {
+      .MuiInputBase-root {
+        border: 1px solid $color-lightGray;
+        width: 100%;
+        height: 40px;
+        border-radius: $borderRadius;
+
+        .MuiInputBase-input {
+          padding: 6px 12px 7px;
+        }
+      }
+
+      .MuiInput-underline:before {
+        border-bottom: 1px solid transparent;
+      }
+
+      .MuiInput-underline:hover:not(.Mui-disabled):after {
+        border: 1px solid transparent;
+      }
+    }
+  }
+}
+
+.separator-section {
+  display: flex;
+  align-items: center;
+
+  hr {
+    width: 35%;
+  }
+
+  span {
+    white-space: nowrap;
+    color: $color-lightGray;
+    font-size: 0.8rem;
+  }
+}
+
+.ticket-title-container,
+.ticket-type-container {
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.create-habit-title-input {
+  width: 49%;
+  padding: 6px !important;
+  border-radius: $borderRadius;
+  border: 1px solid $color-lightGray !important;
+
+  .MuiInput-underline:before,
+  .MuiInput-underline:after {
+    border-bottom: 0;
+  }
+
+  .MuiInput-underline:after:hover {
+    border-bottom: 0 !important;
+  }
+}
+
+.create-habit-title-profile {
+  display: flex;
+}
+
+
+/* ----------------------- Changes required for Anil Kumar ----------------------- */
+.ticket-type-template {
+  @extend %d-flex-align-center;
+  width: 95%;
+
+  .responsible-avathar {
+    @include heighWidth(40px, 40px);
+    border-radius: $borderRadius;
+  }
+
+  .responsible-avathar-description {
+    span:nth-child(1) {
+      color: $color-lightGray;
+    }
+
+    span:nth-child(2) {
+      color: $color-thickGray;
+    }
+
+    span {
+      font-size: 0.8rem;
+      display: block;
+      margin-left: 5px;
+    }
+  }
+}
+
+.create-habit-title-profile-section {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .ticket-type-avathar-dropdown {
+    width: 100%;
+
+
+    .MuiInputBase-root {
+      border: 1px solid $color-lightGray;
+      width: 100%;
+      height: 50px;
+      border-radius: 20px;
+      padding-left: 10px;
+    }
+
+    .MuiInputBase-root::before {
+      border: 0;
+    }
+
+    .MuiInput-underline:hover:not(.Mui-disabled):before {
+      border-bottom: none;
+    }
+
+    .MuiInputBase-root:after {
+      border: 0;
+    }
+  }
+}
+
+/* ----------------------- Changes required for Anil Kumar ----------------------- */
+.create-habit-description-area {
+  textarea {
+    width: 100%;
+    margin: 2% auto;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid $color-lightGray;
+  }
+}
+
+.create-habit-location-tags-section {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.create-habit-location-tag-input {
+  width: 49%;
+  border-radius: $borderRadius;
+  border: 1px solid $color-lightGray;
+  position: relative;
+
+  .MuiInputBase-root {
+    width: 100%;
+    padding: 7px;
+  }
+
+  span {
+    @extend %d-flex-align-justify-center;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    top: 12px;
+    border: 1px solid $color-lightGray;
+    border-radius: $borderRadius;
+
+    i {
+      color: $color-skyBlue;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.inactive-radio-button {
+  margin: 0 10px !important;
+
+  span {
+    color: $color-lightGray !important;
+  }
+
+  .MuiButtonBase-root {
+    padding: 0;
+
+    .MuiIconButton-label {
+      div {
+        .MuiSvgIcon-root {
+          width: 15px;
+        }
+
+      }
+    }
+  }
+}
+
+.active-radio-button {
+  margin: 0 10px !important;
+
+  span {
+    color: $color-skyBlue !important;
+  }
+
+  .MuiButtonBase-root {
+    padding: 0;
+
+    .MuiIconButton-label {
+      div {
+        .MuiSvgIcon-root {
+          width: 15px;
+        }
+
+      }
+    }
+  }
+}
+
+.radio-label-section {
+  margin: 0 8px;
+
+  span {
+    font-size: 0.7rem;
+    color: $color-thickGray;
+  }
+}
+
+.create-habit-goal-daily-section {
+  margin: 2% 0;
+  padding: 2%;
+  border-radius: 20px;
+  border: 1px dashed $color-lightGray;
+
+  div {
+    margin: 3px 0;
+  }
+
+  .CHabit-goal-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    span:first-child {
+      color: $color-lightGray;
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+
+  .CH-daily-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      color: $color-lightGray;
+      font-size: 0.7rem;
+    }
+
+    .CH-daily-count-input {
+      width: 40%;
+      border-radius: $borderRadius;
+      border: 1px solid $color-lightGray;
+      position: relative;
+
+      .MuiInputBase-root {
+        width: 100%;
+        padding: 7px;
+      }
+    }
+
+    /* ----------------------- Changes required for Anil Kumar ----------------------- */
+    .CH-daily-set-time-input {
+      width: 40%;
+      border-radius: $borderRadius;
+      border: 1px solid $color-lightGray;
+      position: relative;
+
+      .MuiInputBase-root {
+        width: 100%;
+        padding: 7px;
+      }
+
+      .customised-date-picker-container {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        right: 15px;
+        top: 15px;
+        border-radius: $borderRadius;
+
+        .react-date-picker {
+          .react-date-picker__wrapper {
+            border: thin solid transparent;
+
+            .react-date-picker__inputGroup {
+              min-width: 0px;
+              width: 0;
+              flex-grow: 1;
+              display: flex;
+              padding: 0px 0px;
+              align-items: baseline;
+              box-sizing: content-box;
+              overflow: hidden;
+            }
+
+            .react-date-picker__calendar-button {
+              background: url('../../assets/icons/01-10-2019/Icon feather-plus-circle.svg');
+              background-repeat: no-repeat;
+              background-size: cover;
+              @include heighWidth(27px, 24px);
+
+              svg {
+                display: none;
+              }
+            }
+
+            .react-date-picker__calendar-button:focus {
+              border: 0;
+            }
+          }
+        }
+      }
+    }
+
+    /* ----------------------- Changes required for Anil Kumar ----------------------- */
+
+  }
+
+  .CH-goal-daily-adder {
+    border: 1px solid $color-lightGray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 5px;
+
+    i {
+      font-size: 1.5rem;
+      color: $color-skyBlue;
+    }
+
+  }
+}
+
+
+.create-habit-frequency-pickday-section {
+  margin: 2% 0;
+  padding: 2%;
+  border-radius: 20px;
+  border: 1px dashed $color-lightGray;
+
+  div {
+    margin: 3px 0;
+  }
+
+  .CHabit-frequency-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    span:first-child {
+      color: $color-lightGray;
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+
+  .CH-pick-days-section {
+    display: flex;
+    align-items: center;
+
+    span {
+      color: $color-lightGray;
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .CH-daily-section-buttons-container {
+      margin-left: 10px;
+
+    }
+  }
+}
+
+.CH-daily-section-button-active {
+  background-color: $color-skyBlue !important;
+  margin: 0 5px !important;
+  box-shadow: none !important;
+  border: transparent !important;
+  height: 22px !important;
+  min-width: 60px !important;
+
+  span {
+    font-size: 0.6rem !important;
+    color: $color-white !important;
+    text-transform: capitalize !important;
+  }
+}
+
+.CH-daily-section-button-inactive {
+  background-color: transparent !important;
+  margin: 0 5px !important;
+  box-shadow: none !important;
+  border: 1px dashed $color-lightGray !important;
+  height: 22px !important;
+  min-width: 60px !important;
+
+  span {
+    text-transform: capitalize !important;
+    font-size: 0.6rem !important;
+    color: $color-lightGray !important;
+  }
+}
+
+
+
+
+.create-habit-date-time-section {
+  @extend %d-flex-align-center-space-btwn;
+  width: 100%;
+
+  .ch-date-picker-container {
+    @extend %d-flex-align-center-space-btwn;
+    width: 49%;
+    border: 1px solid $color-lightGray;
+    padding: 10px 20px;
+    border-radius: 40px;
+
+    span {
+      font-size: 0.9rem;
+    }
+
+    .react-date-picker {
+      .react-date-picker__wrapper {
+        border: thin solid transparent;
+
+        .react-date-picker__inputGroup {
+          min-width: 0px;
+          width: 0;
+          flex-grow: 1;
+          display: flex;
+          padding: 0px 0px;
+          align-items: baseline;
+          box-sizing: content-box;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  .ch-time-assigner {
+    @extend %d-flex-align-center;
+
+    width: 49%;
+    border: 1px solid $color-lightGray;
+    padding: 10px 10px;
+    border-radius: $borderRadius;
+
+    img {
+      margin: 0 3%;
+      width: 18px;
+      transform: rotate(-30deg);
+    }
+
+    .mins-increment-decrement-section {
+      width: 65%;
+      background: $color-lightSkyBlue;
+      border-radius: 7px;
+      padding: 5px 10px;
+      @extend %d-flex-align-center-space-btwn;
+
+      span:nth-child(1) {
+        font-size: 0.85rem;
+      }
+
+      span:nth-child(2) {
+        width: 22px;
+        height: 22px;
+        border-radius: $borderRadius;
+        background: $color-white;
+      }
+    }
+
+    .increment-icon {
+      @extend %d-flex-align-justify-center;
+      height: 25px;
+      width: 25px;
+      margin: auto 10px auto auto;
+      border: 1px solid $color-lightGray;
+      padding: 5px;
+      border-radius: $borderRadius;
+
+      i {
+        color: $color-skyBlue;
+      }
+    }
+  }
+}
+
+
+
+.ch-email-section {
+  margin: 3% 0;
+
+  .ch-send-copy-checkBox {
+    color: $color-skyBlue !important;
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+
+  .ch-send-copy-target {
+    width: 50%;
+    margin: 0 5%;
+
+    .MuiInputBase-root {
+      .MuiOutlinedInput-input {
+        padding: 13.5px 14px
+      }
+
+      fieldset {
+        border-radius: $borderRadius;
+        border: 1px solid $color-skyBlue;
+      }
+    }
+  }
+}
+
+.ch-save-submit-buttons-section {
+  @extend %d-flex-align-center-space-btwn;
+  margin: 3% 0;
+
+  .ch-save-button {
+
+    background-color: transparent;
+    border: 1px dashed $color-lightGray;
+    box-shadow: none;
+    border-radius: $borderRadius;
+    padding: 10px;
+    width: 21%;
+
+    span {
+      text-transform: capitalize;
+    }
+  }
+
+  .ch-save-button:hover {
+    background-color: transparent;
+
+  }
+
+  .ch-submit-button {
+    background-color: $color-green;
+    box-shadow: none;
+    border-radius: $borderRadius;
+    padding: 10px;
+    width: 40%;
+    margin-right: 6%;
+    color: $color-white;
+
+    span {
+      text-transform: capitalize;
+    }
+  }
+
+  .ch-submit-button:hover {
+    background-color: $color-green;
+  }
+}
+
+
+
+
+.create-habit-right-section {
+  width: 30%;
+
+
+  .create-habit-templates-section {
+    width: 90%;
+    margin: 70px auto auto auto;
+    border-top: 2px solid $color-green;
+    border-right: 1px dashed $color-lightGray;
+    border-left: 1px dashed $color-lightGray;
+    border-bottom: 1px dashed $color-lightGray;
+    background: $color-lightWhite;
+    border-radius: 0 0 15px 15px;
+
+    .create-habit-templates-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+
+      span:nth-child(1) {
+        color: $color-thickGray;
+        font-weight: 700;
+        text-transform: uppercase;
+
+      }
+
+      span:nth-child(2) {
+        color: $color-skyBlue;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+
+      }
+    }
+
+    .habit-templates-card {
+      padding: 5px 10px;
+      display: flex;
+
+      .habit-templates-card-details {
+        width: 80%;
+
+        p:nth-child(1) {
+          color: $color-thickGray;
+          text-transform: capitalize;
+          margin: 0;
+
+        }
+
+        p:nth-child(2) {
+          color: $color-thickGray;
+          font-size: 0.6rem;
+          text-transform: capitalize;
+          margin: 0;
+        }
+      }
+
+      .habit-templates-card-image {
+        width: 20%;
+        padding: 2px;
+
+        img {
+          width: 100%;
+        }
+
+      }
+    }
+  }
+}
+
+.submit-dialog {
+  color: $color-white !important;
+  background-color: $color-green !important;
+}
+
+// .create-habit-profile-container {
+//   width: 50%;
+
+//   .MuiFormControl-root {
+//     width: 100%;
+
+//     .MuiInputLabel-formControl {
+//       top: -11px;
+//       left: 12px;
+//       font-size: 15px;
+//       color: #656565;
+//     }
+
+//     .create-habit-menu-item {
+//       .MuiInputBase-root {
+//         border: 1px solid #C8C8C8;
+//         width: 100%;
+//         height: 40px;
+//         border-radius: 20px; 
+
+//         .MuiInputBase-input {
+//           padding: 6px 12px 7px;
+//         }        
+//       }
+//       .MuiInput-underline:before {
+//         border-bottom: 1px solid transparent;
+//       }      
+//       .MuiInput-underline:hover:not(.Mui-disabled):after {
+//         border: 1px solid transparent;
+//       }
+//     }
+//   }
+// }

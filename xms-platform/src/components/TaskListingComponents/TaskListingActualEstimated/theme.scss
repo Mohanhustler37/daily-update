@@ -1,0 +1,80 @@
+@import '../../../variables';
+@import '../../../mixins';
+@import '../../../mixins';
+
+.tsk-lstng-tmr{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .tasks-listing-estimate-timer {
+        width: 46%;
+        height: 4vh!important;
+        display: flex;
+        align-items: center;
+       
+        .tasks-listing-countdown-button-one {
+            background-color: transparent !important;
+            height: 100% !important;
+            width: 100% !important;
+            box-shadow: none !important;
+            display: flex !important;
+            align-items: center !important;
+            color: $color-thickGray !important;
+            border: 1px solid #53d7e3;;
+            border-radius: 100px;
+            min-height: 100%!important;
+        
+            .MuiFab-label {
+                display: flex;
+                align-items: center !important;
+                justify-content: space-between;
+                height: 20px !important;
+                width: 80% !important;
+                color: $color-thickGray !important;
+                p {
+                    font-size: rem(14px);
+                    z-index: 1;
+                    text-align: center;
+                    width: 100%;
+                    font-family: HelveticaNeue-MediumCond;
+                    // font-size: 14px;
+                }
+            }
+        }
+
+        .gray {
+            border: 1px solid $color-lightGray !important;
+        }
+        
+        .blue-border {
+            border: 1px solid $color-thinBlue !important;
+            background-color: transparent !important;
+            color: $color-thickGray !important;
+        }
+    
+        .MuiFab-extended.MuiFab-sizeSmall {
+            width: 70%;
+            min-width: 100%;
+            margin: 0px !important;
+            padding: 0px !important;
+            border: 1px solid $color-darkThickBlue;
+            height:100%!important;
+    
+        }
+    
+        .MuiFab-extended {
+            padding: 0px;
+        }
+    
+        .MuiFab-root {
+            font-weight: 200;
+            font-size: 10px;
+            letter-spacing: 0px;
+    
+            .MuiTouchRipple-root {
+                background-color: $color-white;
+            }
+        }
+    }
+}

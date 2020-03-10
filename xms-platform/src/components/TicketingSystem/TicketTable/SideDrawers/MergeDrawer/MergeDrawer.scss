@@ -1,0 +1,617 @@
+@import '../../../../../variables';
+
+
+.merge-ticket-drawer-bodySection {
+    // width: 100%;
+    width: 50% !important;
+    background-color: #fff;
+}
+
+.mergeone-ticket-drawer {
+    width: 100%;
+    background-color: transparent;
+
+    .MuiDrawer-paperAnchorRight {
+        // width: 35%;
+        width: 100%;
+        background: transparent;
+    }
+
+    .drawer-full-width {
+        width: 100%;
+    }
+}
+
+.merge-ticket {
+    margin-top: 5%;
+    width: 95%;
+    height: auto;
+    // border: 1px solid red;
+    margin: 5% auto;
+}
+
+.merge-ticket-header-text>p {
+    font-size: 18px;
+    font-weight: bolder;
+    color: $color-dimGray;
+    margin-left: 10px;
+}
+
+.merge-ticket-drop-down-search {
+    width: 100%;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 4%;
+}
+
+.merge-ticket-drop-down-search {
+    .dropdown-button {
+        width: 25%;
+
+    }
+}
+
+.merge-ticket-drop-down-search {
+    .dropdown-button {
+        .btn {
+            color: $color-thickGray;
+            font-size: 10px;
+            height: 30px;
+            border: 1px dashed $color-lightGray;
+            box-shadow: none !important;
+            padding: 5px !important;
+            border-radius: 20px;
+            margin: 0px !important;
+        }
+    }
+}
+
+.merge-ticket-drop-down-search {
+    .header-search {
+        width: 75%;
+        padding-top: 0px !important;
+        margin-left: 0%;
+    }
+}
+
+.merge-ticket-drop-down-search {
+    .header-search {
+        .search-bar {
+            width: 80%;
+            height: 30px;
+            margin-left: 5%;
+            border: 1px solid $color-darkWhite;
+            border-radius: 15px;
+        }
+    }
+}
+
+.merge-ticket-drop-down-search {
+    .header-search {
+        .search-bar {
+            .MuiInputBase-root {
+                .MuiInputBase-input {
+                    font-size: 14px;
+                    padding: 6px 10px 7px;
+                }
+            }
+        }
+    }
+}
+
+.merge-ticket-drop-down-search {
+    .header-search {
+        .search-bar {
+            .search-icon {
+                .MuiSvgIcon-root {
+                    font-size: 1.7rem;
+                    padding-top: 5px;
+                }
+
+            }
+        }
+    }
+}
+
+.merge-ticket-licensing-container {
+    height: 450px;
+}
+
+
+.merge-ticket-licensing {
+    width: 80%;
+    height: 50px;
+    border: 1px dashed $color-skyBlue;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-top: 8%;
+    display: flex;
+}
+
+
+.merge-ticket-licensing-icon {
+    width: 6%;
+    margin: 10px auto;
+}
+
+.merge-ticket-phone-number-text {
+    width: 16%;
+    margin: 10px auto;
+}
+
+.merge-ticket-licensing-text {
+    width: 55%;
+    margin: 10px auto;
+}
+
+.merge-ticket-licensing-icon {
+    img {
+        width: 15px;
+        margin: 5px auto;
+    }
+}
+
+.merge-ticket-phone-number-text {
+    p {
+        margin: 0px !important;
+        color: $color-lightGray;
+    }
+}
+
+.merge-ticket-phone-number-text-one {
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.merge-ticket-phone-number-text-two {
+    font-size: 8px;
+}
+
+.merge-ticket-licensing-text {
+    p {
+        margin: 0px !important;
+        color: $color-thickGray;
+        font-size: 11px;
+    }
+}
+
+.merge-ticket-licensing-img-text {
+    display: flex;
+}
+
+.merge-ticket-licensing-img-text {
+    img {
+        width: 18px;
+        height: 18px;
+        border-radius: 10px;
+        margin-right: 5px;
+    }
+}
+
+.merge-ticket-licensing-img-text {
+    p {
+        margin-top: 2px !important;
+        margin-left: 1px !important;
+        font-size: 9px;
+    }
+}
+
+.merge-ticket-primary {
+    width: 14%;
+    height: 35px;
+    border: 1px dashed $color-skyBlue;
+    border-radius: 5px;
+    margin: 8px 0px;
+    margin-right: 10px;
+}
+
+.merge-ticket-primary {
+    img {
+        width: 30%;
+        margin-left: 14px;
+    }
+}
+
+.merge-ticket-primary {
+    p {
+        margin-top: -2px !important;
+        margin-left: 5px;
+        font-size: 7px;
+        color: $color-skyBlue;
+    }
+}
+
+.merge-ticket-licensing-one {
+    width: 75%;
+    height: 50px;
+    border: 1px dashed $color-skyBlue;
+    border-radius: 5px;
+    margin-left: 15%;
+    margin-top: 4%;
+    display: flex;
+}
+
+.merge-ticket-licensing-two {
+    width: 70%;
+    height: 50px;
+    border: 1px dashed $color-skyBlue;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-top: 4%;
+    display: flex;
+}
+
+.merge-ticket-primary-one {
+    width: 14%;
+    height: 35px;
+    border: 1px dashed $color-lightGray;
+    border-radius: 5px;
+    margin: 8px 0px;
+    margin-right: 10px;
+}
+
+.merge-ticket-primary-one {
+    img {
+        width: 30%;
+        margin-left: 14px;
+    }
+}
+
+.merge-ticket-primary-one {
+    p {
+        margin-top: -2px !important;
+        margin-left: 4px;
+        font-size: 7px;
+        color: $color-lightGray;
+    }
+}
+
+.merge-ticket-primary-two {
+    width: 14%;
+    height: 35px;
+    border: 1px dashed $color-lightGray;
+    border-radius: 5px;
+    margin: 8px 0px;
+    margin-right: 10px;
+}
+
+.merge-ticket-primary-two {
+    img {
+        width: 30%;
+        margin-left: 14px;
+    }
+}
+
+.merge-ticket-primary-two {
+    p {
+        margin-top: -2px !important;
+        margin-left: 3px;
+        font-size: 7px;
+        color: $color-lightGray;
+    }
+}
+
+
+
+
+.merge-break-for-submit-section {
+    width: 100%;
+    border: 1px solid $color-darkWhite !important;
+    margin: 5% auto;
+}
+
+
+.merge-update-submit-section {
+    width: 80%;
+    height: 50px;
+    margin: 3% auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.merge-update-submit-section-button-one,
+.bulk-update-submit-section-button-two {
+    width: 50%;
+}
+
+.merge-update-submit-section-button-one {
+    .MuiButton-outlinedPrimary {
+        width: 50%;
+        height: 40px;
+        border: 1px solid $color-lightGray !important;
+        border-radius: 20px;
+        color: $color-lightGray;
+        font-size: 12px;
+
+    }
+}
+
+.merge-update-submit-section-button-one {
+    .MuiButton-root {
+        text-transform: none;
+    }
+}
+
+.merge-update-submit-section-button-one {
+    .MuiButton-outlined {
+        padding: 5px 0px;
+    }
+}
+
+.merge-update-submit-section-button-two {
+    .MuiButton-outlinedPrimary {
+        width: 84%;
+        height: 40px;
+        border: 1px solid $color-green !important;
+        border-radius: 20px;
+        color: $color-white;
+        font-size: 12px;
+        background-color: $color-green;
+        margin-left: 16%;
+    }
+}
+
+.merge-update-submit-section-button-two {
+    .MuiButton-outlinedPrimary:hover {
+        width: 84%;
+        height: 40px;
+        border: 1px solid $color-green !important;
+        border-radius: 20px;
+        color: $color-white;
+        font-size: 12px;
+        background-color: $color-green;
+        margin-left: 16%;
+    }
+}
+
+.merge-update-submit-section-button-two {
+    .MuiButton-root {
+        text-transform: none;
+    }
+}
+
+.merge-update-submit-section-button-two {
+    .MuiButton-outlined {
+        padding: 5px 0px;
+    }
+}
+
+////////////////////////////////////////////////
+.merge-ticket-menu-item {
+    .MuiInput-underline:before {
+        border-bottom: none !important;
+    }
+}
+
+.merge-ticket-menu-item {
+
+    .MuiInput-underline:after {
+        border-bottom: none !important;
+    }
+}
+
+.merge-ticket-menu-item {
+
+    .MuiInput-underline:hover:not(.Mui-disabled):before {
+        border-bottom: none !important;
+    }
+
+}
+
+.merge-ticket-menu-item {
+
+    .MuiInput-root {
+
+        .MuiSelect-select {
+            padding: 5px;
+            font-size: 13px;
+            font-weight: 400;
+            color: $color-thickGray;
+        }
+    }
+
+}
+
+.merge-ticket-menu-item {
+
+    .MuiInputBase-root {
+        width: 100%;
+        border: 1px solid $color-lightGray;
+        border-radius: 20px;
+    }
+}
+
+.merge-ticket-drop-down-search {
+
+    .MuiFormControl-root {
+        width: 25%;
+
+        .MuiInputLabel-formControl {
+            top: -14px;
+            left: 10px;
+            color: $color-thickGray;
+        }
+    }
+}
+
+.merge-ticket-licensing {
+    .MuiIconButton-root {
+        .MuiIconButton-label {
+            .MuiSvgIcon-root {
+                width: 1.2rem;
+            }
+        }
+    }
+}
+
+// Added on Nov 18th
+
+.merge-ticket-drawer-bodySection {
+    .merge-ticket {
+        .merge-container {
+            width: 95%;
+            margin: 2% auto;
+
+            .merge-header-search {
+                display: flex;
+                height: 45px;
+
+                .merge-search-bar {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid $color-lightGray;
+                    border-radius: 30px;
+                    padding: 5px;
+                }
+            }
+
+            .create-ticket-drawer-priority {
+                width: 48%;
+                height: 40px;
+
+                .MuiFormControl-root {
+                    width: 100%;
+                    height: 40px;
+
+                    .MuiInputLabel-formControl {
+                        top: -14px !important;
+                        left: 14px !important;
+                        font-size: 18px;
+                        font-weight: 300;
+
+                        .MuiFormLabel-asterisk {
+                            color: $color-red;
+                        }
+                    }
+
+                    .MuiInputBase-root {
+                        margin-top: 0px !important;
+
+                        .MuiSelect-select {
+                            padding-left: 10px;
+                            color: $color-thickGray;
+                        }
+
+                        .MuiSelect-icon {
+                            right: 12px;
+                        }
+                    }
+
+                    .MuiInput-underline:before {
+                        border-bottom: none !important;
+                    }
+
+                    .MuiInput-underline:after {
+                        border-bottom: none !important;
+                    }
+
+                    .MuiInput-underline {
+                        border: 1px solid $color-borderLightGray;
+                        border-radius: 20px;
+                        height: 40px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.select-ticket-drawer-ticket-type {
+    width: 48%;
+    height: 50px;
+    display: flex;
+
+    .menu-container {
+        width: 100%;
+        position: relative;
+        margin: auto;
+        transition: 0.5s;
+
+        .select-drawer-container {
+            width: 100%;
+            position: relative;
+            border: 1px solid $color-lightGray;
+            height: 45px;
+            background: $color-white;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            z-index: 998;
+
+            .selected-item-container {
+                // margin-left: 1%;
+                width: 85%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                p {
+                    font-size: 18px;
+                    color: $color-thickGray;
+                    padding-left: 14px;
+                    font-weight: 590;
+                }
+            }
+
+            .selected-drp-dwn-img {
+                width: 6%;
+                margin-right: 1%;
+                display: flex;
+                justify-content: center;
+                // border: 1px dashed $color-violet;
+                border-radius: 50%;
+                height: 50%;
+
+                img {
+                    width: 12px;
+                }
+            }
+        }
+
+        .ticket-type-open-dropdown {
+            height: 160px;
+            overflow: auto;
+            padding-top: 40px;
+            transition: 0.5s;
+
+        }
+
+        .ticket-type-dropdown-menu-container {
+            position: absolute;
+            border-radius: 20px 20px 5px 5px;
+            top: 10px;
+            left: 0;
+            width: 99%;
+            background: $color-white;
+            box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+            z-index: 997 !important;
+            transition: 0.5s;
+            // overflow: hidden;
+
+            .MuiButtonBase-root {
+                width: 90% !important;
+                margin: 0 auto !important;
+                background-color: transparent !important;
+                box-shadow: none !important;
+                border-radius: 25px;
+                height: 40px;
+                min-height: 40px;
+                padding: 0px !important;
+                min-height: 30px !important;
+                // margin: 1% auto;
+
+            }
+        }
+
+        .custom-scroll {
+            width: 98% !important;
+        }
+    }
+}
+
+// Added on Nov 18th ends

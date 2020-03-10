@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewBox="0 0 40 35">
+    <defs>
+        <style>
+            .cls-1{fill:#275651}
+        </style>
+    </defs>
+    <path id="Icon_metro-paragraph-left" d="M2.571 3.856h40v5h-40zm0 7.5h25v5h-25zm0 15h25v5h-25zm0-7.5h40v5h-40zm0 15h40v5h-40z" class="cls-1" data-name="Icon metro-paragraph-left" transform="translate(-2.571 -3.856)"/>
+</svg>

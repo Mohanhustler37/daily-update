@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke:rgba(78,88,169,.2)}.cls-2,.cls-4{fill:none}.cls-2{stroke:#4e58a9;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}.cls-3{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_11519" data-name="Group 11519" transform="translate(-.334)">
+        <g id="Rounded_Rectangle_4" class="cls-1" data-name="Rounded Rectangle 4" transform="translate(.334)">
+            <rect width="28" height="28" class="cls-3" rx="9"/>
+            <rect width="27" height="27" x=".5" y=".5" class="cls-4" rx="8.5"/>
+        </g>
+        <g id="Group_11517" data-name="Group 11517" transform="translate(9.627 9)">
+            <g id="Icon_feather-plus" data-name="Icon feather-plus">
+                <path id="Path_77" d="M18 7.5V18" class="cls-2" data-name="Path 77" transform="translate(-12.75 -7.5)"/>
+                <path id="Path_78" d="M7.5 18H18" class="cls-2" data-name="Path 78" transform="translate(-7.5 -12.75)"/>
+            </g>
+        </g>
+    </g>
+</svg>

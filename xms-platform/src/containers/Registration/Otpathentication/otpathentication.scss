@@ -1,0 +1,158 @@
+@import '../../../variables';
+@import '../../../extends';
+@import '../../../mixins';
+
+%reg-main-heading {
+    font-family: helveticaNeueCondensedBold;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 0.89;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #656565;
+    margin-bottom: 0.5%;
+}
+%reg-sub-heading {
+    font-family: helveticaNeueLight;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: 0.36px;
+    text-align: center;
+    color: #c8c8c8;
+}
+.otpAuthenticationComponent {
+    height: 100%;
+    box-sizing: border-box;
+    user-select: none;
+    .otpAuthenticationComponentBody {
+        height: 88%;
+        padding-top: 5%;
+        box-sizing: border-box;
+        label {
+            // margin: 1% 0;
+            padding-top:2%;
+        }
+        label:nth-child(1) {
+            @extend %reg-main-heading;
+            font-size: rem(45px);
+            display: block;
+        }
+        label:nth-child(2), label:nth-child(3) {
+            @extend %reg-sub-heading;
+            font-size: rem(18px);
+            display: block;
+        }
+        .optContainer {
+            %commonStyles {
+                width: 70%;
+                margin: auto;   
+            }
+            width: 26%;
+            height: 70%;
+            margin: auto;
+            min-width: 335px;
+            max-width: 574px;
+            .otpInputComponent {
+                width: 100%;
+                margin-top:12%;
+                align-items: center;
+                justify-content: space-between;
+                height: 10%;
+                div {
+                    margin: 0 5px;
+                    height: 100%;
+                    input {
+                        font-size: rem(40px) !important;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.18;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color:$color-strongPurple;
+                        box-sizing: border-box;
+                        border: 0;
+                        border-bottom: 1px solid #c8c8c8;
+                        height: 100%;
+                        width: 45px !important;
+                    }:focus {
+                        outline: none;
+                    }::-webkit-outer-spin-button,
+                     ::-webkit-inner-spin-button {
+                      -webkit-appearance: none;
+                      margin: 0;
+                    }
+                }
+            }
+            .buttonAndCaptionContainer {
+                width: 100%;
+                margin: auto;
+                height: 14%;
+                max-height: 82px;
+                position: relative;
+                .otpValidatorButton {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 100px;
+                    border: 0;
+                    padding: 0;
+                    margin-top:12%;
+                    background-color: #41e590;
+                   
+                    max-height: 82px;
+                    .MuiButton-label {
+                        font-family: helveticaNeueMedium;
+                        font-size: rem(22px);
+                        text-transform: capitalize;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.18;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #ffffff;
+                    }
+                }
+                .ur-cmpny-button-filed-click-section {
+                    position: absolute;
+                    right: -35%;
+                    top: 40%;
+                    text-align: left;
+                    width: 160px;
+                    img {
+                        width: 23%;
+                        cursor: pointer;
+                    }
+                    p {
+                        white-space: nowrap;
+                        font-family: helveticaNeueLight;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.17;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #c8c8c8;
+                        font-size: rem(18px);
+                        padding-left:14%;
+                    }
+                }
+            }
+            .resendOTP {
+                font-size: rem(18px);
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.17;
+                letter-spacing: normal;
+                text-align: left;
+                text-align: center;
+                color: $color-strongPurple;
+                margin-top: 21%;
+                display: block;
+                cursor: pointer;
+                font-family: helveticaNeueMedium;
+            }
+        }
+    }
+}  

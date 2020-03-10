@@ -1,0 +1,107 @@
+https://www.vertabelo.com/blog/organize-your-time-and-resources-a-project-management-data-model/
+
+https://blog.harveydelaney.com/setting-up-graphql-express-and-postgresql/
+
+https://www.howtographql.com/graphql-js/6-authentication/
+
+Prisma Register Login Protected Field
+------ -------- ----- --------- ----- 
+https://www.prisma.io/tutorials/authentication-in-apollo-server-ct21/
+
+https://github.com/vitaly-t/pg-promise/wiki/Learn-by-Example#simple-insert
+
+React Apollo Client
+----- ------ ------
+https://www.apollographql.com/docs/react/get-started/
+
+React Apollo Mutation
+----- ------ --------
+https://www.apollographql.com/docs/react/data/mutations/
+
+https://github.com/the-road-to-graphql/fullstack-apollo-express-postgresql-boilerplate/blob/master/src/resolvers/message.js
+
+Command Line Postgres
+------- ---- --------
+
+$ sudo -i -u postgres
+
+$ psql
+
+# CREATE DATABASE project_management;
+
+# \list
+
+# \connect project_management;
+
+# \du       => To check user
+
+# pg_dump -U $username --format=c --file=$mydatabase.sqlc $dbname
+
+# pg_dump -U postgres --format=c --file=backup.sql project_management
+
+  The options in detail are:
+  -U, --username=NAME      connect as specified database user
+  -F, --format=c|t|p       output file format (custom, tar, plain text)
+  -f, --file=FILENAME      output file name
+
+# pg_restore -U$username --dbname=$databasename $filename
+
+# CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  user_name VARCHAR (64),
+  first_name VARCHAR (64),
+  last_name VARCHAR (64),
+  email VARCHAR (255),
+  password VARCHAR (64),
+  phone VARCHAR (64),
+  designation VARCHAR (64),
+  is_sketch_brahma BOOLEAN
+);
+
+# INSERT INTO users (user_name,first_name,last_name,email,password,phone,designation,is_sketch_brahma) VALUES ('MohanHustler', 'Mohan', 'Hustler', 'mohanhustler@gmail.com', 'mohan121','9876543210', 'Developer', TRUE);
+
+# SELECT * FROM users;
+
+// Register mutation
+User {
+  register(user_name: "VjaySachin",first_name:"Vijat", last_name:"Sachin",email:"vijay@gmail.com", password: "vijay121") {
+    id
+  }
+}
+
+// Login User
+mutation {
+  login(user_name: "VjaySachin", password: "vijay121"){
+    token
+    user {
+      id
+      user_name
+    }
+  }
+}
+
+// Get Users
+{
+  users{
+    first_name
+    last_name
+  }
+}
+
+
+CREATE TABLE tasks (
+  id SERIAL PRIMARY KEY,
+  task_name VARCHAR (64),
+  start_date DATE,
+  end_date DATE,
+  start_time TIME,
+  end_time TIME,
+  status VARCHAR (64),
+  sprint_id INTEGER REFERENCES sprint(id),
+  user_id INTEGER REFERENCES users(id)
+);
+
+INSERT INTO tasks(task_name,start_date,end_date,start_time,end_time,status,sprint_id,user_id) VALUES ('Test Task', '12/12/2019', '12/1/2020','08:00:00', '12:00:00', 'Development', 1, 18);
+
+
+

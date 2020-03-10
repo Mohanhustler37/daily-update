@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#d0cfec;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <path id="Icon_feather-columns" d="M16 4.5h8.944A2.556 2.556 0 0 1 27.5 7.056v17.888a2.556 2.556 0 0 1-2.556 2.556H16m0-23H7.056A2.556 2.556 0 0 0 4.5 7.056v17.888A2.556 2.556 0 0 0 7.056 27.5H16m0-23v23" class="cls-1" data-name="Icon feather-columns" transform="translate(-3.5 -3.5)"/>
+</svg>

@@ -1,0 +1,30 @@
+@import "../../../../variables";
+
+.button-one{
+    width: 17%;
+    height: 15px;
+    padding: 0px !important;
+    border: none !important;
+    background-color: #FFFFFF;
+    margin: 0% 6% 0% 20%;
+    svg{
+        width: 10px;
+        display: flex;
+        // padding-bottom: 5px;
+    }
+}
+
+.stopwatch{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    // justify-content: space-between;
+    border: 1px solid $color-red;
+    background-color: $color-white;
+    border-radius: 100px;
+}
+
+.stop-watch-section{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
+  <g id="Group_11465" data-name="Group 11465" transform="translate(-1849 -221)">
+    <g id="Rectangle_534" data-name="Rectangle 534" transform="translate(1849 221)" fill="#fff" stroke="#4e58a9" stroke-width="1" stroke-dasharray="2 1">
+      <rect width="39" height="39" rx="16" stroke="none"/>
+      <rect x="0.5" y="0.5" width="38" height="38" rx="15.5" fill="none"/>
+    </g>
+    <path id="Icon_feather-chevron-down" data-name="Icon feather-chevron-down" d="M9,19.963,15.676,13.5l6.676,6.463" transform="translate(1852.5 224)" fill="none" stroke="#4e58a9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

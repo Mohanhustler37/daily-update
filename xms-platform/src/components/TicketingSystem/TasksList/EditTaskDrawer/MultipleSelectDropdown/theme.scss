@@ -1,0 +1,116 @@
+@import '../../../../../variables';
+
+.dropdownComponentContainer {
+  width: 100%;
+  cursor: pointer;
+  .menu-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    transition: 0.5s;
+    .dropdownHeaderSection {
+      width: 100%;
+      position: relative;
+      border: 1px solid $color-lightGray;
+      background: $color-white;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      // z-index: 1;
+      padding: 0 6%;
+      box-sizing: border-box;
+      img {
+        width: 25px;
+      }
+      .dropdownSelectedItemsHolder {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        margin: 0px 10px;
+        height: 9vh;
+        max-height: 72px;
+        box-sizing: border-box;
+        .dropdownPlaceholder {
+          font-size: rem(22px);
+          font-size: 1.3rem !important;
+          color: $color-thickGray;
+          font-weight: normal;
+          width: 100%;
+          white-space: nowrap;
+          margin-right: 5px;
+          padding-top: 4px;
+          padding-left: 8px;
+          border-radius: 5px;
+        }
+      }
+      .email-drp-dwn-img {
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        height: 50%;
+        img {
+          width: 12px;
+        }
+      }
+    }
+    .openDropdown {
+      height: 200px;
+      overflow: auto;
+      padding-top: 9vh;
+      padding-top: 5.5vh !important;
+      transition: 0.5s;
+    }
+    .dropdownBodySection {
+      padding: 10px;
+      position: absolute;
+      border-radius: 20px 20px 5px 5px;
+      top: 2.4vh;
+      left: 0;
+      width: 100%;
+      background: #FFFFFF;
+      box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+      z-index: -1;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      overflow: auto;
+      box-sizing: border-box;
+    }
+    // .emailListCustomScroll {
+    //   width: 98% !important;
+    //   height: 88% !important;
+    //   padding: 10px 0px;
+    //   .customized-ticket-source {
+    //     margin: 10px auto;
+    //     .create-ticket-one-email {
+    //       img {
+    //         border-radius: 100px;
+    //         height: 25px;
+    //         width: 25px;
+    //       }
+    //     }
+    //   }
+    //   .emailSelectCheckBox {
+    //     padding: 0;
+    //     margin-left: 5px;
+    //     width: 20px !important;
+    //     span {
+    //       svg {
+    //         width: 20px;
+    //       }
+    //     }
+    //   }
+    //   div {
+    //     display: block;
+    //   }
+    // }
+  }
+  .dropdownZindex {
+    z-index: 1600;
+  }
+  .dropdownBodyZindex {
+    z-index: 1500 !important;
+  }
+}

@@ -1,0 +1,198 @@
+@import "../../variables";
+
+.main-wrapper {
+    height: auto !important;
+    top: -10%;
+    transform: none;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    margin-left: 18%;
+}
+
+.ticket-listing-body-container {
+    width: 100%;
+    height: auto;
+}
+
+.ticket-listing-overall-body {
+    .row {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+}
+
+.ticket-listing-body-container {
+    .col-sm-3 {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .col-sm-9 {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
+.sort-popup-for-one::after {
+    position: absolute;
+    right: 108px;
+    top: 40px;
+    width: 11px;
+    height: 0px;
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $color-thickWhite;
+}
+
+.sort-popup-one {
+    position: absolute;
+    padding: 10px;
+    top: 50px;
+    right: 50px;
+    height: auto;
+    width: 175px;
+    border-radius: 10px;
+    z-index: 1000;
+    overflow: auto;
+    background: $color-white;
+    box-shadow: 0 0 15px $color-lightWeightGray;
+    opacity: 1;
+    cursor: pointer;
+    p{
+        margin-bottom: 0px;
+    }
+}
+
+.sort-popup-for-ascending{
+    display: flex;
+    justify-content: space-between;
+    p{
+        padding-top: 10px;
+    }
+}
+
+.popup-for-tag-pick-color::after{
+    position: absolute;
+    right: 60px;
+    top: 45px;
+    width: 11px;
+    height: 0px;
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 10px solid $color-darkWhite;
+}
+
+.pic-color-for-tag-pop-up{
+    position: absolute;
+    padding: 10px;
+    top: 55px;
+    right: 40px;
+    height: auto;
+    width: 150px;
+    border-radius: 10px;
+    z-index: 1000;
+    overflow: auto;
+    background: $color-white;
+    box-shadow: 0 0 15px $color-lightWeightGray;
+    opacity: 1;
+
+    p{
+        font-size: 10px;
+        font-weight: 900;
+        color: $color-lightGray;
+        margin-bottom: 2px;
+    }
+    hr{
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+}
+
+.sort-popup-for-ascending{
+    .MuiSwitch-root{
+        .MuiSwitch-track{
+            height: 75%;
+            width: 85%;
+        }
+        .MuiIconButton-root{
+            .MuiIconButton-label{
+                .MuiSwitch-thumb{
+                    width: 15px!important;
+                    height: 15px!important;
+                    box-shadow: none!important;
+                }
+            }
+        }
+    }
+}
+
+.sort-popup-for-descending{
+    .MuiSwitch-root{
+        .MuiSwitch-track{
+            height: 75%;
+            width: 85%;
+        }
+        .MuiIconButton-root{
+            .MuiIconButton-label{
+                .MuiSwitch-thumb{
+                    width: 15px!important;
+                    height: 15px!important;
+                    box-shadow: none!important;
+                }
+            }
+        }
+    }
+}
+
+.ticket-header-content-one{
+    .MuiFab-root{
+        height: 22px;
+        box-shadow: none;
+        transition: none;
+        border-radius: 10px;
+        text-transform: none;
+        background-color: $color-white!important;
+        margin-left: 10px;
+        color: $color-skyBlue;
+        border: 1px dashed $color-skyBlue;
+        min-height: 0px!important;
+    }
+    .MuiFab-root:active{
+        box-shadow: none!important;
+    }
+    .MuiFab-root:hover{
+        background-color: $color-white!important;
+    }
+}
+
+.status-header-content{
+    .MuiFab-root{
+        height: 22px;
+        box-shadow: none;
+        transition: none;
+        border-radius: 10px;
+        text-transform: none;
+        background-color: $color-white!important;
+        margin-left: 10px;
+        color: $color-skyBlue;
+        border: 1px dashed $color-skyBlue;
+        min-height: 0px!important;
+    }
+    .MuiFab-root:active{
+        box-shadow: none!important;
+    }
+    .MuiFab-root:hover{
+        background-color: $color-white!important;
+    }
+}
+
+.ticket-modal{
+    width: 50%;
+    height: 200px;
+    border: 1px solid;
+}

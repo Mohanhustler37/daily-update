@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+    <defs>
+        <style>
+            .cls-1{fill:rgba(255,255,255,.2);stroke:rgba(78,88,169,.3)}.cls-2{fill:rgba(78,88,169,.5)}.cls-3{stroke:none}.cls-4{fill:none}
+        </style>
+    </defs>
+    <g id="Group_11514" data-name="Group 11514" transform="translate(-6113 6705)">
+        <g id="Group_11375" data-name="Group 11375" transform="translate(6113 -6705)">
+            <g id="Rectangle_687" class="cls-1" data-name="Rectangle 687">
+                <rect width="70" height="70" class="cls-3" rx="35"/>
+                <rect width="69" height="69" x=".5" y=".5" class="cls-4" rx="34.5"/>
+            </g>
+        </g>
+        <path id="Icon_awesome-ellipsis-h" d="M24.681 17.929a5.219 5.219 0 0 1-5.427 4.991 5.219 5.219 0 0 1-5.427-4.991 5.219 5.219 0 0 1 5.427-4.991 5.219 5.219 0 0 1 5.427 4.991zm7.839-4.991a5.219 5.219 0 0 0-5.427 4.991 5.219 5.219 0 0 0 5.427 4.991 5.219 5.219 0 0 0 5.427-4.991 5.219 5.219 0 0 0-5.427-4.991zm-26.53 0a5.219 5.219 0 0 0-5.427 4.991 5.219 5.219 0 0 0 5.426 4.991 5.219 5.219 0 0 0 5.427-4.991 5.219 5.219 0 0 0-5.427-4.991z" class="cls-2" data-name="Icon awesome-ellipsis-h" transform="translate(6128.583 -6687.13)"/>
+    </g>
+</svg>

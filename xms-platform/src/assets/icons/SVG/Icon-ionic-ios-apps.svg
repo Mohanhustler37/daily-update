@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.154" height="17.149" viewBox="0 0 17.154 17.149">
+    <defs>
+        <style>
+            .cls-1{fill:#4e58a9}
+        </style>
+    </defs>
+    <g id="Icon_ionic-ios-apps" data-name="Icon ionic-ios-apps" transform="translate(-4.492 -4.497)">
+        <path id="Path_897" d="M21.059 7.785l-6.672-3.041a3.613 3.613 0 0 0-2.63 0L5.089 7.785c-.786.357-.786.942 0 1.3L11.7 12.1a3.8 3.8 0 0 0 2.751 0l6.609-3.014c.785-.358.785-.943-.001-1.301z" class="cls-1" data-name="Path 897" transform="translate(-.003)"/>
+        <g id="Group_11371" data-name="Group 11371" transform="translate(4.493 11.723)">
+            <path id="Path_898" d="M11.7 25.177l-4.458-2.032a.725.725 0 0 0-.594 0l-1.559.71c-.786.357-.786.942 0 1.3l6.611 3.014a3.8 3.8 0 0 0 2.751 0l6.609-3.014c.786-.357.786-.942 0-1.3l-1.559-.71a.725.725 0 0 0-.594 0l-4.457 2.032a3.8 3.8 0 0 1-2.75 0z" class="cls-1" data-name="Path 898" transform="translate(-4.496 -18.504)"/>
+            <path id="Path_899" d="M21.056 16.582l-1.416-.643a.714.714 0 0 0-.589 0l-4.823 2.184a3.942 3.942 0 0 1-2.318 0l-4.822-2.185a.714.714 0 0 0-.589 0l-1.416.643c-.786.357-.786.942 0 1.3l6.609 3.019a3.8 3.8 0 0 0 2.751 0l6.609-3.014c.79-.362.79-.947.004-1.304z" class="cls-1" data-name="Path 899" transform="translate(-4.493 -15.875)"/>
+        </g>
+    </g>
+</svg>

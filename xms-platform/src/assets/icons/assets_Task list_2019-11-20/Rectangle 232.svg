@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke:#ecf1f9;stroke-dasharray:4 0}.cls-2{stroke:none}.cls-3{fill:none}
+        </style>
+    </defs>
+    <g id="Rectangle_232" class="cls-1" data-name="Rectangle 232">
+        <rect width="50" height="50" class="cls-2" rx="12"/>
+        <rect width="49" height="49" x=".5" y=".5" class="cls-3" rx="11.5"/>
+    </g>
+</svg>

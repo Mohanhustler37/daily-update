@@ -1,0 +1,264 @@
+@import '../../../variables';
+@import '../../../extends';
+@import '../../../mixins';
+
+/*------------------Media Queries Start--------------*/
+
+@media screen and (max-width: 1279px) and (min-width: 320px) {
+  
+}
+
+@media screen and (min-width: 1280px) and (max-width:1365px) {
+
+}
+
+@media screen and (min-width: 1366px) and (max-width:1439px) {
+
+}
+
+@media screen and (min-width: 1440px) and (max-width:1679px){
+
+}
+
+@media screen and (min-width: 1680px) and (max-width:1919px) {
+
+}
+@media screen and (min-width: 1920px) {
+
+}
+ /*------------------Media Queries End--------------*/
+
+
+.taskListingAttachement {
+    .tckt-lst-edit-drawer {
+        .MuiPaper-root {
+            width: 100%;
+            background: transparent;
+            .editdrawer {
+                height: 100%;
+                .drawer-full-width {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.tckt-lst-edit-drawer {
+    width: 100%;
+    .taskListingAttachmentContainer {
+        width: 50%;
+        overflow: auto;
+        .edit-tkt-sidebar-container {
+            height: 100%;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            .sideDrawerBodySection {
+                height: 83%;
+                padding: 0 15px;
+
+                .taskListTabsHeader {
+                    box-shadow: none;
+                    border-bottom: 1px solid grey;
+                    .MuiTabs-root {
+                        .MuiTabs-scroller {
+                            .MuiTabs-flexContainer {
+                                .taskLinkTab {
+                                    width: 10% !important;
+                                    min-width: auto !important;
+                                    .MuiTab-wrapper {
+                                        font-family: helveticaNeueMedium;
+                                        font-size: rem(18px);
+                                        font-stretch: normal;
+                                        font-style: normal;
+                                        line-height: 1.33;
+                                        letter-spacing: 0.36px;
+                                        text-align: left;
+                                    }
+                                }
+                                .Mui-selected {
+                                    font-family: helveticaNeueMedium;
+                                    font-size: rem(18px);
+                                    font-stretch: normal;
+                                    font-style: normal;
+                                    line-height: 1.33;
+                                    letter-spacing: 0.36px;
+                                    text-align: left;
+                                    font-weight: normal;
+                                    color: #4e58a9;
+                                }
+                            }
+                    }   }
+                }
+                .taskListTabPanelsWrapper {
+                    height: 85%;
+                    .react-swipeable-view-container {
+                        height: 100%;
+                            .taskLinkTabPanel {
+                                height: 94%;
+                                .MuiBox-root {
+                                    height: 100%;
+                                    padding: 0;
+
+                                    .linkWithSearchBar {
+                                        width: 100%;
+                                        margin: 3.9vh auto;
+                                        border-radius: 100px;
+                                        border: 1px solid #d0cfec;
+                                        box-sizing: border-box;
+                                        background: $color-white;
+                                        @extend %d-flex-space-btwn;
+                                        .sidebar-search-field {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding-left: 2%; 
+                                        width: 80%;
+                                        .MuiInputBase-root {
+                                            width: 100%;
+                                            .MuiInputBase-input {
+                                                font-family: helveticaNeueLight;
+                                                font-size: rem(18px);
+                                                font-stretch: normal;
+                                                font-style: normal;
+                                                line-height: 1.17;
+                                                letter-spacing: normal;
+                                                text-align: left;
+                                                color: #c8c8c8;
+                                                padding: 6% 8%;
+                    
+                                            }
+                                            fieldset {
+                                            border: 1px solid transparent;
+                                            }
+                                        }
+                                        }
+                    
+                                        img {
+                                        width: 6.9%;
+                                        margin: 0 4% 0 0;
+                                        }
+                                    }
+                                    .taskLinkListContainer {
+                                        height: 75%;
+                                        overflow: auto;
+
+
+                                        .taskListItem {
+                                            // width: 90%;
+                                            margin: auto;
+                                            padding: 3%;
+                                            border: 1px dashed rgba(78, 88, 169, 0.5);
+                                            border-radius: 12px;
+                                            @extend %d-flex-align-center-space-btwn;
+                                            .itemDescriptionContainer {
+                                                width: 80%;
+                                                p {
+                                                    font-family: helveticaNeueMedium;
+                                                    font-size: rem(18px);
+                                                    font-weight: normal;
+                                                    font-stretch: normal;
+                                                    font-style: normal;
+                                                    line-height: 1.33;
+                                                    letter-spacing: 0.36px;
+                                                    text-align: left;
+                                                    color: #656565;
+                                                }
+                                                label {
+                                                    font-family: helveticaNeueLight;
+                                                    font-size: rem(14px);
+                                                    font-weight: normal;
+                                                    font-stretch: normal;
+                                                    font-style: normal;
+                                                    line-height: 1.72;
+                                                    letter-spacing: 0.28px;
+                                                    text-align: left;
+                                                    color: #c8c8c8;
+                                                }
+                                                .taskAssignedTo {
+                                                    @extend %d-flex-align-center;
+                                                    margin-left: 4%;
+                                                    padding: 1px 6px;
+                                                    #avathar-img {
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        border-radius: 100px;
+                                                    }
+                                                    span {
+                                                      margin-left: 5px;
+                                                      white-space: nowrap;
+                                                      font-family: helveticaNeueLight;
+                                                      font-size: rem(13px);
+                                                      font-weight: normal;
+                                                      font-stretch: normal;
+                                                      font-style: normal;
+                                                      line-height: 1.38;
+                                                      letter-spacing: 0.26px;
+                                                      text-align: left;
+                                                      color: #151b26;
+                                                    }
+                                                  }
+                                            }
+                            
+                                        }
+                                    }
+                                }
+                            }
+                    }
+                }
+            }
+
+            .sideDrawerFooter {
+                div {
+                    margin: 0 5%;
+                }
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin: auto;
+                padding: 14px 0;
+                box-shadow: -4px 0 30px 0 rgba(0, 0, 0, 0.09);
+                .update-button {
+                    margin: 0 5%;
+                    background-color: $color-green !important;
+                    border-radius: 41px !important;
+                    color: $color-white !important;
+                    text-transform: capitalize !important;
+                    width: 150px !important;
+                    .MuiButton-label {
+                        font-family: helveticaNeueMedium;
+                        font-size: rem(22px);
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #ffffff;
+                    }
+                }
+                .cancel-button {
+                    border-radius: 41px !important;
+                    text-transform: capitalize !important;
+                    border: 0 !important;
+                    width: 150px !important;
+                    .MuiButton-label {
+                        font-family: helveticaNeueMedium;
+                        font-size: rem(22px);
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #c8c8c8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

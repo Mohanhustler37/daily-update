@@ -1,0 +1,15 @@
+function loadSelectedTab(tabID) {
+    const newIndex = parseInt(tabID.split("-")[3]);
+    const newIndex2 = parseInt(props.currentTabID.split("-")[3]);
+    console.log("NEXT TAB BY CLICKING, setCurrentTabID");
+    console.log(props.currentTabID);
+    console.log(tabID);
+    console.log(newIndex);
+    if (props.operationType !== "add" || 0 < newIndex2) {
+      setCurrentTabID(tabID);
+      // Maintain Current Tab ID in State
+      if (props.setCurrentTabId)
+        props.setCurrentTabId(tabID, tabBarData[tabID].tabId);
+    }
+  }
+

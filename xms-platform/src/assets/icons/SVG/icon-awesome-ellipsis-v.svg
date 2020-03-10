@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.222" height="5" viewBox="0 0 17.222 5">
+    <defs>
+        <style>
+            .cls-1{fill:rgba(78,88,169,.5)}
+        </style>
+    </defs>
+    <path id="Icon_awesome-ellipsis-v" d="M4.187 6.674a2.5 2.5 0 1 1-2.5 2.5 2.5 2.5 0 0 1 2.5-2.5zm-2.5-3.611a2.5 2.5 0 1 0 2.5-2.5 2.5 2.5 0 0 0-2.499 2.499zm0 12.222a2.5 2.5 0 1 0 2.5-2.5 2.5 2.5 0 0 0-2.499 2.5z" class="cls-1" data-name="Icon awesome-ellipsis-v" transform="rotate(-90 3.062 3.625)"/>
+</svg>

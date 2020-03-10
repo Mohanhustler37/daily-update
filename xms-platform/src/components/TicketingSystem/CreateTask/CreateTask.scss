@@ -1,0 +1,148 @@
+@import '../../../variables';
+
+.create-task-overall-body{
+    .row{
+        margin-right: 0px!important;
+        margin-left: 0px!important;
+        
+    }
+}
+
+.create-task-body-container{
+    width: 100%;
+    height: auto;
+    .col-sm-3{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .col-sm-9{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+.create-task-container{
+    width: 100%;
+    margin-top: 0px;
+}
+
+.create-task-sub-header{
+    display: flex;
+    height: 60px;
+    border: 1px solid $color-thickWhite;
+}
+
+.create-task-left-side, .create-ticket-right-side{
+    width: 50%;
+}
+
+.create-task-left-side-text-one{
+    p{
+        margin-bottom:0px!important;
+        margin-top: 2%;
+        margin-left: 3%;
+        font-size: 18px;
+        font-weight: bolder;
+        color: $color-thickGray;
+    }
+    
+}
+
+.create-task-left-side-text-two{
+    p{
+        margin-bottom:0px!important;
+        margin-top:0px!important;
+        font-size: 12px;
+        margin-left: 3%;
+        color: $color-lightGray;
+    }
+    
+
+}
+
+.create-task-right-side{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 40%;
+    margin-top: 0.7%;
+}
+
+.create-task-sub-header-icon-one{
+    margin-top: 1%;
+    margin-right: 3%;
+}
+
+.create-task-sub-header-icon, .create-ticket-sub-header-icon-two{
+    margin-top: 1%;
+    margin-right: 2%;
+}
+
+.create-task-sub-header-icon{
+    .MuiButton-contained{
+        box-shadow: none;
+        background-color:$color-white;
+        border: 1px solid $color-darkWhite;
+        border-radius: 8px;
+    }
+    
+}
+
+.create-task-sub-header-icon-one{
+    .MuiButton-contained{
+        box-shadow: none;
+        background-color:$color-white;
+        border: 1px solid $color-darkWhite;
+        border-radius: 8px;
+    }
+    
+} 
+
+.create-task-sub-header-icon{
+    .MuiButton-root{
+        min-width: 40px;
+        height: 40px;
+    }
+}
+
+.create-ticket-sub-header-icon-two{
+    .MuiButton-root{
+        min-width: 40px;
+        height: 40px;
+    }
+}
+
+
+.create-task-sub-header-icon-two{
+    .MuiButton-contained{
+        box-shadow: none;
+        background-color:$color-white;
+        border-radius: 8px;
+    }
+} 
+
+.create-task-sub-header-icon-one{
+    .MuiButton-root{
+        min-width: 40px;
+        height: 40px;
+        margin-left: 10%;
+    }
+}
+
+.create-task-sub-header-icon-one{
+    .MuiButtonBase-root{
+        .MuiButton-label{
+            img{
+                width: 20px;
+            }
+        }
+    }
+}
+
+.create-task-sub-header-icon{
+    .MuiButtonBase-root{
+        .MuiButton-label{
+            .fa{
+                width: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+@import '../../../variables';
+
+.sub-header{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid $color-lightWhite;
+    display: flex;
+    justify-content: space-between;
+    .sub-header-left{
+        margin-left: 0%;
+        height: 30px;
+        margin-top: 5px;
+        margin-left: 1%;
+        .sub-header-left-content {
+            display: inline-flex;
+            height: 30px;
+            margin-top: 3%;
+            p{
+                margin-bottom: 0px!important;
+            }
+            .dropdown-button{
+                padding-top: 0px;
+
+                .btn{
+                    font-size: 9px;
+                    padding: 4px 14px;
+                    border: 1px dashed $color-lightGray;
+                    border-radius: 10px;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    .sub-header-right{
+        .sub-header-icon{
+            .btn{
+                padding: 7px 20px;
+                border: 1px dashed $color-lightGray;
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+
+.sub-header-text{
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #656565;
+    padding: 0px 5px;
+    padding-top: 3px;
+}
+
+
+
+.sub-header-left-bottom-text{
+    margin-bottom: 0px;
+    font-size: 10px;
+    color:$color-lightGray;
+    padding-left: 10px;
+   
+}
+
+.sub-header-right{
+    display: inline-flex;
+    padding-top: 5px;
+    align-items: center;
+}
+
+.sub-header-icon-one{
+    width: 35px;
+    height: 35px;
+    border: 1px dashed $color-lightGray;
+    margin-right: 5px;
+    font-size: 1rem;
+    padding-right: 5px;
+    border-radius: 20px;
+}
+.active-class {
+    background: $color-mdLightPurple;
+}
+.sub-header-icon{
+    width: 45px;
+    height: 50px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-header-icon1{
+    .btn{
+        border: 1px dashed $color-lightGray;
+        padding: 4px 18px;
+        font-size: 18px;
+        line-height: 1.5rem;
+        color: $color-thickGray;
+        border-radius: 20px;
+        box-shadow: none;
+        span{
+            img{
+                width:25px;
+        height: 20px;
+        padding: 0 3px;
+            }
+        }
+    }
+}
+
+
+.sub-header-icon{
+    font-size: 1rem;
+    img{
+        margin-top: 0px;
+        height: 20px;
+    }
+}
+
+.sub-header-icon-one{
+    img {
+        margin: 8px;
+        height: 17px;
+    }
+} 

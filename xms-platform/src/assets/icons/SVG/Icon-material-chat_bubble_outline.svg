@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.25" height="17.25" viewBox="0 0 17.25 17.25">
+    <defs>
+        <style>
+            .cls-1{fill:#41e590}
+        </style>
+    </defs>
+    <path id="Icon_material-chat_bubble_outline" d="M18.525 3h-13.8A1.73 1.73 0 0 0 3 4.725V20.25l3.45-3.45h12.075a1.73 1.73 0 0 0 1.725-1.725V4.725A1.73 1.73 0 0 0 18.525 3zm0 12.075H6.45L4.725 16.8V4.725h13.8z" class="cls-1" data-name="Icon material-chat_bubble_outline" transform="translate(-3 -3)"/>
+</svg>

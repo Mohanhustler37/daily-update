@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:#ffc089}.cls-2{stroke:#fff}.cls-3{fill:#fff}.cls-4{stroke:none}.cls-5{fill:none}.cls-6{filter:url(#Path_917)}
+        </style>
+        <filter id="Path_917" width="56" height="56" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Group_10429" data-name="Group 10429" transform="translate(9.5 8)">
+        <g class="cls-6" transform="translate(-9.5 -8)">
+            <path id="Path_917-2" d="M19 0A19 19 0 1 1 0 19 19 19 0 0 1 19 0z" class="cls-1" data-name="Path 917" transform="translate(9 8)"/>
+        </g>
+        <g id="Ellipse_3387" class="cls-2" data-name="Ellipse 3387" transform="translate(1.5 2)">
+            <circle cx="17" cy="17" r="17" class="cls-4"/>
+            <circle cx="17" cy="17" r="16.5" class="cls-5"/>
+        </g>
+        <path id="Icon_material-lock-outline" d="M13 15.5a1.75 1.75 0 1 0-1.75-1.75A1.755 1.755 0 0 0 13 15.5zm5.25-7.875h-.875v-1.75a4.375 4.375 0 0 0-8.75 0v1.75H7.75A1.755 1.755 0 0 0 6 9.375v8.75a1.755 1.755 0 0 0 1.75 1.75h10.5a1.755 1.755 0 0 0 1.75-1.75v-8.75a1.755 1.755 0 0 0-1.75-1.75zm-7.963-1.75a2.713 2.713 0 1 1 5.425 0v1.75h-5.424zm7.963 12.25H7.75v-8.75h10.5z" class="cls-3" data-name="Icon material-lock-outline" transform="translate(5.972 7.738)"/>
+    </g>
+</svg>

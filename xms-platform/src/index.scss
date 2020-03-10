@@ -1,0 +1,291 @@
+@import "variables";
+@import 'mixins';
+
+@media screen and (max-width: 1279px) and (min-width: 320px) {
+  #root{
+    height: 100%;
+    max-height: 100%;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width:1365px) {
+
+  #root{
+    height: 100%;
+    max-height: 100%;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  :root {
+    font-size: 16px;
+  }
+
+    }
+@media screen and (min-width: 1366px) and (max-width:1439px) {
+  #root{
+    height: 100%;
+    max-height: 100%;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  :root {
+    font-size: 16px;
+  }
+    }
+@media screen and (min-width: 1440px) and (max-width:1679px) {
+  #root{
+    height: 100%;
+    max-height: 100%;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  :root {
+    font-size: 16px;
+  }
+
+}
+@media screen and (min-width: 1680px) and (max-width:1919px) {
+  #root{
+    height: 100%;
+    max-height: 100%;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  :root {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #root{
+    height: 100%;
+    max-height: 100%;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  :root {
+    font-size: 16px;
+  }
+}
+// defining different font-families bsaed on requirements and ux spec
+@font-face {
+  font-family: helveticaNeueLight;
+  src: url(assets/fonts/HelveticaNeue-woff/HelveticaNeue-Light.woff);
+}
+
+@font-face {
+  font-family: helveticaNeueBold;
+  src: url(assets/fonts/HelveticaNeue-woff/HelveticaNeue-Bold.woff);
+}
+
+@font-face {
+  font-family: helveticaNeueMedium;
+  src: url(assets/fonts/HelveticaNeue-woff/HelveticaNeue-Medium.woff);
+}
+
+@font-face {
+  font-family: helveticaNeueCondensedBold;
+  src: url(assets/fonts/HelveticaNeue-woff/HelveticaNeue-CondensedBold.woff);
+}
+@font-face {
+  font-family: HelveticaNeueCondensedBlack;
+  src: url(assets/fonts/HelveticaNeue/HelveticaNeueBold.ttf);
+}
+@font-face {
+  font-family: HelveticaNeue-MediumCond;
+  src: url(assets/fonts/HelveticaNeue/HelveticaNeue-MediumCond.otf);
+}
+
+@font-face {
+  font-family: helveticaNeueLightCond;
+  src: url(assets/fonts/HelveticaNeue-woff/HelveticaNeue-Light.woff);
+}
+
+
+:root {
+  font-size: 12px;
+}
+
+img {
+  cursor: pointer;
+}
+
+body,* {
+  font-family: 'helveticaNeueLight';
+}
+
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#root{
+  height: 100%;
+  max-height: 100%;
+  font-weight: normal;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 3px $color-borderLightGray;
+    background-color: $color-borderLightGray;
+}
+
+
+.m-0{
+  margin: 0px !important;
+}
+
+.p-0{
+  padding: 0px !important;
+}
+
+.fa {
+  color: gray;
+}
+
+.userStatus{
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  &.active{
+    background-color: $color-green;
+  }
+  &.inactive{
+    background-color: $color-red;
+  }
+  &.away{
+    background-color: $color-yellow;
+  }
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-space-between{
+  justify-content: space-between;
+}
+
+.justify-space-around{
+  justify-content: space-around;
+}
+
+.justify-flex-end{
+  justify-content: flex-end;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.displayBlock{
+  display: block;
+}
+
+.displayNone{
+  display: none;
+}
+
+.error-input {
+  background: rgba(253, 103, 58, 0.05);
+  border-radius: 100px;
+}
+.click-not-allowed {
+  cursor: not-allowed !important;
+}
+.on-boarding-input-field {
+  width: 100%;
+  margin: 0 !important;
+  border-radius: 100px;
+
+  .MuiFormLabel-root.Mui-focused {
+    color: #656565;
+  }
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #656565;
+    border-width: 1px;
+    margin: 0;
+  }
+
+  .MuiInputLabel-outlined {
+    z-index: 1;
+    transform: translate(26px, 28px) scale(1);
+    pointer-events: none;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(20px, 1px) scale(0.75);
+    transform-origin: top left;
+}
+  .MuiFormLabel-root{
+    font-family: helveticaNeueLight;
+    background: #FFFFFF;
+    padding: -4% 0% 0% 0%;
+  }
+
+  .MuiFormControl-root{
+    .MuiInputLabel-formControl{
+        top: -10 !important;
+    }
+  }
+
+
+  .MuiInputBase-root {
+    border-radius: 100px;
+    input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: helveticaNeueLight;
+      // font-size: 1.375rem;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.18;
+      letter-spacing: normal;
+      text-align: left;
+      color: #656565;
+    }
+  }
+}
+.MuiButton-outlined.Mui-disabled {
+  border: 0 !important;
+  cursor: not-allowed;
+}
+
+
+@media screen and (min-width:1440px){
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1920px){
+  :root {
+    font-size: 16px;
+  }
+}

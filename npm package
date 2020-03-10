@@ -1,0 +1,130 @@
+------------------------------------------------
+		=> 1 <=
+------------------------------------------------
+$ npm i randomstring
+
+const randomstring = require("randomstring");
+
+randomstring.generate({
+  length: 7,
+  charset: 'alphabetic'
+});
+// >> "xqm5wXX"
+
+------------------------------------------------
+		=> 2 <=
+------------------------------------------------
+$ npm i ejs
+
+
+------------------------------------------------
+		=> 3 <=
+------------------------------------------------
+$ npm i --save react-toastify
+
+import { toast } from 'react-toastify';
+
+
+------------------------------------------------
+		=> 4 <=
+------------------------------------------------
+$ npm i express
+
+onst express = require('express');
+const app = express();
+
+
+------------------------------------------------
+		=> 5 <=
+------------------------------------------------
+$ npm i -D nodemon
+
+In => package.json
+
+"start" : "nodemon index.js"
+
+$ npm start
+
+------------------------------------------------
+		=> 6 <=
+------------------------------------------------
+Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment
+
+$ npm i mongoose
+
+const mongoose = require('mongoose');
+
+mongoose.connect();
+
+------------------------------------------------
+		=> 7 <=
+------------------------------------------------
+Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env
+
+$ npm i dotenv
+
+const dotenv = require('dotenv');
+
+dotenv.config();
+
+------------------------------------------------
+		=> 8 <=
+------------------------------------------------
+Validation 
+$ npm i @hapi/joi
+
+const Joi = require('@hapi/joi');
+
+------------------------------------------------
+		=> 9 <=
+------------------------------------------------
+Password Hashing
+$ npm i bcryptjs
+
+const bcrypt = require('bcryptjs');
+
+const salt = await bcrypt.genSalt(10);
+
+const hashedPassword = await bcrypt.hash(req.body.password, salt);
+
+const validPassword = await bcrypt.compare(req.body.password, userModel.password);
+
+------------------------------------------------
+		=> 10 <=
+------------------------------------------------
+JSON WEB TOKEN 
+$ npm i jsonwebtoken
+
+const jwt = require('jsonwebtoken');
+
+const token = jwt.sign({ _id: user._id }, process.env.TOKEN_SECRET);
+
+res.header('auth-token', token);
+
+
+
+FIRESHIP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

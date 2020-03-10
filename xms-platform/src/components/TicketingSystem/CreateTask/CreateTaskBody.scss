@@ -1,0 +1,1071 @@
+@import '../../../variables';
+
+$borderRadius: 100px;
+$lightGrayDashedBorder: 1px dashed $color-lightGray;
+$lightGraySolidBorder: 1px solid $color-lightGray;
+
+%d-flex {
+  display: flex;
+} 
+%d-flex-align-center {
+  @extend %d-flex;
+  align-items: center;
+}
+%d-flex-align-justify-center {
+  @extend %d-flex-align-center;
+  justify-content: center;
+}
+%d-flex-align-center-space-btwn {
+  @extend %d-flex-align-center;
+  justify-content: space-between;
+} 
+ 
+@mixin heighWidth($heigh, $width) {
+  height: $heigh;
+  width: $width;
+}
+
+.create-task-body-container{
+    width: 100%;
+    border: 1px solid $color-thickWhite;
+    height: auto;
+    display: flex;
+}
+
+.create-task-body-left{
+    width: 70%;
+}
+
+
+.create-task-first-field-section{
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.create-assign-to{
+    width: 50%;
+    height: 40px;
+    // border: 1px solid #C8C8C8;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 4%;
+}
+
+.create-task-assign-field{
+    width: 100%;
+}
+
+.create-task-title{
+    width: 50%;
+    height: 40px;
+}
+.create-task-title-input-field{
+    position: relative;
+    border-radius:30px;
+    border: 1px solid $color-darkWhite;
+    background-color:$color-white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    color: $color-lightGray;
+    margin-left: 0%;
+    font-size: 10px;
+}
+
+
+.create-task-title-img> img{
+    padding-top: 13px;
+    padding-left: 10px;
+    padding-right: 2px;
+    width: 25px;
+}
+
+.create-task-title-img > .MuiSvgIcon-root{
+    font-size: 1.5rem;
+    padding-top: 5px;
+}
+
+.create-task-title-img> .MuiInputBase-root> .MuiInputBase-input{
+    font-size: 15px;
+    color: $color-thickGray;
+}
+
+.create-task-title-input-field> img{
+    width: 20px;
+    margin-left: 35px;
+}
+
+.create-assign-to-menu-item> .MuiInputBase-root> .MuiSelect-root{
+    display: flex;
+}
+
+.create-task-menu-list> img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+.create-assign-to-menu-item > .MuiInputBase-root> .MuiSelect-root> img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+.create-assign-to-menu-item> .MuiInputBase-root> .MuiSelect-icon{
+    right: 8px;
+}
+
+.create-task-menu-list-name{
+    width: 50px;
+    height: 30px;
+}
+
+.create-task-date-range-container {
+    width: 90%;
+    margin:  3% auto 1% auto;
+    border: $lightGrayDashedBorder;
+    padding: 3%;
+    border-radius: 25px;
+    @extend %d-flex-align-center-space-btwn;
+
+    .create-task-date-picker-container {
+      @extend %d-flex-align-center-space-btwn;
+      width: 40%;
+      padding: 0 20px;
+      border-radius: 40px; 
+
+      
+      .create-task-calender-icon-date-container {
+        @extend %d-flex-align-center;
+        
+        .label-date-container {
+          margin-left: 10px;
+          p:nth-child(1) {
+            margin: 0;
+            color: $color-lightGray;
+            font-size: 0.8rem;
+          }
+          p:nth-child(2) {
+            margin: 0;
+            color: $color-thickGray;
+          }
+          p:nth-child(3) {
+            margin: 0;
+            color: $color-lightGray;
+          }
+        }
+      }
+
+      .react-date-picker {
+        .react-date-picker__wrapper {
+            border: thin solid transparent;
+          .react-date-picker__inputGroup {
+            min-width: 0px;
+            width: 0;
+            flex-grow: 1;
+            display: flex;
+            padding: 0px 0px;
+            align-items: baseline;
+            box-sizing: content-box;
+            overflow: hidden;
+          }
+          .react-date-picker__calendar-button {
+            background: url('../../../assets/icons/SVG/Iconfeather-calendar.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            @include heighWidth(30px, 27px);
+            svg {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .start-end-date-seperator {
+      @include heighWidth(30px, 30px)
+    }
+  }
+
+.create-task-menu-list> .create-task-menu-list-name{
+    margin-bottom: 10px;
+}
+
+.create-task-menu-list-name> .second-text{
+    color: $color-black;
+}
+
+.create-task-menu-list-name{
+    .first-text{
+        line-height: 8px;
+        padding-top: 10px;
+        font-weight: bolder;
+        color: $color-lightGray;
+    }
+} 
+
+
+.create-task-date-range-container {
+    width: 90%;
+    margin:  3% auto 1% auto;
+    border: $lightGrayDashedBorder;
+    padding: 3%;
+    border-radius: 25px;
+    @extend %d-flex-align-center-space-btwn;
+
+    .create-task-date-picker-container {
+      @extend %d-flex-align-center-space-btwn;
+      width: 40%;
+      padding: 0 20px;
+      border-radius: 40px; 
+
+      
+      .create-task-calender-icon-date-container {
+        @extend %d-flex-align-center;
+        
+        .label-date-container {
+          margin-left: 10px;
+          p:nth-child(1) {
+            margin: 0;
+            color: $color-lightGray;
+            font-size: 0.8rem;
+          }
+          p:nth-child(2) {
+            margin: 0;
+            color: $color-thickGray;
+          }
+          p:nth-child(3) {
+            margin: 0;
+            color: $color-lightGray;
+          }
+        }
+      }
+
+      .react-date-picker {
+        .react-date-picker__wrapper {
+            border: thin solid transparent;
+          .react-date-picker__inputGroup {
+            min-width: 0px;
+            width: 0;
+            flex-grow: 1;
+            display: flex;
+            padding: 0px 0px;
+            align-items: baseline;
+            box-sizing: content-box;
+            overflow: hidden;
+          }
+          .react-date-picker__calendar-button {
+            background: url('../../../assets/icons/SVG/Iconfeather-calendar.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            @include heighWidth(30px, 27px);
+            svg {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .start-end-date-seperator {
+      @include heighWidth(30px, 30px)
+    }
+}
+
+.create-task-menu-list> .create-task-menu-list-name{
+    margin-bottom: 10px;
+}
+
+.create-task-menu-list-name> .second-text{
+    color: $color-black;
+}
+
+
+.create-assign-to>.create-task-assign-field> .MuiFormControl-root> .create-assign-to-menu-item> .MuiInput-underline:hover:not(.Mui-disabled):before{
+    border-bottom: none;
+}
+
+.create-assign-to>.create-task-assign-field> .MuiFormControl-root>.create-assign-to-menu-item> .MuiInput-underline:before{
+    border-bottom: none;
+}
+
+.create-assign-to>.create-task-assign-field> .MuiFormControl-root> .create-assign-to-menu-item> .MuiInput-underline:after{
+    border-bottom: none;
+}
+
+.create-assign-to>.create-task-assign-field> .MuiFormControl-root{
+    width: 100%;
+    // margin-left: 8%;
+}
+
+.create-assign-to> .create-task-assign-field> .MuiFormControl-root> .create-assign-to-menu-item> .MuiInputBase-root{
+    border: 1px solid $color-lightGray;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.create-assign-to>.MuiFormControl-root> .create-assign-to-menu-item> .MuiInputBase-root> .MuiInputBase-input{
+    padding: 6px 12px 7px;
+}
+
+.create-assign-to> .MuiFormControl-root>.MuiInputLabel-formControl{
+    top: -11px;
+    left: 12px;
+    font-size: 15px;
+    color: $color-thickGray;
+}
+
+.create-task-assign-field> .MuiFormControl-root>.MuiInputLabel-formControl{
+    top: -11px;
+    left: 11px;
+    color: $color-thickGray;
+    font-size: 15px;
+}
+
+.create-task-text-area{
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 4%;
+}
+
+.create-task-text-area> textarea{
+    width: 100%;
+    border-radius: 22px;
+    border: 1px solid $color-lightGray;
+    padding: 12px;
+    font-size: 14px;
+    color: $color-thickGray;
+}
+
+.create-task-second-field-section{
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.ct-multipleselect-container {
+    width: 48%;
+}
+
+.ct-multipleselect-container > .MuiFormControl-root{
+    // margin-left:2%;
+    // margin-top: 5%; 
+    width: 100%;
+    height: 40px;
+    
+}
+
+.ct-multipleselect-container > .MuiFormControl-root > .MuiInputLabel-formControl{
+    top: -12px;
+    left: 12px;
+    font-size: 15px;
+}
+
+.ct-multipleselect-menu-item {
+    height: 40px;
+}
+
+.ct-multipleselect-menu-item  > .MuiInput-underline:before {
+    border-bottom: none!important;
+}
+
+.ct-multipleselect-menu-item  > .MuiInput-underline:after {
+    border-bottom: none!important;
+}
+
+.ct-multipleselect-menu-item > .MuiInput-underline:hover:not(.Mui-disabled):before{
+    border-bottom: none!important;
+}
+
+.ct-multipleselect-menu-item > .MuiInput-root> .MuiSelect-select{
+    
+    font-size: 15px;
+}
+.ct-multipleselect-menu-item > .MuiInputBase-root{
+    width: 100%;
+    height: 40px;
+    border: 1px solid $color-lightGray;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.create-task-priority{
+    width: 48%;
+    height: 40px;
+    // border: 1px solid #C8C8C8;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 0%;
+}
+.create-task-priority-image{
+    display: flex;
+}
+
+.create-task-tag{
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    // border: 1px solid #C8C8C8;
+    display: flex;
+    margin-left: 4%;
+}
+
+.create-task-priority-field{
+    width: 100%;
+}
+
+
+
+.create-task-priority>.create-task-priority-field> .MuiFormControl-root> .create-assign-to-menu-item> .MuiInput-underline:hover:not(.Mui-disabled):before{
+    border-bottom: none;
+}
+
+.create-task-priority>.create-task-priority-field> .MuiFormControl-root>.create-assign-to-menu-item> .MuiInput-underline:before{
+    border-bottom: none;
+}
+
+.create-task-priority>.create-task-priority-field> .MuiFormControl-root> .create-assign-to-menu-item> .MuiInput-underline:after{
+    border-bottom: none;
+}
+
+.create-task-priority>.create-task-priority-field> .MuiFormControl-root{
+    width: 100%;
+    // margin-left: 8%;
+}
+
+.create-task-priority> .create-task-priority-field> .MuiFormControl-root> .create-assign-to-menu-item> .MuiInputBase-root{
+    border: 1px solid $color-lightGray;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.create-task-priority>.MuiFormControl-root> .create-assign-to-menu-item> .MuiInputBase-root> .MuiInputBase-input{
+    padding: 6px 12px 7px;
+}
+
+
+.create-task-priority-field> .MuiFormControl-root>.MuiInputLabel-formControl{
+    top: -11px;
+    left: 12px;
+    font-size: 15px;
+    color: $color-thickGray;
+}
+
+
+.create-task-tags-container-body {
+    width: 100%;
+    height: 40px;
+    border: 1px solid $color-lightGray;
+    border-radius: 20px;
+    margin-left: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.create-task-third-field-section{
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.create-task-related-record{
+    width: 50%;
+    height: 40px;
+    // border: 1px solid #C8C8C8;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 0%;
+}
+.create-task-priority-image{
+    display: flex;
+}
+
+
+.create-task-related-record-field{
+    width: 100%;
+}
+
+
+
+.create-task-related-record>.create-task-related-record-field> .MuiFormControl-root> .create-assign-to-menu-item> .MuiInput-underline:hover:not(.Mui-disabled):before{
+    border-bottom: none;
+}
+
+.create-task-related-record>.create-task-related-record-field> .MuiFormControl-root>.create-assign-to-menu-item> .MuiInput-underline:before{
+    border-bottom: none;
+}
+
+.create-task-related-record>.create-task-related-record-field> .MuiFormControl-root> .create-assign-to-menu-item> .MuiInput-underline:after{
+    border-bottom: none;
+}
+
+.create-task-related-record>.create-task-related-record-field> .MuiFormControl-root{
+    width: 100%;
+    // margin-left: 8%;
+}
+
+.create-task-related-record> .create-task-related-record-field> .MuiFormControl-root> .create-assign-to-menu-item> .MuiInputBase-root{
+    border: 1px solid $color-lightGray;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.create-task-related-record>.MuiFormControl-root> .create-assign-to-menu-item> .MuiInputBase-root> .MuiInputBase-input{
+    padding: 6px 12px 7px;
+}
+
+
+.create-task-related-record-field> .MuiFormControl-root>.MuiInputLabel-formControl{
+    top: -11px;
+    left: 12px;
+    font-size: 15px;
+    color: $color-thickGray;
+}
+
+///////////////////////create-link
+.create-task-link{
+    width: 50%;
+    height: 40px;
+    // border: 1px solid #C8C8C8;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 4%;
+}
+.create-task-priority-image{
+    display: flex;
+}
+
+
+.create-task-link-field{
+    width: 100%;
+}
+
+
+
+.create-task-link>.create-task-link-field> .MuiFormControl-root> .create-assign-to-menu-item> .MuiInput-underline:hover:not(.Mui-disabled):before{
+    border-bottom: none;
+}
+
+.create-task-link>.create-task-link-field> .MuiFormControl-root>.create-assign-to-menu-item> .MuiInput-underline:before{
+    border-bottom: none;
+}
+
+.create-task-link>.create-task-link-field> .MuiFormControl-root> .create-assign-to-menu-item> .MuiInput-underline:after{
+    border-bottom: none;
+}
+
+.create-task-link>.create-task-link-field> .MuiFormControl-root{
+    width: 100%;
+    // margin-left: 8%;
+}
+
+.create-task-link> .create-task-link-field> .MuiFormControl-root> .create-assign-to-menu-item> .MuiInputBase-root{
+    border: 1px solid $color-lightGray;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.create-task-link>.MuiFormControl-root> .create-assign-to-menu-item> .MuiInputBase-root> .MuiInputBase-input{
+    padding: 6px 12px 7px;
+}
+
+
+.create-task-link-field> .MuiFormControl-root>.MuiInputLabel-formControl{
+    top: -11px;
+    left: 12px;
+    font-size: 15px;
+    color: $color-thickGray;
+}
+
+
+
+/////////////////////////////create-task-right
+
+.create-task-body-right{
+    width: 30%;
+    border-left: 1px solid $color-darkWhite;
+}
+
+.create-task-company-details{
+    width: 80%;
+    // height: 90px;
+    border: 1px dashed $color-skyBlue;
+    margin: 0% auto;
+    margin-top: 10%;
+    border-radius: 8px;
+}
+
+.create-task-company-description{
+    margin-top: 3%;
+    margin-left: 3%;
+    display: flex;
+}
+.create-task-company-description> img{
+    width: 14%;
+}
+
+.create-task-company-text>p{
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+    margin-left: 5px!important;
+}
+
+.create-task-company-text-one{
+    font-size: 16px;
+    font-weight: bolder;
+    color: $color-thickGray;
+}
+
+.create-task-company-text-two{
+    color: $color-lightGray;
+}
+
+.create-task-company-details-edit{
+    margin-left:  40px;
+}
+
+.create-task-department-and-team-name{
+    display: flex;
+}
+
+.create-task-department-and-team-name>p{
+    margin-top: 5px!important;
+    margin-bottom: 10px!important;
+    margin-left: 15px!important;
+    // margin-right: 15px!important;
+    color: $color-lightGray;
+    font-size: 12px;
+}
+
+.create-task-team-name{
+    border-left: 1px solid $color-lightGray;
+    padding-left: 15px;
+}
+
+.create-task-email-section{
+    width: 80%;
+    margin: 0% auto;
+    margin-top: 4%;
+}
+
+.create-task-email-section> .PrivateSwitchBase-root-66{
+    padding: 0px;
+}
+.create-task-email-section>.email-section-check-box> .MuiButtonBase-root> .MuiIconButton-label> .MuiSvgIcon-root{
+    color: $color-skyBlue;
+}
+
+.email-section-check-box> .MuiButtonBase-root> .MuiIconButton-label> .MuiSvgIcon-root{
+    // font-size: 12px;
+    // color: #656565;
+
+    width: 17px;
+}
+.create-task-email-section> p{
+    margin: opx!important;
+}
+
+.create-task-email-section> .MuiInputBase-root{
+    width: 40%;
+    height: 40px;
+    border: 1px solid $color-skyBlue;
+    border-radius: 20px;
+    font-size: 14px;
+    padding-left: 20px;
+    margin-left: 35px;
+}
+
+.create-task-enter-email{
+    width: 100%;
+    margin-top: 4%;
+}
+
+.create-task-enter-email> .MuiFormControl-root> .create-assign-to-menu-item> .MuiInput-underline:hover:not(.Mui-disabled):before{
+    border-bottom: none;
+}
+
+.create-task-enter-email> .MuiFormControl-root>.create-assign-to-menu-item> .MuiInput-underline:before{
+    border-bottom: none;
+}
+
+.create-task-enter-email> .MuiFormControl-root> .create-assign-to-menu-item> .MuiInput-underline:after{
+    border-bottom: none;
+}
+
+
+
+.create-task-enter-email> .MuiFormControl-root{
+    width: 100%;
+    // margin-left: 8%;
+}
+
+.create-task-enter-email> .MuiFormControl-root> .create-assign-to-menu-item> .MuiInputBase-root{
+    border: 1px solid $color-skyBlue;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.create-task-enter-email>.MuiFormControl-root> .create-assign-to-menu-item> .MuiInputBase-root{
+    padding: 6px 12px 7px;
+}
+
+.create-task-enter-email>.MuiFormControl-root> .MuiInputLabel-formControl{
+    top: -10px;
+    left: 18px;
+}
+
+
+
+
+
+
+.followers-section-check-box> .MuiButtonBase-root> .MuiIconButton-label> .MuiSvgIcon-root{
+    // font-size: 12px;
+    // color: #656565;
+
+    width: 17px;
+}
+
+
+
+.followers-section-check-box> span{
+    font-size: 12px;
+    color: $color-thickGray;
+}
+
+.create-task-followers-input{
+    width: 90%;
+    margin: auto;
+}
+
+.followers-container-body{
+    width: 100%;
+    height: 40px;
+    border: 1px solid $color-skyBlue;
+    border-radius: 20px;
+    margin-left: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.follower-container-tag> p{
+    margin-bottom: 0px!important;
+    margin-top: 7px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: $color-thickGray;
+}
+
+.follower-container-add> .fa{
+    width: 40px;
+    padding: 10px;
+}
+
+
+
+.create-task-attachment-container{
+    width: 88%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.create-task-attachment-container> p{
+    font-size: 14px;
+    font-weight: bolder;
+    color: $color-lightGray;
+    text-align: left;
+    margin: 0px!important;
+}
+
+.create-task-attachment-container-field{
+    width: 102%;
+    height: 70px;
+    border: 1px dashed $color-lightGray;
+    border-radius: 8px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.create-task-attachment-container-field>p{
+    margin: 0px!important;
+    color: $color-lightGray;
+}
+
+.create-task-attachment-container-field> p > span{
+    color: $color-skyBlue;
+}
+
+
+.create-task-break-for-submit-section{
+    width: 88%;
+    border: 1px solid $color-darkWhite!important;
+    margin: 4% auto;
+}
+
+.create-task-save-template-submit-button{
+    width: 90%;
+    margin: 5%;
+}
+
+
+.create-task-save-template-submit-button> .MuiButton-outlinedPrimary{
+    width: 30%;
+    height: 40px;
+    border: 1px solid $color-green!important;
+    border-radius: 20px;
+    color: $color-white;
+    font-size: 12px;
+    background-color: $color-green;
+    margin-left: 65%;
+}
+
+.create-task-save-template-submit-button> .MuiButton-outlinedPrimary:hover{
+    width: 30%;
+    height: 40px;
+    border: 1px solid $color-green!important;
+    border-radius: 20px;
+    color: $color-white;
+    font-size: 12px;
+    background-color: $color-green;
+    margin-left: 65%;
+}
+
+.create-task-save-template-submit-button> .MuiButton-root{
+        text-transform: none;
+}
+
+.create-task-save-template-submit-button> .MuiButton-outlined{
+   padding: 5px 0px;
+}
+
+
+////////////File Upload
+.create-task-custom-file-label-upload::after{
+    display: none!important;
+}
+
+.create-ticket-left-side-text-one{
+    p{
+        margin-bottom: 0px!important;
+        margin-left: 15px;
+        font-size: 16px;
+        font-weight: 900;
+        color: $color-thickGray;
+    }
+}
+
+.create-ticket-left-side-text-two{
+    p{
+        margin-bottom: 0px!important;
+        margin-left: 15px;
+        font-size: 12px;
+        color: $color-lightGray;
+    }
+}
+
+.create-task-custom-file-label-upload-text-two{
+    padding-top: 0px!important;
+    margin-block-start: 0!important;
+    margin-block-end: 0!important;
+    margin-left: -9%!important;
+    color: $color-lightGray;
+}
+
+.create-task-custom-file-label-upload-image-icon>.create-task-custom-file-label-upload-text-one{
+    padding-bottom: 0px!important;
+    margin-block-start: 0!important;
+    margin-block-end: 0!important;
+    margin-left: -12%!important;
+}
+.create-task-custom-file-label-upload-image-icon> .create-task-custom-file-label-upload-text-two> span{
+    color: $color-skyBlue;
+}
+
+.create-task-custom-file-label-upload-image-icon{
+    margin-top: -15%;
+    margin-left: 50%;
+    z-index: 1;
+}
+
+.create-task-custom-file-upload> .MuiButton-root{
+    border: 1px dashed $color-lightGray;
+    width: 102%;
+    height: 90px;
+    border-radius: 10px;
+}
+
+.create-task-custom-file-label-upload-image-icon> img{
+    width: 20px;
+    margin-top: 15px;
+}
+
+////////////////////////Estimate Time//////////////////////
+.create-task-time-picker-section{
+    width: 88%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-task-time-picker> .react-time-picker> .react-time-picker__wrapper> .react-time-picker__button:enabled{
+    display: none!important;
+}
+
+.create-task-time-picker> .react-time-picker> .react-time-picker__wrapper{
+    border: none;
+}
+
+.create-task-time-picker{
+    display: flex;
+}
+
+.create-task-time-picker> img{
+    width: 12px;
+    margin-right: 3px;
+    margin-left: 8px;
+}
+.create-task-time-picker{
+    border: 1px dashed $color-skyBlue;
+    width: 250px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.create-task-time-picker> p{
+    margin: 10px 0px!important;
+    color: $color-thickGray;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.create-task-time-picker-section> .create-task-time-picker> .react-time-picker *{
+    padding-top: 1px;
+    color:$color-thickGray;
+    font-size: 12px;
+}
+
+
+.create-task-time-picker-section>.create-task-billable> .MuiButtonBase-root> .MuiIconButton-label> .MuiSvgIcon-root{
+    color: $color-skyBlue;
+}
+
+.create-task-billable> .MuiButtonBase-root> .MuiIconButton-label> .MuiSvgIcon-root{
+    // font-size: 12px;
+    // color: #656565;
+
+    width: 17px;
+}
+
+.create-task-billable> span{
+    color:$color-thickGray;
+    font-size: 14px;
+}
+
+.create-task-followers-section {
+    width: 80%;
+    margin: auto;
+    .MuiInputBase-root {
+        width: 100%;
+    }
+    .MuiFormControl-root {
+        width: 100%;
+
+        .followers-multipleselect-menu-item {
+            .MuiInputBase-root {
+                .MuiSelect-root {
+                    border: 1px solid $color-skyBlue;
+                    border-radius: 100px;
+                    height: 30px;
+                }
+            }
+            .MuiInput-underline:before {
+                border: 0;
+            }
+            .MuiInput-underline:hover:not(.Mui-disabled):before {
+                border: 0;
+            }
+        }
+    }
+}
+
+
+.tags-multipleselect-menu-item{
+    .MuiInputBase-root{
+        width: 100%!important;
+        height: 40px;
+        border: 1px solid $color-lightGray!important;
+        border-radius: 20px!important;
+    }
+    .MuiInput-underline:before{
+        border-bottom: none!important;
+        width: 100%;
+        height: 40px;
+    }
+    .MuiInput-underline:hover:not(.Mui-disabled):before{
+        border-bottom: none!important;
+    }
+    .MuiInput-underline:after{
+        border-bottom: none!important;
+    }
+}
+
+.create-task-followers-input{
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    .MuiFormControl-root{
+        width: 100%;
+        height: 40px;
+        .MuiInputLabel-formControl{
+            top: -11px;
+            left: 20px;
+        }
+        .followers-multipleselect-menu-item{
+            .MuiInput-underline:before{
+                height: 40px;
+            }
+            .MuiInput-underline:after{
+                border-bottom: none!important;
+            }
+            .MuiInputBase-root{
+                width: 100%;
+                height: 40px;
+                .MuiSelect-root{
+                    padding: 0px!important;
+                    height: 40px;
+                    right: 6px!important;
+                }
+            }
+        }
+    }
+}
+
+
+.create-assign-to-menu-item{
+    .MuiInput-root{
+        .MuiSelect-select{
+            padding-left: 10px!important;
+            color:$color-thickGray!important;
+        }
+    }
+}

@@ -1,0 +1,338 @@
+@import '../../../../../variables';
+
+$borderRadius: 100px;
+$lightGrayDashedBorder: 1px dashed $color-lightGray;
+$lightGraySolidBorder: 1px solid $color-lightGray;
+
+%d-flex {
+  display: flex;
+} 
+%d-flex-align-center {
+  @extend %d-flex;
+  align-items: center;
+}
+%d-flex-align-justify-center {
+  @extend %d-flex-align-center;
+  justify-content: center;
+}
+%d-flex-align-center-space-btwn {
+  @extend %d-flex-align-center;
+  justify-content: space-between;
+} 
+ 
+@mixin heighWidth($heigh, $width) {
+  height: $heigh;
+  width: $width;
+}
+.drawer-closer {
+  border: 1px solid red;
+  position: absolute;
+  top: 8% !important;
+  width: 77%;
+  height: 91%;
+  z-index: 1301;
+}
+.filters-drawer {
+  z-index: 1300;
+  .MuiDrawer-paper {
+    // width: 30%;
+    width: 600px;
+
+    .filter-drawer-bodySection {
+      padding: 2% 5%;
+      .filter-drawer-heading-section {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        padding: 10px;
+
+        img {
+          @include heighWidth(30px, 30px)
+        }
+
+        .filter-drawer-heading {
+          margin: 0 0 0 2% !important;
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: $color-dimGray;
+          text-transform: uppercase;
+        }
+
+        .clear-filter-button {
+          margin-left: auto;
+          box-shadow: none;
+          border-radius: $borderRadius;
+          background-color: transparent;
+          border: $lightGrayDashedBorder;
+          height: 30px;
+          padding: 4px 16px;
+
+        }
+        
+      }
+
+      .filter-drawer-date-range-container {
+        border: $lightGrayDashedBorder;
+        padding: 3%;
+        border-radius: 25px;
+        @extend %d-flex-align-center-space-btwn;
+
+        .fd-date-picker-container {
+          @extend %d-flex-align-center-space-btwn;
+          width: 40%;
+          padding: 0 20px;
+          border-radius: 40px; 
+
+          
+          .fd-calender-icon-date-container {
+            @extend %d-flex-align-center;
+            
+            .label-date-container {
+              margin-left: 10px;
+              p:nth-child(1) {
+                margin: 0;
+                color: $color-lightGray;
+                font-size: 0.8rem;
+              }
+              p:nth-child(2) {
+                margin: 0;
+                color: $color-thickGray;
+              }
+            }
+          }
+
+          .react-date-picker {
+            .react-date-picker__wrapper {
+                border: thin solid transparent;
+              .react-date-picker__inputGroup {
+                min-width: 0px;
+                width: 0;
+                flex-grow: 1;
+                display: flex;
+                padding: 0px 0px;
+                align-items: baseline;
+                box-sizing: content-box;
+                overflow: hidden;
+              }
+              .react-date-picker__calendar-button {
+                background: url('../../../../../assets/icons/SVG/Iconfeather-calendar.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                @include heighWidth(30px, 27px);
+                svg {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+
+        .start-end-date-seperator {
+          @include heighWidth(30px, 30px)
+        }
+      }
+
+      .flex-dropdown-menu-container {
+        @extend %d-flex-align-center-space-btwn;
+        margin: 2% 0;
+
+        .customised-dropdown-menu {
+          width: 49%;
+          label {
+            background: $color-white;
+          }
+          fieldset {
+            border: $lightGraySolidBorder;
+            border-radius: $borderRadius;
+          }
+
+          .MuiFormLabel-root {
+            .MuiInputBase-root {
+              .MuiSelect-root {
+                background: transparent;
+              }
+            }
+          }
+        }
+      }
+
+      .filter-drawer-projects-section {
+        
+
+        span {
+          text-transform: uppercase;
+          color: $color-lightGray;
+          font-size: 0.8rem;
+        }
+        div {
+          @extend %d-flex-align-center;
+
+          .fd-projects-icons-adder {
+            width: 15%;
+            height: 50px;
+            width: 50px;
+          }
+        }
+        .fd-projects-icons-container {
+          @extend %d-flex;
+          width: 85%;
+          overflow: auto;
+          
+          %icon-container-common-style {
+            height: 70px;
+            width: 70px;
+          }
+
+          div {
+            display: flex;
+            flex-direction: column;
+            
+            margin: 1.5%;
+            @extend %icon-container-common-style;
+
+            img {
+              margin-top: 10px;
+              width: 30px;
+              height: 30px;
+            }
+
+            span {
+              margin-top: auto;
+              padding: 5px;
+              font-size: 0.65rem;
+            }
+          }
+          div:nth-child(1) {
+            background: #FFC089;
+            border-radius: 100px;
+            span {
+              color: $color-white;
+            }
+          } 
+          
+          div:nth-child(2) {
+            border-radius: 10px;
+            background: #81FFBE;
+          } 
+
+          div:nth-child(3) {
+            border-radius: 10px;
+            background: #FFC5F7;
+          } 
+
+          div:nth-child(4) {
+            border-radius: 10px;
+            background: #BBE3FF;
+          } 
+          
+          div:nth-child(5) {
+            border-radius: 100px;
+            background: #FFC089;
+            span {
+              color: $color-white;
+            }
+          }           
+        }
+      }
+
+      .customised-multi-dropdown-menu {
+        border: $lightGraySolidBorder;
+        border-radius: $borderRadius;
+        width: 100%;
+        padding: 10px;
+        label {
+          background: $color-white;
+        }
+        .MuiInputLabel-shrink {
+          transform: translate(16px, -6px) scale(0.75);
+          transform-origin: top left;
+        }
+        .MuiInputLabel-formControl {
+          top: 0;
+          left: 0;
+          position: absolute;
+          transform: translate(10px, 22px) scale(1);
+        }
+        .MuiInputBase-root {
+          margin-top: 6px;
+        }
+        .MuiInputBase-root::before {
+          border-bottom: 0;
+        }
+        .Mui-focused:after {
+          border-bottom: 0;
+        }
+      }
+
+      .customised-multi-dropdown-menu-second {
+        border: $lightGraySolidBorder;
+        border-radius: $borderRadius;
+        width: 49%;
+        padding: 10px;
+        label {
+          background: $color-white;
+        }
+        .MuiInputLabel-shrink {
+          transform: translate(16px, -6px) scale(0.75);
+          transform-origin: top left;
+        }
+        .MuiInputLabel-formControl {
+          top: 0;
+          left: 0;
+          position: absolute;
+          transform: translate(10px, 22px) scale(1);
+        }
+        .MuiInputBase-root {
+          margin-top: 6px;
+        }
+        .MuiInputBase-root::before {
+          border-bottom: 0;
+        }
+        .Mui-focused:after {
+          border-bottom: 0;
+        }
+      }
+
+      .filter-bottom-buttons {
+        @extend %d-flex-align-center-space-btwn;
+        margin: 3% 0;
+        .ch-save-button {
+      
+          background-color:transparent;
+          border: 1px dashed $color-lightGray;
+          box-shadow: none;
+          border-radius: $borderRadius;
+          padding: 10px;
+          width: 21%;
+      
+          span {
+            text-transform: capitalize;
+          }
+        }
+        .ch-save-button:hover {
+          background-color:transparent;
+          
+        }
+      
+        .ch-submit-button {
+          background-color: $color-green;
+          box-shadow: none;
+          border-radius: $borderRadius;
+          padding: 10px;
+          width: 40%;
+          margin-right: 6%;
+          color: $color-white;
+      
+          span {
+            text-transform: capitalize;
+          }
+        }
+        .ch-submit-button:hover {
+          background-color: $color-green;
+        }
+      
+        
+      }      
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-1{fill:#36577b}.cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="Group_11536" data-name="Group 11536" transform="translate(0 .028)">
+        <rect id="Rectangle_620" width="40" height="40" class="cls-1" data-name="Rectangle 620" rx="6" transform="translate(0 -.028)"/>
+        <g id="Group_11261" data-name="Group 11261" transform="translate(6.127 9.162)">
+            <rect id="Rectangle_622" width="21" height="3" class="cls-2" data-name="Rectangle 622" rx="1.5" transform="translate(-.127 -.19)"/>
+            <rect id="Rectangle_623" width="14" height="3" class="cls-2" data-name="Rectangle 623" rx="1.5" transform="translate(-.127 5.81)"/>
+            <rect id="Rectangle_624" width="21" height="3" class="cls-2" data-name="Rectangle 624" rx="1.5" transform="translate(-.127 12.81)"/>
+            <rect id="Rectangle_625" width="19" height="3" class="cls-2" data-name="Rectangle 625" rx="1.5" transform="translate(-.127 18.81)"/>
+        </g>
+        <path id="Icon_open-question-mark" d="M4.327 0a4.527 4.527 0 0 0-3.294 1.156A3.822 3.822 0 0 0 0 3.4l1.752.228a2.123 2.123 0 0 1 .543-1.209 2.6 2.6 0 0 1 2.032-.666 3.091 3.091 0 0 1 2.137.6 1.464 1.464 0 0 1 .49 1.147c0 1.454-.6 1.857-1.471 2.628a4.993 4.993 0 0 0-2.032 3.941v.438H5.2v-.438a2.914 2.914 0 0 1 1.421-2.624A5.023 5.023 0 0 0 8.706 3.5a3.365 3.365 0 0 0-1.033-2.47A4.842 4.842 0 0 0 4.327 0zm-.876 12.262v1.752H5.2v-1.752z" class="cls-2" data-name="Icon open-question-mark" transform="translate(27.83 17.204)"/>
+    </g>
+</svg>

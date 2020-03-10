@@ -1,0 +1,788 @@
+@import '../../../../variables';
+@import '../../../../extends';
+
+%reg-cmp-dtls-font-style {
+    font-family: helveticaNeueLight;
+    font-size: 1.375rem;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+    text-align: left;
+    color: #656565;
+}
+.taskListMergeDrawer {
+    width: 100%;
+    height: 100%;
+   
+    .taskListingMergeDrawer {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+
+        .taskMergeDrawerHeading {
+            width: 90%;
+            margin: 3.7vh auto 2.8vh auto;
+            font-family: helveticaNeueCondensedBold;
+            font-size: 1.875rem;
+            font-weight: bold;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: 1.27;
+            letter-spacing: 0.6px;
+            text-align: left;
+            color: #707070;
+        }
+
+        .tarkMergeDropdownAndSearchWrapper {
+            margin : 2.8vh auto 3.7vh auto;
+            // margin-top: 2.8vh;
+            // margin-bottom: 3.7vh;
+            .company-details-button-one {
+                width: 30%;
+                .menu-container{
+                    width: 100%;
+                    position: relative;
+                    margin: auto ;
+                    transition: 0.5s;
+                    .industry-container{
+                        cursor: pointer;
+                        width: 100%;
+                        position: relative;
+                        border: 1px solid $color-lightGray;
+                        background: $color-white;
+                        border-radius: 100px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        z-index: 998;
+                        .selected-item-container{ 
+                            width: 85%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            p{
+                                font-family: helveticaNeueMedium;
+                                font-size: 1rem;
+                                font-weight: normal;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: 1.5;
+                                letter-spacing: 0.32px;
+                                text-align: left;
+                                color: #656565;
+                                padding: 11% 8%;
+                                white-space: nowrap;
+                            }
+                          }
+                          .industry-drp-dwn-img{
+                            width: 6%;
+                            margin-right: 5%;
+                            display: flex;
+                            justify-content: center;
+                            border-radius: 50%;
+                          height: 50%;
+                          img{
+                              width: 12px;
+                          }
+                        }
+                    }
+                    .industry-open-dropdown {
+                        height: 21vh;
+                        overflow: auto;
+                        max-height: 143px;
+                        padding-top: 30px;
+                        -webkit-transition: 0.5s;
+                        transition: 0.5s;
+                    }
+                    .industry-dropdown-menu-container{
+                        position: absolute;
+                        border-radius: 20px 20px 5px 5px;
+                        top: 52%;
+                        left: 0;
+                        width: 100%;
+                        background: $color-white;
+                        box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                        z-index: 997 !important;
+                        transition: 0.5s;
+                        overflow: hidden;
+                        .MuiButtonBase-root{
+                            width: 90%!important;
+                            margin: 0 auto!important;
+                            background-color:transparent!important;
+                            box-shadow: none!important;
+                            border-radius: 25px;
+                            height: 25px;
+                            min-height: 40px;
+                            padding: 0px!important;
+                            min-height: 30px!important;
+                        }
+
+                        .customized-ticket-source {
+                            .create-ticket-one-industry {
+                                width: 100%;
+                                .create-ticket-prio-img-text {
+                                    width: 100%;
+
+                                    font-size: 1rem;
+                                    font-weight: normal;
+                                    font-stretch: normal;
+                                    font-style: normal;
+                                    line-height: 1.5;
+                                    letter-spacing: 0.32px;
+                                    text-align: left;
+                                    color: #656565;
+                                    p {
+                                       
+                                        padding-left: 5px;
+                                    }
+                                }
+                                .create-ticket-src-radio {
+
+                                }
+                            }
+                        }
+                    }
+                    .custom-scroll{
+                        width: 98%!important;
+                        height: 92%;
+                    }
+                }
+            }
+        }
+        .merge-ticket-licensing-container {
+            height: 60%;
+            width: 90%;
+            margin: auto;
+            .mergeItemContainer:before {
+                content: '';
+                position: absolute;
+                left: -5px;
+                height: 7px;
+                width: 7px;
+                border: 1px solid red;
+                border-radius: 100px;
+            }
+            .mergeItemContainer {
+                position: relative;
+                padding: 2%;
+                border: 1px dashed #c8c8c8;
+                width: 95%;
+                margin: 2% auto;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                .taskListingItemDescription {
+                    margin: auto;
+                    width: 85%;
+                    display: flex;
+                    align-items: center;
+                    .taskListingItemLeftSection {
+                        .merge-ticket-phone-number-text-one {
+                            font-size: 1.125rem;
+                            font-family: helveticaNeueMedium;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.33;
+                            letter-spacing: 0.36px;
+                            text-align: left;
+                            color: #c8c8c8;
+                        }
+                        .merge-ticket-phone-number-text-two {
+                            font-family: helveticaNeueLight;
+                            font-size: 0.875rem;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.72;
+                            letter-spacing: 0.28px;
+                            text-align: left;
+                            color: #c8c8c8;
+                        }
+                    }
+                }
+
+                .taskTitleAndAssignTo {
+                    margin-left: 5%;
+                    p {
+                        font-family: helveticaNeueLight;
+                        font-size: 1.125rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.33;
+                        letter-spacing: 0.36px;
+                        text-align: left;
+                        color: #656565;
+                        white-space: nowrap;
+                    }
+                    .merge-ticket-licensing-img-text {
+                        p {
+                            font-family: helveticaNeueLight;
+                            font-size: 13px;
+                            font-weight: 300;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.38;
+                            letter-spacing: 0.26px;
+                            text-align: left;
+                            color: #151b26;
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+
+
+        .sideDrawerFooter {
+            position: absolute;
+            bottom: 0;
+            div {
+                margin: 0 5%;
+            }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: auto;
+            padding: 14px 0;
+            box-shadow: -4px 0 30px 0 rgba(0, 0, 0, 0.09);
+            .update-button {
+                margin: 0 5%;
+                background-color: $color-green !important;
+                border-radius: 41px !important;
+                color: $color-white !important;
+                text-transform: capitalize !important;
+                width: 150px !important;
+                .MuiButton-label {
+                    font-family: helveticaNeueMedium;
+                    font-size: 22px;
+                    font-stretch: normal;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #ffffff;
+                }
+            }
+            .cancel-button {
+                border-radius: 41px !important;
+                text-transform: capitalize !important;
+                border: 0 !important;
+                width: 150px !important;
+                .MuiButton-label {
+                    font-family: helveticaNeueMedium;
+                    font-size: 22px;
+                    font-stretch: normal;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #c8c8c8;
+                }
+            }
+        }
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.merge-ticket-drawer-bodySection{
+    width: 100%;
+}
+
+.merge-ticket-drawer{
+    width: 100%;
+    .MuiDrawer-paperAnchorRight{
+        width: 35%;
+    }
+}
+
+.merge-ticket{
+    margin-top: 5%;
+    width: 95%;
+    height: auto;
+    margin: 5% auto;
+}
+
+
+
+.tarkMergeDropdownAndSearchWrapper {
+    width: 90%;
+    // margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .MuiFormControl-root {
+        border: 1px dashed #c8c8c8;
+        border-radius: 100px;
+        .dropdownLabel {
+            font-family: helveticaNeueCondensedBold;
+            font-size: 1rem;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: 0.32px;
+            text-align: left;
+            color: #656565;
+        }
+        .dropdownMenuItem {
+            .MuiInputBase-root {
+                width: 100%;
+                .MuiInputBase-input {
+                    padding: 12% 8%;
+                }
+            }:before {
+                border: 0;
+            }
+        }
+    }
+    .linkWithSearchBar {
+        width: 66%;
+        border-radius: 100px;
+        border: 1px solid  #ecf1f9;
+        box-sizing: border-box;
+        background: $color-white;
+        @extend %d-flex-space-btwn;
+        .sidebar-search-field {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2%; 
+        width: 80%;
+        border: 0;
+        .MuiInputBase-root {
+            width: 100%;
+            .MuiInputBase-input {
+                font-family: helveticaNeueLight;
+                font-size: 1.125rem;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.17;
+                letter-spacing: normal;
+                text-align: left;
+                color: #c8c8c8;
+                padding: 6% 8%;
+
+            }
+            fieldset {
+            border: 1px solid transparent;
+            }
+        }
+        }
+
+        img {
+        width: 6.9%;
+        margin: 0 4% 0 0;
+        }
+    }
+}
+
+.merge-ticket-drop-down-search{
+    .dropdown-button{
+        width: 25%;
+        
+    }
+}
+
+.merge-ticket-drop-down-search{
+    .dropdown-button {
+        .btn{
+            color:$color-thickGray;
+            font-size: 10px;
+            height: 30px;
+            border: 1px dashed $color-lightGray;
+            box-shadow: none!important;
+            padding: 5px!important;
+            border-radius: 20px;
+            margin: 0px!important;
+        }
+    } 
+} 
+
+.merge-ticket-drop-down-search{
+    .header-search{
+        width: 75%;
+        padding-top: 0px!important;
+        margin-left: 0%;
+    }
+} 
+
+.merge-ticket-drop-down-search{
+    .header-search{
+        .search-bar{
+            width: 80%;
+            height: 30px;
+            margin-left: 5%;
+            border: 1px solid $color-darkWhite;
+            border-radius: 15px; 
+        }
+    }
+}
+
+.merge-ticket-drop-down-search{
+    .header-search{
+        .search-bar{
+            .MuiInputBase-root{
+                .MuiInputBase-input{
+                    font-size: 14px;
+                    padding: 6px 10px 7px;
+                }
+            }
+        }
+    }
+} 
+
+.merge-ticket-drop-down-search{
+    .header-search{
+        .search-bar{
+            .search-icon{
+                .MuiSvgIcon-root{
+                    font-size: 1.7rem;
+                    padding-top: 5px;
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+.merge-ticket-licensing{
+    width: 80%;
+    height: 50px;
+    border: 1px dashed $color-skyBlue;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-top: 8%;
+    display: flex;
+}
+
+
+.merge-ticket-licensing-icon{
+    width: 6%;
+    margin: 10px auto;
+}
+
+
+.merge-ticket-licensing-icon{
+    img{
+        width: 15px;
+        margin: 5px auto;
+    }
+}
+.merge-ticket-phone-number-text{
+    p{
+        margin: 0px!important;
+        color: $color-lightGray;
+    }
+}
+
+
+.merge-ticket-phone-number-text-two{
+    font-size: 8px;
+}
+.merge-ticket-licensing-text{
+    p{
+        margin: 0px!important;
+        color: $color-thickGray;
+        font-size: 11px;
+    }
+} 
+
+.merge-ticket-licensing-img-text{
+    display: flex;
+}
+.merge-ticket-licensing-img-text{
+    img{
+        width: 18px;
+        height: 18px;
+        border-radius: 10px;
+        margin-right: 5px;
+    }
+} 
+.merge-ticket-licensing-img-text{
+    p{
+        margin-top: 2px!important;
+        margin-left: 1px!important;
+        font-size: 9px;
+    }
+} 
+
+.merge-ticket-primary{
+    width: 14%;
+    height: 35px;
+    border: 1px dashed $color-skyBlue;
+    border-radius: 5px;
+    margin: 8px 0px;
+    margin-right: 10px;
+}
+
+.merge-ticket-primary{
+    img{
+        width: 30%;
+        margin-left: 14px;
+    }
+} 
+
+.merge-ticket-primary{
+    p{
+    margin-top: -2px !important;
+    margin-left: 5px;
+    font-size: 7px;
+    color: $color-skyBlue;
+}
+}
+
+.merge-ticket-licensing-one{
+    width: 75%;
+    height: 50px;
+    border: 1px dashed $color-skyBlue;
+    border-radius: 5px;
+    margin-left: 15%;
+    margin-top: 4%;
+    display: flex;
+}
+
+.merge-ticket-licensing-two{
+    width: 70%;
+    height: 50px;
+    border: 1px dashed $color-skyBlue;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-top: 4%;
+    display: flex;
+}
+
+.merge-ticket-primary-one{
+    width: 14%;
+    height: 35px;
+    border: 1px dashed $color-lightGray;
+    border-radius: 5px;
+    margin: 8px 0px;
+    margin-right: 10px;
+}
+
+.merge-ticket-primary-one{
+    img{
+        width: 30%;
+        margin-left: 14px;
+    }
+} 
+
+.merge-ticket-primary-one{
+    p{
+        margin-top: -2px !important;
+        margin-left: 4px;
+        font-size: 7px;
+        color: $color-lightGray;
+    }
+}
+
+.merge-ticket-primary-two{
+    width: 14%;
+    height: 35px;
+    border: 1px dashed $color-lightGray;
+    border-radius: 5px;
+    margin: 8px 0px;
+    margin-right: 10px;
+}
+
+.merge-ticket-primary-two{
+    img{
+        width: 30%;
+        margin-left: 14px;
+    }
+} 
+
+.merge-ticket-primary-two{
+    p{
+        margin-top: -2px !important;
+        margin-left: 3px;
+        font-size: 7px;
+        color: $color-lightGray;
+    }
+}
+
+
+
+
+.merge-break-for-submit-section{
+    width: 100%;
+    border: 1px solid $color-darkWhite!important;
+    margin: 5% auto;
+}
+
+
+.merge-update-submit-section{
+    width: 80%;
+    height: 50px;
+    margin: 3% auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.merge-update-submit-section-button-one, .bulk-update-submit-section-button-two{
+    width: 50%;
+}
+
+.merge-update-submit-section-button-one{
+    .MuiButton-outlinedPrimary{
+        width: 50%;
+        height: 40px;
+        border: 1px solid $color-lightGray!important;
+        border-radius: 20px;
+        color: $color-lightGray;
+        font-size: 12px;
+        
+    }
+}
+
+.merge-update-submit-section-button-one{
+    .MuiButton-root{
+        text-transform: none;
+}
+}
+
+.merge-update-submit-section-button-one{
+    .MuiButton-outlined{
+        padding: 5px 0px;
+     }
+} 
+
+.merge-update-submit-section-button-two{
+    .MuiButton-outlinedPrimary{
+        width: 84%;
+        height: 40px;
+        border: 1px solid $color-green!important;
+        border-radius: 20px;
+        color: $color-white;
+        font-size: 12px;
+        background-color: $color-green;
+        margin-left: 16%;
+    }
+}
+
+.merge-update-submit-section-button-two{
+    .MuiButton-outlinedPrimary:hover{
+        width: 84%;
+        height: 40px;
+        border: 1px solid $color-green!important;
+        border-radius: 20px;
+        color: $color-white;
+        font-size: 12px;
+        background-color: $color-green;
+        margin-left: 16%;
+    }
+} 
+
+.merge-update-submit-section-button-two{
+    .MuiButton-root{
+        text-transform: none;
+}
+} 
+
+.merge-update-submit-section-button-two{
+    .MuiButton-outlined{
+        padding: 5px 0px;
+     }
+}   
+
+////////////////////////////////////////////////
+.merge-ticket-menu-item {
+    width: 100%;
+    .MuiInput-underline:before {
+        border-bottom: none!important;
+    }
+} 
+
+.merge-ticket-menu-item{
+
+    .MuiInput-underline:after {
+        border-bottom: none!important;
+    }
+} 
+
+.merge-ticket-menu-item {
+
+    .MuiInput-underline:hover:not(.Mui-disabled):before{
+        border-bottom: none!important;
+    }
+
+}
+
+.merge-ticket-menu-item{
+
+    .MuiInput-root{
+
+        .MuiSelect-select{
+            padding:5px;
+            font-size: 13px;
+            font-weight: 400;
+            color:$color-thickGray;
+        }
+    }
+
+} 
+
+.merge-ticket-menu-item{
+    
+    .MuiInputBase-root{
+        width: 100%;
+        border: 1px solid $color-lightGray;
+        border-radius: 20px;
+    }
+} 
+
+.merge-ticket-drop-down-search{
+
+    .MuiFormControl-root{
+        width: 25%;
+        .MuiInputLabel-formControl{
+            top: -14px;
+            left: 10px;
+            color: $color-thickGray;
+        }
+    }
+}
+
+.merge-ticket-licensing{
+    .MuiIconButton-root{
+        .MuiIconButton-label{
+            .MuiSvgIcon-root{
+                width: 1.2rem;
+            }
+        }
+    }
+}

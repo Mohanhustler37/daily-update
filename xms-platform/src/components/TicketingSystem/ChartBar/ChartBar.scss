@@ -1,0 +1,463 @@
+@import "../../../variables";
+@import "../../../extends";
+@import "../../../mixins";
+
+.ticket-table-chart-container {
+  transition: 0.3s ease;
+}
+.collapsed-chart-section {
+  max-height: 11%;
+  @media (max-width: 1279px) {
+    max-height: 12%;
+  }
+  margin-top: 2.9vh;
+  overflow: hidden;
+  transition: max-height 0.3s linear;
+}
+.expanded-chart-section {
+  max-height: 100%;
+  // overflow: hidden;
+  width: 100%;
+  float: left;
+  transition: max-height 0.3s linear;
+  @media (max-width: 1024px) {
+    float: none;
+  }
+}
+#chart-bar {
+  height: 0px;
+  border: 1px solid $color-white;
+  // margin: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 0px dashed $color-lightGray;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+
+  div {
+    visibility: hidden;
+    transition: all 0.3s linear;
+    color: $color-strongPurple;
+  }
+}
+
+#chart-bar.chartClosed {
+  height: 50px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border: 1px dashed $color-lightGray;
+  div {
+    visibility: visible;
+  }
+}
+
+#chartOpened {
+  max-height: 0;
+  height: 0px;
+  // overflow: hidden;
+  -webkit-transition: all 0.9s linear;
+  -moz-transition: all 0.9s linear;
+  transition: all 0.9s linear;
+  visibility: hidden;
+}
+
+#chartOpened.chartOpened {
+  display: block;
+  margin-top: 2vh;
+  // width: 100%;
+  // float: left;
+  visibility: visible;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  height: 100%;
+  max-height: 100%;
+}
+
+.chartopensection {
+  width: 100%;
+  float: left;
+  // flex-direction: row !important;
+  // .chart4sec{
+  //   width: 25% !important;
+  //   float: left;
+  //   overflow: scroll;
+  //   min-height: 40vh;
+  // }
+  @media (max-width: 1024px) {
+    // flex-direction: column !important;
+    flex-wrap: wrap;
+  }
+}
+
+.chart-bar-opened {
+  padding: 1%;
+  // width: 100%;
+  // float: left;
+  .label {
+    color: $color-thickGray;
+    font-family: "HelveticaNeue-MediumCond";
+    font-size: rem(20px);
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+  }
+  .icons {
+    width: 80px;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        cursor: pointer;
+        width: 0.8rem;
+        // height: 0.8rem;
+      }
+      &.icon_edit {
+        border: dashed 1px #c8c8c8;
+        border-radius: 25px;
+        margin-right: 15px;
+        img {
+          width: 0.9rem;
+          padding: 5px;
+        }
+      }
+      &.icon_pin {
+        margin-right: 15px;
+        img {
+          width: 1rem;
+        }
+      }
+      &.icon_expand {
+        img {
+          width: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+.charts-text {
+  margin-left: 1%;
+  margin-top: 0%;
+  color: $color-thickGray;
+  font-size: 15px;
+  font-weight: 900;
+  p {
+    font-size: rem(16px);
+    font-family: HelveticaNeue-MediumCond;
+    color: #4e58a9;
+    line-height: 1.06;
+    letter-spacing: 0.32px;
+    margin-bottom: 0px !important;
+  }
+}
+
+.charts-icon1-text,
+.charts-icon2-text,
+.charts-icon3-text,
+.charts-icon4-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.charts-icon1-text,
+.charts-icon2-text,
+.charts-icon3-text {
+  img {
+    width: 25px;
+  }
+}
+
+.charts-icon4-text {
+  img {
+    width: 20px;
+  }
+}
+
+.charts-drop-down-icon {
+  margin-right: 2%;
+  cursor: pointer;
+}
+
+.charts-icon1-text,
+.charts-icon2-text,
+.charts-icon3-text,
+.charts-icon4-text {
+  p {
+    margin-left: 5px;
+    margin-top: 5px;
+    font-weight: 900;
+    color: $color-strongPurple;
+    margin-bottom: 0px !important;
+    font-size: rem(18px);
+    font-family: helveticaNeueCondensedBold;
+    line-height: 1.21;
+  }
+  span {
+    margin-top: 3px;
+    margin-left: 3px;
+    color: $color-muzliColor;
+    font-size: rem(14px);
+    font-family: helveticaNeueLight;
+    
+  }
+}
+
+#allTicketsRadialChartContainer {
+  position: relative;
+  // width: 200px;
+  // height: 240px;
+  margin-right: 10px;
+  box-shadow: 0px 1px 5px $color-thickWhite;
+
+  border-radius: 12px;
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+  #allTicketsRadialChart {
+    padding-top: 28px;
+  }
+  > :first-child {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 3px 10px;
+    label {
+      font-size: rem(18px);
+      font-family: helveticaNeueLight;
+      color: #161616;
+    }
+  }
+  .chartLabels {
+    padding: 0px 10px;
+    label {
+      font-size: 10px;
+    }
+    .resolved,
+    .inProcess,
+    .due {
+      span {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 2px solid #249efa;
+        display: inline-block;
+      }
+    }
+    .inProcess {
+      span {
+        border: 2px solid #fdba3a;
+      }
+    }
+    .due {
+      span {
+        border: 2px solid #fd5f76;
+      }
+    }
+  }
+}
+
+#ticketsGrowthAreaChartContainer {
+  position: relative;
+  // width: 200px;
+  // height: 240px;
+  margin-right: 10px;
+  box-shadow: 0px 1px 5px $color-thickWhite;
+
+  border-radius: 12px;
+  // padding: 10px 0;
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+  > :first-child {
+    text-align: right;
+  }
+}
+
+#assignedGraphsContainer {
+  position: relative;
+  // width: 200px;
+  // height: 240px;
+  margin-right: 10px;
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+  > div {
+    width: 100%;
+    height: 48%;
+    box-shadow: 0px 1px 5px $color-thickWhite;
+
+    border-radius: 12px;
+    > div:first-child {
+      position: absolute;
+      top: 10px;
+      left: 0px;
+      width: 100%;
+      text-align: right;
+    }
+  }
+  > div:last-child {
+    // margin-top: 4%;
+  }
+}
+
+#fromOriginPointGraphContainer {
+  position: relative;
+  // width: 320px;
+  // height: 240px;
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  > div {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 1px 5px $color-thickWhite;
+
+    border-radius: 12px;
+    // padding: 6px;
+    .down {
+      margin-top: 2px;
+      border-top: 1px solid $color-darkWhite;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      > div {
+        width: 140px;
+        font-size: 8px;
+        font-weight: 600;
+        color: $color-thickGray;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 22px;
+        position: relative;
+        > label {
+          display: inline-block;
+          width: 100%;
+          height: 3px;
+          background-color: $color-darkWhite;
+          border-radius: 3px;
+          margin: 0px;
+        }
+        > label:last-child {
+          position: absolute;
+          bottom: 3px;
+          &.purple {
+            background-color: $color-purple;
+          }
+          &.green {
+            background-color: $color-green;
+          }
+          &.orange {
+            background-color: $color-orange;
+          }
+          &.pink {
+            background-color: $color-pink;
+          }
+        }
+      }
+    }
+    .top {
+      height: 180px;
+      @extend %d-flex-align-justify-center;
+      > div:first-child {
+        width: 110px;
+        height: 100%;
+        line-height: 1;
+        position: relative;
+        > label {
+          color: $color-thickGray;
+          font-size: rem(10px);
+          font-family: helveticaNeueLight;
+          color: #707070!important;
+          width: 100%;
+          display: inline-block;
+          font-weight: bold;
+          line-height: 1;
+          &:first-child {
+            font-family: HelveticaNeueCondensedBlack;
+            color: $color-thickGray!important;
+            font-size: rem(35px);
+          }
+          &.areaChartLabel {
+            margin: 14px 0;
+            &.up {
+              color: $color-light-green;
+            }
+            &.down {
+              color: $color-red;
+            }
+            > img {
+              width: 8px;
+            }
+            > label {
+              color: $color-thickGray;
+            }
+          }
+          &:last-child {
+            font-size: 9px;
+            font-weight: bold;
+            color: $color-thickGray;
+            cursor: pointer;
+            padding: 5px;
+            text-align: center;
+            border: 1px solid $color-lightSkyBlue;
+            border-radius: 14px;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.apexcharts-title-text {
+  font-size: rem(44px);
+  font-family: HelveticaNeueCondensedBlack!important;
+  color: $color-thickGray!important;
+  fill: $color-thickGray!important;
+}
+.apexcharts-subtitle-text{
+  font-size: rem(17px);
+  font-family: helveticaNeueLight!important;
+  color: #2c2c2c!important;
+}
+
+.areaChartLabel {
+  margin: 0px;
+  // font-size: 14px;
+  // font-weight: bold;
+  font-size:rem(14px);
+  font-family:HelveticaNeue-MediumCond;
+  padding-right: 20px;
+  &.up {
+    color: $color-light-green;
+  }
+  &.down {
+    color: $color-red;
+  }
+  > img {
+    width: 10px;
+    height: 10px;
+    margin: 0px;
+    margin-right: 4px;
+  }
+  label {
+    margin: 0px;
+    font-weight: normal;
+    color: $color-lightGray;
+    font-size: rem(14px);
+    font-family: helveticaNeueLight;
+  }
+}

@@ -1,0 +1,246 @@
+@import "../../../extends";
+@import "../../../variables";
+@import "../../../mixins";
+
+/*----------------------Media Query---------------------*/
+
+/*    Device = Most of the Smartphones Mobiles (Portrait)  Screen = B/w 320px to 479px  */
+
+// Login Style
+
+.on-boarding-login-layout {
+  height: 100%;
+  width: 100%;
+  .login-wrapper {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login-form {
+      min-width: 350px;
+      width: 25vw;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      // justify-content: space-evenly;
+      .label-wrapper {
+        text-align: center;
+        font-family: helveticaNeueCondensedBold;
+        h2 {
+          font-size: rem(45px);
+          font-weight: bold;
+          font-stretch: condensed;
+          font-style: normal;
+          line-height: 0.89;
+          letter-spacing: 0.9px;
+          color: #656565;
+          font-family: helveticaNeueCondensedBold;
+        }
+        p {
+          font-size: rem(18px);
+          font-weight: 300;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 0.11;
+          letter-spacing: 0.36px;
+          text-align: center;
+          color: #656565;
+          padding-bottom: 25px;
+        }
+      }
+
+      .field-wrapper {
+        height: 50px !important;
+        margin-bottom: 15px;
+        // height: 7.vh !important;
+        // max-height: 81px !important;
+      }
+      div {
+        .MuiFormControl-root {
+          width: 100%;
+          color: #656565;
+          font-family: helveticaNeueLight;
+          height: 100%;
+          // max-height: 81px;
+          font-size: rem(22px);
+
+          .MuiInputLabel-outlined {
+            font-family: helveticaNeueLight;
+            transform: translate(2vw, 2.8vh) scale(1);
+            font-size: rem(22px);
+
+            @media screen and (min-width: 2560px) {
+              // transform: translate(2vw, 2vh);
+            }
+          }
+          .MuiInputLabel-outlined.MuiInputLabel-shrink {
+            transform: translate(2vw, -1vh) scale(1);
+            background: white;
+            font-size: rem(12px);
+          }
+          .MuiOutlinedInput-root {
+            height: 100%;
+            font-size: rem(22px);
+          }
+          .MuiOutlinedInput-adornedEnd {
+            border-radius: 100px;
+            @media screen and (min-width: 7680px) {
+              border-radius: 300px;
+            }
+          }
+          .error-popup {
+            position: absolute;
+            height: 100%;
+            width: 45%;
+            border-radius: 10px;
+            right: -46%;
+            top: -28%;
+            padding: 10px 0px 10px 0px;
+            display: flex;
+            color: $color-errorPopUpColor;
+            text-align: left;
+            box-shadow: 0px 0px 15px #00000029;
+            align-items: center;
+            justify-content: center;
+            font-family: helveticaNeueLight;
+
+            p {
+              margin-left: 5%;
+              text-align: left;
+            }
+          }
+          .error-popup::before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: relative;
+            left: -5%;
+            border-top: 10px solid transparent;
+            border-bottom: 0px solid transparent;
+            border-right: 10px solid #ffffff;
+          }
+        }
+        &:nth-child(4) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          a {
+            color: #696969;
+            text-decoration: none;
+          }
+
+          @media screen and (min-width: 1600px) {
+            padding: 0px;
+          }
+        }
+        &:nth-child(5) {
+          display: flex;
+          justify-content: space-between;
+          button {
+            height: 100%;
+            align-self: flex-end;
+            span {
+              font-family: helveticaNeueMedium;
+              font-size: rem(22px);
+              font-weight: 500;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.18;
+              letter-spacing: normal;
+              text-align: left;
+              color: #ffffff;
+            }
+          }
+          .arrow-container {
+            width: 20vw;
+            position: absolute;
+            right: -21vw;
+            top: -25px;
+          }
+        }
+        &:nth-child(6) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          hr {
+            width: 10vw;
+          }
+          span {
+            font-family: helveticaNeueLight;
+            font-size: rem(22px);
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.18;
+            letter-spacing: normal;
+            text-align: left;
+            color: #656565;
+          }
+        }
+        &:nth-child(7) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .sigh-up-with-google-button {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // border: 1px solid #c8c8c8;
+            border-radius: 100px;
+
+            button {
+              height: 100%;
+              width: 100%;
+              width: 25vw;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              box-shadow: none !important;
+              border-radius: 50px !important;
+              border: solid 1px #c8c8c8 !important;
+              background-color: #ffffff !important;
+              font-size: rem(22px) !important;
+              padding: 4.1% !important;
+              width: 100%;
+
+              div {
+                padding: 0 !important;
+              }
+              span {
+                font-family: helveticaNeueLight;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.23;
+                letter-spacing: normal;
+                text-align: left;
+                color: $color-thickGray;
+                padding: 0 !important;
+                font-size: rem(22px);
+              }
+            }
+          }
+        }
+        &:nth-child(8) {
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <style>
+            .cls-1,.cls-2,.cls-4{fill:none}.cls-1,.cls-2{stroke:#d0cfec}.cls-1{stroke-dasharray:4 3}.cls-2{stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}.cls-3{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_10464" data-name="Group 10464" transform="translate(-1605 -105)">
+        <g id="Rectangle_6" class="cls-1" data-name="Rectangle 6" transform="translate(1605 105)">
+            <rect width="50" height="50" class="cls-3" rx="25"/>
+            <rect width="49" height="49" x=".5" y=".5" class="cls-4" rx="24.5"/>
+        </g>
+        <path id="Icon_feather-filter" d="M23.321 4.5H3l8.128 9.612v6.645l4.064 2.032v-8.677z" class="cls-2" data-name="Icon feather-filter" transform="translate(1616.5 117)"/>
+    </g>
+</svg>

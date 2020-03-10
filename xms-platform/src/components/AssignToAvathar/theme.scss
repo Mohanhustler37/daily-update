@@ -1,0 +1,31 @@
+@import '../../extends';
+
+    .avatharContainer {
+        @extend %d-flex-align-center;
+        border-radius: 100px;
+        margin-left: 2%;
+        padding: 1px 6px;
+        background: #ecedf5;
+        height: 30px;
+        max-width: 177px;
+        // min-width: 100px;
+        justify-content: space-between;
+
+        #avathar-img {
+            width: 20px;
+            height: 20px;
+            border-radius: 100px;
+        }
+        span {
+            margin-left: 5px;
+            white-space: nowrap;
+        }
+        #remove-img {
+            width: 12px;
+            height: 12px;
+            margin-left: auto;
+            margin-left: 10px;
+        }
+    }
+
+

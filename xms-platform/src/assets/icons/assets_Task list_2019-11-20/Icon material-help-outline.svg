@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <style>
+            .cls-1{fill:#d0cfec}
+        </style>
+    </defs>
+    <path id="Icon_material-help-outline" d="M16.5 27h3v-3h-3zM18 3a15 15 0 1 0 15 15A15.005 15.005 0 0 0 18 3zm0 27a12 12 0 1 1 12-12 12.016 12.016 0 0 1-12 12zm0-21a6 6 0 0 0-6 6h3a3 3 0 0 1 6 0c0 3-4.5 2.625-4.5 7.5h3c0-3.375 4.5-3.75 4.5-7.5a6 6 0 0 0-6-6z" class="cls-1" data-name="Icon material-help-outline" transform="translate(-3 -3)"/>
+</svg>

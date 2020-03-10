@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke:#d0cfec}.cls-2{fill:rgba(78,88,169,.5)}.cls-3{stroke:none}.cls-4{fill:none}
+        </style>
+    </defs>
+    <g id="Group_11531" data-name="Group 11531" transform="translate(10892 -11279)">
+        <g id="Rectangle_727" class="cls-1" data-name="Rectangle 727" transform="translate(-10892 11279)">
+            <rect width="30" height="30" class="cls-3" rx="10"/>
+            <rect width="29" height="29" x=".5" y=".5" class="cls-4" rx="9.5"/>
+        </g>
+        <path id="Icon_material-edit" d="M4.5 15.186V18h2.812l8.295-8.3-2.812-2.809zm13.282-7.658a.747.747 0 0 0 0-1.057l-1.755-1.755a.747.747 0 0 0-1.057 0L13.6 6.088 16.41 8.9z" class="cls-2" data-name="Icon material-edit" transform="translate(-10887.8 11283.002)"/>
+    </g>
+</svg>

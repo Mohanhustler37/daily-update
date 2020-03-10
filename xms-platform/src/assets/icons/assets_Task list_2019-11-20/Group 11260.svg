@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 26 18">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:#d0cfec}.cls-2{stroke:#fff}.cls-3{fill:#fff}.cls-4{stroke:none}.cls-5{fill:none}
+        </style>
+    </defs>
+    <g id="Group_11260" data-name="Group 11260" transform="translate(0 -.404)">
+        <path id="Subtraction_8" d="M23 18H3a3 3 0 0 1-3-3v-3a3 3 0 0 0 3-3 3 3 0 0 0-3-3V3a3 3 0 0 1 3-3h20a3 3 0 0 1 3 3v3a3 3 0 1 0 0 6v3a3 3 0 0 1-3 3z" class="cls-1" data-name="Subtraction 8" transform="translate(0 .404)"/>
+        <g id="Group_11259" data-name="Group 11259" transform="translate(6 5)">
+            <g id="Rectangle_619" class="cls-2" data-name="Rectangle 619" transform="translate(0 .404)">
+                <rect width="14" height="8" class="cls-4" rx="2"/>
+                <rect width="13" height="7" x=".5" y=".5" class="cls-5" rx="1.5"/>
+            </g>
+            <g id="Group_11258" data-name="Group 11258" transform="translate(4 3.903)">
+                <circle id="Ellipse_3379" cx=".5" cy=".5" r=".5" class="cls-3" data-name="Ellipse 3379"/>
+                <circle id="Ellipse_3380" cx=".5" cy=".5" r=".5" class="cls-3" data-name="Ellipse 3380" transform="translate(2.5)"/>
+                <circle id="Ellipse_3381" cx=".5" cy=".5" r=".5" class="cls-3" data-name="Ellipse 3381" transform="translate(5)"/>
+            </g>
+        </g>
+    </g>
+</svg>

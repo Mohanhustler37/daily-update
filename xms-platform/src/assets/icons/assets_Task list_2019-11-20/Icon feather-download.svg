@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.133" height="22.133" viewBox="0 0 22.133 22.133">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#d0cfec;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="Icon_feather-download" data-name="Icon feather-download" transform="translate(-3.5 -3.5)">
+        <path id="Path_162" d="M24.633 22.5v4.474a2.237 2.237 0 0 1-2.233 2.237H6.737A2.237 2.237 0 0 1 4.5 26.974V22.5" class="cls-1" data-name="Path 162" transform="translate(0 -4.578)"/>
+        <path id="Path_163" d="M10.5 15l5.592 5.592L21.685 15" class="cls-1" data-name="Path 163" transform="translate(-1.526 -2.671)"/>
+        <path id="Path_164" d="M18 17.922V4.5" class="cls-1" data-name="Path 164" transform="translate(-3.434)"/>
+    </g>
+</svg>

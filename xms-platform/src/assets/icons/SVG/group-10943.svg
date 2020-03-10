@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+    <defs>
+        <style>
+            .cls-1{fill:#d0cfec}.cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="Group_10943" data-name="Group 10943" transform="translate(-1258 -313)">
+        <rect id="Rectangle_353" width="26" height="26" class="cls-1" data-name="Rectangle 353" rx="13" transform="translate(1258 313)"/>
+        <g id="Icon_feather-repeat" data-name="Icon feather-repeat" transform="translate(1265.936 320.054)">
+            <path id="Path_202" d="M25.5 1.5l2.311 2.311L25.5 6.123" class="cls-2" data-name="Path 202" transform="translate(-17.411 -1.5)"/>
+            <path id="Path_203" d="M4.5 10.967V9.811A2.311 2.311 0 0 1 6.811 7.5H14.9" class="cls-2" data-name="Path 203" transform="translate(-4.5 -5.189)"/>
+            <path id="Path_204" d="M6.811 27.123L4.5 24.811 6.811 22.5" class="cls-2" data-name="Path 204" transform="translate(-4.5 -14.411)"/>
+            <path id="Path_205" d="M14.9 19.5v1.156a2.311 2.311 0 0 1-2.311 2.311H4.5" class="cls-2" data-name="Path 205" transform="translate(-4.5 -12.566)"/>
+        </g>
+    </g>
+</svg>

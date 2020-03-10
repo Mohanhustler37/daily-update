@@ -1,0 +1,1119 @@
+@import '../../../extends';
+@import '../../../variables';
+@import '../../../mixins';
+
+/*----------------------Media Query---------------------*/
+ 
+/*    Device = Most of the Smartphones Mobiles (Portrait)  Screen = B/w 320px to 479px  */
+
+@media screen and (max-width: 1279px) and (min-width: 320px) {
+    .on-boarding-login-layout {
+        .on-boarding-login-body {
+            .login-card-container{
+                width: 90% !important;
+                margin: 0 auto !important;
+                .click-here-login-arrow-container {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width:1365px) {
+
+
+    
+    .on-boarding-login-layout {
+        .on-boarding-login-body {
+            // .login-card-container{
+            //     width: 90% !important;
+            //     margin: 0 auto !important;
+            //     .click-here-login-arrow-container {
+            //         display: none;
+
+            //     }
+            .sign-in-heading {
+                margin-top: 14% !important;
+                font-family: helveticaNeueCondensedBold;
+                font-size: rem(45px);
+                font-stretch: condensed;
+                font-style: normal;
+                line-height: 0.89;
+                letter-spacing: 0.9px;
+                text-align: left;
+                color: #656565;
+                text-align: center;
+            }
+            .sign-in-sub-heading{
+                margin-top:1% !important;
+                font-size: rem(18px) !important;
+            }
+                .MuiInputLabel-shrink {
+                    transform: translate(20px, 0px) scale(0.75) !important;
+                    transform-origin: top left;
+                }
+                label#outlined-basic1-label{
+                    margin:-2% !important;
+                }
+                label#outlined-basic-label{
+                    margin:-2% !important;
+                }
+
+                .MuiButton-label{
+                    font-size: rem(20px);
+                    font-family: "helveticaNeueMedium";
+                    padding: 5% 8% !important;
+                }
+                .sign-up-or-seperator{
+                    margin-top: 7% !important;
+                     span{
+                    font-size:rem(22px) !important;
+                }
+            }
+                .sigh-up-with-google-button
+                {
+                    margin-top: 7% !important;
+
+                     button span{
+                    font-size:rem(22px) !important;
+
+                }
+                svg{
+                    margin-top: 10%;
+                }
+            }
+                .click-here-login-arrow-container{
+                    cursor: default;
+                    text-align: left;
+                    width: 160px;}
+            }
+
+        }
+        .sign-in-heading{
+            font-size: rem(45px);
+        }
+        .sign-in-sub-heading{
+            font-size: rem(18px);
+        }
+        .on-boarding-input-field {
+            .MuiFormLabel-root{
+                font-size: rem(16px);
+              }
+              .MuiInputBase-root{
+                input{
+                    font-size: rem(22px);
+                }
+              }
+        }
+        .sign-up-field-radio{
+            .radion-btn-and-label{
+                .remember-me{
+                    font-size: rem(16px);
+                    margin: 3.5% 0% 0% 1% !important;
+                }
+                .forgot-password-link {
+                    nav {
+                        a {
+                           font-size: rem(16px);
+                        }
+                    }
+                }
+            }
+        }
+        .login-btn-field{
+            .MuiButton-outlined{
+                .MuiButton-label{
+                    font-size: rem(16px);
+                }
+            }
+        }
+        .login-card-container{
+            .sign-up-or-seperator{
+                margin-top: 7% !important;
+
+                span{
+                    font-size: rem(22px);
+                }
+            }
+            .sigh-up-with-google-button{
+                margin-top: 7% !important;
+
+                button{
+                    span{
+                        font-size: rem(22px);
+                    }
+                }
+            }
+            .login-bottom-text{
+                p{
+                    font-size: rem(18px);
+                    margin-top: 0.5%;
+                }
+                nav{
+                    a{
+                        font-size: rem(18px);
+                    }
+                }
+            }
+        }
+        .sign-up-email-container{
+            i{
+                font-size: rem(20px);
+            }
+            .error-valid-email-popup{
+                font-size: rem(14px);
+            }
+            .error-email-popup{
+                font-size: rem(14px);
+            }
+        }
+        .sign-up-password-container {
+            i{
+                font-size: rem(20px);
+            }
+            .error-password-popup{
+                font-size: rem(14px);
+            }
+            .error-password-required-popup{
+                font-size: rem(14px);
+            }
+        }
+        .click-here-login-arrow-container{
+            .Click-here-to-Login{
+                font-size: rem(18px);
+            }
+        }
+        
+    }
+
+@media screen and (min-width: 1336px) and (max-width:1439px) {
+    .on-boarding-login-layout {
+        .on-boarding-login-body {
+            // .login-card-container{
+            //     width: 90% !important;
+            //     margin: 0 auto !important;
+            //     .click-here-login-arrow-container {
+            //         display: none;
+            //     }
+            .MuiInputLabel-shrink {
+                transform: translate(20px, 0px) scale(0.75) !important;
+                transform-origin: top left;
+            }
+                label#outlined-basic1-label{
+                    margin:-2% !important;
+                }
+                label#outlined-basic-label{
+                    margin:-2% !important;
+                }
+            }
+
+        }
+        .sign-in-heading{
+            font-size: rem(45px);
+        }
+        .sign-in-sub-heading{
+            font-size: rem(18px);
+        }
+        .on-boarding-input-field {
+            .MuiFormLabel-root{
+                font-size: rem(16px);
+              }
+              .MuiInputBase-root{
+                input{
+                    font-size: rem(22px);
+                }
+              }
+        }
+        .sign-up-field-radio{
+            .radion-btn-and-label{
+                .remember-me{
+                    font-size: rem(16px);
+                }
+                .forgot-password-link {
+                    nav {
+                        a {
+                           font-size: rem(16px);
+                        }
+                    }
+                }
+            }
+        }
+        .login-btn-field{
+            .MuiButton-outlined{
+                .MuiButton-label{
+                    font-size: rem(18px);
+                }
+            }
+        }
+        .login-card-container{
+            .sign-up-or-seperator{
+                margin-top: 7% !important;
+
+                span{
+                    font-size: rem(22px);
+                }
+            }
+            .sigh-up-with-google-button{
+                margin-top: 7% !important;
+
+                button{
+                    span{
+                        font-size: rem(22px);
+                    }
+                }
+            }
+            .login-bottom-text{
+                p{
+                    font-size: rem(18px);
+                }
+                nav{
+                    a{
+                        font-size: rem(18px);
+                    }
+                }
+            }
+        }
+        .sign-up-email-container{
+            i{
+                font-size: rem(22px);
+            }
+            .error-valid-email-popup{
+                font-size: rem(15px);
+            }
+            .error-email-popup{
+                font-size: rem(15px);
+            }
+        }
+        .sign-up-password-container {
+            i{
+                font-size: rem(22px);
+            }
+            .error-password-popup{
+                font-size: rem(15px);
+            }
+            .error-password-required-popup{
+                font-size: rem(1rpx);
+            }
+        }
+        .click-here-login-arrow-container{
+            .Click-here-to-Login{
+                font-size: rem(18px);
+            }
+        }
+    }
+
+// @media screen and (min-width: 1336px) and (max-width:1439px) {
+//     .on-boarding-login-layout {
+//         .on-boarding-login-body {
+
+//         }
+//     }
+//     .sign-in-heading{
+//         font-size: rem(35px);
+//     }
+// }
+@media screen and (min-width: 1440px) and (max-width:1679px) {
+    // .on-boarding-login-layout {
+    //     .on-boarding-login-body {
+            
+    //     }
+    // }
+    .sign-in-heading{
+        font-size: rem(45px);
+    }
+    .sign-in-sub-heading{
+        font-size: rem(18px);
+    }
+    .on-boarding-input-field {
+        .MuiFormLabel-root{
+            font-size: rem(18px);
+          }
+          .MuiInputBase-root{
+            input{
+                font-size: rem(22px);
+            }
+          }
+    }
+    .sign-up-field-radio{
+        .radion-btn-and-label{
+            .remember-me{
+                font-size: rem(16px);
+            }
+            .forgot-password-link {
+                nav {
+                    a {
+                       font-size: rem(16px);
+                    }
+                }
+            }
+        }
+    }
+    .login-btn-field{
+        .MuiButton-outlined{
+            .MuiButton-label{
+                font-size: rem(20px);
+            }
+        }
+    }
+    .login-card-container{
+        .sign-up-or-seperator{
+            margin-top: 7% !important;
+
+            span{
+                font-size: rem(22px);
+            }
+        }
+        .sigh-up-with-google-button{
+            margin-top: 7% !important;
+
+            button{
+                span{
+                    font-size: rem(22px);
+                }
+            }
+        }
+        .login-bottom-text{
+            p{
+                font-size: rem(16px);
+            }
+            nav{
+                a{
+                    font-size: rem(16px);
+                }
+            }
+        }
+    }
+    .sign-up-email-container{
+        i{
+            font-size: rem(24px);
+        }
+        .error-valid-email-popup{
+            font-size: rem(16px);
+        }
+        .error-email-popup{
+            font-size: rem(16px);
+        }
+    }
+    .sign-up-password-container {
+        i{
+            font-size: rem(24px);
+        }
+        .error-password-popup{
+            font-size: rem(16px);
+        }
+        .error-password-required-popup{
+            font-size: rem(16px);
+        }
+    }
+    .click-here-login-arrow-container{
+        .Click-here-to-Login{
+            font-size: rem(18px);
+        }
+    }
+}
+
+
+
+@media (min-width: 1680px){
+    .sign-in-heading{
+        font-size: rem(45px);
+    }
+    .sign-in-sub-heading{
+        font-size: rem(18px);
+    }
+    .on-boarding-input-field {
+        .MuiFormLabel-root{
+            font-size: rem(22px);
+          }
+          .MuiInputBase-root{
+            input{
+                font-size: rem(22px);
+            }
+          }
+    }
+    .sign-up-field-radio{
+        .radion-btn-and-label{
+            .remember-me{
+                font-size: rem(16px);
+            }
+            .forgot-password-link {
+                nav {
+                    a {
+                       font-size: rem(16px);
+                    }
+                }
+            }
+        }
+    }
+
+    .login-btn-field{
+        .MuiButton-outlined{
+            .MuiButton-label{
+                font-size: rem(22px);
+            }
+        }
+    }
+    .login-card-container{
+        .sign-up-or-seperator{
+            margin-top: 7% !important;
+
+            span{
+                font-size: rem(22px);
+            }
+        }
+        .sigh-up-with-google-button{
+            margin-top: 7% !important;
+
+            button{
+                span{
+                    font-size: rem(22px);
+                }
+            }
+        }
+        .login-bottom-text{
+            p{
+                font-size: rem(18px);
+            }
+            nav{
+                a{
+                    font-size: rem(18px);
+                }
+            }
+        }
+    }
+
+    .sign-up-email-container{
+        i{
+            font-size: rem(28px);
+        }
+        .error-valid-email-popup{
+            font-size: rem(18px);
+        }
+        .error-email-popup{
+            font-size: rem(18px);
+        }
+    }
+@media screen and (min-width: 1440px) and (max-width:1679px) {
+    .on-boarding-login-layout {
+        .on-boarding-login-body {
+
+            label#outlined-basic1-label{
+                margin:-1% !important;
+            }
+            label#outlined-basic-label{
+                margin:-1% !important;
+            }
+            .MuiInputLabel-shrink {
+                transform: translate(20px, -5px) scale(0.75) !important;
+                transform-origin: top left;
+            }
+
+        }
+    }
+}
+@media screen and (min-width: 1680px) and (max-width:1919px) {
+    .on-boarding-login-layout {
+        .on-boarding-login-body {
+
+            .MuiInputLabel-shrink {
+                transform: translate(25px, -8px) scale(0.75) !important;
+                transform-origin: top left;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1920px) {
+    .on-boarding-login-layout {
+        .on-boarding-login-body {
+
+            label#outlined-basic1-label{
+                margin:1% !important;
+            }
+            label#outlined-basic-label{
+                margin:1% !important;
+            }
+            .MuiInputLabel-shrink {
+                transform: translate(22px, -12px) scale(0.75) !important;
+                transform-origin: top left;
+            }
+            .sigh-up-with-google-button 
+            
+            div{
+                margin-top: 1%;
+            }
+            // button{
+            //     // height: 7.6vh !important;
+            // }
+
+            .sign-up-email-container {
+                margin: 0 0 0 0;
+                margin-top: 11%;
+                position: relative;
+                i {
+                    top: 35%;
+                    right: 26px;
+                    font-size: 1.8rem;
+
+                }
+                .login-btn-field{
+                    // height: 7.6vh;
+                    margin: 6.4% 0 0 0;
+                }
+                .sigh-up-with-google-button{
+                    
+                    // height: 7.6vh;
+                    div{
+                        margin-top: 1%;
+                    }
+                    svg{
+                        transform: scale(2);
+                        margin-right: 20px;
+                    }
+
+
+
+                }
+                
+            }
+        }
+    }
+}
+
+    .sign-up-password-container {
+        i{
+            font-size: rem(28px);
+        }
+        .error-password-popup{
+            font-size: rem(18px);
+        }
+        .error-password-required-popup{
+            font-size: rem(18px);
+        }
+    }
+    .click-here-login-arrow-container{
+        .Click-here-to-Login {
+            // font-size: 1.125rem;
+            color: #c8c8c8;
+            text-align: left;
+            position: absolute;
+            top: -20% !important;
+            right: -35% !important;
+            font-size: rem(18px);
+        }
+
+    }
+}
+
+/*------------------Media Queriy Ends Here----------------*/
+
+.on-boarding-login-layout {
+    // height: 100%;
+    user-select: none;
+    width: 100%;
+    box-sizing: border-box;
+    .on-boarding-login-body {
+        // height: 85vh;
+        // border: 1px solid red;
+        box-sizing: border-box;
+        // display: flex;
+        align-items: center;
+        justify-content: center;
+        .alert-dismissible .close {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 3px 10px 3px 3px;
+        }
+        .login-card-container{
+            // border: 1px solid purple;
+            height: 100%;
+            margin: auto;
+            margin: 0% 37.5% 0 37.5%;
+            width: 25%;
+            .fullwid{
+                width:100%;
+                
+            }
+            .sign-in-heading {
+                margin-top: 14%;
+                font-family: helveticaNeueCondensedBold;
+                // font-size: 2.8125rem;
+                font-stretch: condensed;
+                font-style: normal;
+                line-height: 0.89;
+                letter-spacing: 0.9px;
+                text-align: left;
+                color: #656565;
+                text-align: center;
+            }
+            .sign-in-sub-heading{
+                margin-top: 1%;
+                @extend %d-flex-align-justify-center;
+                font-family: helveticaNeueLight;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.11;
+                letter-spacing: 0.36px;
+                text-align: center;
+                color: #656565;
+                font-size: rem(18px);
+
+            }
+            input{
+                padding:6% 8%;
+            }
+            label#outlined-basic1-label{
+                margin:0%;
+            }
+            label#outlined-basic-label{
+                margin:0%;
+            }
+            .MuiInputLabel-shrink {
+                        transform: translate(25px, -5px) scale(0.75);
+                        transform-origin: top left;
+                    }
+            // .on-boarding-input-field {
+            //     width: 100%;
+            //     margin: 0;
+            //     height: 7.5%;
+
+            //     .MuiFormLabel-root.Mui-focused {
+            //         color: #656565;
+            //     }
+            //     .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+            //         border-color: #656565;
+            //         border-width: 1px;
+            //         margin: 0;
+            //     }
+
+            //     .MuiInputLabel-outlined {
+            //         z-index: 1;
+            //         transform: translate(26px, 28px) scale(1);
+            //         pointer-events: none;
+            //     }
+            //     .MuiInputLabel-shrink {
+            //         transform: translate(20px, 1px) scale(0.75);
+            //         transform-origin: top left;
+            //     }
+            //     .MuiFormLabel-root{
+            //         font-size: 1.375rem;
+            //         background: #FFFFFF;
+            //         padding: -4% 0% 0% 0%;
+            //         top:-10px !important;
+            //     }
+                
+            //     .MuiFormControl-root{
+            //         .MuiInputLabel-formControl{
+            //             top: -10 !important;
+            //         }
+            //     }
+
+
+            //     .MuiInputBase-root {
+            //         border-radius: 50px;
+            //         input {
+            //             display: flex;
+            //             align-items: center;
+            //             justify-content: center;
+            //             // padding: 33.3vh 8.5%;
+            //             font-family: helveticaNeueLight;
+            //             // padding: 28px 40px;
+            //             // padding: 7% 0% 7% 0%;
+            //             font-size: 1.375rem;
+            //             font-stretch: normal;
+            //             font-style: normal;
+            //             line-height: 1.18;
+            //             letter-spacing: normal;
+            //             text-align: left;
+            //             color: #656565;
+            //         }
+            //     }
+
+            // }
+            .sign-up-email-container {
+                margin: 7% 0 0;
+                // margin-top: 7%;
+                position: relative;
+
+                i {
+                    position: absolute;
+                    top: 32%;
+                    right: 26px;
+                    color: $color-errorPopUpColor;
+                }
+                img {
+                    position: absolute;
+                    top: 36%;
+                    right: 4%;
+                    font-size:rem(24px);
+                    color: #fd673a;
+                    width: 20px;
+                    height: 20px;
+                }
+                .error-email-popup {
+                    position: absolute;
+                    height: 80%;
+                    width: 40%;
+                    border-radius: 10px;
+                    right: -46%;
+                    top: -2px;
+                    padding: 10px 8px 10px 5px;;
+                    display: flex;
+                    color: $color-errorPopUpColor;
+                    text-align: left;
+                    box-shadow: 0px 0px 15px #00000029;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .error-email-popup::before {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    position: relative;
+                    left: -13%;
+                    border-top: 10px solid transparent;
+                    border-bottom: 0px solid transparent;
+                    border-right: 10px solid #FFFFFF;
+                }
+                .error-valid-email-popup {
+                    position: absolute;
+                    height: 100%;
+                    width: 45%;
+                    border-radius: 10px;
+                    right: -46%;
+                    top: -28%;
+                    padding: 10px 0px 10px 0px;;
+                    display: flex;
+                    color: $color-errorPopUpColor;
+                    text-align: left;
+                    box-shadow: 0px 0px 15px #00000029;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: helveticaNeueLight;
+
+                    p{
+                        margin-left: 5%;
+                        text-align: left;
+                    }
+                }
+                .error-valid-email-popup::before {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    position: relative;
+                    left: -5%;
+                    border-top: 10px solid transparent;
+                    border-bottom: 0px solid transparent;
+                    border-right: 10px solid #FFFFFF;
+                }
+            }
+            .sign-up-password-container {
+                // margin: 2.8vh 0 2.9vh 0;
+                margin-top: 6%;
+                position: relative;
+                .show-password-eye {
+                    color: $color-borderLightGray;
+                    cursor: pointer;
+                    right: 25px;
+                    top:28%;
+                }
+                i {
+                    position: absolute;
+                    top: 28%;
+                    right: 4%;
+                    color: $color-errorPopUpColor;
+                }
+                .error-password-popup {
+                    position: absolute;
+                    height: 80%;
+                    width: 40%;
+                    border-radius: 10px;
+                    right: -41%;
+                    top: 2px;
+                    padding: 10px 0px 10px 0px;
+                    display: flex;
+                    color: #fd673a;
+                    text-align: left;
+                    box-shadow: 0px 0px 15px #00000029;
+                    align-items: center;
+                    justify-content: center;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.22;
+                    letter-spacing: normal;
+                    font-family: "helveticaNeueLight";
+                }
+    
+                .error-password-popup::before {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    position: relative;
+                    left: -46px;
+                    border-top: 10px solid transparent;
+                    border-bottom: 0px solid transparent;
+                    border-right: 10px solid #FFFFFF;
+                }
+                .error-password-required-popup {
+                    position: absolute;
+                    // height: 100px;
+                    // width: 200px;
+                    height: 80%;
+                    width: 48%;
+                    border-radius: 10px;
+                    // right: -208px;
+                    // top: -20px;
+                    right: -52%;
+                    top: -11%;
+                    padding: 10px 5px 10px 0px;
+                    display: flex;
+                    color: $color-errorPopUpColor;
+                    text-align: left;
+                    box-shadow: 0px 0px 15px #00000029;
+                    align-items: center;
+                    justify-content: center;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.22;
+                    letter-spacing: normal;
+                    font-family: "helveticaNeueLight";
+                }
+    
+                .error-password-required-popup::before {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    position: relative;
+                    left: -9%;
+                    border-top: 10px solid transparent;
+                    border-bottom: 0px solid transparent;
+                    border-right: 10px solid $color-white;
+                }
+            }
+            .sign-up-field-radio {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 5.5%;
+                .radion-btn-and-label {
+                    display: flex;
+                    width:48%;
+                    align-content: center;
+                    color: $color-strongPurple !important;
+                    .MuiButtonBase-root {
+                        border: transparent;
+                        padding: 0;
+                        margin: 0;    
+                        color: $color-strongPurple !important;
+
+                        // .MuiIconButton-label {
+                        //     div {
+                        //         svg {
+        
+                        //         }
+                        //     }
+                        }
+                    }
+                    .remember-me {
+                        font-family: "helveticaNeueLight";
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.13;
+                        letter-spacing: normal;
+                        text-align: left;
+                        margin: 4px 0px 0 5px;
+                        color: #696969;
+                    }
+                }
+            }
+            .forgot-password-link {
+                margin-top: 4px;
+                nav {
+                    a {
+                        font-family: "helveticaNeueLight";
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.13;
+                        letter-spacing: normal;
+                        text-align: right;
+                        color: #696969;
+                        text-decoration: none;
+                        font-size: rem(16px);
+                    }
+                }
+            }
+
+
+
+
+
+            .login-btn-field{
+                //  height: 6.6vh;
+                width: 100%;
+                position: relative;
+                margin: 9% 0 0 0;
+                .MuiButton-outlined {
+
+                    .MuiButton-label {
+                        // height: 100%;
+                        padding: 6% 8%;
+                        font-family: helveticaNeueMedium;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.18;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #ffffff;
+                        .login-spinner {
+                            height: 60px;
+                            width: 60px;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+            .click-here-login-arrow-container{
+                // position: absolute;
+                cursor: default;
+                right: -170px;
+                top: -15px;
+                text-align: left;
+                width: 160px;
+                
+                img {
+                    width: 30px;
+                    padding-left: 0px;
+                    padding-bottom: 10px;
+                    cursor: default;
+                    position: absolute;
+                    top: 7%;
+                    right: -12%;
+                }
+                .Click-here-to-Login {
+                    // font-size: 1.125rem;
+                    color: #c8c8c8;
+                    text-align: left;
+                    position: absolute;
+                    top: -22%;
+                    right: -43%;
+                    font-family: "helveticaNeueLight";
+                }
+            }
+            .sign-in-button {
+                width: 100%;
+                height: 100%;
+                border-radius: 100px;
+                border: solid 1px #e2e6ea;
+                background-color: #41e590;
+                .MuiButton-label {
+                    padding: 6% 8%;
+                    font-family: helveticaNeueMedium;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.18;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #ffffff;
+                    min-height: 25px;
+                }
+                
+            }
+            .sign-up-or-seperator {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $color-thickGray;
+                margin-top: 9%;
+                hr {
+                    background:$color-lightGray;
+                    width: 50%;
+                    margin: 1% 1% 1% 1% !important;
+                }
+                span {
+                    font-family: helveticaNeueLight;
+                    padding: 0 9px;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.18;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: $color-thickGray;
+                    cursor: default;
+                    font-size: rem(22px);
+                }
+            }
+
+            .sigh-up-with-google-button {
+                width: 100%;
+                // height: 6.6vh;
+                margin-top: 9%;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // border: 1px solid #c8c8c8;
+                border-radius: 100px;
+
+                button {
+                    // height: 6.6vh;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: none !important;
+                    border-radius: 50px !important;
+                    border: solid 1px #c8c8c8 !important;
+                    background-color: #ffffff !important; 
+                    font-size: rem(22px) !important;
+                    padding: 4.1% !important;
+                    div {
+                        padding: 0 !important;
+                    }
+                    svg{
+                        transform: scale(2);
+                        margin-right: 20px;
+                    }
+                    span {
+                        font-family: helveticaNeueLight;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.23;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: $color-thickGray;
+                        padding: 0 !important;
+                        font-size: rem(22px);
+                    }
+                }
+            }
+            .login-bottom-text {
+                margin-top:11.5% ;
+                cursor: default;
+                p {
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.17;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: $color-thickGray;
+                }
+                nav > a {
+                    font-family: 'helveticaNeueMedium';
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.17;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color:$color-strongPurple;
+                    text-decoration: none;
+                    font-size: rem(18px);
+                }
+            }
+        }
+    }

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7.714" height="9" viewBox="0 0 7.714 9">
+    <defs>
+        <style>
+            .cls-1{fill:rgba(213,0,0,.5)}
+        </style>
+    </defs>
+    <path id="Icon_material-pause" d="M9 16.5h2.571v-9H9zm5.143-9v9h2.571v-9z" class="cls-1" data-name="Icon material-pause" transform="translate(-9 -7.5)"/>
+</svg>

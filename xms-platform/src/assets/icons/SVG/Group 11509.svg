@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+    <defs>
+        <style>
+            .cls-1{fill:#f9f9f9;opacity:.21}.cls-2{fill:#d50000;opacity:.8}
+        </style>
+    </defs>
+    <g id="Group_11509" data-name="Group 11509" transform="translate(-582 -851)">
+        <circle id="Ellipse_3395" cx="7" cy="7" r="7" class="cls-1" data-name="Ellipse 3395" transform="translate(582 851)"/>
+        <path id="Icon_material-delete-forever" d="M7.929 11.36a.86.86 0 0 0 .857.857h3.43a.86.86 0 0 0 .857-.857V6.215H7.929zm1.054-3.053l.6-.6.913.909.914-.916.6.6-.909.909.909.909-.6.6-.91-.897-.909.909-.6-.6.909-.914zM12 4.929l-.427-.429H9.429L9 4.929H7.5v.857h6v-.857z" class="cls-2" data-name="Icon material-delete-forever" transform="translate(578.5 849.5)"/>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="9.997" viewBox="0 0 10 9.997">
+    <defs>
+        <style>
+            .cls-1{fill:rgba(78,88,169,.5)}
+        </style>
+    </defs>
+    <g id="Group_11753" data-name="Group 11753" transform="translate(-684.857 -693.858)">
+        <path id="Icon_ionic-ios-close" d="M17.47 16.287l3.572-3.572a.837.837 0 0 0-1.184-1.184L16.286 15.1l-3.572-3.572a.837.837 0 1 0-1.184 1.184l3.57 3.575-3.572 3.572a.837.837 0 1 0 1.184 1.184l3.572-3.572 3.572 3.572a.837.837 0 0 0 1.184-1.184z" class="cls-1" data-name="Icon ionic-ios-close" transform="translate(673.572 682.569)"/>
+    </g>
+</svg>

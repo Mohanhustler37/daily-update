@@ -1,0 +1,2646 @@
+@import '../../../../variables';
+@import "../../../../extends";
+@import "../../../../mixins";
+
+$borderRadius: 100px;
+$lightGrayDashedBorder: 1px dashed $color-lightGray;
+$lightGraySolidBorder: 1px solid $color-lightGray;
+$elementsBgColor: #ffffff;
+
+%subHeading {
+    font-size: 1.15rem;
+    font-family: "helveticaNeueCondensedBold";
+    font-stretch: normal;
+    font-style: normal;
+    color: $color-lightViolet;
+    // font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  %multi-select-custom {
+    .MuiInput-underline:before {
+      border: 0;
+    }
+    .MuiInput-underline:after {
+      border: 0;
+    }
+    .MuiInputLabel-formControl {
+      top: 0;
+      left: 0;
+      position: absolute;
+      transform: translate(14px, 14px) scale(1);
+    }
+    .MuiInputLabel-shrink {
+      transform: translate(24px, -6.5px) scale(0.75);
+      transform-origin: top left;
+    }
+    .MuiInputBase-root {
+      margin: 0;
+      height: 50px;
+      .MuiSelect-root {
+        margin-left: 24px;
+      }
+      .MuiSvgIcon-root {
+        margin-right: 10px;
+      }
+    }
+  }
+  %dropdownStyle {
+    height: 10vh;
+    max-height: 77px;
+  }
+
+%d-flex {
+    display: flex;
+}
+
+%d-flex-align-center {
+    @extend %d-flex;
+    align-items: center;
+}
+
+%d-flex-align-justify-center {
+    @extend %d-flex-align-center;
+    justify-content: center;
+}
+
+%d-flex-align-center-close {
+    @extend %d-flex-align-center;
+    justify-content: center;
+}
+%dropdownCommonStyle {
+  height: 9vh;
+}
+
+@mixin placeholder($background, $position, $repeat, $size) {
+    background: $background;
+    background-position: $position;
+    background-repeat: $repeat;
+    background-size: $size;
+  }
+
+
+@mixin heighWidth($heigh, $width) {
+    height: $heigh;
+    width: $width;
+}
+
+.EdtCmpTask-drawer {
+    width: 100%;
+    background: transparent;
+
+    .drawer-closer {
+        border: 1px solid red;
+        position: absolute;
+        left: 0;
+        width: 100%;
+    }
+
+    .MuiDrawer-paper {
+        width: 100%;
+        background: transparent;
+
+        .edit-task-drawer {
+            // height: 100%;
+            width: 100%;
+
+            .drawer-full-width {
+                width: 70%;
+                background: transparent;
+
+
+            }
+        }
+
+        .side-task-list {
+            width: 30%;
+            height: 100%;
+
+            .EdtCmpTask-drawer-bodySection {
+                padding: 2vh 0%;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                background: $color-white;
+                height: 96vh;
+
+
+
+                // Company section
+
+                .edit-task-drawer-task-comp {
+                    width: 90%;
+                    // height: 6.5vh;
+                    margin: 0vh 5% 2.8vh 5%;
+
+                    .edit-task-drawer-task-company {
+                        width: 100%;
+                        @extend %dropdownCommonStyle;
+
+                        .menu-comp-container {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            margin: auto;
+                            transition: 0.5s;
+
+                            .edit-drawer-container-comp {
+                                width: 100%;
+                                position: relative;
+                                border: 1px solid $color-lightGray;
+                                height: 100%;
+                                background: $color-white;
+                                border-radius: 41px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                z-index: 998;
+                                cursor: pointer;
+
+                                .selected-item-container {
+                                    width: 85%;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+
+                                    p {
+                                        font-family: helveticaNeueLight;
+                                        font-size: rem(22px);
+                                        color: $color-thickGray;
+                                        padding-left: 4%;
+                                        white-space: nowrap;
+                                        display: flex;
+                                        align-items: center;
+                                        img{
+                                          // height:2.8vh;
+                                          width:14%;
+                                        }
+                                    }
+                                }
+
+                                .task-drp-dwn-img {
+                                    width: 6%;
+                                    margin-right: 1%;
+                                    display: flex;
+                                    justify-content: center;
+                                    // border: 1px dashed $color-violet;
+                                    border-radius: 50%;
+                                    height: 50%;
+
+                                    img {
+                                        width: 12px;
+                                    }
+                                }
+                            }
+
+                            .task-type-open-dropdown {
+                                height: 175px;
+                                padding-top: 40px;
+                                transition: 0.5s;
+
+                            }
+
+                            .task-type-dropdown-menu-container {
+                                position: absolute;
+                                border-radius: 20px 20px 5px 5px;
+                                top: 50%;
+                                width: 99.4%;
+                                left: 0.5%;
+                                background: $color-white;
+                                box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                                z-index: 997 !important;
+                                transition: 0.5s;
+                                overflow: hidden;
+
+                                .MuiButtonBase-root {
+                                    width: 90% !important;
+                                    margin: 0 auto !important;
+                                    background-color: transparent !important;
+                                    box-shadow: none !important;
+                                    border-radius: 25px;
+                                    height: 40px;
+                                    min-height: 40px;
+                                    padding: 0px !important;
+                                    min-height: 30px !important;
+                                }
+
+                                .create-task-one-tckt-typ {
+                                    width: 100%;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                }
+                            }
+
+                            .custom-scroll {
+                                width: 98% !important;
+                            }
+                        }
+                    }
+                }
+
+                // Company Section ends
+
+
+                // Department section
+
+                .edit-task-drawer-task-dept {
+                    width: 90%;
+                    // height: 6.5vh;
+                    margin: 0vh 5% 2.8vh 5%;
+
+                    .edit-task-drawer-task-department {
+                        width: 100%;
+                        @extend %dropdownCommonStyle;
+
+                        .menu-dept-container {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            margin: auto;
+                            transition: 0.5s;
+
+                            .edit-drawer-container-dept {
+                                width: 100%;
+                                position: relative;
+                                border: 1px solid $color-lightGray;
+                                height: 100%;
+                                background: $color-white;
+                                border-radius: 41px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                z-index: 995;
+                                cursor: pointer;
+
+                                .selected-item-container {
+                                    width: 85%;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    text-transform: capitalize;
+
+                                    p {
+                                      font-family: helveticaNeueLight;
+                                      font-size: rem(22px);
+                                      color: $color-thickGray;
+                                      white-space: nowrap;
+                                        padding-left: 4%;
+                                        display: flex;
+                                        align-items: center;
+                                        img{
+                                          // height:2.8vh;
+                                          width:14%;
+                                        }
+                                    }
+                                }
+
+                                .task-drp-dwn-img {
+                                    width: 6%;
+                                    margin-right: 1%;
+                                    display: flex;
+                                    justify-content: center;
+                                    // border: 1px dashed $color-violet;
+                                    border-radius: 50%;
+                                    height: 50%;
+
+                                    img {
+                                        width: 12px;
+                                    }
+                                }
+                            }
+
+                            .task-type-open-dropdown {
+                                height: 175px;
+                                padding-top: 40px;
+                                transition: 0.5s;
+
+                            }
+
+                            .task-dept-dropdown-menu-container {
+                                position: absolute;
+                                border-radius: 20px 20px 5px 5px;
+                                top: 50%;
+                                width: 99.4%;
+                                left: 0.5%;
+                                background: $color-white;
+                                box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                                z-index: 992 !important;
+                                transition: 0.5s;
+                                overflow: hidden;
+
+                                .MuiButtonBase-root {
+                                    width: 90% !important;
+                                    margin: 0 auto !important;
+                                    background-color: transparent !important;
+                                    box-shadow: none !important;
+                                    border-radius: 25px;
+                                    height: 40px;
+                                    min-height: 40px;
+                                    padding: 0px !important;
+                                    min-height: 30px !important;
+                                }
+
+                                .create-task-one-tckt-typ {
+                                    width: 100%;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                }
+                            }
+
+                            .custom-scroll {
+                                width: 98% !important;
+                            }
+                        }
+                    }
+                }
+
+                // Department Section ends
+
+                // Team section
+
+                .edit-task-drawer-task-team {
+                    width: 90%;
+                    // height: 6.5vh;
+                    margin: 0vh 5% 2.8vh 5%;
+
+                    .edit-task-drawer-team {
+                        width: 100%;
+                        @extend %dropdownCommonStyle;
+
+                        .menu-team-container {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            margin: auto;
+                            transition: 0.5s;
+
+                            .edit-drawer-container-team {
+                                width: 100%;
+                                position: relative;
+                                border: 1px solid $color-lightGray;
+                                height: 100%;
+                                background: $color-white;
+                                border-radius: 41px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                z-index: 990;
+                                cursor: pointer;
+
+                                .selected-item-container {
+                                    width: 85%;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+
+                                    p {
+                                      font-family: helveticaNeueLight;
+                                      font-size: rem(22px);
+                                      color: $color-thickGray;
+                                      padding-left: 4%;
+                                      white-space: nowrap;
+                                        display: flex;
+                                        align-items: center;
+                                        img{
+                                          width:18%;
+                                        }
+                                    }
+                                }
+
+                                .task-drp-dwn-img {
+                                    width: 6%;
+                                    margin-right: 1%;
+                                    display: flex;
+                                    justify-content: center;
+                                    // border: 1px dashed $color-violet;
+                                    border-radius: 50%;
+                                    height: 50%;
+
+                                    img {
+                                        width: 12px;
+                                    }
+                                }
+                            }
+
+                            .task-type-open-dropdown {
+                                height: 175px;
+                                padding-top: 40px;
+                                transition: 0.5s;
+
+                            }
+
+                            .task-team-dropdown-menu-container {
+                                position: absolute;
+                                border-radius: 20px 20px 5px 5px;
+                                top: 50%;
+                                width: 99.4%;
+                                left: 0.5%;
+                                background: $color-white;
+                                box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                                z-index: 985 !important;
+                                transition: 0.5s;
+                                overflow: hidden;
+
+                                .MuiButtonBase-root {
+                                    width: 90% !important;
+                                    margin: 0 auto !important;
+                                    background-color: transparent !important;
+                                    box-shadow: none !important;
+                                    border-radius: 25px;
+                                    height: 40px;
+                                    min-height: 40px;
+                                    padding: 0px !important;
+                                    min-height: 30px !important;
+                                }
+
+                                .create-task-one-tckt-typ {
+                                    width: 100%;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                }
+                            }
+
+                            .custom-scroll {
+                                width: 98% !important;
+                            }
+                        }
+                    }
+                }
+
+                // Team Section ends
+
+                // Project section
+
+                .edit-task-drawer-task-pro {
+                    width: 90%;
+                    // height: 6.5vh;
+                    margin: 0vh 5% 2.8vh 5%;
+
+                    .edit-task-drawer-pro {
+                        width: 100%;
+                        @extend %dropdownCommonStyle;
+
+                        .menu-pro-container {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            margin: auto;
+                            transition: 0.5s;
+
+                            .edit-drawer-container-pro {
+                                width: 100%;
+                                position: relative;
+                                border: 1px solid $color-lightGray;
+                                height: 100%;
+                                background: $color-white;
+                                border-radius: 41px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                z-index: 980;
+                                cursor: pointer;
+
+                                .selected-item-container {
+                                    width: 85%;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+
+                                    p {
+                                      font-family: helveticaNeueLight;
+                                      font-size: rem(22px);
+                                      color: $color-thickGray;
+                                      padding-left: 4%;
+                                      white-space: nowrap;
+                                        display: flex;
+                                        align-items: center;
+                                        img{
+                                          // height:2.8vh;
+                                          width:19%;
+                                        }
+                                    }
+                                }
+
+                                .task-drp-dwn-img {
+                                    width: 6%;
+                                    margin-right: 1%;
+                                    display: flex;
+                                    justify-content: center;
+                                    // border: 1px dashed $color-violet;
+                                    border-radius: 50%;
+                                    height: 50%;
+
+                                    img {
+                                        width: 12px;
+                                    }
+                                }
+                            }
+
+                            .task-type-open-dropdown {
+                                height: 175px;
+                                padding-top: 40px;
+                                transition: 0.5s;
+
+                            }
+
+                            .task-pro-dropdown-menu-container {
+                                position: absolute;
+                                border-radius: 20px 20px 5px 5px;
+                                top: 50%;
+                                width: 99.4%;
+                                left: 0.5%;
+                                background: $color-white;
+                                box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                                z-index: 975 !important;
+                                transition: 0.5s;
+                                overflow: hidden;
+
+                                .MuiButtonBase-root {
+                                    width: 90% !important;
+                                    margin: 0 auto !important;
+                                    background-color: transparent !important;
+                                    box-shadow: none !important;
+                                    border-radius: 25px;
+                                    height: 40px;
+                                    min-height: 40px;
+                                    padding: 0px !important;
+                                    min-height: 30px !important;
+                                }
+
+                                .create-task-one-tckt-typ {
+                                    width: 100%;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                }
+                            }
+
+                            .custom-scroll {
+                                width: 98% !important;
+                            }
+                        }
+                    }
+                }
+
+                // Project Section ends
+
+                .EdtCmpTask-drawer-heading-section {
+                    display: flex;
+                    align-items: center;
+                    margin: 0vh 5% 2.8vh 5%;
+                    padding: 1% 0;
+
+
+
+                    .filter-drawer-heading {
+                        font-family: helveticaNeueCondensedBold;
+                        font-size: rem(30px);
+                        font-weight: bold;
+                        font-stretch: condensed;
+                        font-style: normal;
+                        line-height: 1.27;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #707070;
+                    }
+
+                }
+
+                .customised-dropdown-menu {
+                    border: 1px solid grey;
+                    border-radius: $borderRadius;
+                    margin-bottom: 20px;
+
+                    .edtCmp-icon {
+                        font-size: 0.5rem;
+                        margin-left: 5px;
+                        color: $color-red;
+                    }
+
+                    label {
+                        background: $color-white;
+                        display: flex;
+                    }
+
+                    .MuiInputLabel-outlined {
+                        transform: translate(46px, 20px) scale(1);
+                    }
+
+                    .MuiInputLabel-outlined.MuiInputLabel-shrink {
+                        transform: translate(14px, -6px) scale(0.75);
+                    }
+
+                    .edit-flex-container {
+                        // @extend %d-flex-align-center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width : 100%;
+                        height: 5vh;
+
+                        img {
+                            @include heighWidth(23px, 30px);
+                            margin-left: 10px;
+                            border-radius: $borderRadius;
+                        }
+
+                        .MuiInputBase-root {
+                            border-radius: 0 100px 100px 0 !important;
+                            width: 88%;
+                            margin-left: auto;
+
+                            .MuiSelect-root {
+                                padding: 18.5px 0;
+                                background: none;
+                            }
+                        }
+
+                        fieldset {
+                            border: 0;
+                        }
+                    }
+
+                    width: 100%;
+
+                    fieldset {
+                        border: $lightGraySolidBorder;
+                        border-radius: $borderRadius;
+                    }
+                }
+
+                .edt-tsk-cmpny-bottom-buttons {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 14.9vh;
+                    margin-top: auto;
+                    box-shadow: 0 -4px 10px 0 #efefef;
+                    .MuiButton-contained {
+                        box-shadow: unset !important;
+                        background-color: unset !important;
+                    }
+
+                    .MuiButton-contained:hover {
+                        background-color: #d5d5d5 !important;
+                        color: $color-lightGray;
+                    }
+
+                    .ed-tsk-save-button:hover{
+                      background-color: $color-white;
+                    }
+                    .ed-tsk-save-button {
+                        border-radius: 100px !important;
+                        border: 1px dashed $color-lightGray;
+                        font-family: helveticaNeueMedium;
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        width: 35%;
+                        height: 8.5vh;
+                        margin-left: 6.1%;
+                        .MuiButton-label{
+                          font-size: rem(22px);
+                          font-family: helveticaNeueMedium;
+                          color: $color-lightGray;
+                        }
+                        span {
+                            text-transform: capitalize;
+                        }
+                    }
+
+                    .ch-save-button:hover {
+                        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+                        background-color: #d5d5d5;
+                    }
+
+                    .edt-tsk-submit-button {
+                        background-color: $color-green!important;
+                        box-shadow: none;
+                        border-radius: $borderRadius;
+                        padding: 10px;
+                        width: 45%;
+                        height: 8.5vh;
+                        color: $color-white;
+                        margin-right: 6.1%;
+                        .MuiButton-label{
+                          font-size: rem(22px);
+                          font-family: helveticaNeueMedium;
+                          color: $color-white;
+                        }
+                        span {
+                            text-transform: capitalize;
+                        }
+                    }
+
+                    .ch-submit-button:hover {
+                        background-color: $color-green;
+                    }
+                }
+            }
+        }
+    }
+}
+
+///////////////Task-Details Code/////////////
+
+.edit-tsk-drwr-section{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    .edit-tsk-layout {
+        user-select: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        // .edit-tsk-drwr-cls-icon {
+        //   cursor: pointer;
+        //   width: 10%;
+        //   height: 100%;
+        //   position: absolute;
+        //   left: -10px;
+        //   img {
+        //     width: 25%;
+        //     margin: 7.9vh 0% 0vh 25.6%;
+        //   }
+        // }
+      
+        .edit-task-drawer-company-details {
+          width: 100%;
+          border: 1px dashed $color-violet;
+          margin: 8.4vh auto 0vh auto;
+          border-radius: 8px;
+          box-sizing: border-box;
+          .edit-task-company-description {
+            margin-top: 3%;
+            margin-left: 3%;
+            display: flex;
+            .cmpny-nm{
+                width: 70%;
+            }
+            .edit-task-drawer-company-details-edit{
+                width:5%;
+                margin-right: 3%;
+            }
+            .edit-task-drawer-company-text {
+                margin-left: 5%;
+                .edit-task-drawer-company-text-one {
+                    font-size: rem(25px);
+                    .text-capitalize{
+                        font-size: rem(25px);
+                        color: $color-thickGray;
+                        font-family: helveticaNeueMedium;
+                    }
+                }
+                .edit-task-drawer-company-text-two {
+                    font-size: 12px;
+                    color: $color-lightGray;
+                }
+              }
+        }
+        .department-and-team-name{
+            p{
+                font-size: rem(14px);
+                font-family: helveticaNeueLight;
+                color :$color-lightGray;
+            }
+        }
+        }
+      
+        .create-ticket-drawer-assign-to {
+          width: 80%;
+          height: 40px;
+          margin: 5% auto;
+          .MuiFormControl-root {
+            width: 100%;
+            height: 40px;
+            .MuiInputLabel-formControl {
+              top: -14px !important;
+              left: 14px !important;
+              font-size: 18px;
+              font-weight: 300;
+              .MuiFormLabel-asterisk {
+                // color:$color-red;
+                display: none;
+              }
+            }
+            .MuiInputBase-root {
+              margin-top: 0px !important;
+              .MuiSelect-select {
+                padding-left: 10px;
+                color: $color-thickGray;
+              }
+              .MuiSelect-icon {
+                right: 12px;
+              }
+            }
+            .MuiInput-underline:before {
+              border-bottom: none !important;
+            }
+            .MuiInput-underline:after {
+              border-bottom: none !important;
+            }
+            .MuiInput-underline {
+              border: 1px dashed $color-borderLightGray;
+              border-radius: 20px;
+              height: 40px;
+            }
+          }
+        }
+      
+        .edit-tsk-main-sctn {
+          width: 65%;
+          height: 95%;
+          position: relative;
+          .edit-tsk-hdr-sctn {
+              height: 9.3vh;
+            margin: 8.4vh 0% 0.5vh 0%;
+            @extend %d-flex-space-btwn;
+            .tsk-hdr-txt {
+              p:nth-child(1) {
+                font-size: rem(48px);
+                font-stretch: condensed;
+                letter-spacing: 0.96px;
+                text-align: left;
+                color: $color-lightViolet;
+                font-family: "helveticaNeueCondensedBold";
+                margin-bottom: 0px !important;
+                text-transform: uppercase;
+                height: 5.1vh;
+                display: flex;
+                align-items: flex-end;
+              }
+              p:nth-child(2) {
+                font-size: rem(18px) !important;
+                font-stretch: normal;
+                font-style: normal;
+                letter-spacing: 0.36px;
+                text-align: left;
+                color: $color-lightGray;
+                font-family: "helveticaNeueLight";
+                height: 4vh;
+                display: flex;
+                align-items: center;
+              }
+            }
+            .quick-create-using-template {
+              width: 45%;
+              position: relative;
+              margin: 0;
+              transition: 0.5s;
+              .quick-create-template {
+                padding: 0 4%;
+                position: relative;
+                border: 1px solid #d0cfec;
+                height: 50px;
+                background: $color-white;
+                border-radius: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                z-index: 1000;
+                cursor: pointer;
+                .selected-item-container {
+                  // margin-left: 1%;
+                  width: 85%;
+                  height: 100%;
+                  display: flex;
+                  align-items: center;
+                  p {
+                    color: $color-thickGray;
+                    white-space: nowrap;
+                    font-family: "helveticaNeueLight";
+                    font-size: 1.125rem;
+                  }
+                }
+                .quick-drp-dwn-img {
+                  width: 28px;
+                  // margin-right: 1%;
+                  display: flex;
+                  justify-content: center;
+                  border: 1px dotted #743ad5;
+                  border-radius: 50%;
+                  height: 26px;
+                }
+              }
+              .open-dropdown {
+                height: 240px;
+                overflow: auto;
+                padding-top: 40px;
+                transition: 0.5s;
+              }
+              .dropdown-menu-container {
+                position: absolute;
+                border-radius: 20px 20px 5px 5px;
+                top: 10px;
+                left: 0;
+                width: 100%;
+                background: $color-white;
+                box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                z-index: 999 !important;
+                transition: 0.5s;
+                overflow: hidden;
+                .MuiButtonBase-root {
+                  width: 90% !important;
+                  margin: 0 auto !important;
+                  background-color: $color-white !important;
+                  box-shadow: none !important;
+                  border-radius: 25px;
+                  height: 40px;
+                  min-height: 40px;
+                  padding: 0px !important;
+                  min-height: 30px !important;
+                  // margin: 1% auto;
+                }
+              }
+              .quick-create-search-bar {
+                width: 85%;
+                margin: 10px auto;
+                border: 1px solid rgba(78, 88, 169, 0.1);
+                border-radius: 100px;
+                .MuiInputBase-root {
+                  width: 90%;
+                  .MuiInputBase-input {
+                    padding: 6px 10px 7px;
+                  }
+                }
+                .MuiSvgIcon-root {
+                  color: $color-borderLightGray !important;
+                }
+              }
+              .custom-scroll {
+                width: 98% !important;
+              }
+            }
+          }
+          .edit-task-title-container {
+            @extend %d-flex-align-center-space-btwn;
+            border-bottom: $lightGraySolidBorder;
+            position: relative;
+            height: 10.1vh;
+            .MuiFormControl-root {
+              margin-left: 15px;
+              font-size: rem(30px);
+              width: 80%;
+              .MuiInputBase-root {
+                font-size: rem(30px);
+                font-weight: 600;
+              }
+              .MuiInput-underline:before {
+                border: 0;
+              }
+              .MuiInput-underline:after {
+                border: 0;
+              }
+              input {
+                font-family: "helveticaNeueMedium";
+                font-size: rem(30px);
+                color:$color-thickGray;
+              }
+            }
+            .color-pallet-container {
+              position: relative;
+              .colorPallet {
+                cursor: pointer;
+              }
+            }
+          }
+          .create-habit-start-date {
+            width: 49%;
+            border-radius: $borderRadius;
+            @extend %d-flex-align-center;
+            padding: 0 15px;
+            border: $lightGraySolidBorder;
+      
+            .date-picker-style {
+              .react-date-picker__wrapper {
+                border: 0;
+      
+                .react-date-picker__inputGroup {
+                  min-width: 0px;
+                  width: 0;
+                  flex-grow: 1;
+                  display: flex;
+                  padding: 0px 0px;
+                  align-items: baseline;
+                  box-sizing: content-box;
+                  overflow: hidden;
+                }
+      
+                .react-date-picker__calendar-button {
+                  background: url("../../../../assets/create-habit/Icon feather-calendar.svg");
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  @include heighWidth(27px, 24px);
+      
+                  svg {
+                    display: none;
+                  }
+                }
+      
+                .react-date-picker__calendar-button:focus {
+                  border: 0;
+                }
+              }
+            }
+      
+            .MuiFormControl-root {
+              margin: 7px 0 0 13px;
+              .MuiInputBase-root {
+                color: $color-thickGray;
+                font-size: 1.2rem;
+                font-weight: 100 !important;
+              }
+              label {
+                color: $color-thickGray;
+                font-size: 1.2rem;
+                font-weight: 100 !important;
+              }
+              .MuiInputLabel-formControl {
+                top: 0;
+                left: 0;
+                position: absolute;
+                transform: translate(0, 5px) scale(1);
+              }
+              .MuiInputLabel-animated {
+                transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms,
+                  transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+              }
+              .MuiInputBase-root {
+                margin: 0%;
+              }
+              .MuiInput-underline:before,
+              .MuiInput-underline:after {
+                border: 0;
+              }
+            }
+          }
+          .task-date-time-container {
+            @extend %d-flex-align-center;
+            justify-content: space-between;
+            margin: 2.8vh 0;
+            height: 4.6vh;
+            // padding: 2px 2px;
+            .task-date-time {
+              display: flex;
+              justify-content: space-between;
+              width: 30%;
+              #task-datepicket-btn {
+                position: relative;
+                width: 40%;
+                .react-date-picker {
+                  position: absolute;
+                  top: 0;
+                  .react-date-picker__wrapper {
+                    border: 0;
+                    .react-date-picker__inputGroup {
+                      min-width: 0;
+                      flex-grow: 1;
+                      display: flex;
+                      padding: 0 2px;
+                      align-items: baseline;
+                      width: 0;
+                      box-sizing: content-box;
+                      display: none;
+                    }
+                  }
+                  .react-date-picker__calendar-button {
+                    width: 121px;
+                    height: 32px !important;
+                    svg {
+                      display: none;
+                    }
+                  }
+                  .react-date-picker__calendar {
+                    z-index: 3;
+                  }
+                }
+                ////////////////////////////////// react-date-picker /////////////////////////////////////////////
+                .react-date-picker__calendar {
+                  margin-top: 7px;
+                  width: 260px;
+                  .react-calendar::before {
+                    content: "";
+                    background: url("../../../../assets/icons/15-10-2019/Path 184.svg");
+                    background-position: center;
+                    position: absolute;
+                    background-size: cover;
+                    height: 20px;
+                    width: 20px;
+                    top: -11px;
+                    -webkit-transform: rotate(-54deg);
+                    transform: rotate(-65deg);
+                    left: 20px;
+                  }
+                  .react-calendar {
+                    border: 0;
+                    border-radius: 15px;
+                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+                    .react-calendar__navigation {
+                      align-items: center;
+                      margin: 0;
+      
+                      .react-calendar__navigation__arrow {
+                        min-width: 26px;
+                        width: 26px;
+                        height: 20px;
+                      }
+                      .react-calendar__navigation__label {
+                        color: rgba(78, 88, 169, 0.5);
+                        font-weight: 700;
+                      }
+                    }
+                    .react-calendar__viewContainer {
+                      .react-calendar__month-view {
+                        div {
+                          div {
+                            .react-calendar__month-view__weekdays {
+                              .react-calendar__month-view__weekdays__weekday {
+                                abbr {
+                                  text-decoration: none;
+                                }
+                              }
+                            }
+                            .react-calendar__month-view__days {
+                            }
+                          }
+                        }
+                      }
+                    }
+      
+                    .react-calendar__tile {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      padding: 10px 0;
+                      // flex-basis: 12.2857% !important;
+                    }
+                    .react-calendar__tile--active {
+                      border-radius: 100px;
+                      background: #a3aad1;
+                    }
+                  }
+                }
+                ////////////////////////////////// react-date-picker /////////////////////////////////////////////
+              }
+      
+              .ET-custome-button {
+                box-shadow: none;
+                background: 0;
+                border-radius: 10px !important;
+                margin-left: 2%;
+                width: 100%;
+                height: 100%;
+                border: 1px solid #d0cfec;
+                background: rgba(78, 88, 169, 0.05);
+                padding: 6% 10%;
+                margin-right: 7px;
+                .MuiButton-label {
+                  white-space: nowrap;
+                }
+                span {
+                  color: $color-thickGray;
+                  font-family: helveticaNeueLight;
+                  font-weight: 300 !important;
+                  text-transform: capitalize;
+                }
+              }
+              .ET-time-btn {
+                width: 100% !important;
+              }
+      
+              .ET-time-setter {
+                position: relative;
+                width: 50%;
+              }
+            }
+            #to {
+              margin: 0 5px;
+              font-size: 1.2rem;
+            }
+      
+            .ET-all-day {
+                margin: 0 1% 0 1%;
+                width: 10%;
+                display: flex;
+                justify-content: center;
+              .ET-all-day-checkbox {
+                padding: 0;
+                margin-left: 5%;
+                width: 20px;
+                span {
+                  color: #4e58a9 !important;
+                  svg {
+                    width: 20px;
+                  }
+                }
+              }
+              .Mui-checked {
+                color: #4e58a9 !important;
+              }
+              span {
+                margin-left: 3px;
+                margin-top: -1px;
+                color: $color-thickGray;
+                font-family: helveticaNeueCondensedBold;
+              }
+            }
+      
+            .DNR-dropdown-container {
+              cursor: pointer;
+              width: 10.2vw;
+              height: 100%;
+              position: relative;
+              transition: 0.5s;
+              box-sizing: border-box;
+              .DNR-custome-non-library-dropdown {
+                position: relative;
+                border: 1px dashed #d0cfec;
+                height: 100%;
+                width: 100%;
+                background: #ffffff;
+                border-radius: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 10px;
+                z-index: 10;
+                padding: 0 10%;
+                box-sizing: border-box;
+                .DNR-selected-item-container {
+                  width: 100%;
+                  white-space: nowrap;
+                  text-align: left;
+                }
+      
+                img {
+                  width: 15px;
+                  height: 15px;
+                  cursor: pointer;
+                }
+              }
+              .DNR-custome-dropdown-menu-container {
+                position: absolute;
+                border-radius: 20px 20px 15px 15px;
+                top: 0px;
+                left: 0;
+                width: 99%;
+                background: $elementsBgColor;
+                box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                z-index: 9 !important;
+                transition: 0.3s;
+                // .assign-to-list-container {}
+                ul {
+                  li {
+                    cursor: pointer;
+                    padding: 2px 5px;
+                    border-radius: 11px;
+                  }
+                  li:hover {
+                    background: #f9f9f9;
+                  }
+                }
+              }
+            }
+            .DNR-custome-open-dropdown {
+              // height: 170px;
+              box-sizing: border-box;
+              overflow: hidden;
+              transition: 0.5s;
+              padding: 37px 12px 0 12px !important;
+              background: #f9f9f9;
+            }
+            .DNR-custome-close-dropdown {
+              padding: 0 12px 0 12px !important;
+              height: 0;
+              transition: 0.5s;
+              overflow: hidden;
+              box-sizing: border-box;
+            }
+          }
+      
+          // .custome-button-dashed {
+          //   border: $lightGrayDashedBorder;
+          // }
+          // .custome-button-active {
+          //   background: $color-lightPurple;
+          //   border: 1px dashed transparent;
+          //   color: $color-strongPurple;
+          // }
+          .set-your-goal-section {
+            @extend %d-flex;
+      
+            // div {
+            //   width: 50%;
+            // }
+            .left-section {
+              width: 50%;
+              span:nth-child(1) {
+                @extend %subHeading;
+              }
+              .left-section-content {
+                margin-top: 10px;
+                width: 100%;
+                @extend %d-flex-align-center;
+      
+                span {
+                  margin-left: 10px;
+                  font-size: 1.2rem;
+                  font-family: "helveticaNeueCondensedBold";
+                  font-weight: 300;
+                  color: $color-lightGray;
+                }
+              }
+              .number-times-perday {
+                @extend %d-flex;
+                border-radius: $borderRadius;
+                height: 40px;
+                width: 150px;
+                border: 1px solid $color-lightPurple;
+                div {
+                  @extend %d-flex-align-justify-center;
+                  cursor: pointer;
+                  width: 50%;
+                }
+                div:nth-child(2) {
+                  border-left: 1px solid $color-lightPurple;
+                  border-right: 1px solid $color-lightPurple;
+                  @extend %subHeading;
+                }
+              }
+              span:nth-child(2) {
+              }
+            }
+            .right-section {
+              width: 50%;
+              span:nth-child(1) {
+                @extend %subHeading;
+              }
+              .right-section-content {
+                @extend %d-flex-align-center;
+                width: 100%;
+                .timer-section {
+                  cursor: pointer;
+                  position: relative;
+                  margin-top: 13px;
+                  @extend %d-flex-align-justify-center;
+                  height: 35px;
+                  width: 100px;
+                  border-radius: 12px;
+                  border: 1px solid $color-lightPurple;
+                  font-size: 0.9rem;
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+          .goals-on-which-days-section {
+            margin-top: 10px;
+            @extend %d-flex-align-center-space-btwn;
+            span {
+              @extend %subHeading;
+            }
+      
+            .days-button-container {
+              @extend %d-flex-align-center;
+              width: 65%;
+              .day-button {
+                @include heighWidth(50px, 50px);
+                @extend %d-flex-align-justify-center;
+                margin-right: 10px;
+                border-radius: $borderRadius;
+                color: $color-strongPurple;
+                cursor: pointer;
+              }
+              .non-active-day-button {
+                border: 1px solid $color-lightPurple;
+              }
+              .active-day-button {
+                background: $color-lightPurple;
+                border: 1px solid transparent;
+              }
+            }
+          }
+          .location-tags-notes-section {
+            @extend %d-flex-align-center;
+            margin: 10px 0;
+      
+            .left-section {
+              width: 50%;
+      
+              .create-habit-location {
+                width: 95%;
+                height: 50px;
+                border-radius: $borderRadius;
+                @extend %d-flex-align-center;
+                padding: 0 15px;
+                margin: 0 0;
+                border: $lightGraySolidBorder;
+                .MuiFormControl-root {
+                  margin: 7px 0 0 13px;
+                  .MuiInputBase-root {
+                    color: $color-thickGray;
+                    font-size: 1.2rem;
+                  }
+                  label {
+                    color: $color-thickGray;
+                    font-size: 1.2rem;
+                  }
+                  .MuiInputLabel-formControl {
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                    transform: translate(0, 5px) scale(1);
+                  }
+                  .MuiInputLabel-animated {
+                    transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms,
+                      transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+                  }
+                  .MuiInputBase-root {
+                    margin: 0%;
+                  }
+                  .MuiInput-underline:before,
+                  .MuiInput-underline:after {
+                    border: 0;
+                  }
+                }
+              }
+      
+              .multi-select-dropdown-menu {
+                border-radius: $borderRadius;
+                border: $lightGraySolidBorder;
+                width: 95%;
+                margin: 10px 0 0 0;
+                label {
+                  background: $color-white;
+                  display: flex;
+                  img {
+                    height: 20px;
+                  }
+                  span {
+                    margin: 0 2px 0 5px;
+                    align-self: flex-end;
+                    font-size: 1.2rem;
+                  }
+                  i {
+                    font-size: 0.5rem;
+                    margin-left: 5px;
+                    color: $color-red;
+                  }
+                }
+                @extend %multi-select-custom;
+                .MuiInputBase-root {
+                  margin: 0;
+                  height: 50px;
+                  svg {
+                    top: calc(50% - 10px);
+                    color: rgba(0, 0, 0, 0.54);
+                    right: 10px;
+                    position: absolute;
+                    pointer-events: none;
+                    @include placeholder(
+                      url("../../../../assets/create-habit/Group 11382.svg"),
+                      center,
+                      no-repeat,
+                      contain
+                    );
+                  }
+                }
+              }
+            }
+            .right-section {
+              width: 50%;
+              @extend %d-flex-align-center;
+              textarea {
+                height: 120px !important;
+                width: 95%;
+                padding: 10px;
+                margin: auto;
+                border: $lightGraySolidBorder;
+                border-radius: 15px;
+              }
+            }
+          }
+          .ET-text-area {
+            width: 100%;
+            height: 12.1vh;
+            margin: 0vh 0% 2.8vh 0%;
+            @extend %d-flex-align-center;
+            textarea {
+              font-family: helveticaNeueLight;
+              font-size: rem(18px);
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.18;
+              letter-spacing: normal;
+              text-align: left;
+              color: #656565;
+              height: 100% !important;
+              width: 100%;
+              padding: 1% 0% 0% 2%;
+              border: $lightGraySolidBorder;
+              border-radius: 15px;
+            }
+            :focus {
+              outline: none;
+            }
+          }
+          .CT-estimated-time {
+            margin-left: 3%;
+            @extend %d-flex-align-center;
+            padding: 0 10px;
+            width: 47%;
+            border-radius: 100px;
+            border: 1px dashed #d0cfec;
+            #estimatedTimeIcon {
+              margin: 0 2%;
+            }
+            .MuiFormControl-root {
+              margin: 0;
+              width: 100%;
+              .MuiInputBase-root {
+                .PrivateNotchedOutline-root-83 {
+                  border: none !important;
+                }
+                .MuiOutlinedInput-input {
+                  border: 0;
+                }
+                input {
+                  outline: none;
+                  @extend %dropdownStyle;
+                  // max-height: 44px;
+                  padding: 0;
+                }
+                input:focus {
+                  outline: none;
+                }
+                fieldset {
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+        // .flex-container.leftdfullsection {
+        //   float: left;
+        //   width: 100%;
+        // }
+      
+        .CT-assignTo-dropdown-container,
+        .CT-estimated-time {
+          width: 49%;
+          height: 100%;
+          float: left !important;
+          position: relative;
+        }
+      
+        .edit-task-sub-section {
+          width: 30%;
+          
+        }
+      
+        .share-through-email-section {
+          width: 100%;
+          margin: 10% auto;
+          .sharethecheckbox {
+            margin: 0% 0% 2% 0%;
+          }
+          div:nth-child(1) {
+            @extend %d-flex-align-center;
+            span:nth-child(1) {
+              @extend %subHeading;
+            }
+          }
+          span {
+            font-size: rem(22px);
+            font-family: "helveticaNeueLight";
+            margin-left: 1%;
+          }
+          .share-through-email-checkbox {
+            padding: 0;
+            margin-left: 5px;
+            width: 20px;
+            span {
+              svg {
+                width: 20px;
+              }
+            }
+          }
+      
+          .createTaskEmailDrawer {
+            width: 100%;
+            cursor: pointer;
+            .menu-container {
+              width: 100%;
+              height: 100%;
+              position: relative;
+              margin: auto;
+              transition: 0.5s;
+              .create-ticket-email {
+                width: 100%;
+                position: relative;
+                border: 1px solid $color-lightGray;
+                background: $color-white;
+                border-radius: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                z-index: 1000;
+                padding: 0 6%;
+                box-sizing: border-box;
+                .selected-item-container {
+                  width: 85%;
+                  display: flex;
+                  align-items: center;
+                  overflow-x: auto;
+                  @extend %dropdownStyle;
+                  box-sizing: border-box;
+      
+                  .CT-selected-item-template {
+                    @extend %d-flex-align-center;
+                    border-radius: 100px;
+                    margin-right: 2%;
+                    padding: 1px 6px;
+                    background: #ecedf5;
+                    height: 30px;
+                    #avathar-img {
+                      width: 30px;
+                      height: 30px;
+                      border-radius: 100px;
+                    }
+                    span {
+                      margin-left: 5px;
+                      white-space: nowrap;
+                    }
+                    #remove-img {
+                      width: 15px;
+                      height: 15px;
+                      margin-left: auto;
+                    }
+                  }
+      
+                  .eml-text {
+                    font-size: rem(22px);
+                    color: $color-thickGray;
+                    font-weight: normal;
+                    width: 100%;
+                    white-space: nowrap;
+                    margin-right: 5px;
+                    padding-top: 4px;
+                    padding-left: 8px;
+                    border-radius: 5px;
+                  }
+      
+                  // img {
+                  //     width: 7%;
+                  //     margin-right: 4%;
+                  // }
+                }
+                .email-drp-dwn-img {
+                  display: flex;
+                  justify-content: center;
+                  border-radius: 50%;
+                  height: 50%;
+                  img {
+                    width: 12px;
+                  }
+                }
+              }
+              .open-dropdown {
+                height: 200px;
+                overflow: auto;
+                padding-top: 9vh;
+                transition: 0.5s;
+              }
+              .dropdown-menu-container {
+                position: absolute;
+                border-radius: 20px 20px 5px 5px;
+                top: 2.4vh;
+                left: 0;
+                width: 100%;
+                background: $color-white;
+                box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                z-index: 1 !important;
+                transition: 0.5s;
+                overflow: hidden;
+                .MuiButtonBase-root {
+                  width: 90% !important;
+                  background-color: transparent !important;
+                  box-shadow: none !important;
+                  border-radius: 25px;
+                  height: 40px;
+                  min-height: 40px;
+                  padding: 0px !important;
+                  min-height: 30px !important;
+                }
+              }
+              .emailListCustomScroll {
+                width: 98% !important;
+                .customized-ticket-source {
+                  margin: 10px auto;
+                  .create-ticket-one-email {
+                    img {
+                      border-radius: 100px;
+                      height: 40px;
+                      width: 40px;
+                    }
+                  }
+                }
+      
+                .emailSelectCheckBox {
+                  padding: 0;
+                  margin-left: 5px;
+                  width: 20px !important;
+                  span {
+                    svg {
+                      width: 20px;
+                    }
+                  }
+                }
+                div {
+                  display: block;
+                }
+              }
+            }
+          }
+      
+        }
+      
+        .create-habit-customised-dropdown-menu {
+          border: $lightGraySolidBorder;
+          border-radius: $borderRadius;
+          margin-bottom: 20px;
+          height:6.5vh;
+          label {
+            background: $color-white;
+            display: flex;
+          }
+          .MuiInputLabel-outlined {
+            transform: translate(46px, 20px) scale(1);
+          }
+          .MuiInputLabel-outlined.MuiInputLabel-shrink {
+            transform: translate(14px, -6px) scale(0.75);
+          }
+          div {
+            @extend %d-flex-align-center;
+      
+            img {
+              @include heighWidth(17px, 30px);
+              margin-left: 10px;
+              border-radius: $borderRadius;
+            }
+      
+            .MuiInputBase-root {
+              border-radius: 0 100px 100px 0 !important;
+              width: 88%;
+              margin-left: auto;
+              .MuiSelect-root {
+                padding: 18.5px 0;
+                background: none;
+              }
+            }
+            fieldset {
+              border: 0;
+            }
+          }
+      
+          width: 100%;
+          fieldset {
+            border: $lightGraySolidBorder;
+            border-radius: $borderRadius;
+          }
+        }
+      }
+}
+
+// .edit-tsk-mddl-sctn {
+//     width: 85%;
+//     margin: auto;
+//     height: 100%;
+//   }
+//   .edit-tsk-bdy-cmpnt {
+//     width: 100%;
+//     height: 87.3%;
+//     display: flex;
+//     justify-content: space-between;
+//   }
+
+//   .edit-flex-container{
+//     width: 100%;
+//     height: 6.5vh;
+//     display: flex;
+//     justify-content: space-between;
+//     margin: 0vh 0% 2.8vh 0%;
+//     .CT-assignTo-dropdown-container{
+//         width: 49%;
+//         height: 100%;
+//         float: left !important;
+//         position: relative;
+//         margin: 0;
+//         -webkit-transition: 0.5s;
+//         transition: 0.5s;
+//         .CT-assignTo-non-library-dropdown{
+//             height : 100%;
+//             position: relative;
+//             box-sizing: border-box;
+//             padding: 0 4%;
+//             cursor: pointer;
+//             border: 1px dashed #d0cfec;
+//             background: #ffffff;
+//             border-radius: 100px;
+//             display: flex;
+//             align-items: center;
+//             justify-content: space-between;
+//             z-index: 20;
+//             width: 98%;
+//         }
+//         .CT-assignTo-custome-dropdown-menu-container{
+//             height: 35vh;
+//             width: 97.5%;
+//             overflow-y: scroll;
+//             -webkit-transition: 0.3s;
+//             transition: 0.3s;
+//             padding: 48px 12px 0 12px !important;
+//             position: absolute;
+//             border-radius: 20px 20px 15px 15px;
+//             top: 10px;
+//             left: 0;
+//             width: 98%;
+//             background: #ffffff;
+//             box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+//             z-index: 19 !important;
+//             -webkit-transition: 0.5s;
+//             transition: 0.5s;
+//             box-sizing: border-box;
+//         }
+//         .CT-assignTo-custome-open-dropdown {
+//             height: 35vh;
+//             width: 97.5%;
+//             overflow-y: scroll;
+//             transition: 0.3s;
+//             padding: 48px 12px 0 12px !important;
+//           }
+//           .CT-assignTo-custome-close-dropdown {
+//             padding: 0 12px 0 12px !important;
+//             height: 0;
+//             transition: 0.3s;
+//             overflow: hidden;
+//           }
+//       }
+//   }
+
+
+
+//   .edit-task-footer-section{
+//       display:flex;
+//       justify-content: space-around;
+//     //   height: 6%;
+//       border-top:1px solid $color-lightGray;
+//       .saveforlatertext{
+//           width: 70%;
+//           margin-top:2.9vh;
+//           display: flex;
+//           align-items: center;
+//       }
+//       .ch-submit-button{
+//         margin-top:2.9vh; 
+//         width: 20.8%;
+//         height: 6.5vh;
+//         background-color: $color-green;
+//         border-radius: 100px;
+//         font-size: rem(22px); 
+//         color: $color-white;  
+//         .MuiButton-label{
+//             font-family: helveticaNeueMedium!important;
+//         }
+//       }
+//       .ch-submit-button:hover{
+//         background-color: $color-green;
+//         color: $color-white;
+//       }
+//   }
+
+//   .ET-menu-container {
+//     width: 49%;
+//     height: 100%;
+//     position: relative;
+//     cursor: pointer;
+//     transition: 0.5s;
+//     .edit-field-z-index{
+//         z-index: 18;
+//     }
+//     .CT-priority-container {
+//       width: 100%;
+//       height: 100%;
+//       position: relative;
+//       border: 1px solid #d0cfec;
+//       background: $color-white;
+//       border-radius: 100px;
+//       display: flex;
+//       box-sizing: border-box;
+//       padding: 0 3%;
+//       @extend %dropdownStyle;
+//       align-items: center;
+//       justify-content: space-around;
+//       z-index: 17!important;
+//       .CT-selected-item-container {
+//         width: 85%;
+//         height: 100%;
+//         display: flex;
+//         align-items: center;
+//         p {
+//           padding-top: 5px;
+//           color: $color-thickGray;
+//           padding-left: 7px;
+//           font-size: rem(21px);
+//         }
+//       }
+//       .CT-priority-drp-dwn-img {
+//         width: 6%;
+//         display: flex;
+//         justify-content: center;
+//         // border: 1px dashed $color-violet;
+//         border-radius: 50%;
+//         height: 50%;
+//         img {
+//           width: 20px;
+//         }
+//       }
+//     }
+//     .tag-open-dropdown {
+//       height: 250px;
+//       overflow: auto;
+//       padding-top: 40px;
+//       transition: 0.5s;
+//     }
+//     .tag-dropdown-menu-container {
+//       position: absolute;
+//       border-radius: 20px 20px 5px 5px;
+//       top: 10px;
+//       left: 0;
+//       width: 100%;
+//       background: $color-white;
+//       box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+//       transition: 0.5s;
+//       overflow: hidden;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-evenly;
+//       .MuiButtonBase-root {
+//         width: 90% !important;
+//         margin: 0 auto !important;
+//         background-color: transparent !important;
+//         box-shadow: none !important;
+//         border-radius: 25px;
+//         height: 40px;
+//         min-height: 40px;
+//         padding: 0px !important;
+//         min-height: 30px !important;
+//         // margin: 1% auto;
+//       }
+//       .MuiButtonBase-root {
+//         width: 95% !important;
+//         margin: 0 auto !important;
+//         background-color: transparent !important;
+//         box-shadow: none !important;
+//         border-radius: 25px;
+//         height: 30px;
+//         min-height: 40px;
+//         padding: 0px !important;
+//         min-height: 30px !important;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         // margin: 1% auto;
+//       }
+//       .create-task-drawer-color-picker {
+//         width: 88%;
+//         border: 1px solid $color-lightGray;
+//         margin: 2% auto;
+//         border-radius: 100px;
+//         width: 100%;
+//         align-items: center !important;
+//         .create-ticket-src-radio {
+//           width: 10%;
+//         }
+//         .create-ticket-prio-img-text {
+//           width: 90%;
+  
+//           img {
+//             margin-left: 3%;
+//             display: flex;
+//             align-items: center;
+//             width: 10px;
+//           }
+//           p {
+//             font-size: 21px;
+//             font-weight: normal;
+//             font-stretch: normal;
+//             font-style: normal;
+//             line-height: 1.14;
+//             letter-spacing: normal;
+//             text-align: left;
+//             color: #656565;
+//             margin-bottom: 0px !important;
+//             margin-left: 2%;
+//             display: flex;
+//             align-items: center;
+//             font-family: helveticaNeueLight;
+//           }
+//         }
+//         .task-circle-color-picker {
+//           width: 90%;
+//           margin-left: 10px;
+//         }
+//       }
+//     }
+  
+//     .custom-scroll {
+//       width: 98% !important;
+//     }
+//     .CT-priority-dropdown-menu-container {
+//         position: absolute;
+//         border-radius: 20px 20px 5px 5px;
+//         top: 10px;
+//         left: 0;
+//         width: 100%;
+//         background: $color-white;
+//         box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+//         // z-index: 997 !important;
+//         transition: 0.5s;
+//         overflow: hidden;
+//         .MuiButtonBase-root {
+//           width: 90% !important;
+//           margin: 0 auto !important;
+//           background-color: transparent !important;
+//           box-shadow: none !important;
+//           border-radius: 25px;
+//           height: 40px;
+//           min-height: 40px;
+//           padding: 0px !important;
+//           min-height: 30px !important;
+//           // margin: 1% auto;
+//         }
+//         .create-ticket-one-priority {
+//           height: 35px;
+//           margin-top: 0%;
+//           align-items: center;
+//           border-radius: 100px;
+//           width: 100%;
+//           align-items: center !important;
+//           .create-ticket-src-radio {
+//             width: 10%;
+//           }
+//           .create-ticket-prio-img-text {
+//             width: 90%;
+    
+//             img {
+//               margin-left: 3%;
+//               display: flex;
+//               align-items: center;
+//               width: 10px;
+//             }
+//             p {
+//               margin-bottom: 0px !important;
+//               margin-left: 2%;
+//               display: flex;
+//               align-items: center;
+//               font-size: 15px;
+//               font-weight: normal;
+//               font-stretch: normal;
+//               font-style: normal;
+//               line-height: 1.14;
+//               letter-spacing: normal;
+//               text-align: left;
+//               color: #656565;
+//               font-family: "helveticaNeueLight";
+//             }
+//           }
+//         }
+//       }
+//       .dropdown-z-index {
+//         z-index: 16 !important;
+//       }
+//       .close-dropdown {
+//         height: 0;
+//         transition: 0.5s;
+//         overflow: hidden;
+//       }
+//       .CT-priority-open-dropdown {
+//         height: 210px;
+//         overflow: auto;
+//         padding-top: 40px;
+//         transition: 0.5s;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-evenly;
+//       }
+//   }
+  
+//   .ET-drawer-tags {
+//     width: 49%;
+//     height: 100%;
+//     cursor: pointer;
+//     .menu-container {
+//       width: 100%;
+//       height: 100%;
+//       position: relative;
+//       margin: auto;
+//       transition: 0.5s;
+//       .tags-container {
+//           height:100%;
+//         padding: 0 3%;
+//         position: relative;
+//         border: 1px solid #d0cfec;
+//         background: $color-white;
+//         border-radius: 100px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-around;
+//         .selected-item-container {
+//           width: 85%;
+//           height: 100%;
+//           display: flex;
+//           align-items: center;
+//           @extend %dropdownStyle;
+//           p {
+//             margin-left: 2%;
+//             font-size: 18px;
+//             font-weight: normal;
+//             font-stretch: normal;
+//             font-style: normal;
+//             line-height: 1.17;
+//             letter-spacing: normal;
+//             text-align: left;
+//             color: #656565;
+//             display: block;
+//             display: flex;
+//             align-items: center;
+//             padding: 7px;
+//             border-radius: 5px;
+//             .removeTagIcon {
+//               margin: 0 4px;
+//             }
+//           }
+//           .selectedTag {
+//             text-transform: capitalize;
+//             margin: 0 2px;
+//             background: #b4e0ff;
+//           }
+//         }
+//         .tag-drp-dwn-img {
+//           width: 6%;
+//           margin-right: 1%;
+//           display: flex;
+//           justify-content: center;
+//           border-radius: 50%;
+//           height: 50%;
+//           img {
+//             height: 4vh;
+//           }
+//         }
+//       }
+//       .tag-open-dropdown {
+//         height: 250px;
+//         overflow: auto;
+//         padding-top: 7vh;
+//         transition: 0.5s;
+//       }
+//       .tag-dropdown-menu-container {
+//         position: absolute;
+//         border-radius: 20px 20px 5px 5px;
+//         top: 0px;
+//         left: 0;
+//         width: 100%;
+//         background: $color-white;
+//         box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+//         transition: 0.5s;
+//         overflow: hidden;
+  
+//         .create-ticket-search-tag {
+//           width: 90%;
+//           margin: auto;
+//           height: 25px;
+//           justify-content: space-between;
+//           .MuiInputBase-root {
+//             width: 90%;
+//             border: 1px solid $color-lightGray;
+//             border-radius: 100px;
+//             .MuiInputBase-input {
+//               padding: 6px 10px 7px;
+//               color: $color-thickGray;
+//             }
+//           }
+//           img {
+//             width: 6%;
+//           }
+//         }
+//         .MuiButtonBase-root {
+//           width: 95% !important;
+//           margin: 0 auto !important;
+//           background-color: transparent !important;
+//           box-shadow: none !important;
+//           border-radius: 25px;
+//           height: 30px;
+//           min-height: 40px;
+//           padding: 0px !important;
+//           min-height: 30px !important;
+//           display: flex;
+//           align-items: center;
+//           justify-content: center;
+//           // margin: 1% auto;
+//         }
+//         .create-task-drawer-color-picker {
+//           width: 90%;
+//           border: 1px solid $color-lightGray;
+//           margin: 2% auto;
+//           border-radius: 100px;
+//           height: 25px;
+//           justify-content: center;
+//           align-items: center;
+//           img {
+//             height: 3.5vh;
+//             margin-left: 5px;
+//           }
+//           .task-circle-color-picker {
+//             width: 90%;
+//             margin-left: 10px;
+//             .circle-picker {
+//               margin: 0 !important;
+//               display: flex;
+//               justify-content: space-evenly;
+//               span {
+//                 div {
+//                   margin: 0 !important;
+//                   height: 3.1vh !important;
+//                   width: 3.1vh !important;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+  
+//       .tagcustomScroll {
+//         width: 98% !important;
+//         border: 1px solid red;
+//         height: 20px;
+//       }
+//     }
+//   }
+
+//   /***************************************Select link to existing **************************************/
+// .edit-tsk-link-to-exist-dropdown-container {
+//     width: 49%;
+//     height: 100%;
+//     position: relative;
+//     margin: 0;
+//     transition: 0.5s;
+//     cursor: pointer;
+//     .LTE-non-library-dropdown {
+//         height: 100%;
+//       position: relative;
+//       border: 1px dashed #d0cfec;
+//       background: $elementsBgColor;
+//       border-radius: 100px;
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       padding: 0 10px;
+//       width: 100%;
+//       box-sizing: border-box;
+//       @extend %dropdownStyle;
+//       .LTE-selected-item-container {
+//         width: 95%;
+//         display: flex;
+//         align-items: center;
+//         .link-to-selected-template {
+//           @extend %d-flex-align-center;
+//           border-radius: 100px;
+//           margin-right: 2%;
+//           padding: 1px 6px;
+//           img {
+//             width: 18px;
+//             height: 18px;
+//             margin-right: 5px;
+//           }
+//           span {
+//             margin-top: 5px;
+//             margin-left: 5px;
+//             white-space: nowrap;
+//             span {
+//               color: #7ac9ff;
+//             }
+//           }
+//         }
+//       }
+//       .LTE-drop-toggler {
+//         height: 8px;
+//         margin: 0 2%;
+//       }
+//     }
+//     .LTE-custome-dropdown-menu-container {
+//       position: absolute;
+//       border-radius: 20px 20px 15px 15px;
+//       bottom: 10px;
+//       left: 0;
+//       width: 97%;
+//       background: $elementsBgColor;
+//       box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+//       transition: 0.5s;
+//       .LTE-list-container {
+//         overflow: auto;
+//         height: 122px;
+//         .LTE-item {
+//           padding: 5px 0;
+//           border-radius: 15px;
+//           .LTE-item-avatar {
+//             margin: 5px 0;
+//             @extend %d-flex-align-center;
+//             border-radius: 7px;
+//             .link-to-icon {
+//               height: 17px;
+//               width: 17px;
+//               margin-right: 5px;
+//             }
+//             span {
+//               margin: 0 0 0 5px;
+//             }
+//             .LTE-item-checkbox {
+//               padding: 0;
+//               margin-left: auto;
+//               margin-right: 8px;
+//               width: 20px;
+//               span {
+//                 color: #4e58a9 !important;
+//                 svg {
+//                   width: 20px;
+//                 }
+//               }
+//               .Mui-checked {
+//                 color: #4e58a9 !important;
+//               }
+//             }
+//             .MuiIconButton-colorSecondary:hover {
+//               background: transparent;
+//             }
+//           }
+//         }
+//         .LTE-item:hover {
+//           background: #f9f9f9;
+//           cursor: pointer;
+//         }
+//       }
+//     }
+//     .LTE-custome-open-dropdown {
+//       height: 180px;
+//       overflow: hidden;
+//       transition: 0.3s;
+//       padding: 10px 12px 0 12px !important;
+//       width: 100%;
+//       box-sizing: border-box;
+//     }
+//     .LTE-custome-close-dropdown {
+//       padding: 0 12px 0 12px !important;
+//       height: 0;
+//       transition: 0.3s;
+//       overflow: hidden;
+//       box-sizing: border-box;
+//     }
+//   }
+
+//   .edit-tsk-link-to-record-dropdown-container {
+//     width: 49%;
+//     position: relative;
+//     margin: 0;
+//     transition: 0.5s;
+//     height: 100%;
+//     .LTR-non-library-dropdown {
+//         height: 100%;
+//       position: relative;
+//       cursor: pointer;
+//       border: 1px dashed #d0cfec;
+//       background: $elementsBgColor;
+//       border-radius: 100px;
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       @extend %dropdownStyle;
+//       width: 100%;
+//       padding: 0 4%;
+//       box-sizing: border-box;
+//       .LTR-selected-item-container {
+//         width: 95%;
+//         height: 100%;
+//         display: flex;
+//         align-items: center;
+  
+//         .link-to-related-selected-template {
+//           @extend %d-flex-align-center;
+//           border-radius: 100px;
+//           margin-right: 2%;
+//           padding: 1px 6px;
+//           overflow-x: auto;
+//           img {
+//             width: 18px;
+//             height: 18px;
+//             margin-right: 5px;
+//           }
+//           span {
+//             margin-top: 5px;
+//             margin-left: 5px;
+//             white-space: nowrap;
+//             span {
+//               color: #7ac9ff;
+//             }
+//           }
+//         }
+//       }
+//       .LTR-drop-toggler {
+//         height: 8px;
+//         margin: 0 2%;
+//       }
+//     }
+//     .LTR-custome-dropdown-menu-container {
+//       position: absolute;
+//       border-radius: 20px 20px 15px 15px;
+//       bottom: 10px;
+//       left: 0;
+//       width: 100%;
+//       background: $elementsBgColor;
+//       box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+//       transition: 0.5s;
+//       .LTR-list-container {
+//         overflow: auto;
+//         height: 122px;
+//         .LTR-item {
+//           padding: 5px 0;
+//           border-radius: 15px;
+//           .LTR-item-avatar {
+//             margin: 5px 0;
+//             @extend %d-flex-align-center;
+//             border-radius: 7px;
+//             .link-to-icon {
+//               height: 17px;
+//               width: 17px;
+//               margin-right: 5px;
+//             }
+//             span {
+//               margin: 0 0 0 5px;
+//             }
+//             .LTR-item-checkbox {
+//               padding: 0;
+//               margin-left: auto;
+//               margin-right: 8px;
+//               width: 20px;
+//               span {
+//                 color: #4e58a9 !important;
+//                 svg {
+//                   width: 20px;
+//                 }
+//               }
+//               .Mui-checked {
+//                 color: #4e58a9 !important;
+//               }
+//             }
+//             .MuiIconButton-colorSecondary:hover {
+//               background: transparent;
+//             }
+//           }
+//         }
+//         .LTR-item:hover {
+//           background: #f9f9f9;
+//           cursor: pointer;
+//         }
+//       }
+//     }
+//     .LTR-custome-open-dropdown {
+//       height: 180px;
+//       overflow: hidden;
+//       transition: 0.3s;
+//       padding: 10px 12px 0 12px !important;
+//       width: 100%;
+//       box-sizing: border-box;
+//     }
+//     .LTR-custome-close-dropdown {
+//       padding: 0 12px 0 12px !important;
+//       height: 0;
+//       transition: 0.3s;
+//       overflow: hidden;
+//       box-sizing: border-box;
+//     }
+//   }
+
+//   .edit-task-attachment {
+//     width: 100%;
+//     margin: 5% auto;
+//     .file-attach-button {
+//       @include heighWidth(30px, 10px);
+//       background: url("../../../../assets/create-habit/Group 11382.svg");
+//       background-repeat: no-repeat;
+//       background-size: contain;
+//       background-position: center;
+//       cursor: pointer;
+//     }
+//     span:nth-child(1) {
+//       @extend %subHeading;
+//     }
+
+//     .ET-attached-files-container {
+//       border: $lightGrayDashedBorder;
+//       height: 10.4vh;
+//       overflow: auto;
+//       display: flex;
+//       flex-wrap: wrap;
+//       border-radius: 10px;
+//       align-items: center;
+//       .attached-file-template {
+//         width: 100px;
+//         height: 75px;
+//         margin: 5px;
+//         border-radius: 10px;
+//         position: relative;
+//         .attached-file-remove {
+//           cursor: pointer;
+//           height: 15px;
+//           width: 15px;
+//           position: absolute;
+//           right: 0;
+//           top: -5px;
+//           border: 1px solid white;
+//         }
+//         img {
+//           width: 100%;
+//           height: 100%;
+//           border-radius: 10px;
+//         }
+//       }
+
+
+//       .edit-tsk-file-upload-field {
+//         border: 1px dashed $color-lightGray;
+//         border-radius: 10px;
+//         height: 100%;
+
+//         box-sizing: border-box;
+//         .edit-tsk-file-attach-button {
+//           height: 100%;
+//           background: url("../../../../assets/create-habit/Group 11382.svg");
+//           background-repeat: no-repeat;
+//           background-size: 25px 25px;
+//           background-position: 50% 20%;
+//           padding: 0px !important;
+//           cursor: pointer;
+//           position: relative;
+//           width: 100%;
+//           min-width: 100%;
+
+//           .MuiButton-label {
+//             width: 100%;
+//             display: flex !important;
+//             align-items: center !important;
+//             justify-content: center !important;
+//             width: 100%;
+//             display: flex !important;
+//             align-items: center !important;
+//             justify-content: center !important;
+//             max-height: 10%;
+//             padding: 3.5vh 0;
+//             box-sizing: border-box;
+
+//             .drag-attach-text {
+//               font-display: 0.9rem;
+//               color: $color-lightGray;
+//               font-weight: 300;
+//               font-stretch: normal;
+//               font-style: normal;
+//               line-height: 1.14;
+//               letter-spacing: normal;
+//               text-align: center;
+//               text-transform: none;
+//               position: absolute;
+//               margin-top: 17px;
+
+//               span {
+//                 color: $color-skyBlue;
+//               }
+//             }
+//           }
+//         }
+//       }
+//       .preButtonStyle {
+//         width: 100%;
+//         border: 0;
+//       }
+//       .postButtonStyle {
+//         width: 100px;
+//         border: 1px dashed #c8c8c8;
+//       }
+//       .align-center {
+//         align-items: center;
+//       }
+//       .space-equaly {
+//         justify-content: space-evenly;
+//       }
+//     }
+//   }

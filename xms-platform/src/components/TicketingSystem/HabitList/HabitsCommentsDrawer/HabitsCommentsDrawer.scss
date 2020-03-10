@@ -1,0 +1,135 @@
+@import '../../../../variables';
+
+
+.taskListingAttachement {
+    .tckt-lst-edit-drawer {
+        .MuiPaper-root {
+            width: 100%;
+            background: transparent;
+            .editdrawer {
+                height: 100%;
+                .drawer-full-width {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.tckt-lst-edit-drawer {
+    width: 100%;
+    .taskListingAttachmentContainer {
+        width: 50%;
+        overflow: auto;
+        .edit-tkt-sidebar-container {
+            height: 100%;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            .uploadButtonAndPreviewWrapper {
+                height: 83%;
+                padding: 0 15px;
+                .textAreaAndIconWrapper {
+                    border: 1px dashed#c8c8c8;
+                    box-sizing: border-box;
+                    border-radius: 15px;
+                    .tasksCommentsTextArea {
+                        border-radius: 15px;
+                        overflow: auto;
+                        min-height: 25%;
+                        max-height: 40%;
+                        width: 96%;
+                        border: 0;
+                        margin: 5px;
+                        font-size: 18px;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.33;
+                        letter-spacing: 0.36px;
+                        text-align: left;
+                        color: #c8c8c8;
+                    }:focus {
+                        outline: none;
+                    }
+                    .textAreaFooterIcons {
+                        display: flex;
+                        justify-content: space-around;
+                        margin: auto 10px 10px auto;
+                        width: 111px;
+                        height: 30px;
+                        border-radius: 20px;
+                        box-shadow: 0 2px 3px 0 rgba(68, 68, 68, 0.16);
+                        background-color: #f9f9f9;
+                    }
+                }
+            }
+            .AttachmentsCaption {
+                font-family: HelveticaNeue-MediumCond;
+                font-size: 1rem;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.13;
+                letter-spacing: 0.32px;
+                text-align: left;
+                color: #c8c8c8;
+                font-weight: normal;
+                    padding-left: 15px;
+            }
+
+
+
+
+            .edit-ticket-body-input-base-two {
+                width: 95%;
+                margin: 0 auto;
+                margin-top: 3%;
+                display: flex;
+                justify-content: space-around;
+            }
+            .sideDrawerFooter {
+                div {
+                    margin: 0 5%;
+                }
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin: auto;
+                padding: 14px 0;
+                box-shadow: -4px 0 30px 0 rgba(0, 0, 0, 0.09);
+                .update-button {
+                    margin: 0 5%;
+                    background-color: $color-green !important;
+                    border-radius: 41px !important;
+                    color: $color-white !important;
+                    text-transform: capitalize !important;
+                    width: 150px !important;
+                    .MuiButton-label {
+                        font-family: helveticaNeueMedium;
+                        font-size: 22px;
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #ffffff;
+                    }
+                }
+                .cancel-button {
+                    border-radius: 41px !important;
+                    text-transform: capitalize !important;
+                    border: 0 !important;
+                    width: 150px !important;
+                    .MuiButton-label {
+                        font-family: helveticaNeueMedium;
+                        font-size: 22px;
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #c8c8c8;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.118" height="25.111" viewBox="0 0 25.118 25.111">
+    <defs>
+        <style>
+            .cls-1{fill:#d0cfec}
+        </style>
+    </defs>
+    <path id="Icon_ionic-ios-close" d="M26.82 23.844l8.971-8.971a2.1 2.1 0 0 0-2.972-2.973l-8.971 8.971-8.972-8.971a2.1 2.1 0 1 0-2.976 2.973l8.971 8.971-8.971 8.971a2.1 2.1 0 0 0 2.973 2.973l8.971-8.971 8.971 8.971a2.1 2.1 0 0 0 2.973-2.973z" class="cls-1" data-name="Icon ionic-ios-close" transform="translate(-11.285 -11.289)"/>
+</svg>

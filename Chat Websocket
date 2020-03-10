@@ -1,0 +1,112 @@
+WIKI => https://en.wikipedia.org/wiki/WebSocket
+----
+==================================================================================================
+
+CHAT COMPLETE PROJECT:
+---- -------- -------
+https://itnext.io/building-a-node-js-websocket-chat-app-with-socket-io-and-react-473a0686d1e1
+
+1.chat using node => https://dev.to/spukas/learn-websockets-by-building-simple-chat-app-dee
+
+2.chat using node => https://davidtang.io/2019/06/22/building-a-simple-chat-application-with-web-sockets-in-node.html
+
+3.chat using node(1) => https://medium.com/@JoshiRabindra/real-time-chat-app-using-websockets-and-nodejs-a97f90eb5bed
+
+4.chat using node(2) => https://medium.com/@JoshiRabindra/real-time-chat-app-using-websockets-part-2-38a89382d930
+
+==================================================================================================
+1.What is WebSocket:
+  ---- -- ---------
+WebSocket is a communications protocol, providing full-duplex communication channels over a single TCP connection.
+
+FULL-DUPLEX
+---- ------
+allow both callers to speak and be heard at the same time, Modern cell phones are also full-duplex.
+
+TCP
+---
+TCP is connection-oriented, and a connection between client and server is established (passive open) before data can be sent. Three-way handshake (active open), retransmission, and error-detection adds to reliability but lengthens latency.
+
+OSI model by layer
+--- ----- -- -----
+7.  Application layer
+6.  Presentation layer
+5.  Session layer
+4.  Transport layer
+3.  Network layer
+2.  Data link layer
+1.  Physical layer
+
+To establish a WebSocket connection:
+-- --------- - --------- ----------
+To establish a WebSocket connection, the client sends a WebSocket handshake request, for which the server returns a WebSocket handshake response, as shown in the example below.
+
+Client request (just like in HTTP, each line ends with \r\n and there must be an extra blank line at the end):
+
+CLIENT REQ
+------ ---
+GET /chat HTTP/1.1
+Host: server.example.com
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Key: x3JJHMbDL1EzLkh9GBhXDw==
+Sec-WebSocket-Protocol: chat, superchat
+Sec-WebSocket-Version: 13
+Origin: http://example.com
+
+
+SERVER RES
+------ ---
+HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: HSmrc0sMlYUkAGmm5OPpG2HaGWk=
+Sec-WebSocket-Protocol: chat
+
+
+The handshake starts with an HTTP request/response, allowing servers to handle HTTP connections as well as WebSocket connections on the same port. Once the connection is established, communication switches to a bidirectional binary protocol which does not conform to the HTTP protocol.
+
+In addition to Upgrade headers, the client sends a Sec-WebSocket-Key header containing base64-encoded random bytes, and the server replies with a hash of the key in the Sec-WebSocket-Accept header. This is intended to prevent a caching proxy from re-sending a previous WebSocket conversation,[33] and does not provide any authentication, privacy, or integrity. The hashing function appends the fixed string 258EAFA5-E914-47DA-95CA-C5AB0DC85B11 (a GUID) to the value from Sec-WebSocket-Key header (which is not decoded from base64), applies the SHA-1 hashing function, and encodes the result using base64.[34]
+
+Once the connection is established, the client and server can send WebSocket data or text frames back and forth in full-duplex mode. The data is minimally framed, with a small header followed by payload.[35] WebSocket transmissions are described as "messages", where a single message can optionally be split across several data frames.
+
+--------------------------------------------------------------------------------------------
+ 
+ data transfer is occurring in real time and we’re not using any kind of Ajax request from each of these different clients to request any new data from the server it’s all happening without the client having to make any additional requests at all.
+
+We’re going to use the socket.io library.
+                       ---------
+
+--------------------------------------------------------------------------------------------
+
+const connection = new WebSocket('ws://localhost:8080');
+
+The web socket protocol starts with ws:// or wss:// (encrypted with SSL, similar to https://).
+
+There are several different event handlers on the WebSocket class including onopen, onclose, onerror, and onmessage.
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

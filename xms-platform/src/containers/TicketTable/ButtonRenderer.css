@@ -1,0 +1,31 @@
+.response-time-button> .MuiFab-root{
+    width: 70%;
+    min-height: 25px!important;
+    height: 25px!important;
+    border-radius: 30px;
+    box-shadow: none;
+    border: 1px solid #41e590;
+    background-color: rgba(65, 229, 144, 0.1);
+}
+
+.response-time-button> .MuiFab-root:hover{
+    background-color: rgba(65, 229, 144, 0.1);
+}
+
+.response-time-button> .MuiFab-root> .MuiFab-label> img{
+    width: 22px;
+    padding: 5px;
+}
+
+.response-time-button> .MuiFab-root> .MuiFab-label{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #656565;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: 0.28px;
+    text-align: left;
+}
+

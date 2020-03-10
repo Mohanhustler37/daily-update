@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66">
+    <defs>
+        <style>
+            .cls-1,.cls-2,.cls-3,.cls-4,.cls-6{fill:none}.cls-1{stroke:#fff}.cls-1,.cls-2,.cls-3,.cls-4{stroke-width:4px}.cls-2{stroke:#ffa200}.cls-3{stroke:#ed0000}.cls-4{stroke:#05d7d7}.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_11807" data-name="Group 11807" transform="translate(147 -15996)">
+        <g id="Ellipse_3443" class="cls-1" data-name="Ellipse 3443" transform="translate(-147 15996)">
+            <circle cx="33" cy="33" r="33" class="cls-5"/>
+            <circle cx="33" cy="33" r="31" class="cls-6"/>
+        </g>
+        <path id="Path_950" d="M-143.987 16036.832a27.781 27.781 0 0 1-1-7.383 33.664 33.664 0 0 1 1.325-9.684 34.753 34.753 0 0 1 1.972-4.759 30.438 30.438 0 0 1 11.241-12.236 29.689 29.689 0 0 1 11.939-4.546c1.533-.1 12.764-1.766 23.11 5.994" class="cls-2" data-name="Path 950"/>
+        <path id="Path_951" d="M-93.314 16005.963a27.513 27.513 0 0 1 3.793 3.992 30.19 30.19 0 0 1 6.354 16.045c.34 4.841.148 6.926-.821 10.553-1.327 5.885-4.439 11.99-11.558 17.315a44.945 44.945 0 0 1-4.788 2.965" class="cls-3" data-name="Path 951"/>
+        <path id="Path_952" d="M-143.36 16038.948a30.4 30.4 0 0 0 7.367 11.909 29.665 29.665 0 0 0 5.889 4.647c10.667 6.417 22.937 4.715 27.687 2.215" class="cls-4" data-name="Path 952"/>
+    </g>
+</svg>

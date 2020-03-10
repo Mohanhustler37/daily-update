@@ -1,0 +1,44 @@
+@import "../../../variables";
+@import "../../../variables";
+@import "../../../mixins";
+/*----------------------Media Query---------------------*/
+/*    Device = Most of the Smartphones Mobiles (Portrait)  Screen = B/w 320px to 479px  */
+
+/*----------------------Media Query---------------------*/
+
+.on-boarding-header {
+  // height: 7.4%;
+  header {
+    padding: 0 1%;
+  }
+  .onboarding-logo {
+    min-height: 21px;
+    max-height: 49px;
+    width: auto;
+    height: 72%;
+  }
+  .MuiPaper-root {
+    height: 7.5vh;
+    .MuiToolbar-root {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      // .onboarding-logo {
+      //     height: 65.5%;
+      //     width: 2.1%;
+      // }
+      .onboarding-more-icon {
+        min-height: 10px;
+        max-height: 18px;
+      }
+    }
+  }
+  .MuiAppBar-colorPrimary {
+    background-color: $color-lightWhite;
+    box-shadow: none;
+    .MuiToolbar-dense {
+      min-height: auto;
+    }
+  }
+}

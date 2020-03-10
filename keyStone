@@ -1,0 +1,96 @@
+Installation
+------------
+$ npm init keystone-app hello-keystone
+
+Project Name
+------- ----
+Hello Keystone
+
+starter project
+------- -------
+Todo
+
+Select an database adapter
+------ -- -------- -------
+Mongoose
+Knex
+
+-------------------------------------------------------------------------------------------
+KeystoneJS created a starter project in: hello-keystone
+
+  To launch your app, run:
+
+  $ cd hello-keystone
+  $ npm run dev
+
+  Next steps:
+
+  - View your app (http://localhost:3000)
+  - Edit hello-keystone/index.js to customize your app.
+  - Open the Admin UI (http://localhost:3000/admin)
+  - Read the docs (https://keystonejs.com)
+  - Star KeystoneJS on GitHub (https://github.com/keystonejs/keystone-5)
+
+-------------------------------------------------------------------------------------------
+
+https://tecadmin.net/install-postgresql-server-on-ubuntu/
+
+Step 1 – Enable PostgreSQL Apt Repository
+
+$ sudo apt-get install wget ca-certificates
+$ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+
+$ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+
+Step 2 – Install PostgreSQL on Ubuntu
+
+$ sudo apt-get update
+$ sudo apt-get install postgresql postgresql-contrib
+
+Step 3 – Connect to PostgreSQL
+
+$ sudo su - postgres
+$ psql
+
+// For connection info in database command prompt
+
+postgres-# \conninfo
+
+// To quit from database command prompt
+postgres-# \q
+
+-------------------------------------------------------------------------------------------
+install Graphical user interface for PostgreSQL like pgAdmin4
+
+https://tecadmin.net/install-pgadmin4-on-ubuntu/
+
+Install pgAdmin4 on Ubuntu
+------- -------- -- ------
+$ sudo apt-get install pgadmin4 pgadmin4-apache2
+
+Enter an email address to use as admin login id for your pgAdmin4 web interface.
+input password for the administrator account.
+
+connect pgAdmin4 with PostgreSQL database.
+
+-------------------------------------------------------------------------------------------
+
+createdb -U postgres myapp
+psql ks5_dev -U postgres -c "CREATE USER admin1 PASSWORD 'mohan121'"
+psql ks5_dev -U postgres -c "GRANT ALL ON DATABASE myapp TO admin1;"
+
+
+https://askubuntu.com/questions/32730/how-to-remove-postgres-from-my-installation/111161
+https://dba.stackexchange.com/questions/191762/how-to-uninstall-pgadmin4-on-ubuntu-16-04
+
+
+
+Ver Cluster Port Status Owner    Data directory              Log file
+12  main    5432 down   postgres /var/lib/postgresql/12/main /var/log/postgresql/postgresql-12-main.log
+
+To start the server:
+-- ----- --- ------
+systemctl start postgresql
+
+
+

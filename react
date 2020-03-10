@@ -1,0 +1,376 @@
+Installation =>  chrome, vs code, node using NVM
+
+vs code extension => live server, bracket pair colorizer, prettier, file icons, auto complete tag,
+
+
+new Date(date)
+    .toISOString()
+    .slice(0, 19)
+    .replace("T", " ")
+
+
+brokenup for components which is different parts of website.
+Each components want some memory called state.
+state is responsibe for how the components want to display
+providers makes store(state) available to all containers
+containers fetch state data and use it to render(display) components 
+whenever state changes components are rerendered(updated)
+actions are users events (or) data from api
+reducer is just a function which takes in action and update part of the application state(store) 
+
+(*)store => one big javascript object
+(*)reducers => is a function which return objects(movies, songs, videos)
+(*)combine reducers => combine all reducers into a single(root) reducer and pass it into createStore	
+
+
+// To install create react app
+npm i -g create-react-app
+
+npx create-react-app .
+
+ES7 React/Redux/GraphQL/React-Native snippets
+
+
+action => each action is a function
+
+thunk => thunk middleware allows us to call the dispatch funtion directly.so that we can make asynchronous request
+
+
+5/10/2019 (saturday)
+
+1.Higher-order functions, callback functions 
+--------------------------------------------
+(Functional programming) => functions are values. var add = x => x + 3;  add(4);  
+var animals = [
+	{ name: 'Hamilton', species: 'dog' }
+	{ name: 'Ursula', species: 'dog' }
+]
+
+var isDog = animal => animal.species === 'dogs';
+
+// Here we are using filter,  reject, map, find, reduce functions
+                     ------   ------  ---  ----  ------
+var dogs = animals.filter(isDog);
+		   ------	
+var otherAnimals = animals.reject(isDog); 
+		           ------	
+var names = animals.map(animal => animal.name);
+                    ---
+find => is same as filter but return only a first item
+----
+
+reduce
+------
+var orders = [
+{ amount: 250}
+{ amount: 400}
+{ amount: 100}
+{ amount: 325}
+]
+
+var totalAmount = orders.reduce((sum, order) => sum + order.amount, 0)
+
+reduce advanced
+------ --------
+
+sample.txt
+mohan hustler	elango 25 7
+mohan hustler	dhana 25 7
+mohan hustler	guna 28 15
+mohan hustler	santhosh 25 11
+
+from this file get mohan hustler as object name
+and friends name, age, yearOfFriendship as values
+
+import fs from 'fs';
+
+let output = gs.readFileSync('sample.text', 'utf8')
+	       .trim()
+	       .split('/n')
+	       .map(line => line.split())
+	       .reduce((customers, line) => {
+			customers[line[0]] = customers[line[0]] || []
+			customers[line[0]].push({
+				name: line[1],
+				price: line[2]
+				quantity: line[3]			
+			
+			})
+			return customers;
+		}, {})
+
+console.log(JSON.stringify(output, null, 2));
+'mohan hustler': [
+{
+  name: 'elango',
+  age: 25,
+  yearOfFriendship: 7
+},
+{
+  name: 'dhana',
+  age: 25,
+  yearOfFriendship: 7
+},
+{
+  name: 'guna',
+  age: 28,
+  yearOfFriendship: 15
+}
+]
+		
+
+2.Closures => function body that has access to the variable that are defined outside 
+--------
+Eg:
+let me = 'mohan';
+var greetMe = () => {
+	console.log(`Hello ${me}`);
+} 
+greetMe();
+
+3.Currying
+  --------	
+we call a function with first argument which return a new function which we call with 
+another argument and it will continues util it return the value.
+
+let dragon = 
+	name => 
+		size => 
+			element => 
+				name + 'is a' +
+				size + 'dragon that breathes ' +
+				element + '!' +
+
+let output = dragon('karo')('large')('fire') 
+ 
+4.Recursion
+  ---------
+is a function which calls itself untill it doesn't
+
+eg:
+let categories = [
+{ id: 'animals', 'parent': null}
+{ id: 'mammals', 'parent': 'animals'}
+{ id: 'cats', 'parent': 'mammals'}
+{ id: 'dogs', 'parent': 'mammals'}
+{ id: 'chihuahua', 'parent': 'dogs'}
+{ id: 'labrador', 'parent': 'dogs'}
+{ id: 'persian', 'parent': 'cats'}
+{ id: 'siamese', 'parent': 'cats'}
+]
+
+let makeTree = (categories, parent) => {
+ let node = {};
+ categories
+	.filter(c => c.parent === parent)
+	.forEach(c => node[c.id] = makeTree(categories, c.id))
+	return node
+}
+
+console.log(JSON.stringify(makeTree(categories, null), null, 2));
+
+
+6/10/2019 (sunday)
+
+5.Promises
+  --------
+Promise.all([
+	loadImage('images/cat1.jpg'),
+	loadImage('images/cat2.jpg'),
+	loadImage('images/cat3.jpg')
+	])
+	.then(images => {
+	  images.forEach(img => addImg(img.src))
+	})
+	.catch(err => {
+	  console.log(err);	
+	})
+
+
+ES6/ES7 syntax
+
+JavaScript/ES6/Browser’s DOM knowledge beforehand starting with React.
+
+
+7/10/2019 (monday)
+Redux Thunk
+----- -----
+By default actions in Redux are dispatched synchronously, 
+which is a problem for any non-trivial app that needs to 
+communicate with an external API 
+
+Redux thunk is a middleware that sits between an action being dispatched 
+and the action reaching the reducers
+
+Redux Thunk is a middleware that lets you call action that 
+return a function instead of an action object. 
+That function receives the store’s dispatch method, 
+which is used to dispatch regular synchronous actions 
+inside the body of the function once the asynchronous operations have completed.
+
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+import rootReducer from './reducers';
+
+const store = createStore(rootReducer, applyMiddleware(thunk));
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
+
+Nontrivial
+----------
+Not lightweight. Nontrivial means "extremely" difficult and time consuming.
+
+Interceptors
+------------
+interceptors is a axios function which is used to modify the request or response 
+before the request or response has started. 
+
+Interceptors allow you to run code or 
+modify the request or response before the request or response has started. 
+Axios is supports async operations before request is made or 
+before the promises of .then or .catch are executed.
+
+Axios also allows you to add functions called interceptors. 
+these functions can be attached to fire when a request is made, or
+when a response is received.
+
+// Add a request interceptor
+axios.interceptors.request.use((config) => {
+    // Do something before request is sent
+    return config;
+  }, (error) => {
+    // Do something with request error
+    return Promise.reject(error);
+  });
+
+// Add a response interceptor
+axios.interceptors.response.use((response) => {
+    // Do something with response data
+    return response;
+  }, (error) => {
+    // Do something with response error
+    return Promise.reject(error);
+  });
+
+
+Protected Route
+--------- -----
+
+import Auth from './Auth';
+const Router = (props) => (
+ <Switch>
+ <Route exact path='/public' component={Public}/>
+ <PrivateRoute path="/protected" component={Protected} />
+ </Switch>
+ )
+
+ const PrivateRoute = ({ component: Component, ...rest }) => (
+ <Route
+  {...rest}
+  render={props => 
+  Auth.getAuth() ? (<Component {...props} />) : (<Redirect to={{pathname: "/"}} />)}
+ />
+ );
+
+Auth.getAuth() is true alllow to access protected route
+
+
+
+REACT ROUTER DOM
+----- ------ ---
+$ npm i react-router-dom
+
+import { BrowserRouter as Router, Switch,  } from 'react-router-dom';
+
+
+SSH
+clone
+copy paste
+command line
+
+===============================================================================================
+
+REF and REACT.CREATEREF()
+--- --- -----------------
+
+// 1. string ref not good practise
+<input type="text" defaultValue="first" ref="first" />
+
+In HandleSubmit
+-- ------------
+console.log(this.refs.first);
+
+------------------------------------------------------------------------------------------------
+
+// 2. Passing function to the ref
+<input type="text" defaultValue="second" ref={input => (this.second = input)} />
+
+In HandleSubmit
+-- ------------
+console.log(this.refs.first, this.second);
+
+------------------------------------------------------------------------------------------------
+
+// 3. Variable Inside Class or Constructor
+
+third = React.createRef();
+
+<input type="text" defaultValue="third" ref={this.third}>
+
+// value is an object that contains the input
+
+console.log(this.refs.first, this.second, this.third.value);
+// To get the actual value this.third.value.value
+
+------------------------------------------------------------------------------------------------
+
+// 4. get the ref in the parent component from its child components
+
+// Not best practice
+
+fourth = React.creatRef();
+
+Inside a Child Component:
+------ - ----- ---------
+<input type="text" defaultValue="fourth" ref={this.props.fourth}>
+
+In Parent Handler:
+-- ------ -------
+console.log(this.refs.first, this.second, this.third.value, this.fourth.value);
+
+------------------------------------------------------------------------------------------------
+                             *********************                               
+IF WE DEfINE REACT.CREATEREF() inside a Constructor:
+-- -- ------ ----------------- ------ - ------------
+
+constructor(){
+	super();
+	this.description = React.creatRef();
+}
+
+<input type="text" defaultValue="description" ref={this.description}>
+
+componentDidMount = () => {
+	console.log(this.description.current);
+}
+                             *********************                               
+-------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+

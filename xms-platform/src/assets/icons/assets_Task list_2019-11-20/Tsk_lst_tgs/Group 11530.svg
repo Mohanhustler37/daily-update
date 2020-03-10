@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke:rgba(213,0,0,.2)}.cls-2{fill:rgba(213,0,0,.3)}.cls-3{stroke:none}.cls-4{fill:none}
+        </style>
+    </defs>
+    <g id="Group_11530" data-name="Group 11530" transform="translate(10854 -11279)">
+        <g id="Rectangle_728" class="cls-1" data-name="Rectangle 728" transform="translate(-10854 11279)">
+            <rect width="30" height="30" class="cls-3" rx="10"/>
+            <rect width="29" height="29" x=".5" y=".5" class="cls-4" rx="9.5"/>
+        </g>
+        <path id="Icon_material-delete-forever" d="M8.194 15.611A1.393 1.393 0 0 0 9.583 17h5.556a1.393 1.393 0 0 0 1.389-1.389V7.278H8.194zM9.9 10.667l.979-.979 1.479 1.472 1.472-1.472.979.979-1.469 1.472 1.472 1.472-.979.979-1.472-1.472-1.472 1.472-.979-.979 1.472-1.472zm4.889-5.472L14.1 4.5h-3.475l-.694.694H7.5v1.389h9.722V5.194z" class="cls-2" data-name="Icon material-delete-forever" transform="translate(-10851.4 11284)"/>
+    </g>
+</svg>

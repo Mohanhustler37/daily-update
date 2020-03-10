@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.286" height="24" viewBox="0 0 26.286 24">
+  <g id="Group_10951" data-name="Group 10951" transform="translate(-1320 -343)">
+    <path id="Icon_awesome-comment-dots" data-name="Icon awesome-comment-dots" d="M13.143,2.25C5.883,2.25,0,7.03,0,12.929a9.478,9.478,0,0,0,2.926,6.71A13.061,13.061,0,0,1,.113,24.557.408.408,0,0,0,.036,25a.4.4,0,0,0,.375.246,11.741,11.741,0,0,0,7.218-2.639,15.657,15.657,0,0,0,5.514,1c7.259,0,13.143-4.78,13.143-10.679S20.4,2.25,13.143,2.25ZM6.571,14.571a1.643,1.643,0,1,1,1.643-1.643A1.641,1.641,0,0,1,6.571,14.571Zm6.571,0a1.643,1.643,0,1,1,1.643-1.643A1.641,1.641,0,0,1,13.143,14.571Zm6.571,0a1.643,1.643,0,1,1,1.643-1.643A1.641,1.641,0,0,1,19.714,14.571Z" transform="translate(1320 341.75)" fill="#c8c8c8"/>
+    <g id="Ellipse_3271" data-name="Ellipse 3271" transform="translate(1339 344)" fill="#ea5455" stroke="#fff" stroke-width="1">
+      <circle cx="3" cy="3" r="3" stroke="none"/>
+      <circle cx="3" cy="3" r="3.5" fill="none"/>
+    </g>
+  </g>
+</svg>

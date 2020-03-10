@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+    <defs>
+        <style>
+            .cls-1{fill:#41e590}.cls-1,.cls-2{stroke:#fff}.cls-2,.cls-4{fill:none}.cls-2{stroke-linecap:round;stroke-linejoin:round}.cls-3{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_11787" data-name="Group 11787" transform="translate(-20)">
+        <g id="Rectangle_801" class="cls-1" data-name="Rectangle 801" transform="translate(20)">
+            <rect width="10" height="10" class="cls-3" rx="5"/>
+            <rect width="9" height="9" x=".5" y=".5" class="cls-4" rx="4.5"/>
+        </g>
+        <path id="Icon_feather-check" d="M9.273 9l-1.364 1.364-.886.886L6 10.227" class="cls-2" data-name="Icon feather-check" transform="translate(17 -5)"/>
+    </g>
+</svg>

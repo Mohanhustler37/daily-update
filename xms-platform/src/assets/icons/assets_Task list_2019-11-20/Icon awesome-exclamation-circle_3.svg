@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.91" height="21.91" viewBox="0 0 21.91 21.91">
+    <defs>
+        <style>
+            .cls-1{fill:#ea5455}
+        </style>
+    </defs>
+    <path id="Icon_awesome-exclamation-circle" d="M22.472 11.518A10.955 10.955 0 1 1 11.518.563a10.954 10.954 0 0 1 10.954 10.955zm-10.954 2.208a2.032 2.032 0 1 0 2.032 2.032 2.032 2.032 0 0 0-2.032-2.032zm-1.929-7.3l.328 6.008a.53.53 0 0 0 .529.5h2.144a.53.53 0 0 0 .529-.5l.328-6.008a.53.53 0 0 0-.529-.559h-2.8a.53.53 0 0 0-.53.555z" class="cls-1" data-name="Icon awesome-exclamation-circle" transform="translate(-.563 -.563)"/>
+</svg>

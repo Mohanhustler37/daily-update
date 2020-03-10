@@ -1,0 +1,33 @@
+@import '../../mixins';
+
+.estimatedTimeContainer {
+    width: 49%;
+    height: 100%;
+    border-radius: 100px;
+    border: 1px dashed #d0cfec;
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+    box-sizing: border-box;
+    input {
+        margin-top: 3px;
+        width: 25px;
+        font-family: helveticaNeueLight;
+        font-size: remm(21px);
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: left;
+        color: #656565;
+        margin-left: 2%;
+        border: 0;
+    }:focus {
+        outline: none;
+    }::-webkit-outer-spin-button,
+                     ::-webkit-inner-spin-button {
+                      -webkit-appearance: none;
+                      margin: 0;
+                    }
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="5.415" height="24.5" viewBox="0 0 5.415 24.5">
+  <g id="Group_11601" data-name="Group 11601" transform="translate(-466.292 -357)">
+    <g id="Ellipse_3265" data-name="Ellipse 3265" transform="translate(467 361)" fill="#4e58a9" stroke="rgba(78,88,169,0.5)" stroke-width="1">
+      <circle cx="2" cy="2" r="2" stroke="none"/>
+      <circle cx="2" cy="2" r="1.5" fill="none"/>
+    </g>
+    <g id="Ellipse_3267" data-name="Ellipse 3267" transform="translate(467 367)" fill="#4e58a9" stroke="rgba(78,88,169,0.5)" stroke-width="1">
+      <circle cx="2" cy="2" r="2" stroke="none"/>
+      <circle cx="2" cy="2" r="1.5" fill="none"/>
+    </g>
+    <g id="Ellipse_3269" data-name="Ellipse 3269" transform="translate(467 373)" fill="#4e58a9" stroke="rgba(78,88,169,0.5)" stroke-width="1">
+      <circle cx="2" cy="2" r="2" stroke="none"/>
+      <circle cx="2" cy="2" r="1.5" fill="none"/>
+    </g>
+    <path id="Icon_feather-chevron-down" data-name="Icon feather-chevron-down" d="M9,13.5l2,2,2-2" transform="translate(458 365.5)" fill="none" stroke="#4e58a9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Icon_feather-chevron-down-2" data-name="Icon feather-chevron-down" d="M9,15.5l2-2,2,2" transform="translate(458 344)" fill="none" stroke="#4e58a9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>

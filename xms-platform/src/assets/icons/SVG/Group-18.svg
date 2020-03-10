@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke-dasharray:4 0}.cls-1,.cls-2{stroke:#c8c8c8}.cls-2,.cls-4{fill:none}.cls-2{stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}.cls-3{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_18" data-name="Group 18" transform="translate(-1477 -104)">
+        <g id="Rectangle_10" class="cls-1" data-name="Rectangle 10" transform="translate(1477 104)">
+            <rect width="50" height="50" class="cls-3" rx="25"/>
+            <rect width="49" height="49" x=".5" y=".5" class="cls-4" rx="24.5"/>
+        </g>
+        <path id="Icon_feather-heart" d="M24.017 6.31a6.185 6.185 0 0 0-8.749 0L14.076 7.5l-1.192-1.19a6.187 6.187 0 1 0-8.749 8.749l1.192 1.192L14.076 25l8.749-8.749 1.192-1.192a6.185 6.185 0 0 0 0-8.749z" class="cls-2" data-name="Icon feather-heart" transform="translate(1488.177 116.003)"/>
+    </g>
+</svg>

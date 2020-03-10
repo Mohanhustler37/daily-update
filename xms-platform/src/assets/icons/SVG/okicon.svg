@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:#41e590}.cls-3{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}.cls-4,.cls-5{stroke:none}.cls-5{fill:#fff}.cls-6{filter:url(#Path_139)}
+        </style>
+        <filter id="Path_139" width="63" height="63" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Group_10427" data-name="Group 10427" transform="translate(-681 -123)">
+        <g class="cls-6" transform="translate(681 123)">
+            <path id="Path_139-2" d="M22.5 0A22.5 22.5 0 1 1 0 22.5 22.5 22.5 0 0 1 22.5 0z" class="cls-1" data-name="Path 139" transform="translate(9 8)"/>
+        </g>
+        <g id="Path_886" class="cls-2" data-name="Path 886">
+            <path d="M20.5 40.5a19.934 19.934 0 0 1-14.142-5.858A19.934 19.934 0 0 1 .5 20.5 19.934 19.934 0 0 1 6.358 6.358 19.934 19.934 0 0 1 20.5.5a19.934 19.934 0 0 1 14.142 5.858A19.934 19.934 0 0 1 40.5 20.5a19.934 19.934 0 0 1-5.858 14.142A19.934 19.934 0 0 1 20.5 40.5z" class="cls-4" transform="translate(692 133)"/>
+            <path d="M20.5 1A19.436 19.436 0 0 0 6.711 6.711 19.436 19.436 0 0 0 1 20.5a19.436 19.436 0 0 0 5.711 13.789A19.436 19.436 0 0 0 20.5 40a19.436 19.436 0 0 0 13.789-5.711A19.436 19.436 0 0 0 40 20.5a19.436 19.436 0 0 0-5.711-13.789A19.436 19.436 0 0 0 20.5 1m0-1C31.822 0 41 9.178 41 20.5S31.822 41 20.5 41 0 31.822 0 20.5 9.178 0 20.5 0z" class="cls-5" transform="translate(692 133)"/>
+        </g>
+        <path id="Icon_feather-check" d="M23.649 9L11.515 21.134 6 15.618" class="cls-3" data-name="Icon feather-check" transform="translate(697.5 138.5)"/>
+    </g>
+</svg>

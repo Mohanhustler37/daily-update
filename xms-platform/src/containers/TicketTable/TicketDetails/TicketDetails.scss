@@ -1,0 +1,753 @@
+%statusLabel {
+    padding-left: 10px;
+    display: block; 
+    text-transform: uppercase;
+}
+%statusLableChildOne {
+    font-family: HelveticaNeue-MediumCond;
+    font-size: 0.875rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.72;
+    letter-spacing: 0.28px;
+    text-align: left;
+    color: var(--light-blue-grey);
+}
+%statusLabelChildTwo {
+    font-family: helveticaNeueLight;
+    font-size: 1.125rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.36px;
+    text-align: left;
+    color: #151b26;
+}
+
+%cardCommonStyle {
+    width: 80%;
+    margin: 2vh auto auto auto;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.ticketDetailsContainer {
+    height: 100%;
+    box-sizing: border-box;
+    .ticketDetailsBodySection {
+        height: 81%;
+        display: flex;
+        .ticketDetailsMainSection {
+            width: 75%;
+            padding: 0 3%;
+            box-sizing: border-box;
+            overflow: auto;
+            
+            //////////////////////////////////// Stepper Begins/////////////////////////////////
+            .ticketDetailsStepper {
+                height: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                .stepperContainer {
+                    height: 100%;
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    .horizontalStepperStep, .verticleStepperStep  {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        height: 5vh;
+                        width: 5vh;
+                        border-radius: 100px;
+                        font-family: HelveticaNeue-MediumCond;
+                        font-size: 14px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.72;
+                        letter-spacing: 0.28px;
+                        text-align: right;
+                        color: #ffffff;
+                        cursor: pointer; 
+                        .stepperDoneIcon {
+                            position: absolute;
+                            top: -2px;
+                            right: -2px;
+                            height: 2vh;
+                            width: 2vh;
+                            border-radius: 100px;
+
+                        }
+                        .stepperNotification {
+                            font-size: 5px;
+                            position: absolute;
+                            bottom: 2px;
+                            color: #ea5455;
+                        }
+                    }
+                    .leftHr {left: 0;}
+                    .rightHr {right: 0;}
+                    hr {
+                        margin: 0 !important;
+                        width: 50%;
+                        position: absolute;
+                        z-index: -1;
+                        height: 5px;
+                        border: 0;
+                        background: rgba(78, 88, 169, 0.1);
+                    }
+
+                    .downVl {bottom: 0; right: 40%;}
+                    .upVl { top: 0;  right: 40%;}
+                    .vl {
+                        margin: 0 !important;
+                        height: 10vh;
+                        position: absolute;
+                        z-index: -1;
+                        border: 0;
+                        border-left: 5px solid rgba(78, 88, 169, 0.1);
+                    }
+                    .stepperDone {
+                        background: #41e590;
+                        color: #ffffff;
+                    }
+                    .stepperInProgress {
+                        background: #ffb300;
+                        color: #ffffff;
+                    }
+                    .stepperPending {
+                        background: #d0cfec;
+                        color: rgba(78, 88, 169, 0.5);; 
+                    }
+                    .varticleStepperContainer {
+                        position: absolute;
+                        height: 100%;
+                        z-index: -1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    }    
+                }
+            }
+            //////////////////////////////////// Stepper Ends/////////////////////////////////
+            .cardPermissionBtnsContainer {
+                margin-top: 2vh;
+                display: flex;
+                .viewPermission {
+                    box-shadow: none;
+                    background-color: transparent;
+                    border-radius: 100px;
+                    padding: .5% 2%;
+                    .MuiButton-label {
+                        font-family: HelveticaNeue-MediumCond;
+                        font-size: 1.125rem;
+                        font-weight: normal;
+                        font-stretch: condensed;
+                        font-style: normal;
+                        line-height: 1.33;
+                        letter-spacing: 0.36px;
+                        text-align: left;
+                        color: #656565;
+                    }
+                }
+                .viewPermissionActive {
+                    background-color: rgba(78, 88, 169, 0.2);
+                    .MuiButton-label {
+                        color: #4e58a9;
+                    }
+                }
+                .expandAllCardsButton {
+                    box-shadow: none;
+                    background-color: transparent;
+                    margin-left: auto;
+                    border: 1px dashed rgba(78, 88, 169, 0.5);
+                    .fullScreenIcon {
+                        width: 1.5vh;
+                        height: 1.5vh;
+                        margin-top: -4px;
+                        margin-right: 5%;
+                    }
+                    .MuiButton-label {
+                        font-family: helveticaNeueMedium;
+                        font-size: 0.875rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.72;
+                        letter-spacing: 0.28px;
+                        text-align: right;
+                        color: rgba(78, 88, 169, 0.5);
+                        white-space: nowrap;
+                    }
+
+                }
+            }
+
+            .cardBody {
+                height: 70%;
+                padding: 0 2%;
+                display: flex;
+                flex-direction: column;
+                .cardMessageSection {
+                    font-family: helveticaNeueLight;
+                    font-size: 1.125rem;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.22;
+                    letter-spacing: 0.36px;
+                    text-align: left;
+                    color: #656565;
+                    p:nth-child(1) {
+                        margin: 3vh 0;
+                    }
+                    p:nth-child(2) {
+                        margin: 3vh 0;
+                    }
+
+                    p:nth-child(3) {
+                        margin: 3vh 0;
+                    }
+                }
+                .attachementsConatiner {
+                    height: 15%;
+                    display: flex;
+                    align-items: center;
+                    margin-top: auto;
+                    margin-bottom: 1%;
+                    .attachmentIcon {
+                        border-radius: 12px;
+                        background-color: #f9f9f9;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 1% 4%;
+                        .pdfIcon {
+                            height: 20px;
+                            width: 20px;
+                        }
+                        label {
+                            margin: 0 8% 0 3%;
+                            font-family: helveticaNeueLight;
+                            font-size: 1.125rem;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1;
+                            letter-spacing: 0.36px;
+                            text-align: left;
+                            color: #151b26;
+                            padding-top: 3px;
+                        }
+
+                        .closeIcon {
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+            .cardFooter {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-top: 1px dotted #D0CFEC;
+                height: 15%;
+                padding: 0 2.1%;
+                .statusPriorityContainer {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                }
+
+                %statusPriorityFont {
+                    font-size: 0.875rem;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.72;
+                    letter-spacing: 0.28px;
+                    text-align: left;
+                    color: #d0cfec;
+                }
+                %statusPriorityValueFont {
+                    font-family: helveticaNeueLight;
+                    font-size: 1.125rem;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.33;
+                    letter-spacing: 0.36px;
+                    text-align: left;
+                    color: #151b26;
+                }
+                .statusSection, .prioritySection {
+                    height: 80%;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        height: 85%;
+                        width: 85%;
+                    }
+                }
+                .statusSection {
+                    .statusWrapper {
+                        padding-left: 3%;
+                        label { 
+                            white-space: nowrap;
+                            display: block;
+                        }
+                        label:nth-child(1) {
+                            @extend  %statusPriorityFont;
+                            text-transform: uppercase;
+                        }
+                        label:nth-child(2) {
+                            @extend %statusPriorityValueFont;
+                        }
+                    }
+                }
+                .prioritySection {
+                    padding-left: 5%;
+                    .statusWrapper {
+                        padding-left: 3%;
+                        label { 
+                            white-space: nowrap;
+                            display: block;
+                        }
+                        label:nth-child(1) {
+                            @extend  %statusPriorityFont;
+                            text-transform: uppercase;
+                        }
+                        label:nth-child(2) {
+                            @extend %statusPriorityValueFont;
+                        }
+                    }
+                }
+                .cardMoreButton {
+                    box-shadow: none;
+                    background-color: transparent;
+                    border: 1px dashed rgba(78, 88, 169, 0.5);
+                    border-radius: 12px;
+                    .MuiButton-label {
+                        font-family: helveticaNeueMedium;
+                        font-size: 1rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.13;
+                        letter-spacing: 0.32px;
+                        text-align: left;
+                        color: rgba(78, 88, 169, 0.5);
+                    }
+                }
+            }
+        }
+        .ticketDetailsSubSection {
+            width: 25%;
+            overflow: auto;
+            %img {
+                width: 20%;
+                height: 20%;
+                max-height: 37px;
+                max-width: 37px;
+            }
+            .ticketDetailsStatusCard {
+                @extend %cardCommonStyle;
+                // padding: 10px 0;
+                .statusSection {
+                    display: flex;
+                    align-items: center;
+                    padding: 1vh;
+                    border-bottom: solid 1px #f9f9f9;
+                    img {
+                        @extend %img;
+                    }
+                    .statusWrapper {
+                        label { 
+                            @extend %statusLabel;
+                        }
+                        label:nth-child(1) {
+                            @extend %statusLableChildOne;
+                        }
+                        label:nth-child(2) {
+                            @extend %statusLabelChildTwo;
+                        }
+                    }
+                }
+                hr {
+                    width: 99%;
+                    margin: 0 !important;
+                    border: 1px dotted rgba(78, 88, 169, 0.1);
+                    // background: rgba(78, 88, 169, 0.1);
+                }
+                .assignToSection {
+                    display: flex;
+                    align-items: center;
+                    padding: 1vh;
+                    img {
+                        @extend %img;
+                        border-radius: 100px;
+                    }
+                    .statusWrapper {
+                        label { 
+                            @extend %statusLabel;
+                        }
+                        label:nth-child(1) {
+                            @extend %statusLableChildOne;
+                        }
+                        label:nth-child(2) {
+                            @extend %statusLabelChildTwo;
+                        }
+                    }
+                }
+ 
+            }
+            .ticketInformationContainer {
+                @extend %cardCommonStyle;
+                .rowCommonStyle {
+                    margin: 10px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .heading {
+                    font-family: HelveticaNeue-MediumCond;
+                    text-transform: uppercase;
+                    font-size: 1.125rem;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 0.83;
+                    letter-spacing: 0.36px;
+                    padding: 15px 0;
+                    color: rgba(78, 88, 169, 0.5);
+                    border-bottom: 1px solid rgba(78, 88, 169, 0.3);
+                    display: block;
+                }
+                .rowHeading {
+                    font-size: 1rem;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.5;
+                    letter-spacing: 0.32px;
+                    text-align: left;
+                    color: #d0cfec;
+                    text-transform: uppercase;
+                }
+                .typeRow {
+                    .ticketType {
+                        font-family: HelveticaNeue-MediumCond;
+                        font-size: 1rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 0.63;
+                        letter-spacing: 0.32px;
+                        text-align: right;
+                        color: #2a3ebc;
+                        text-transform: uppercase;
+                    }
+                }
+                .ticketTagsRow {
+                    .ticketTags {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        label {
+                            margin: 0 2px;
+                            border-radius: 6px;
+                            padding: 3px 12px;
+                            font-size: 0.875rem;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.57;
+                            letter-spacing: 0.28px;
+                        }
+                        label:nth-child(1) {
+                            background: rgba(0, 150, 255, 0.2);
+                            color: #0096ff;
+
+                        }
+                        label:nth-child(2) {
+                            background: rgba(255, 119, 0, 0.2);
+                            color: #ff7700;
+                        }
+                        img {
+                            margin-left: 5px ;
+                        }
+                    }
+                }
+                .ticketPriorityRow {
+                    .ticketPriority {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        label {
+                            border: 1px solid rgba(213, 0, 0, 0.2);
+                            font-family: HelveticaNeue-MediumCond;
+                            padding: 3px 12px;
+                            background: rgba(213, 0, 0, 0.2);
+                            border-radius: 100px;
+                            font-size: 0.875rem;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.29;
+                            letter-spacing: 0.28px;
+                            text-align: left;
+                            color: #d50000;
+                        }
+                    }
+                }
+                .ticketDueDateRow {
+                    .ticketDueDate {
+                        font-family: helveticaNeueLight;
+                        font-size: 1.125rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.33;
+                        letter-spacing: 0.36px;
+                        text-align: right;
+                        color: #656565;
+                        
+                    }
+                }
+                .ticketEstimatedTimeRow {
+                    .ticketEstimatedTime {
+                        font-size: 1.125rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.33;
+                        letter-spacing: 0.36px;
+                        text-align: right;
+                        color: #656565;
+                        white-space: nowrap;
+                    }
+                }
+                .ticketReporterRow {
+                    .ticketReporter {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        img {
+                            width: 4vh;
+                            height: 4vh;
+                            border-radius: 100px;
+                        }
+                        label {
+                            text-transform: capitalize;
+                            font-family: helveticaNeueLight;
+                            font-size: 1rem;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.13;
+                            letter-spacing: 0.32px;
+                            text-align: left;
+                            color: #656565;
+                            padding-left: 7px;
+                            white-space: nowrap;
+                        }
+                    }  
+                }
+            }
+
+
+
+            .companyInformationContainer {
+                @extend %cardCommonStyle;
+                .rowCommonStyle {
+                    margin: 10px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .heading {
+                    font-family: HelveticaNeue-MediumCond;
+                    text-transform: uppercase;
+                    font-size: 1.125rem;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 0.83;
+                    letter-spacing: 0.36px;
+                    padding: 15px 0;
+                    color: rgba(78, 88, 169, 0.5);
+                    border-bottom: 1px solid rgba(78, 88, 169, 0.3);
+                    display: block;
+                }
+                .rowHeading {
+                    font-size: 1rem;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.5;
+                    letter-spacing: 0.32px;
+                    text-align: left;
+                    color: #d0cfec;
+                    text-transform: uppercase;
+                }
+
+
+
+                .companyNameRow {
+                    .companyName {
+                        font-family: helveticaNeueLight;
+                        font-size: 1.125rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.33;
+                        letter-spacing: 0.36px;
+                        text-align: right;
+                        color: #656565;
+                        text-transform: uppercase;
+                        white-space: nowrap;
+                    }
+                }
+
+                .contactRow {
+                    .ticketReporter {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        img {
+                            width: 5vh;
+                            height: 5vh;
+                            border-radius: 100px;
+                        }
+                        label {
+                            text-transform: capitalize;
+                            font-family: helveticaNeueLight;
+                            font-size: 1rem;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.13;
+                            letter-spacing: 0.32px;
+                            text-align: left;
+                            color: #656565;
+                            padding-left: 7px;
+                            white-space: nowrap;
+                        }
+                    } 
+                }
+                .emailRow {
+                    .rowHeading {
+                        display: flex;
+                        img {
+                            height: 20px;
+                            width: 20px;
+                            margin-right: 3px;
+                        }
+                    }
+                    .email {
+                        font-size: 1.125rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.33;
+                        letter-spacing: 0.36px;
+                        text-align: right;
+                        color: #4e58a9;
+                        white-space: nowrap;
+                    }
+                }
+                .PhoneRow {
+                    .rowHeading {
+                        display: flex;
+                        img {
+                            height: 20px;
+                            width: 20px;
+                            margin-right: 3px;
+                        }
+                    }
+                    .Phone {
+                        font-family: helveticaNeueLight;
+                        font-size: 1.125rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.33;
+                        letter-spacing: 0.36px;
+                        text-align: right;
+                        color: #656565;
+                        white-space: nowrap;
+                    }
+                }
+
+                .webRow {
+                    .rowHeading {
+                        display: flex;
+                        img {
+                            height: 20px;
+                            width: 20px;
+                            margin-right: 3px;
+                        }
+                    }
+                    .web {
+                        font-family: helveticaNeueLight;
+                        font-size: 1.125rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.33;
+                        letter-spacing: 0.36px;
+                        text-align: right;
+                        color: #656565;
+                        white-space: nowrap;
+                    }
+                }
+
+                .addressRow {
+                    align-items: flex-start;
+                    .rowHeading {
+                        display: flex;
+                        img {
+                            height: 20px;
+                            width: 20px;
+                            margin-right: 3px;
+                        }
+                    }
+                    .address {
+                        font-family: helveticaNeueLight;
+                        font-size: 1.125rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.33;
+                        letter-spacing: 0.36px;
+                        text-align: right;
+                        color: #656565;
+                        
+                    }
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+        }
+    }
+}

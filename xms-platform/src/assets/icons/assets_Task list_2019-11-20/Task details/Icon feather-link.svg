@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.784" height="12.989" viewBox="0 0 12.784 12.989">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#53d7e3;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="Icon_feather-link" data-name="Icon feather-link" transform="translate(.75 .967)">
+        <path id="Path_920" d="M15 9.208a2.82 2.82 0 0 0 4.252.3l1.692-1.692a2.819 2.819 0 1 0-3.987-3.987l-.97.965" class="cls-1" data-name="Path 920" transform="translate(-10.486 -3.008)"/>
+        <path id="Path_921" d="M9.762 14.623a2.82 2.82 0 0 0-4.252-.3L3.819 16.01A2.819 2.819 0 1 0 7.806 20l.964-.965" class="cls-1" data-name="Path 921" transform="translate(-2.993 -9.551)"/>
+    </g>
+</svg>

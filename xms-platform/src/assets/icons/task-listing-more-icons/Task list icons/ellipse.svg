@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="Group_11598" data-name="Group 11598" transform="translate(-6113 6705)">
+    <g id="Group_11375" data-name="Group 11375" transform="translate(6113 -6705)">
+      <g id="Rectangle_687" data-name="Rectangle 687" fill="rgba(255,255,255,0.2)" stroke="#4e58a9" stroke-width="1">
+        <rect width="26" height="26" rx="13" stroke="none"/>
+        <rect x="0.5" y="0.5" width="25" height="25" rx="12.5" fill="none"/>
+      </g>
+    </g>
+    <path id="Icon_awesome-ellipsis-h" data-name="Icon awesome-ellipsis-h" d="M9.171,14.874a1.937,1.937,0,1,1-1.937-1.937A1.936,1.936,0,0,1,9.171,14.874Zm2.8-1.937a1.937,1.937,0,1,0,1.937,1.937A1.936,1.936,0,0,0,11.969,12.938Zm-9.469,0a1.937,1.937,0,1,0,1.937,1.937A1.936,1.936,0,0,0,2.5,12.938Z" transform="translate(6118.703 -6706.58)" fill="#4e58a9"/>
+  </g>
+</svg>

@@ -1,0 +1,222 @@
+@import '../../../../variables';
+@import '../../../../extends';
+@import '../../../../mixins';
+$borderRadius: 100px;
+/*----------------------Media Query---------------------*/
+ 
+/*    Device = Most of the Smartphones Mobiles (Portrait)  Screen = B/w 320px to 479px  */
+@media (min-width: 320px) and (max-width: 480px) {
+
+  
+}
+
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape) Screen = B/w 481px to 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+}
+
+
+/* Device = Tablets, Ipads (landscape) Screen = B/w 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  
+}
+
+/* Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+
+}
+
+
+/* Device = Laptops, Desktops Screen = B/w 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  .heading-and-dropdown-container{
+
+  }
+
+//   .select-day-for-tickets {
+//     .MuiInputBase-root {
+//       .MuiSelect-root {
+//         font-size: rem(10px)!important;
+//       }
+//     }
+// }
+
+
+
+}
+
+
+/* Device = Desktops Screen = 1281px to higher resolution desktops */
+@media (min-width: 1281px) and (max-width: 1600px) {
+  .heading-and-dropdown-container{
+
+  }
+//   .select-day-for-tickets {
+//     .MuiInputBase-root {
+//       .MuiSelect-root {
+//         font-size: rem(12px)!important;
+//       }
+//     }
+// }
+
+
+}
+
+
+@media (min-width: 1601px) {
+  .heading-and-dropdown-container{
+
+  }
+
+}
+
+
+
+/*----------------------Media Query---------------------*/
+
+.ticketDetailsSubHeader {
+    @extend %d-flex-align-center-space-btwn;
+    border: 1px solid rgba(236, 241, 249, 0.9);
+    border-top: none;
+    border-left: 0px;
+    border-right: 0px;
+    // height: 56px;
+    height: 10vh;
+    // border: 1px solid green;
+    .sub-header-left-section {
+      width: 50%;
+      margin: 1vh 2%;
+      @extend %d-flex-column;
+        .heading-and-dropdown-container {
+            @extend %d-flex-align-center;
+            .ticketDeatailsHeading {
+                font-family: HelveticaNeue-MediumCond;
+                font-size: 1.25rem;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.2;
+                letter-spacing: 0.4px;
+                text-align: left;
+                color: #4e58a9;
+            }
+        }
+        .ticketDeatailsSubHeading {
+          font-family: helveticaNeueMedium;
+          font-size: 1.875rem;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 0.8;
+          letter-spacing: 0.6px;
+          text-align: left;
+          color: #656565;
+        }
+    }
+    .sub-header-right-section {
+      @extend %d-flex-align-center;
+      justify-content: flex-end;
+      width: 48%;
+      height: 100%;
+      .view-type-button-container {
+        display: flex;
+        align-items: center;
+        width: 56%;
+        .view-type-button {
+          margin: 0 0.4%;
+          padding: 4%;
+          width: 10%;
+          height: 63.2%;
+        }
+        .active-view-button {
+          background: $color-mdLightPurple;
+          border-radius: 10px;
+        }
+      }
+      .filter-sort-button-container {
+        @extend %d-flex;
+        align-items: center;
+        height: 100%;
+        .filter-sort-button-section {
+          img {
+              height: 30px;
+              width: 30px;
+          }
+        }
+        .startTimerButton {
+          // cursor: pointer;
+          border: 1px solid #c8c8c8;
+          background: transparent;
+          box-shadow: none;
+          border-radius: 12px;
+          min-width: auto;
+          padding: 7px;
+          .MuiButton-label {
+            font-family: HelveticaNeue-MediumCond;
+            font-size: 1.125rem;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 0.83;
+            letter-spacing: 0.36px;
+            text-align: left;
+            color: rgba(78, 88, 169, 0.5);
+            white-space: nowrap;
+          }
+        }
+        div {
+          display: flex;
+          align-items: center;
+          margin: 5%;
+          cursor: pointer;
+
+          .filter-sort-type-button {
+            width: 100%;
+          }
+          .active-filter-sort-button {
+            background: $color-mdLightPurple;
+          }
+        }
+      }
+
+      .custome-button-container {
+        @extend %d-flex;
+        width: 20%;
+        height: 100%;
+        div {
+          border-radius: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: solid 1px #ecf1f9;
+          border-radius: 8px;
+          margin: 1.5vh 2%;
+          cursor: pointer;
+          width: 44%;
+          height: 65%;
+
+          .filter-sort-type-button {
+            width: 50%;
+          }
+          .active-filter-sort-button {
+            background: $color-mdLightPurple;
+          }
+        }
+      }
+
+      .more-options-icon {
+        // padding: 7px;
+        // margin-right: 10px;
+        width: 1%;
+        margin: 0% 1.5%;
+      }
+    }
+
+
+}

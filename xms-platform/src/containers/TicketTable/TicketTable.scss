@@ -1,0 +1,840 @@
+@import "../../variables";
+@import "../../extends";
+@import "../../mixins";
+
+@mixin elementStylingMixin($bgc, $brd, $col) {
+  background: $bgc;
+  border: 1px solid $brd;
+  color: $col;
+}
+
+.ticket-listing-component-body {
+  height: 100%;
+  width: 100%;
+
+  .ticket-table-body {
+    overflow: auto;
+    height: 80%;
+    padding: 0 3%;
+    margin: auto;
+
+    .ticket-listing-table-section {
+      // height: 50%;
+      overflow: auto;
+      position: relative;
+      transition: 0.5s;
+
+      div {
+        .ag-root-wrapper {
+          .ag-root-wrapper-body {
+            .ag-root {
+              border: 0;
+
+              .ag-header {
+                //table header
+                .ag-header-viewport {
+                  background-color: rgba(78, 88, 169, 0.05);
+
+                  .ag-header-container {
+                    .ag-header-row {
+                      .ag-header-cell {
+                        .ag-cell-label-container {
+                          .ag-header-cell-text {
+                            font-family: "helveticaNeueLight" !important;
+                            text-transform: uppercase;
+                            font-size: rem(15px) !important;
+                          }
+                        }
+                      }
+
+                      .ag-header-cell::after {
+                        border: 0;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .ag-body-viewport {
+                // table body
+                .ag-center-cols-clipper {
+                  .ag-center-cols-viewport {
+                    .ag-center-cols-container {
+                      //rows container
+                      .ag-row-selected {
+                        z-index: 1000;
+                      }
+
+                      .ag-row {
+                        .ag-cell {
+                          border: 0;
+                          z-index: 100000;
+                          font-family: "helveticaNeueLight" !important;
+                            font-size: rem(15px)!important;
+                            @extend %d-flex-align-center;
+                          overflow: visible;
+                          // overflow: hidden;
+                          // &:last-child {
+                          //   overflow: visible;
+                          // }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .compress-ticket-table {
+      height: 50%;
+      top: 2%;
+      width: 100%;
+      float: left;
+    }
+
+    .expand-ticket-table {
+      height: 88%;
+      top: 2%;
+    }
+
+    /////////// Ticket Status Element /////////////
+    .ticket-status-container {
+      @extend %d-flex-space-btwn;
+      position: relative;
+      background: rgba(213, 0, 0, 0.05);
+      padding: 0 10px;
+      height: 25px;
+      border-radius: 5px;
+      color: rgba(213, 0, 0, 0.5);
+      font-size: 0.9;
+      cursor: pointer;
+      z-index: 1000;
+      p{
+        font-size: rem(14px);
+        font-family: HelveticaNeue-MediumCond;
+      }
+
+      .ticket-popup-placeholder {
+        width: 20px;
+        @extend %d-flex-align-justify-center;
+        position: relative;
+
+        .top-text:before {
+          content: "";
+          background: url("../../assets/icons/15-10-2019/Path 184.svg");
+          background-position: center;
+          position: absolute;
+          background-size: cover;
+          height: 20px;
+          width: 20px;
+          top: -11px;
+          -webkit-transform: rotate(-54deg);
+          transform: rotate(-65deg);
+          right: 20px;
+        }
+
+        .top-text {
+          position: absolute;
+          padding: 15px;
+          top: 29px;
+          right: -23px;
+          height: 150px;
+          width: 150px;
+          border-radius: 10px;
+          z-index: 1000;
+          // overflow: auto;
+          background: $color-white;
+          box-shadow: 0 0 15px $color-lightWeightGray;
+          opacity: 1;
+
+          .top-text-popup-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+
+    // //////////  Header Column Dropdown section starts ///////////
+    .column-header-container {
+      @extend %d-flex-space-btwn;
+      position: relative;
+      cursor: pointer;
+
+      .table-addnew-header-icon {
+        // @extend %d-flex-align-justify-center;
+        position: relative;
+      }
+
+      .header-column-dropdown {
+        position: absolute;
+
+        .top-text:before {
+          content: "";
+          background: url("../../assets/icons/15-10-2019/Path 184.svg");
+          background-position: center;
+          position: absolute;
+          background-size: cover;
+          height: 20px;
+          width: 20px;
+          top: -11px;
+          -webkit-transform: rotate(-54deg);
+          transform: rotate(-65deg);
+          right: 20px;
+        }
+
+        .top-text {
+          position: absolute;
+          padding: 15px;
+          top: 29px;
+          right: -23px;
+          height: 150px;
+          width: 150px;
+          border-radius: 10px;
+          z-index: 1000;
+          // overflow: auto;
+          background: $color-white;
+          box-shadow: 0 0 15px $color-lightWeightGray;
+          opacity: 1;
+
+          .top-text-popup-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+
+    // /////////    Header Column Dropdown section ends //////////
+
+    //////////////  Ticket Tag Element /////////////////
+    .ticket-tags-container {
+      @extend %d-flex-space-btwn;
+      position: relative;
+
+      .tags-elements-holder {
+        @extend %d-flex;
+        div{
+          font-size: rem(12px);
+          font-family: HelveticaNeue-MediumCond;
+        }
+      }
+
+      .tag-element {
+        padding: 0 5px;
+        height: 25px;
+        border-radius: 4px;
+        font-size: 0.9;
+        cursor: pointer;
+        margin: 0 4px 0 0;
+      }
+
+      .risk-tag {
+        @include elementStylingMixin(#c7e9fe, "", #0096ff);
+      }
+
+      .phase1-tag {
+        @include elementStylingMixin(#ffe3cd, "", #ff762c);
+      }
+
+      .critical-tag {
+        background: #fde4e5;
+        color: $color-darkPink;
+      }
+
+      .tags-popup-placeholder {
+        @extend %d-flex-align-justify-center;
+        justify-self: flex-end;
+        width: 10px;
+
+        .pic-color-for-pop-up:before {
+          content: "";
+          background: url("../../assets/icons/15-10-2019/Path 184.svg");
+          background-position: center;
+          position: absolute;
+          background-size: cover;
+          height: 20px;
+          width: 20px;
+          top: -10px;
+          -webkit-transform: rotate(-54deg);
+          transform: rotate(-58deg);
+          right: 15px;
+        }
+
+        .pic-color-for-pop-up {
+          position: absolute;
+          padding: 10px;
+          right: -21px;
+          top: 28px;
+          height: auto;
+          width: 150px;
+          border-radius: 10px;
+          z-index: 1000;
+          overflow: visible !important;
+          background: #ffffff;
+          box-shadow: 0 0 15px #c8c8c880;
+          opacity: 1;
+          // height: 200px;
+          // overflow: auto;
+
+          p {
+            font-size: rem(10px);
+            font-weight: 900;
+            color: $color-lightGray;
+            margin-bottom: 2px;
+          }
+
+          .color-pic-tags-container {
+            width: 100%;
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .color-picker-section {
+              .MuiCheckbox-root {
+                padding: 0px;
+                padding-bottom: 3px;
+              }
+
+              .MuiIconButton-label {
+                padding-top: 3px;
+
+                .MuiSvgIcon-root {
+                  font-size: rem(12px);
+                  padding-bottom: 1px;
+                }
+              }
+
+              .color-picker-text {
+                font-size: rem(11px);
+                padding-left: 5px;
+                color: $color-thickGray;
+                font-weight: 550;
+              }
+            }
+
+            // .color-picker-risk, .color-picker-critical-customer, .color-picker-phase1, .color-picker-technical, .color-picker-server-issue{
+            //     width: 12px;
+            //     height: 12px;
+            //     border-radius: 6px;
+            // }
+            // .color-picker-risk{
+            //     background-color: $color-snowFlurry;
+            // }
+            // .color-picker-critical-customer{
+            //     background-color: $color-lightPink;
+            // }
+            // .color-picker-phase1{
+            //     background-color: $color-orange;
+            // }
+            // .color-picker-technical{
+            //     background-color: $color-mediumAquarium;
+            // }
+            // .color-picker-server-issue{
+            //     background-color: $color-lightPink;
+            // }
+          }
+
+          hr {
+            margin-top: 2px;
+            margin-bottom: 2px;
+          }
+
+          .color-picker-search-and-add {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            height: 25px;
+
+            .MuiInputBase-root {
+              width: 70%;
+              font-size: rem(10px);
+              border: 1px solid $color-lightGray;
+              border-radius: 15px;
+
+              .MuiInputBase-input {
+                padding: 6px 6px 7px;
+              }
+            }
+
+            .pick-color-add {
+              min-width: 20px !important;
+              box-shadow: none !important;
+              border-radius: 40px !important;
+              min-height: 15px !important;
+              background: transparent !important;
+              font-size: rem(14px) !important;
+              // margin-top: 5px !important;
+              text-transform: capitalize !important;
+              white-space: nowrap !important;
+              position: relative;
+
+              .add-color-icon {
+                width: 15px;
+              }
+
+              .MuiFab-label {
+                margin-bottom: 15px;
+              }
+            }
+          }
+
+          .tags-color-picker-color-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 20px;
+            margin-top: 5px;
+            border: 1px dashed $color-lightGray;
+            border-radius: 10px;
+
+            .tags-circle-picker-one {
+              .circle-picker {
+                // height: 20px;
+                // align-items: center!important;
+                // flex-wrap: inherit!important;
+                // margin-right: 0px!important;
+                // margin-bottom: 0px!important;
+                // width: 130px!important;
+                // span:nth-child(1) > div{
+                //         width: 15px!important;
+                //         height: 15px!important;
+                //         margin-left: 5px;
+                //         margin-bottom: 0px!important;
+                //         margin-right: 3px!important;
+                // }
+                // span:nth-child(2)> div, .circle-picker-one> .circle-picker> span:nth-child(3)> div, .circle-picker-one> .circle-picker> span:nth-child(4)> div, .circle-picker-one> .circle-picker> span:nth-child(5)> div, .circle-picker-one> .circle-picker> span:nth-child(6)> div{
+                //         width: 15px!important;
+                //         height: 15px!important;
+                //         margin-left: 3px;
+                //         margin-bottom: 0px!important;
+                //         margin-right: 3px!important;
+                // }
+              }
+            }
+
+            .pick-color-make-it-private {
+              width: 100%;
+              height: 20px;
+              margin-top: 6px;
+              display: flex;
+
+              img {
+                width: 10px;
+                margin-left: 3px;
+              }
+
+              p {
+                margin: 5px 2px 0px 5px;
+              }
+
+              .MuiCheckbox-root {
+                padding: 0px;
+              }
+
+              .MuiIconButton-label {
+                .MuiSvgIcon-root {
+                  font-size: rem(12px);
+                  padding-bottom: 1px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // .pick-color-popup {
+      //     min-width: 20px !important;
+      //     box-shadow: none !important;
+      //     border-radius: 40px !important;
+      //     height: 40px !important;
+      //     background: transparent !important;
+      //     font-size: 0.8rem !important;
+      //     text-transform: capitalize !important;
+      //     white-space: nowrap!important;
+      //     position: relative;
+
+      //     .MuiFab-label{
+      //         margin-bottom: 26px;
+      //     }
+      //     .color-picker-risk,
+      //     .color-picker-critical-customer,
+      //     .color-picker-phase1,
+      //     .color-picker-technical,
+      //     .color-picker-server-issue {
+      //         width: 12px;
+      //         height: 12px;
+      //         border-radius: 6px;
+      //     }
+
+      //     .color-picker-risk {
+      //         background-color: $color-snowFlurry;
+      //     }
+
+      //     .color-picker-critical-customer {
+      //         background-color: $color-lightPink;
+      //     }
+
+      //     .color-picker-phase1 {
+      //         background-color: $color-orange;
+      //     }
+
+      //     .color-picker-technical {
+      //         background-color: $color-mediumAquarium;
+      //     }
+
+      //     .color-picker-server-issue {
+      //         background-color: $color-lightPink;
+      //     }
+
+      // }
+    }
+
+    ///////////////////// Ticket priority element //////////////////
+    .ticket-priority-container {
+      position: relative;
+      background: rgba(213, 0, 0, 0.05);
+      padding: 0 10px;
+      height: 25px;
+      border-radius: 15px;
+      color: rgba(213, 0, 0, 0.5);
+      font-size: rem(15px);
+      cursor: pointer;
+      z-index: 1000;
+      width: 80%;
+      text-align: center;
+      text-transform: uppercase;
+
+      .ticket-table-priority-popup:before {
+        content: "";
+        background: url("../../assets/icons/15-10-2019/Path 184.svg");
+        background-position: center;
+        position: absolute;
+        background-size: cover;
+        height: 20px;
+        width: 20px;
+        top: -10px;
+        -webkit-transform: rotate(-54deg);
+        transform: rotate(-58deg);
+        left: 26px;
+      }
+
+      .ticket-table-priority-popup {
+        position: absolute;
+        padding: 15px;
+        top: 28px;
+        left: -10px;
+        height: 150px;
+        width: 150px;
+        border-radius: 10px;
+        z-index: 1000;
+        background: #ffffff;
+        box-shadow: 0 0 15px #c8c8c880;
+        opacity: 1;
+
+        .top-text-popup-content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .low-priority {
+      background: #e3f8ef;
+      border: 1px solid #bef5dc;
+      color: #00e493;
+      div{
+        font-size: rem(14px);
+        font-family: HelveticaNeue-MediumCond;
+      }
+    }
+
+    .medium-priority {
+      background: #ddf0f9;
+      border: 1px solid #bbe3f9;
+      color: #0099fa;
+      div{
+        font-size: rem(14px);
+        font-family: HelveticaNeue-MediumCond;
+      }
+    }
+
+    .high-priority {
+      background: #fff1e5;
+      border: 1px solid #ffd9bb;
+      color: #ff762c;
+      div{
+        font-size: rem(14px);
+        font-family: HelveticaNeue-MediumCond;
+      }
+    }
+
+    .critical-priority {
+      background: #fde4e5;
+      border: 1px solid #f9b6b7;
+      color: $color-darkPink;
+      div{
+        font-size: rem(14px);
+        font-family: HelveticaNeue-MediumCond;
+      }
+    }
+
+    //////////////// Ticket Assign Element /////////////////
+    .assign-Profile-element {
+      position: relative;
+      cursor: pointer;
+
+      .assign-Profile {
+        top: 10px;
+        @extend %d-flex-align-center;
+
+        img {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+        }
+
+        p {
+          margin: 0px !important;
+          font-family: "helveticaNeueLight";
+          font-size: rem(13px);
+          font-weight: 300;
+          line-height: 1.38;
+          letter-spacing: 0.26px;
+          color: #151b26;
+          text-align: left;
+          padding-left: 10px;
+        }
+      }
+
+      .top-text-popup-one:before {
+        content: "";
+        background: url("../../assets/icons/15-10-2019/Path 184.svg");
+        background-position: center;
+        position: absolute;
+        background-size: cover;
+        height: 20px;
+        width: 20px;
+        top: -9px;
+        -webkit-transform: rotate(-54deg);
+        transform: rotate(-61deg);
+        left: 32px;
+      }
+
+      .top-text-popup-one {
+        position: absolute;
+        padding: 15px;
+        top: 30px;
+        left: -40px;
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        z-index: 1000;
+        background: #ffffff;
+        box-shadow: 0 0 15px #c8c8c880;
+        opacity: 1;
+
+        .top-text-search-field {
+          border: 1px solid $color-darkWhite;
+          display: flex;
+          justify-content: space-evenly;
+          border-radius: 20px;
+
+          .MuiInputBase-root {
+            padding-left: 10px;
+            color: $color-lightWeightGray;
+          }
+
+          img {
+            padding-right: 10px;
+            padding-top: 10px;
+            color: $color-lightWeightGray;
+            height: 25px;
+          }
+        }
+
+        .top-text-popup-content {
+          .MuiIconButton-root {
+            margin-right: 4%;
+          }
+
+          .top-text-popup-avathar {
+            height: 25px;
+            width: 25px;
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+
+    .assign-to-cell > p {
+      margin: 0px !important;
+      font-family: "helveticaNeueLight";
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.38;
+      letter-spacing: 0.26px;
+      color: #151b26;
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    /////////////////// Tickets-More-Element //////////////
+    .tickets-more-options {
+      @extend %d-flex-align-justify-center;
+      cursor: pointer;
+      position: relative;
+      z-index: 15000;
+      width: 20px;
+
+      .more-options-popup-placeholder {
+        @extend %d-flex-align-justify-center;
+        width: 20px;
+      }
+
+      .ticket-list-more-popup:before {
+        content: "";
+        background: url("../../assets/icons/15-10-2019/Path 184.svg");
+        background-position: center;
+        position: absolute;
+        background-size: cover;
+        height: 20px;
+        width: 20px;
+        top: -9px;
+        -webkit-transform: rotate(-54deg);
+        transform: rotate(-56deg);
+        right: 7px;
+      }
+
+      .ticket-list-more-popup {
+        width: 200px;
+        // height: 335px;
+        height: auto;
+        z-index: 1000;
+        background-color: #ffffff;
+        box-shadow: 0px 3px 12px #d2d2d2;
+        border-radius: 15px;
+        opacity: 1;
+        position: absolute;
+        top: 14px;
+        right: -19px;
+        margin: 10px;
+        text-align: center;
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 20px 0;
+          text-transform: capitalize !important;
+
+          li {
+            color: $color-dimGray;
+            text-align: left;
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+
+            i {
+              margin: 0 10px;
+              text-align: left;
+            }
+          }
+
+          li:hover {
+            background: $color-veryLightGray;
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ag-header,
+.ag-header-container,
+.ag-header-viewport,
+.ag-header-row {
+  height: 50px !important;
+  min-height: 50px !important;
+}
+
+.ag-header-cell-label {
+}
+
+.ag-header-cell-text {
+  font-size: rem(18px);
+  // font-weight: 500;
+  font-family: HelveticaNeue-MediumCond;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 0.36px;
+  text-align: left;
+  color: #656565;
+}
+
+.ag-cell-label-container {
+  flex-direction: row-reverse;
+}
+
+// .ag-icon-checkbox-unchecked{
+//     font-size: 12px!important;
+// }
+
+// .ag-theme-balham .ag-icon-checkbox-unchecked:before{
+//     font-size: 12px!important;
+// }
+
+// .ag-theme-balham .ag-cell {
+//     display: flex;
+// }
+
+.ag-react-container {
+  width: 100%;
+}
+
+.ag-center-cols-container .ag-row {
+  &:hover {
+    .ag-row-drag {
+      display: block;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+.ag-theme-balham .ag-row-drag {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+// .response-time-button{
+//     width: 100%;
+// }
+
+// .ag-center-cols-container{
+//     width: 100%;
+// }
+
+.ag-cell-value {
+  font-size: rem(15px);
+  font-family: "HelveticaNeue-MediumCond";
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  color: #151b26;
+}
+
+.table-addnew-header-icon {
+  height: 25px;
+  width: 25px;
+}

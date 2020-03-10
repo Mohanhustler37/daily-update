@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_11274" data-name="Group 11274" transform="translate(-1586 -181)">
+    <g id="Rectangle_630" data-name="Rectangle 630" transform="translate(1586 181)" fill="#fff" stroke="#d0cfec" stroke-width="2">
+      <rect width="24" height="24" rx="5" stroke="none"/>
+      <rect x="1" y="1" width="22" height="22" rx="4" fill="none"/>
+    </g>
+    <line id="Line_14" data-name="Line 14" x2="13.6" transform="translate(1587.6 187.8)" fill="none" stroke="#d0cfec" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_15" data-name="Line 15" x2="2" transform="translate(1604 187.8)" fill="none" stroke="#d0cfec" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_16" data-name="Line 16" x2="2" transform="translate(1589.6 191.8)" fill="none" stroke="#d0cfec" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_17" data-name="Line 17" x2="4.098" transform="translate(1589.6 195.8)" fill="none" stroke="#d0cfec" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_18" data-name="Line 18" x2="1.9" transform="translate(1589.6 199.8)" fill="none" stroke="#d0cfec" stroke-linecap="round" stroke-width="1"/>
+    <g id="Rectangle_631" data-name="Rectangle 631" transform="translate(1593.2 190.2)" fill="#fff" stroke="#d0cfec" stroke-width="1">
+      <rect width="6.4" height="3.2" rx="1.6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="5.4" height="2.2" rx="1.1" fill="none"/>
+    </g>
+    <line id="Line_19" data-name="Line 19" x2="7.2" transform="translate(1599.2 191.8)" fill="none" stroke="#d0cfec" stroke-linecap="round" stroke-width="1"/>
+    <g id="Rectangle_632" data-name="Rectangle 632" transform="translate(1594.8 194.2)" fill="#fff" stroke="#d0cfec" stroke-width="1">
+      <rect width="10.4" height="3.2" rx="1.6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="9.4" height="2.2" rx="1.1" fill="none"/>
+    </g>
+    <line id="Line_20" data-name="Line 20" x2="1.7" transform="translate(1604.7 195.8)" fill="none" stroke="#d0cfec" stroke-linecap="round" stroke-width="1"/>
+    <g id="Rectangle_633" data-name="Rectangle 633" transform="translate(1592.2 198.2)" fill="#fff" stroke="#d0cfec" stroke-width="1">
+      <rect width="9.4" height="3.2" rx="1.6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="8.4" height="2.2" rx="1.1" fill="none"/>
+    </g>
+    <line id="Line_21" data-name="Line 21" x2="4.9" transform="translate(1601.5 199.8)" fill="none" stroke="#d0cfec" stroke-linecap="round" stroke-width="1"/>
+  </g>
+</svg>

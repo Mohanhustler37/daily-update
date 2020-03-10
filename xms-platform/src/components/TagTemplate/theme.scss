@@ -1,0 +1,29 @@
+@import '../../mixins';
+
+
+.selectedTag {
+  text-transform: capitalize;
+  margin: 0 2px;
+  display: flex;
+  background: #b4e0ff;
+  justify-content: space-between;
+  height: 16px;
+  margin-left: 2%;
+  font-size: rem(18px);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: #656565;
+  display: block;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  border-radius: 5px;
+  .removeTagIcon {
+    margin: 0 0 0 4px;
+  }
+}
+

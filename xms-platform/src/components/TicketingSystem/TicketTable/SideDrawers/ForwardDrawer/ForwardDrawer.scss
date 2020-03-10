@@ -1,0 +1,320 @@
+@import '../../../../../variables';
+
+.forward-ticket-header-text{
+    display: flex;
+}
+
+.forward-ticket-header-text{
+    p{
+        font-size: 18px;
+        font-weight: bolder;
+        color: $color-dimGray;
+        margin-left: 5%;
+        margin-top: 8%;
+    }
+} 
+
+.forward-ticket-header-text{
+    span{
+    font-size: 18px;
+    font-weight: bolder;
+    color: $color-skyBlue;
+    margin-left: 1%;
+    margin-top: 8%;
+}
+}
+
+
+.forward-ticket-text-editor-container{
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+.forward-ticket-text-editor-container{
+    p{
+    font-size: 12px;
+    color: $color-lightGray;
+}
+}
+
+.forward-ticket-from-field{
+    width: 40%;
+    height: 30px;
+    margin-top: 5%;
+}
+
+.forward-ticket-from-field{
+    .MuiFormControl-root{
+        width: 100%;
+        .forward-ticket-menu-item{
+            .MuiInputBase-root{
+                border: 1px solid $color-lightGray;
+                width: 100%;
+                height: 30px;
+                border-radius: 20px; 
+            }
+            .MuiInput-underline:hover:not(.Mui-disabled):before{
+                border-bottom: none;
+            }
+            .MuiInput-underline:before{
+                border-bottom: none;
+            }
+            .MuiInput-underline:after{
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+
+
+.forward-ticket-from-field{
+    .MuiFormControl-root{
+        .MuiInputLabel-formControl{
+            top: -11px;
+            left: 11px;
+            color: $color-thickGray;
+            font-size: 15px;
+        }
+    }
+}
+
+.forward-ticket-from-field>.MuiFormControl-root> .forward-ticket-menu-item> .MuiInputBase-root> .MuiInputBase-input{
+    padding: 6px 12px 7px;
+}
+
+
+
+.forward-ticket-from-field{
+    .MuiFormControl-root{
+        .MuiInputLabel-formControl{
+            top: -17px;
+            left: 12px;
+            font-size: 15px;
+            color: $color-thickGray;
+        }
+    }
+}
+
+.forward-ticket-menu-item > .MuiInputBase-root > .MuiSelect-root {
+    display: flex;
+}
+
+.forward-ticket-menu-list> img{
+    width: 26px;
+    height: 26px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+.forward-ticket-menu-item{
+    .MuiInputBase-root{
+        .MuiSelect-root > img {
+            width: 26px;
+            height: 26px;
+            border-radius: 13px;
+            margin-right: 5px;
+            margin-top: 2px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.forward-ticket-menu-list-name{
+    width: 50px;
+    height: 30px;
+}
+
+.forward-ticket-menu-list-name{
+    .first-text{
+        line-height: 8px;
+        padding-top: 6px;
+        font-weight: bolder;
+        color: $color-lightGray;
+    }
+} 
+
+.forward-ticket-menu-list{
+    .forward-ticket-menu-list-name{
+        margin-bottom: 10px;
+    }
+} 
+
+.forward-ticket-menu-list-name{
+    .second-text{
+        color: $color-black;
+    }
+} 
+
+.forward-ticket-text-editor-container{
+    .forward-ticket-to{
+        font-size: 12px;
+        color: $color-lightGray;
+        margin-top: 5%;
+    }
+} 
+
+.forward-ticket-editor-section{
+    width: 98%;
+    border: 1px dashed $color-lightGray;
+    border-radius: 10px;
+    height: 310px;
+    margin-top: 5%;
+}
+
+.forward-ticket-editor-input-field{
+    position: relative;
+    border-radius:30px 30px 0px 0px;
+    border-bottom: 1px solid $color-darkWhite;
+    background-color:$color-white; 
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    color: $color-lightGray;
+    margin-left: 0%; 
+    font-size: 10px;
+}
+
+.forward-ticket-editor-input-field> .MuiInputBase-root{
+    width: 70%;
+}
+.forward-ticket-text-editor-field{
+    width: 100%;
+    height: 220px;
+    
+}
+
+.forward-ticket-button{
+    .MuiButton-root{
+        padding: 0px;
+        min-width: 40px;
+    }
+}
+
+.forward-ticket-button> .MuiButtonBase-root> .MuiButton-label{
+    height: 40px;
+}
+
+.forward-ticket-cc-button{
+    span{
+    color: $color-skyBlue;
+}
+}
+
+.forward-ticket-bcc-button{
+    span{
+    color: $color-lightGray;
+}
+}
+
+.forward-ticket-text-editor-footer{
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid $color-lightGray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forward-ticket-text-editor-footer{
+    .MuiButton-root{
+        min-width: 40px;
+        height: 47px;
+        
+    }
+}
+
+
+.forward-ticket-text-editor-footer>.MuiButton-root> .MuiButton-label> img{
+    width: 15px;
+}
+
+.forward-ticket-save-button{
+    .MuiButton-label{
+        font-size: 12px;
+        font-weight: bolder;
+        color: $color-lightGray;
+    }
+} 
+
+.forward-ticket-footer-drop-down{
+    width: 22%;
+    height: 47px;
+}
+
+.forward-ticket-footer-drop-down{
+    .MuiFormControl-root{
+        width: 100%;
+        .forward-ticket-footer-menu-item{
+            .MuiInputBase-root{
+                border: 1px dashed $color-lightGray;
+                width: 100%;
+                height: 30px;
+                border-radius: 20px; 
+                margin-top: 10px;
+            }
+            
+            .MuiInput-underline:hover:not(.Mui-disabled):before{
+                border-bottom: none;
+            }
+            .MuiInput-underline:before{
+                border-bottom: none;
+            }
+            .MuiInput-underline:after{
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+
+.forward-ticket-footer-drop-down{
+    .MuiFormControl-root{
+        .MuiInputLabel-formControl{
+            top: -3px;
+            left: 6px;
+            font-size: 10px;
+            font-weight: bolder;
+            color: $color-thickGray;
+        }
+    }
+}
+
+.forward-ticket-break-section{
+    margin-top: 15%;
+    border-bottom: 1px solid $color-lightGray;
+}
+
+.forward-ticket-cancel-sent-button{
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+    height: 40px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.forward-ticket-cancel-sent-button> .MuiButton-text{
+padding: 0px;
+}
+
+.forward-ticket-cancel-sent-button{
+    .forward-ticket-cancel-button{
+        min-width: 30%;
+        border: 1px dashed $color-lightGray;
+        border-radius: 20px; 
+        font-size: 12px;
+        font-weight: bolder;
+        color: $color-lightGray;
+    }
+}
+
+.forward-ticket-cancel-sent-button{
+    .forward-ticket-sent-button{
+        min-width: 45%;
+        border-radius: 20px; 
+        background-color: $color-green;
+        color: $color-white;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+}

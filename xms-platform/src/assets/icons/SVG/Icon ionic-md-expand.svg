@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Icon_ionic-md-expand" width="12.879" height="12.879" data-name="Icon ionic-md-expand" viewBox="0 0 12.879 12.879">
+    <defs>
+        <style>
+            .cls-1{fill:#d0cfec}
+        </style>
+    </defs>
+    <path id="Path_923" d="M24.26 25.141h2.64V26.9h-4.4v-4.4h1.76z" class="cls-1" data-name="Path 923" transform="translate(-14.022 -22.5)"/>
+    <path id="Path_924" d="M24.26 6.261V8.9H22.5V4.5h4.4v1.761z" class="cls-1" data-name="Path 924" transform="translate(-14.022 3.978)"/>
+    <path id="Path_925" d="M7.14 6.26H4.5V4.5h4.4v4.4H7.14z" class="cls-1" data-name="Path 925" transform="translate(-4.5 3.978)"/>
+    <path id="Path_926" d="M7.14 25.14V22.5H8.9v4.4H4.5v-1.76z" class="cls-1" data-name="Path 926" transform="translate(-4.5 -22.5)"/>
+</svg>

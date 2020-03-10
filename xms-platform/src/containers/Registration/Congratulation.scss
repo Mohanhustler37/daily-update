@@ -1,0 +1,129 @@
+@import '../../variables';
+
+@font-face {
+    font-family: 'Helvetica Neue Condensed Bold';
+    src: local('Helvetica Neue Condensed Bold'), url(/HelveticaNeue/HelveticaNeueCondensedBold.ttf) format('truetype');
+  }
+
+  .congratulations-page{
+    .congratulation-header-logo{
+        .MuiAppBar-root{
+            .MuiToolbar-root{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .MuiAppBar-colorPrimary{
+            background-color: $color-lightWhite;
+        }
+        .MuiPaper-elevation4{
+            box-shadow: none;
+        }
+    }
+  }
+
+
+.congratulation-logo{
+    width: 25px;
+}
+
+
+.congratulation-field-one{
+    width:100%;
+    text-align:center;  
+    margin-top:100px;
+    
+}
+
+.congratulation-text-one{
+    font-size: 30px;
+    font-family: 'helveticaNeueCondensedBold';
+    letter-spacing:1px;
+    color: $color-thickGray;
+}
+
+.congratulation-text-two{
+    font-size:14px;
+    .MuiButton-outlined{
+        text-align:center;
+        border-radius: 10px;
+        background: $color-lightWhite 0% 0% no-repeat padding-box;
+        color: $color-thickGray;
+        border: 1px solid $color-lightGray;
+        width:330px;
+        height:50px; 
+        margin-top:1%;
+        margin-left: 475px;
+        text-transform: lowercase;
+    }
+}
+
+
+
+.field2{
+    font-size:16px;
+}
+
+
+.congratulation-field-two{
+    
+    span{
+        img{
+            margin-top:-0.5%;
+        }
+    }
+}
+
+
+.congratulation-field-three{
+    width:100%;
+    text-align: center;
+    margin-top:6%;
+    p{
+        font-size:13px;
+    }
+
+}
+
+
+
+
+
+.congratulationfooter{
+    display: flex;
+     justify-content: space-between;
+     margin-top:14%;
+   }
+
+   .congratulationfooter{
+    .footerleftcontainer{
+        p{
+            font-size: 13px;
+            margin-left:10px;
+        }
+    }
+   }
+  
+   p{
+       span{
+           img{
+            height:15px;
+           }
+       }
+   }
+  
+   .congratulationfooter{
+    .footerrightcontainer{
+        .list{
+            list-style-type:none;
+            display:flex;
+            justify-content: space-between; 
+            font-size: 10px;
+        }
+    }
+   }
+ 
+ 
+ li{
+   padding-right:20px;
+ }

@@ -1,0 +1,1118 @@
+@import '../../../variables';
+
+.table-space {
+    height: 60px;
+    width: 83%;
+    border: 1px solid $color-white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1;
+    margin: -1;
+    overflow: 'hidden';
+    padding: 0;
+    position: 'absolute';
+    top: 20;
+    width: 1;
+}
+
+
+#table-header-text {
+    .MuiTableSortLabel-root {
+        cursor: pointer;
+        display: inline-flex;
+        align-items: unset !important;
+        flex-direction: unset !important;
+        justify-content: unset !important;
+        font-weight: 700
+    }
+
+    .MuiPaper-root {
+        div:first-child {
+            table {
+                thead {}
+
+                tbody {
+                    tr {
+                        .MuiTableCell-root {
+                            .ticket-status-popup {
+                                position: relative;
+                                height: 20px;
+                                width: 63px;
+                                display: flex;
+                                align-items: center;
+                                background: $color-supLightPink;
+                                color: $color-strongPink;
+                                font-weight: bold;
+                                border-radius: 5px;
+                                padding: 5px 10px;
+                                justify-content: space-between;
+
+                                .ticket-status-popup-element {
+                                    position: absolute;
+                                    padding: 15px;
+                                    left: 0;
+                                    top: 27px;
+                                    height: 145px;
+                                    width: 150px;
+                                    border-radius: 10px;
+                                    z-index: 1000;
+                                    background: $color-white;
+                                    box-shadow: 0 0 15px $color-lightWeightGray;
+                                    opacity: 1;
+
+                                    .ticket-status-popup-content {
+                                        position: relative;
+                                        overflow: hidden;
+                                        width: 180px;
+                                        height: 150px;
+                                        border: 1px solid red;
+                                    }
+                                }
+                            }
+
+                            .ticket-status-arrow {
+                                transform: rotate(-90deg);
+                                padding: 5px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.MuiTableCell-alignRight {
+    text-align: left !important;
+}
+
+
+.MuiTableCell-root {
+    padding: 12px 0px 10px 15px !important;
+    font-size: 0.69rem !important;
+}
+
+.MuiTableHead-root {
+    background-color: $color-darkWhite;
+}
+
+.MuiTableCell-root {
+    border-bottom: 0px !important;
+}
+
+.MuiButton-sizeLarge {
+    padding: 8px 10px !important;
+    width: 100%;
+    margin: 0px !important;
+}
+
+.MuiTableSortLabel-root {
+    font-weight: 700
+}
+
+.MuiPaper-elevation1 {
+    box-shadow: none !important;
+}
+
+
+#ticket-table-header {
+    .MuiTableRow-root {
+        .MuiTableCell-root {
+            .PrivateSwitchBase-root-90 {
+                padding: 0px;
+                padding-left: 9px;
+            }
+
+        }
+
+    }
+}
+
+#ticket-table-header {
+    .MuiTableRow-root {
+        .MuiTableCell-root {
+            .ticket-table-edit-icon {
+                margin-right: 5px;
+                padding-top: 1px;
+                width: 35px;
+                height: 35px;
+                border: 1px dashed;
+                border-radius: 20px;
+                background-color: transparent !important;
+                box-shadow: none !important;
+                position: relative;
+                color: $color-lightGray;
+                display: inline;
+                position: relative;
+            }
+        }
+    }
+}
+
+.ticket-popup-main {
+    width: 200px;
+    height: auto;
+    z-index: 1000;
+    background-color: $color-white;
+    box-shadow: 0px 3px 12px $color-white-gray;
+    border-radius: 15px;
+    opacity: 1;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -165px;
+
+}
+
+.ticket-popup-sub {
+    width: 170px;
+    height: auto;
+    margin: 15px;
+    padding-top: 5px;
+
+}
+
+.ticket-popup-heading {
+    display: flex;
+    justify-content: space-between;
+    color: $color-lightGray;
+    // margin-top:20px;
+}
+
+.ticket-popup-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -29px;
+}
+
+.ticket-popup-list-one {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -22px;
+}
+
+.popup-text>p {
+    text-transform: capitalize;
+    color: $color-dimGray;
+    padding-top: 10px;
+}
+
+#ticket-table-header {
+    .MuiTableRow-root {
+        .MuiTableCell-root {
+            .ticket-table-edit-icon {
+                img {
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+.ticket-table-edit-icon {
+    width: 30px;
+    height: 30px;
+    border: 1px dashed;
+    border-radius: 15px;
+}
+
+#ticket-table-header {
+    .MuiTableRow-root {
+        .MuiTableCell-root {
+            font-weight: bolder;
+        }
+    }
+}
+
+////////////////////////////////////////edit pop up///////////////////////////////
+.assign-to-image-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    padding-right: 3px;
+}
+
+.tags-container-value-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.risk-container {
+    background-color: $color-snowFlurry;
+    width: 30%;
+    height: 14px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 8px;
+    padding-top: 1px;
+}
+
+.critical-customer-container {
+    background-color: $color-lightPink;
+    width: 70%;
+    height: 14px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 8px;
+    padding-top: 1px;
+}
+
+.tags-body {
+    padding-left: 0px !important;
+    width: 12% !important;
+}
+
+.need-one-more-body {
+    padding-left: 14px !important;
+}
+
+.tags-container-value-two {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.phase-container {
+    background-color: $color-orange;
+    width: 35% !important;
+    height: 14px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 8px;
+    padding-top: 1px;
+}
+
+.technical-container {
+    background-color: $color-mediumAquarium;
+    width: 60%;
+    height: 14px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 8px;
+    padding-top: 1px;
+    margin-left: 3px !important;
+}
+
+.button-in-ticket-table {
+    .MuiButton-root {
+        .MuiButton-label {
+            height: 10px;
+        }
+    }
+}
+
+.ticket-table-response-time {
+    .MuiButtonBase-root {
+        .MuiButton-label {
+            height: 14px;
+        }
+    }
+}
+
+.ticket-table-response-time>.MuiButton-root>.MuiButton-label>img {
+    margin-right: 3px;
+}
+
+.ticket-list-click-menu {
+    background-color: transparent !important;
+    width: 36px !important;
+    height: 20px !important;
+    box-shadow: none !important;
+    position: relative;
+}
+
+button:focus {
+    outline: none;
+}
+
+.ticket-list-popup {
+    width: 200px;
+    height: 315px;
+    z-index: 1000;
+    background-color: $color-white;
+    box-shadow: 0px 3px 12px $color-white-gray;
+    border-radius: 15px;
+    opacity: 1;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    margin: 10px;
+    text-align: center;
+}
+
+.ticket-list-popup:after {
+    position: absolute;
+    right: 15px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $color-white;
+}
+
+.ticket-list-popup>ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-transform: capitalize !important;
+}
+
+.ticket-list-popup>ul>li {
+    color: $color-dimGray;
+    text-align: right;
+    margin: 5px 0;
+}
+
+.ticket-list-popup>ul>li>i {
+    margin: 0 10px;
+    text-align: left;
+}
+
+.ticket-list-popup>ul>li:hover {
+    background: $color-veryLightGray;
+    color: $color-white;
+}
+
+.add-container>img {
+    width: 15px;
+    margin-left: 2px;
+}
+
+.ticket-listing-icon>img {
+    width: 15px;
+    margin: 5px 10px;
+}
+
+
+.popup-for-pick-color::after {
+    position: absolute;
+    right: 500px;
+    bottom: 160px;
+    width: 11px;
+    height: 0px;
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 10px solid $color-darkWhite;
+}
+
+.pick-color-popup {
+    min-width: 20px !important;
+    box-shadow: none !important;
+    border-radius: 40px !important;
+    height: 40px !important;
+    background: transparent !important;
+    font-size: 0.8rem !important;
+    text-transform: capitalize !important;
+    white-space: nowrap !important;
+    position: relative;
+
+    .MuiFab-label {
+        margin-bottom: 26px;
+    }
+}
+
+.add-container {
+    width: 25px;
+    height: 25px;
+
+    .MuiFab-sizeSmall {
+        width: 25px;
+    }
+}
+
+.add-color-icon {
+    width: 15px;
+
+}
+
+button:focus {
+    outline: none !important;
+}
+
+// .pic-color-for-pop-up{
+//     position: absolute;
+//     padding: 10px;
+//     right: -13px;
+//     top: 23px;
+//     height: auto;
+//     width: 150px;
+//     border-radius: 10px;
+//     z-index: 1000;
+//     overflow: auto;
+//     background: #FFFFFF;
+//     box-shadow: 0 0 15px #C8C8C880;
+//     opacity: 1;
+
+//     p{
+//         font-size: 10px;
+//         font-weight: 900;
+//         color: $color-lightGray;
+//         margin-bottom: 2px;
+//     }
+//     hr{
+//         margin-top: 2px;
+//         margin-bottom: 2px;
+//     }
+// }
+
+
+
+.color-pic-tags-container {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .color-picker-section {
+        .MuiCheckbox-root {
+            padding: 0px;
+            padding-bottom: 3px;
+        }
+
+        .MuiIconButton-label {
+            padding-top: 3px;
+
+            .MuiSvgIcon-root {
+                font-size: 12px;
+                padding-bottom: 1px;
+            }
+        }
+    }
+
+    .color-picker-risk,
+    .color-picker-critical-customer,
+    .color-picker-phase1,
+    .color-picker-technical,
+    .color-picker-server-issue {
+        width: 12px;
+        height: 12px;
+        border-radius: 6px;
+    }
+
+    .color-picker-risk {
+        background-color: $color-snowFlurry;
+    }
+
+    .color-picker-critical-customer {
+        background-color: $color-lightPink;
+    }
+
+    .color-picker-phase1 {
+        background-color: $color-orange;
+    }
+
+    .color-picker-technical {
+        background-color: $color-mediumAquarium;
+    }
+
+    .color-picker-server-issue {
+        background-color: $color-lightPink;
+    }
+
+}
+
+.color-picker-text {
+    font-size: 11px;
+    padding-left: 5px;
+    color: $color-thickGray;
+    font-weight: 550;
+}
+
+.color-picker-search-and-add {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 25px;
+
+    .MuiInputBase-root {
+        width: 70%;
+        font-size: 10px;
+        border: 1px solid $color-lightGray;
+        border-radius: 15px;
+
+        .MuiInputBase-input {
+            padding: 6px 6px 7px;
+        }
+    }
+
+    .pick-color-add {
+        min-width: 20px !important;
+        box-shadow: none !important;
+        border-radius: 40px !important;
+        min-height: 15px !important;
+        background: transparent !important;
+        font-size: 0.8rem !important;
+        // margin-top: 5px !important;
+        text-transform: capitalize !important;
+        white-space: nowrap !important;
+        position: relative;
+
+        .MuiFab-label {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.color-picker-color-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+    border: 1px dashed $color-lightGray;
+    border-radius: 10px;
+
+    .pick-one-color {
+        img {
+            width: 10px;
+        }
+    }
+
+    .pick-color1,
+    .pick-color2,
+    .pick-color3,
+    .pick-color4,
+    .pick-color5,
+    .pick-color6,
+    .pick-color7,
+    .pick-color8 {
+        width: 7%;
+        height: 10px;
+        border-radius: 20px;
+
+    }
+
+    .pick-color1 {
+        background-color: $color-lightPink;
+    }
+
+    .pick-color2 {
+        background-color: $color-skyBlue;
+    }
+
+    .pick-color3 {
+        background-color: $color-orange;
+    }
+
+    .pick-color4 {
+        background-color: $color-green;
+    }
+
+    .pick-color5 {
+        background-color: $color-red;
+    }
+
+    .pick-color6 {
+        background-color: $color-lightGray;
+    }
+
+    .pick-color7 {
+        background-color: $color-thickGray;
+    }
+
+    .pick-color8 {
+        background-color: $color-darkWhite;
+    }
+
+}
+
+.pick-color-make-it-private {
+    width: 100%;
+    height: 20px;
+    margin-top: 6px;
+    display: flex;
+
+    img {
+        width: 10px;
+        margin-left: 3px;
+    }
+
+    p {
+        margin: 5px 2px 0px 5px;
+        ;
+    }
+
+    .MuiCheckbox-root {
+        padding: 0px;
+    }
+
+    .MuiIconButton-label {
+        .MuiSvgIcon-root {
+            font-size: 12px;
+            padding-bottom: 1px;
+        }
+    }
+}
+
+.circle-picker-one {
+    .circle-picker {
+        align-items: center !important;
+        flex-wrap: inherit !important;
+        margin-right: 0px !important;
+        margin-bottom: 0px !important;
+        width: 130px !important;
+
+        span:nth-child(7),
+        span:nth-child(8),
+        span:nth-child(9),
+        span:nth-child(10),
+        span:nth-child(11),
+        span:nth-child(12),
+        span:nth-child(13),
+        span:nth-child(14),
+        span:nth-child(15),
+        span:nth-child(16),
+        span:nth-child(17),
+        span:nth-child(18) {
+            display: none;
+
+        }
+
+    }
+}
+
+.circle-picker-one>.circle-picker>span:nth-child(1)>div {
+    width: 15px !important;
+    height: 15px !important;
+    margin-left: 5px;
+    margin-bottom: 0px !important;
+    margin-right: 3px !important;
+}
+
+.circle-picker-one>.circle-picker>span:nth-child(2)>div,
+.circle-picker-one>.circle-picker>span:nth-child(3)>div,
+.circle-picker-one>.circle-picker>span:nth-child(4)>div,
+.circle-picker-one>.circle-picker>span:nth-child(5)>div,
+.circle-picker-one>.circle-picker>span:nth-child(6)>div {
+    width: 15px !important;
+    height: 15px !important;
+    margin-left: 3px;
+    margin-bottom: 0px !important;
+    margin-right: 3px !important;
+}
+
+
+.ticket-body {
+    #table-header-text {
+        .MuiPaper-root {
+            .makeStyles-tableWrapper-57 {
+                .MuiTable-root {
+                    .MuiTableBody-root {
+                        .MuiTableRow-root {
+                            .MuiTableCell-root {
+                                .MuiButtonBase-root {
+                                    .MuiFab-label {
+                                        img {
+                                            width: 5px !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.add-container {
+    .MuiButtonBase-root {
+        .MuiFab-label {
+            img {
+                width: 15px;
+            }
+        }
+    }
+}
+
+
+
+
+.ticket-add-note-popup-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    bottom: 180px;
+    left: 200px;
+    height: 130px;
+    width: 45%;
+    border-radius: 10px;
+    overflow: auto;
+    background: $color-white;
+    box-shadow: 5px 5px 15px 10px$color-lightWeightGray;
+
+    textarea {
+        width: 100%;
+        height: 70px !important;
+        margin-bottom: 10px;
+    }
+
+    .MuiCheckbox-root {
+        width: 10px;
+        height: 10px;
+    }
+
+    .check-box-flex-container {
+        width: 40%;
+        display: flex;
+
+        div {
+            width: 100%;
+            margin: 0 5px;
+        }
+    }
+
+    .flex-container {
+        width: 40%;
+        display: flex;
+        margin-left: auto;
+
+        div {
+            width: 100%;
+            margin: 0 5px;
+        }
+    }
+
+    .ticket-add-note-button {
+        width: 25%;
+        align-self: flex-end;
+        margin-left: auto;
+
+        .MuiButton-root {
+            width: 100%;
+            height: 30px;
+            border: 1px dashed $color-lightGray;
+            margin: 3px;
+            border-radius: 15px;
+            background-color: $color-white;
+            color: $color-lightGray;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: none;
+            padding: 0px !important;
+        }
+    }
+}
+
+
+.popup-checkbox {
+    .MuiFormControlLabel-root {
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: -10px;
+        margin-top: 5px;
+    }
+}
+
+.popup-checkbox>.MuiFormControlLabel-root>.MuiIconButton-root>.MuiIconButton-label>.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+    border-radius: 10px;
+}
+
+.popup-checkbox>.MuiFormControlLabel-root>.MuiIconButton-root {
+    flex: 0 0 auto;
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.ticket-popup-list-one {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -22px;
+}
+
+.popup-checkbox1>.MuiFormControlLabel-root {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin-left: -21px;
+    margin-right: -7px;
+}
+
+.popup-checkbox1>.MuiFormControlLabel-root>.MuiIconButton-root>.MuiIconButton-label>.MuiSvgIcon-root {
+    // fill: currentColor;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    // color:green;
+    border-radius: 10px;
+}
+
+//////////////////////////Assign To////////////////////////
+.top-text-popup {
+    min-width: 110px !important;
+    box-shadow: none !important;
+    border-radius: 40px !important;
+    height: 40px !important;
+    background: transparent !important;
+    font-size: 0.8rem !important;
+    margin-right: 10px !important;
+    text-transform: capitalize !important;
+    white-space: nowrap !important;
+    position: relative;
+}
+
+
+.top-text-popup-for-one::after {
+    position: absolute;
+    right: 260px;
+    bottom: 329px;
+    width: 11px;
+    height: 0px;
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 10px solid $color-darkWhite;
+
+}
+
+.top-text-popup-one {
+    position: absolute;
+    padding: 15px;
+    bottom: 130px;
+    left: 600px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    z-index: 1000;
+    // overflow: auto;
+    background: $color-white;
+    box-shadow: 0 0 15px $color-lightWeightGray;
+    opacity: 1;
+}
+
+.top-text-popup-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.top-text-popup-content>div {
+    display: flex;
+    align-items: center;
+
+}
+
+.top-text-popup-content>div>span {
+    margin-left: 5px;
+    color: $color-dimGray;
+    font-size: 0.8rem;
+}
+
+
+.top-text-popup-avathar {
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+}
+
+.top-text-popup-radio-button {
+    margin: 0 !important;
+}
+
+.top-text-popup-radio-button>.Mui-checked {
+    color: $color-skyBlue !important;
+}
+
+.top-text-search-field {
+    border: 1px solid $color-darkWhite;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+
+.top-text-search-field>.MuiInputBase-root {
+    padding-left: 10px;
+    color: $color-lightWeightGray;
+}
+
+.top-text-search-field>img {
+    padding-right: 10px;
+    padding-top: 10px;
+    color: $color-lightWeightGray;
+    height: 25px;
+}
+
+.top-text-popup-content {
+    .MuiIconButton-root {
+        margin-right: 4%;
+    }
+}
+
+
+.log-time-popup-container {
+    width: 100%;
+}
+
+.log-time-popup {
+    position: absolute;
+    padding: 15px;
+    bottom: 490px;
+    left: 240px;
+    width: 35%;
+    border-radius: 10px;
+    overflow: auto;
+    background: $color-white;
+    box-shadow: 2px 2px 10px 5px$color-lightWeightGray;
+
+    .log-time-section {
+        .log-time-tracking {
+            font-size: 18px;
+            font-weight: 800;
+            color: $color-thickGray;
+        }
+
+        .log-time-slider-section {
+            width: 100%;
+
+            img {
+                width: 20px;
+                margin-bottom: 15px;
+            }
+
+            .log-time-slider {
+                width: 80%;
+
+                .MuiSlider-root {
+                    width: 100%;
+                }
+
+                .log-timer-logged-text {
+                    margin: 0px;
+                    font-size: 12px;
+                    float: left;
+                    font-weight: 600;
+                    color: $color-darkGray;
+                }
+
+                .log-timer-remaining-text {
+                    margin: 0px;
+                    font-size: 12px;
+                    float: left;
+                    font-weight: 600;
+                    color: $color-darkGray;
+                }
+            }
+        }
+
+        .log-timer-original-estimate {
+            font-size: 12px;
+            font-weight: bolder;
+            color: $color-darkGray;
+            margin-top: 15px;
+            margin-bottom: 0px;
+
+            span {
+                font-size: 12px;
+                color: $color-white;
+                background-color: $color-darkGray;
+                padding: 2px;
+            }
+        }
+
+        .time-spent-remaining-section {
+            width: 100%;
+            margin-top: 15px;
+
+            .time-spent {
+                width: 48%;
+
+                p {
+                    margin: 0px;
+                    font-size: 10px;
+                    font-weight: bolder;
+                    color: $color-dimGray;
+                }
+
+                .MuiInputBase-root {
+                    border: 1px solid $color-lightGray;
+                    border-radius: 3px;
+
+                    .MuiInputBase-input {
+                        padding: 6px 5px 7px;
+                    }
+                }
+
+            }
+
+            .time-remaining {
+                width: 48%;
+
+                p {
+                    margin: 0px;
+                    font-size: 10px;
+                    font-weight: bolder;
+                    color: $color-dimGray;
+                }
+
+                .MuiInputBase-root {
+                    border: 1px solid $color-lightGray;
+                    border-radius: 3px;
+
+                    .MuiInputBase-input {
+                        padding: 6px 5px 7px;
+                    }
+                }
+
+            }
+        }
+
+        .log-timer-save-cancel-button {
+            margin-top: 15px;
+
+            .log-timer-save {
+                .MuiButton-root {
+                    background-color: $color-skyBlue;
+
+                    .MuiButton-label {
+                        color: $color-white !important;
+                        font-weight: bolder;
+                        text-transform: none;
+                    }
+                }
+            }
+
+            .log-timer-remaining {
+                margin-left: 10px;
+
+                .MuiButton-root {
+                    background-color: $color-lightGray;
+
+                    .MuiButton-label {
+                        color: $color-white !important;
+                        font-weight: bolder;
+                        text-transform: none;
+                    }
+                }
+            }
+
+        }
+    }
+}

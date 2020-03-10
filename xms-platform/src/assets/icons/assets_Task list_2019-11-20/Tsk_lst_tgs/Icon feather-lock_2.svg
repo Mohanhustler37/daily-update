@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9.3" height="10.222" viewBox="0 0 9.3 10.222">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#d0cfec;stroke-linecap:round;stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="Icon_feather-lock" data-name="Icon feather-lock" transform="translate(-4 -2.5)">
+        <path id="Path_192" d="M5.422 16.5h6.456a.922.922 0 0 1 .922.922v3.228a.922.922 0 0 1-.922.922H5.422a.922.922 0 0 1-.922-.922v-3.228a.922.922 0 0 1 .922-.922z" class="cls-1" data-name="Path 192" transform="translate(0 -9.35)"/>
+        <path id="Path_193" d="M10.5 7.15V5.306a2.306 2.306 0 0 1 4.611 0V7.15" class="cls-1" data-name="Path 193" transform="translate(-4.156)"/>
+    </g>
+</svg>

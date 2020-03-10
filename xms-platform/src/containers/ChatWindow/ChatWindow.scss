@@ -1,0 +1,124 @@
+$borderRadius: 100px;
+@import '../../extends';
+
+@mixin heighWidth($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+.chat-container {
+    @extend %d-flex;
+    height: 100%;
+    .chat-users-list {
+        width: 25%;
+        overflow: auto;
+        border-right: 1px solid grey;
+        .selected-user {
+            background: grey;
+            color: white;
+        }
+        .chat-contact-avathar {
+            cursor: pointer;
+            padding: 10px;
+            @extend %d-flex;
+            border-bottom: 0.5px solid #eee;
+            &:last-child {
+                border: 0;
+            }
+            .userInfo {
+                position: relative;
+                img {
+                    @include heighWidth(55px, 55px);
+                    border-radius: 100px;
+                }
+                span {
+                    position: absolute;
+                    bottom: 5px;
+                    right: 0;
+                    @include heighWidth(15px, 15px);
+                    border-radius: 20px;
+                }
+                .userActive {
+                    background-color: rgb(36, 216, 0);
+                }
+                .userInactive {
+                    background-color: rgb(172, 172, 172);
+                }
+            }
+            .chatDetails {
+                @extend %d-flex;
+                flex-direction: column;
+                justify-content: center;
+                div {
+                    @extend %d-flex-align-center-space-btwn;
+                    span:first-child {
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                    }
+                }
+                width: 90%;
+                position: relative;
+                padding: 0 10px;
+                .moreOptions {
+                    @include heighWidth(15px, 15px);
+                    background-color: red;
+                    border-radius: 5px;
+                }
+            }
+
+        }
+    }
+    .chat-area {
+        width: 75%;
+        overflow: auto;
+        height: 90%;
+
+        .rightSide {
+            flex-direction: row-reverse;
+        }
+
+        .message-container {
+            @extend %d-flex;
+            margin-top: 15px;
+            .message-profile-icon {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include heighWidth(70px, 70px);
+                img {
+                    @include heighWidth(30px, 30px);
+                }
+            }
+            .message-content {
+                width: 70%;
+                background-color: rgb(179, 179, 179);
+                border-radius: 10px;
+                padding: 15px;
+                p {
+                    margin: 5px 0;
+                }
+            }
+        }
+
+        .text-container {
+            position: absolute;
+            bottom: 2px;
+            width: 74%;
+            display: flex;
+            align-items: center;
+            textarea {
+                width: 100%;
+                height: 50px;
+            }
+            img {
+                height: 37px;
+                width: 36px;
+                cursor: pointer;
+                border: 1px solid grey;
+                border-radius: 100px;
+                padding: 8px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

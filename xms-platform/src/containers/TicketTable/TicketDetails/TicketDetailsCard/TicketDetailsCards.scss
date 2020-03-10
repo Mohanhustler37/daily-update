@@ -1,0 +1,192 @@
+@import '../../../../variables';
+@import '../../../../extends';
+@import '../../../../mixins';
+
+.tckts-dtls-bdy-crd{
+.ticketDescriptionCard {
+    margin-top: 4vh;
+    border-radius: 12px;
+    box-shadow: 0 1px 30px 0 rgba(0, 0, 0, 0.1);
+    height: 55%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .cardHeader {
+        height: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2.1%;
+        border-bottom: 1px dashed #D0CFEC;
+
+        .cardAvathar {
+            display: flex;
+            align-items: center;
+            img {
+                height: 40px;
+                width: 40px;
+                border-radius: 100px;
+            }
+            div {
+                margin-left: 1.3%;
+            }
+            label {
+                display: block;
+                white-space: nowrap;
+            }
+            label:nth-child(1) {
+                font-family: helveticaNeueMedium;
+                font-size: 1.25rem;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.2;
+                letter-spacing: 0.4px;
+                text-align: left;
+                color: #656565;
+            }
+            label:nth-child(2) {
+                font-family: helveticaNeueLight;
+                font-size: 0.75rem;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.25;
+                letter-spacing: 0.24px;
+                text-align: left;
+                color: #c8c8c8;
+            }
+        }
+    }
+    .cardHeaderRightSection {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .permalink {
+            display: flex;
+            align-items: center;
+            margin: 0 5%;
+            img { width: 14px; height: 14px; }
+            label {
+                padding-left: 3px;
+                padding-top: 6px;
+                font-family: helveticaNeueLight;
+                font-size: 0.875rem;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.07;
+                letter-spacing: 0.28px;
+                text-align: right;
+                color: #656565;
+            }
+        }
+        .verticalDevaider {
+            height: 15px;
+            margin: 0 5%;
+            display: block;
+            border-right: 1px solid #c7c7c7;
+        }
+        .attachCount {
+            display: flex;
+            align-items: center;
+            margin: 0 5%;
+            img { width: 14px; height: 14px; }
+            label {
+                padding-top: 3px;
+                padding-left: 2px;
+                font-family: HelveticaNeue-MediumCond;
+                font-size: 1.125rem;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 0.83;
+                letter-spacing: 0.36px;
+                text-align: left;
+                color: #656565;
+            }
+        
+
+        }
+        .fullScreenIcon {
+            margin: 0 5%;
+        }
+
+
+
+    }
+}
+    .tsk-mltipl-crds{
+        margin-top: 2vh;
+        height: 30vh;
+        .slct-crds-in-mltpl-crds{
+            height: auto;
+            box-shadow: 0 -3px 30px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            .card-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 2.1%;
+                .card-prfl{
+                    width: 20%;
+                    display: flex;
+                    align-items: center;
+                    // justify-content: space-between;
+                    // border: 1px solid red;
+                    img{
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 100px;
+                        padding: 2%;
+                    }
+                    .crd-prf-nm-lst-seen {
+                        margin-left: 1.3%;
+                    }
+                    label {
+                        display: block;
+                        white-space: nowrap;
+                    }
+                    label:nth-child(1) {
+                        font-family: helveticaNeueMedium;
+                        font-size: 1.25rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.2;
+                        letter-spacing: 0.4px;
+                        text-align: left;
+                        color: #656565;
+                    }
+                    label:nth-child(2) {
+                        font-family: helveticaNeueLight;
+                        font-size: 0.75rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.25;
+                        letter-spacing: 0.24px;
+                        text-align: left;
+                        color: #c8c8c8;
+                    }
+                }
+                .crd-ttle-area {
+                    width: 50%;
+                    color: $color-thickGray;
+                    font-family: helveticaNeueLight;
+                    .crd-ttl-txt{
+                        font-size: rem(18px);
+                    }
+                }
+                .crd-hdr-rght-sctn{
+                    display: flex;
+                    align-items: center;
+                    .fullScreenIcon-icon{
+                        margin: 0 0 0 5%;
+                    }
+                }
+            }
+        }
+    }
+}

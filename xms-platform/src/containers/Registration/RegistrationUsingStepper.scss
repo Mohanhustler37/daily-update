@@ -1,0 +1,332 @@
+@import "../../variables";
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.MuiStepLabel-labelContainer {
+    width: 100%;
+    // display: none;
+}
+
+.MuiStepper-alternativeLabel {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.user-button-two {
+    // width: 25%;
+    width: 35%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid;
+}
+
+.user-button-one {
+    // width: 25%;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid;
+
+    .MuiFormControl-root {
+        width: 47%;
+
+        .MuiFormLabel-root {
+            line-height: 0.5;
+
+            span {
+                color: red;
+                font-size: 20px;
+            }
+        }
+
+        // .MuiFormLabel-root.Mui-focused {
+        // }
+
+        .MuiInputBase-root {
+            .MuiOutlinedInput-notchedOutline {
+                border-radius: 30px;
+                border-width: 1px;
+                border-color: $color-borderColor;
+            }
+        }
+    }
+
+    .MuiInputBase-root {
+        // border: 1px solid $color-lightGray;
+        border-radius: 25px;
+        height: 50px;
+        // width: 48%;
+
+        .MuiInputBase-input {
+            padding: 6px 10px 7px;
+            font-size: 15px;
+        }
+
+
+    }
+}
+
+
+.user-input-field-three {
+    // margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin-left: 1%;
+    // height: 80px;
+
+    // .user-birthday-input-field {
+    //     display: flex;
+    //     justify-content: space-between;
+
+    //     .MuiGrid-root {
+    //         .MuiFormControl-root {
+    //             .MuiFormLabel-root {
+    //                 line-height: 1.5;
+    //             }
+
+    //             .MuiInputLabel-asterisk {
+    //                 color: red;
+    //                 font-size: 20px;
+    //             }
+    //         }
+    //     }
+
+    //     .MuiGrid-root {
+    //         .MuiFormControl-root {
+
+    //             min-width: 100%;
+
+    //             .MuiInputLabel-formControl {
+    //                 top: -2px;
+    //                 left: 20px;
+    //             }
+
+    //             .MuiInput-underline:before {
+    //                 border-bottom: none;
+    //             }
+
+    //             .MuiInput-underline:after {
+    //                 border-bottom: none;
+    //             }
+    //         }
+    //     }
+
+    //     .MuiInputBase-root {
+    //         border: 1px solid $color-lightGray;
+    //         border-radius: 25px;
+    //         height: 50px;
+    //         width: 100%;
+
+    //         .MuiInputBase-input {
+    //             padding: 6px 10px 7px;
+    //             font-size: 15px;
+    //         }
+    //     }
+    // }
+}
+
+// .user-input-field-four {
+//     margin-top: 1%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     // margin-left: 1%;
+
+//     .user-phone-number-input-field {
+//         // height: 50px;
+//         display: flex;
+//         justify-content: space-between;
+
+//         .MuiFormControl-root {
+//             width: 100%;
+
+//             .MuiFormLabel-root {
+//                 line-height: 0.5;
+
+//                 .MuiInputLabel-asterisk {
+//                     color: red;
+//                 }
+//             }
+
+//             .MuiInputBase-root {
+//                 .MuiOutlinedInput-notchedOutline {
+//                     border-radius: 30px;
+//                     border-width: 1px;
+//                     border-color: $color-borderColor;
+//                 }
+//             }
+//         }
+
+//         .MuiInputBase-root {
+//             // border: 1px solid $color-lightGray;
+//             border-radius: 25px;
+//             height: 50px;
+//             width: 100%;
+
+//             .MuiInputBase-input {
+//                 font-size: 15px;
+//             }
+//         }
+//     }
+// }
+
+
+
+
+.registration-footer-container {
+    .registration-left-container {
+        p {
+            font-size: 12px;
+            margin-left: 0%;
+            padding-left: 20px;
+        }
+    }
+}
+
+.registration-footer-container {
+    .registration-right-container {
+        .list {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 10px;
+            font-size: 10px;
+        }
+    }
+}
+
+.registration-footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+
+.company-details-button-one {
+    width: 12%;
+
+    .MuiFormControl-root {
+        width: 95%;
+        border: 1px solid $color-lightGray;
+        height: 50px;
+        border-radius: 25px;
+
+        .MuiInput-root {
+            height: 50px;
+
+            .MuiNativeSelect-select {
+                padding: 0px 10px 0px;
+                color: $color-thickGray;
+                font-weight: 400;
+            }
+        }
+
+        .MuiInput-underline:before {
+            border-bottom: none;
+        }
+
+        .MuiInput-underline:hover:not(.Mui-disabled):before {
+            border-bottom: none;
+        }
+
+        .MuiInput-underline:after {
+            border-bottom: none;
+        }
+    }
+}
+
+
+.user-container-text-field {
+    padding-right: 0px;
+    margin-top: 2%;
+}
+
+
+
+.registration-overall-body {
+    .makeStyles-root-1 {
+        .registration-page {
+            .MuiPaper-root {
+                .MuiStep-root {
+                    display: flex !important;
+
+                    .company-stepper-icons {
+                        width: 10px;
+                        margin-left: 90px;
+                        background-color: blue;
+
+                        img {
+                            vertical-align: middle;
+                            border-style: none;
+                            width: 15px !important;
+
+                        }
+                    }
+
+                    .MuiStepLabel-root {
+                        display: none;
+
+                        .MuiStepLabel-iconContainer {
+                            .MuiSvgIcon-root {
+                                .MuiStepIcon-text {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+.company-stepper-icons {
+    width: 25px;
+    height: 25px;
+    margin-left: 90px;
+    background-color: white;
+    border-radius: 14px;
+
+    img {
+        vertical-align: middle;
+        border-style: none;
+        width: 15px !important;
+
+    }
+}
+
+
+.user-stepper-icons {
+    width: 25px;
+    height: 25px;
+    margin-left: 90px;
+    background-color: white;
+    border-radius: 14px;
+
+    img {
+        vertical-align: middle;
+        border-style: none;
+        width: 15px !important;
+    }
+}
+
+
+.MuiStepIcon-root.MuiStepIcon-completed {
+    color: $color-green !important;
+}
+
+.MuiStepIcon-root.MuiStepIcon-active {
+    color: $color-orange !important;
+}
+
+.MuiStepIcon-root {
+    color: $color-lightGray;
+}

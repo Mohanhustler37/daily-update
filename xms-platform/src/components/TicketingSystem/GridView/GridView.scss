@@ -1,0 +1,165 @@
+@import "../../../variables";
+
+.ticketing-system-page {
+    // width: 100%;
+    width: 97%;
+    margin-top: 12px;
+}
+
+.grid-table {
+    margin-top: 1%;
+    width: 100%;
+    margin-left: 1%;
+    border: 1px solid $color-darkWhite;
+    border-radius: 15px;
+}
+
+.grid-table-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-darkWhite;
+    padding: 1% 1% 0 1%;
+}
+
+.description-section {
+    display: flex;
+    width: 75%;
+}
+
+.description-date-section {
+    width: 15%;
+}
+
+.btnClr {
+    margin: 1% !important;
+    background-color: $color-skyBlue !important;
+    font-size: 8px !important;
+    color: $color-white !important;
+    opacity: 1 !important;
+    border-radius: 25px !important;
+}
+
+.date-time-font {
+    color: $color-lightGray;
+    font: '67 Medium Condensed 13px/24px Helvetica Neue';
+    font-size: 0.7rem;
+}
+
+.discription-container {
+    width: 100%;
+}
+
+.full-date {
+    text-align: left;
+    font: Condensed Bold 13px/24px Helvetica Neue;
+    letter-spacing: 0.36px;
+    color: $color-thickGray;
+    // text-transform: uppercase;
+    opacity: 1;
+}
+
+.ticket-no {
+    text-align: left;
+    font: Condensed Bold 18px/18px Helvetica Neue;
+    letter-spacing: 0.6px;
+    color: $color-lightGray;
+}
+
+.ticket-heading {
+    text-align: left;
+    font: 65 Medium 24px/24px Helvetica Neue;
+    letter-spacing: 0.48px;
+    color: $color-thickGray;
+    margin-left: 2%;
+}
+
+.last-communication-thread {
+    text-align: left;
+    letter-spacing: NaNpx;
+    color: $color-thickGray;
+    opacity: 1;
+    font-size: 0.8rem;
+}
+
+.service-request-section {
+    width: 15%;
+}
+
+.service-section-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-section-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5%;
+}
+
+.service-section-header>span {
+    margin-right: '2%'
+}
+
+.service-section-footer>.MuiButton-sizeSmall {
+    padding: 0;
+}
+
+.service-section-footer>button {
+    border: 1px solid $color-light-green;
+    border-radius: 15px;
+}
+
+.avtar-style {
+    margin: 10px;
+}
+
+.ticket-details-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.4%;
+}
+
+.ticket-details-footer {
+    display: flex;
+    align-items: center;
+}
+
+.company-text {
+    text-align: left;
+    // font: 45 Light 12px/24px Helvetica Neue;
+    letter-spacing: 0.24px;
+    color: $color-lightGray;
+    // text-transform: uppercase;
+    opacity: 1;
+    font-size: 10px;
+}
+
+.company-text-two {
+    text-align: left;
+    // font: 45 Light 12px/24px Helvetica Neue;
+    letter-spacing: 0.24px;
+    // text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 500
+}
+
+.ticket-details-footer>div>p {
+    margin-left: unset;
+    margin-top: unset;
+    margin-bottom: unset;
+}
+
+.profile-img>img {
+    width: 60%;
+    border-radius: 50px;
+    border: 2px solid linear-gradient(to left,$color-violet 0%, $color-pink 100%);
+}
+
+
+.img-width {
+    width: 25%;
+}
+
+.img-cal-width {
+    width: 15%;
+}

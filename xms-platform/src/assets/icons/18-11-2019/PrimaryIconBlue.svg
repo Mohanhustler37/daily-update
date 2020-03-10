@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Group_11508" data-name="Group 11508" transform="translate(-1879 -307)">
+    <g id="Rectangle_349" data-name="Rectangle 349" transform="translate(1879 307)" fill="#fff" stroke="#4e58a9" stroke-width="1" stroke-dasharray="4">
+      <rect width="50" height="50" rx="12" stroke="none"/>
+      <rect x="0.5" y="0.5" width="49" height="49" rx="11.5" fill="none"/>
+    </g>
+    <path id="Icon_awesome-star-of-life" data-name="Icon awesome-star-of-life" d="M16.348,11.583,11.64,8.867,16.348,6.15a.554.554,0,0,0,.2-.757l-1.109-1.92a.555.555,0,0,0-.757-.2L9.976,5.987V.554A.554.554,0,0,0,9.422,0H7.2a.554.554,0,0,0-.555.554V5.987L1.941,3.271a.555.555,0,0,0-.757.2L.075,5.393a.554.554,0,0,0,.2.757L4.986,8.867.278,11.583a.554.554,0,0,0-.2.757l1.109,1.92a.555.555,0,0,0,.757.2l4.708-2.716v5.433a.554.554,0,0,0,.555.554H9.422a.554.554,0,0,0,.555-.554V11.746l4.708,2.716a.554.554,0,0,0,.757-.2l1.109-1.92A.554.554,0,0,0,16.348,11.583Z" transform="translate(1896 314)" fill="#4e58a9"/>
+    <text id="Primary" transform="translate(1886 346)" fill="#4e58a9" font-size="10" font-family="HelveticaNeue-MediumCond, Helvetica Neue" font-weight="500" letter-spacing="0.02em"><tspan x="0" y="0">PRIMARY</tspan></text>
+  </g>
+</svg>

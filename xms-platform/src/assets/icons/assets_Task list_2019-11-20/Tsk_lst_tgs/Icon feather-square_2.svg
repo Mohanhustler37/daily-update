@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.5" height="11.5" viewBox="0 0 11.5 11.5">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#d0cfec;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <path id="Icon_feather-square" d="M5.556 4.5h7.389A1.056 1.056 0 0 1 14 5.556v7.389A1.056 1.056 0 0 1 12.944 14H5.556A1.056 1.056 0 0 1 4.5 12.944V5.556A1.056 1.056 0 0 1 5.556 4.5z" class="cls-1" data-name="Icon feather-square" transform="translate(-3.5 -3.5)"/>
+</svg>

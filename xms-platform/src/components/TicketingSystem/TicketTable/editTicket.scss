@@ -1,0 +1,1580 @@
+@import '../../../variables';
+
+.table-space {
+    height: 60px;
+    width: 83%;
+    border: 1px solid $color-white;
+    // margin-left: 17%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1;
+    margin: -1;
+    overflow: 'hidden';
+    padding: 0;
+    position: 'absolute';
+    top: 20;
+    width: 1;
+}
+
+// #table-header-text>.MuiPaper-root>.MuiTable-root>.
+#table-header-text>.MuiTableSortLabel-root {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: unset !important;
+    flex-direction: unset !important;
+    justify-content: unset !important;
+    font-weight: 700
+}
+
+.MuiTableCell-alignRight {
+    text-align: left !important;
+}
+
+// .MuiTableCell-root {
+//     padding: 14px 0px 14px 10px !important;
+//     font-size: 0.75rem !important;
+// }
+
+.MuiTableCell-root {
+    padding: 12px 0px 10px 15px !important;
+    font-size: 0.69rem !important;
+}
+
+.MuiTableHead-root {
+    background-color: $color-darkWhite;
+}
+
+.MuiTableCell-root {
+    border-bottom: 0px !important;
+}
+
+.MuiButton-sizeLarge {
+    padding: 8px 10px !important;
+    width: 100%;
+    margin: 0px !important;
+}
+
+.MuiTableSortLabel-root {
+    font-weight: 700
+}
+
+.MuiPaper-elevation1 {
+    box-shadow: none !important;
+}
+
+// .MuiPaper-root> .makeStyles-tableWrapper-32>.MuiTable-root>
+#ticket-table-header>.MuiTableRow-root>.MuiTableCell-root>.PrivateSwitchBase-root-90 {
+    padding: 0px;
+    padding-left: 9px;
+}
+
+#ticket-table-header>.MuiTableRow-root>.MuiTableCell-root>.ticket-table-edit-icon {
+    // padding-right: 13px;
+    margin-right: 5px;
+}
+
+#ticket-table-header>.MuiTableRow-root>.MuiTableCell-root>.ticket-table-edit-icon>img {
+    padding-left: 5px;
+}
+
+.ticket-table-edit-icon {
+    width: 30px;
+    height: 30px;
+    border: 1px dashed;
+    border-radius: 15px;
+}
+
+#ticket-table-header>.MuiTableRow-root>.MuiTableCell-root {
+    font-weight: bolder;
+}
+
+.assign-to-image-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    padding-right: 3px;
+}
+
+// .tags-container{
+//     border: 1px solid;
+// }
+.tags-container-value-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.risk-container {
+    background-color: $color-snowFlurry;
+    width: 30%;
+    height: 14px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 8px;
+    padding-top: 1px;
+}
+
+.critical-customer-container {
+    background-color: $color-lightPink;
+    width: 70%;
+    height: 14px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 8px;
+    padding-top: 1px;
+}
+
+.tags-body {
+    padding-left: 0px !important;
+    width: 12% !important;
+}
+
+.need-one-more-body {
+    padding-left: 14px !important;
+}
+
+.tags-container-value-two {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.phase-container {
+    background-color: $color-orange;
+    width: 30%;
+    height: 14px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 8px;
+    padding-top: 1px;
+}
+
+.technical-container {
+    background-color: $color-mediumAquarium;
+    width: 60%;
+    height: 14px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 8px;
+    padding-top: 1px;
+}
+
+.button-in-ticket-table>.MuiButton-root>.MuiButton-label {
+    height: 10px;
+}
+
+.ticket-table-response-time>.MuiButtonBase-root>.MuiButton-label {
+    height: 14px;
+}
+
+.MuiBackdrop-root {
+    background-color: $color-black !important;
+}
+
+.edit-sidebar-container {
+    // margin: 2%;
+}
+
+
+
+.cancel-x {
+    cursor: pointer;
+}
+
+
+
+
+
+.ticket-title-container,
+.ticket-type-container {
+    width: 50%;
+    margin-right: 4%;
+}
+
+.ticket-title-container>.MuiInputBase-root {
+    width: 100%;
+    height: 50px;
+    border: 1px solid $color-lightGray;
+    border-radius: 20px;
+}
+
+.ticket-title-container>.MuiInputBase-root>.MuiInputBase-input {
+    padding: 9px 7px 9px;
+}
+
+.ticket-type-container>.dropdown-button>button {
+    width: 100%;
+    text-align: left;
+    height: 50px;
+}
+
+.ticket-type-container>.dropdown-button>.btn {
+    border: 1px solid $color-lightGray;
+}
+
+.ticket-type-container>.select {
+    width: 100%;
+    border: 1px solid $color-lightGray;
+    border-radius: 17px;
+    height: 50px;
+}
+
+
+
+.create-ticket-text-area>textarea {
+    width: 96%;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.update-button {
+    background-color: $color-green !important;
+    border-radius: 41px !important;
+    color: $color-white !important;
+    text-transform: capitalize !important;
+    width: 150px !important;
+}
+
+.cancel-button {
+    border-radius: 41px !important;
+    text-transform: capitalize !important;
+}
+
+.ticket-title-container>.MuiTextField-root {
+    width: 100%;
+    margin: 0px !important;
+}
+
+.MuiPaper-elevation16 {
+    box-shadow: none !important;
+}
+
+// .ticket-title-container>.MuiTextField-root>.MuiOutlinedInput-root>.MuiOutlinedInput-notchedOutline {
+//     border-radius: 20px;
+// }
+
+.ticket-list-click-menu {
+    background-color: transparent !important;
+    width: 36px !important;
+    height: 20px !important;
+    box-shadow: none !important;
+    position: relative;
+}
+
+button:focus {
+    outline: none;
+}
+
+.ticket-list-popup {
+    width: 200px;
+    height: 315px;
+    z-index: 1000;
+    background-color: $color-white;
+    box-shadow: 0px 3px 12px $color-white-gray;
+    border-radius: 15px;
+    opacity: 1;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    margin: 10px;
+}
+
+.ticket-list-popup:after {
+    position: absolute;
+    right: 15px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $color-white;
+}
+
+.ticket-list-popup>ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-transform: capitalize !important;
+}
+
+.ticket-list-popup>ul>li {
+    color: $color-dimGray;
+    text-align: left;
+    margin: 5px 0
+}
+
+.ticket-list-popup>ul>li>i {
+    margin: 0 15px;
+}
+
+.ticket-list-popup>ul>li:hover {
+    background: $color-veryLightGray;
+    color: $color-white;
+}
+
+.ticket-body>#table-header-text>.MuiPaper-root>.makeStyles-tableWrapper-32 {
+    height: 24rem;
+}
+
+
+// EDIT COMPANY
+.ticket-type-container>.MuiFormControl-root>.edit-ticket-menu-item>.MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: none;
+}
+
+.ticket-type-container>.MuiFormControl-root>.edit-ticket-menu-item>.MuiInput-underline:before {
+    border-bottom: none;
+}
+
+.ticket-type-container>.MuiFormControl-root>.edit-ticket-menu-item>.MuiInput-underline:after {
+    border-bottom: none;
+}
+
+.ticket-type-container>.MuiFormControl-root {
+    width: 100%;
+    // margin-left: 8%;
+}
+
+.ticket-type-container>.MuiFormControl-root>.edit-ticket-menu-item>.MuiInputBase-root {
+    border: 1px solid $color-lightGray;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.ticket-type-container>.MuiFormControl-root>.edit-ticket-menu-item>.MuiInputBase-root>.MuiInputBase-input {
+    padding: 6px 12px 7px;
+}
+
+// .MuiPaper-root{
+//     top: 104px;
+// }
+
+.ticket-type-container>.MuiFormControl-root>.MuiInputLabel-formControl {
+    top: -11px;
+    left: 12px;
+    font-size: 15px;
+    color: $color-thickGray;
+}
+
+// Addec on 21st nov
+
+.tckt-lst-edit-drawer {
+    width: 100%;
+    background: transparent;
+    height: 100%;
+
+    .MuiPaper-root {
+        width: 100%;
+        background: transparent;
+
+        .editdrawer {
+            height: 100%;
+
+            .drawer-full-width {
+                width: 100%;
+            }
+        }
+    }
+
+    .edit-container {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+
+        .edit-tkt-sidebar-container {
+            // height: 100%;
+            height: auto;
+
+            // Company and description section
+
+            .edit-ticket-drawer-ticket-comp-description {
+                width: 95%;
+                height: 50px;
+                margin: 0 auto;
+
+                .edit-ticket-drawer-ticket-company {
+                    width: 48%;
+
+                    .menu-comp-container {
+                        width: 100%;
+                        position: relative;
+                        margin: auto;
+                        transition: 0.5s;
+                        // padding: 7px;
+
+                        .edit-drawer-container-comp {
+                            width: 100%;
+                            position: relative;
+                            border: 1px solid $color-lightGray;
+                            height: 60px;
+                            background: $color-white;
+                            border-radius: 41px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            z-index: 998;
+                            cursor: pointer;
+
+                            .selected-item-container {
+                                // margin-left: 1%;
+                                width: 85%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+
+                                p {
+                                    font-family: helveticaNeueMedium;
+                                    font-size: 18px;
+                                    color: $color-thickGray;
+                                    padding-left: 14px;
+                                    font-weight: 590;
+                                }
+                            }
+
+                            .ticket-drp-dwn-img {
+                                width: 6%;
+                                margin-right: 1%;
+                                display: flex;
+                                justify-content: center;
+                                // border: 1px dashed $color-violet;
+                                border-radius: 50%;
+                                height: 50%;
+
+                                img {
+                                    width: 12px;
+                                }
+                            }
+                        }
+
+                        .ticket-type-open-dropdown {
+                            height: 160px;
+                            overflow: auto;
+                            padding-top: 40px;
+                            transition: 0.5s;
+
+                        }
+
+                        .ticket-type-dropdown-menu-container {
+                            position: absolute;
+                            border-radius: 20px 20px 5px 5px;
+                            // top: 10px;
+                            // left: 0;
+                            top: 50%;
+                            width: 100%;
+                            background: $color-white;
+                            box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                            z-index: 997 !important;
+                            transition: 0.5s;
+                            overflow: auto;
+
+                            .MuiButtonBase-root {
+                                width: 90% !important;
+                                margin: 0 auto !important;
+                                background-color: transparent !important;
+                                box-shadow: none !important;
+                                border-radius: 25px;
+                                height: 40px;
+                                min-height: 40px;
+                                padding: 0px !important;
+                                min-height: 30px !important;
+                                // margin: 1% auto;
+
+                            }
+                        }
+
+                        .custom-scroll {
+                            width: 98% !important;
+                        }
+                    }
+                }
+
+                .ticket-title-container {
+                    .MuiFormControl-root {
+                        .MuiInputBase-root {
+                            height: 60px;
+
+                            .MuiOutlinedInput-notchedOutline {
+                                border-radius: 100px;
+                                border: solid 1px #c8c8c8;
+                            }
+
+                            .MuiInputLabel-outlined {
+                                transform: translate(16px, -4px) scale(0.75);
+                            }
+                        }
+
+                        .MuiFormLabel-root.Mui-focused {
+                            color: #c8c8c8 !important;
+                        }
+                    }
+                }
+            }
+
+            // Company and description section ends
+
+            // Status and priority section
+
+            .edit-ticket-drawer-ticket-status-priority {
+                width: 95%;
+                height: 50px;
+                margin: 0 auto;
+                margin-top: 6%;
+
+                .edit-ticket-drawer-ticket-status {
+                    width: 48%;
+
+                    .menu-status-container {
+                        width: 100%;
+                        position: relative;
+                        margin: auto;
+                        transition: 0.5s;
+                        // padding: 7px;
+
+                        .edit-drawer-container-status {
+                            width: 100%;
+                            position: relative;
+                            border: 1px solid $color-lightGray;
+                            height: 60px;
+                            background: $color-white;
+                            border-radius: 41px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            z-index: 995;
+                            cursor: pointer;
+
+                            .selected-item-container {
+                                // margin-left: 1%;
+                                width: 85%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+
+                                p {
+                                    font-family: helveticaNeueLight;
+                                    font-size: 18px;
+                                    color: $color-thickGray;
+                                    padding-left: 14px;
+                                    font-weight: 590;
+                                }
+                            }
+
+                            .ticket-drp-dwn-img {
+                                width: 6%;
+                                margin-right: 1%;
+                                display: flex;
+                                justify-content: center;
+                                // border: 1px dashed $color-violet;
+                                border-radius: 50%;
+                                height: 50%;
+
+                                img {
+                                    width: 12px;
+                                }
+                            }
+                        }
+
+                        .ticket-type-open-dropdown {
+                            height: 160px;
+                            overflow: auto;
+                            padding-top: 40px;
+                            transition: 0.5s;
+
+                        }
+
+                        .ticket-type-dropdown-menu-container {
+                            position: absolute;
+                            border-radius: 20px 20px 5px 5px;
+                            // top: 10px;
+                            // left: 0;
+                            top: 50%;
+                            width: 100%;
+                            background: $color-white;
+                            box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                            z-index: 994 !important;
+                            transition: 0.5s;
+                            overflow: auto;
+
+                            .MuiButtonBase-root {
+                                width: 90% !important;
+                                margin: 0 auto !important;
+                                background-color: transparent !important;
+                                box-shadow: none !important;
+                                border-radius: 25px;
+                                height: 40px;
+                                min-height: 40px;
+                                padding: 0px !important;
+                                min-height: 30px !important;
+                                // margin: 1% auto;
+
+                            }
+                        }
+
+                        .custom-scroll {
+                            width: 98% !important;
+                        }
+                    }
+                }
+
+                .edit-ticket-drawer-ticket-priority {
+                    width: 48%;
+
+                    .menu-priority-container {
+                        width: 100%;
+                        position: relative;
+                        margin: auto;
+                        transition: 0.5s;
+
+                        .priority-container {
+                            width: 100%;
+                            position: relative;
+                            border: 1px solid $color-lightGray;
+                            height: 60px;
+                            background: $color-white;
+                            border-radius: 41px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            z-index: 998;
+                            cursor: pointer;
+
+                            .selected-item-container {
+                                // margin-left: 1%;
+                                width: 85%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+
+                                p {
+                                    font-family: helveticaNeueLight;
+                                    font-size: 18px;
+                                    color: $color-thickGray;
+                                    padding-left: 14px;
+                                    font-weight: 590;
+                                }
+                            }
+
+                            .des-drp-dwn-img {
+                                width: 6%;
+                                margin-right: 1%;
+                                display: flex;
+                                justify-content: center;
+                                // border: 1px dashed $color-violet;
+                                border-radius: 50%;
+                                height: 50%;
+
+                                img {
+                                    width: 12px;
+                                }
+                            }
+                        }
+
+                        .ticket-type-open-dropdown {
+                            height: 160px;
+                            overflow: auto;
+                            padding-top: 40px;
+                            transition: 0.5s;
+
+                        }
+
+                        .priority-dropdown-menu-container {
+                            position: absolute;
+                            border-radius: 20px 20px 5px 5px;
+                            // top: 10px;
+                            // left: 0;
+                            top: 50%;
+                            width: 100%;
+                            background: $color-white;
+                            box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                            z-index: 997 !important;
+                            transition: 0.5s;
+                            overflow: hidden;
+
+                            .MuiButtonBase-root {
+                                width: 90% !important;
+                                margin: 0 auto !important;
+                                background-color: transparent !important;
+                                box-shadow: none !important;
+                                border-radius: 25px;
+                                height: 40px;
+                                min-height: 40px;
+                                padding: 0px !important;
+                                min-height: 30px !important;
+                                // margin: 1% auto;
+
+                            }
+                        }
+
+                        .custom-scroll {
+                            width: 98% !important;
+                        }
+                    }
+                }
+            }
+
+            // Status and priority section ends
+            // Text area
+            .edit-ticket-text-area {
+                width: 93%;
+                margin: 0 auto;
+                margin-top: 6%;
+
+                textarea {
+                    font-family: helveticaNeueLight;
+                    width: 93%;
+                    border-radius: 41px;
+                    padding: 30px;
+                    outline: none;
+                }
+            }
+
+            // Text area ends
+
+
+            // Tags and types section
+
+            .edit-ticket-drawer-ticket-tags-type {
+                width: 95%;
+                height: 50px;
+                margin: 0 auto;
+                margin-top: 4%;
+
+                .edit-ticket-drawer-ticket-tags {
+                    width: 48%;
+
+                    .menu-tags-container {
+                        width: 100%;
+                        position: relative;
+                        margin: auto;
+                        transition: 0.5s;
+                        // padding: 7px;
+
+                        .edit-drawer-container-tags {
+                            width: 100%;
+                            position: relative;
+                            border: 1px solid $color-lightGray;
+                            height: 60px;
+                            background: $color-white;
+                            border-radius: 41px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            z-index: 990;
+                            cursor: pointer;
+
+                            .selected-item-container {
+                                // margin-left: 1%;
+                                width: 85%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+
+                                p {
+                                    font-family: helveticaNeueLight;
+                                    font-size: 18px;
+                                    color: $color-thickGray;
+                                    padding-left: 14px;
+                                    font-weight: 590;
+                                }
+                            }
+
+                            .ticket-drp-dwn-img {
+                                width: 6%;
+                                margin-right: 1%;
+                                display: flex;
+                                justify-content: center;
+                                // border: 1px dashed $color-violet;
+                                border-radius: 50%;
+                                height: 50%;
+
+                                img {
+                                    width: 12px;
+                                }
+                            }
+                        }
+
+                        .ticket-type-open-dropdown {
+                            height: 160px;
+                            overflow: auto;
+                            padding-top: 40px;
+                            transition: 0.5s;
+
+                        }
+
+                        .ticket-type-dropdown-menu-container {
+                            position: absolute;
+                            border-radius: 20px 20px 5px 5px;
+                            // top: 10px;
+                            // left: 0;
+                            top: 50%;
+                            width: 100%;
+                            background: $color-white;
+                            box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                            z-index: 985 !important;
+                            transition: 0.5s;
+                            overflow: auto;
+
+                            .MuiButtonBase-root {
+                                width: 90% !important;
+                                margin: 0 auto !important;
+                                background-color: transparent !important;
+                                box-shadow: none !important;
+                                border-radius: 25px;
+                                height: 40px;
+                                min-height: 40px;
+                                padding: 0px !important;
+                                min-height: 30px !important;
+                                // margin: 1% auto;
+
+                            }
+                        }
+
+                        .custom-scroll {
+                            width: 98% !important;
+                        }
+                    }
+                }
+
+                .edit-ticket-drawer-ticket-type {
+                    width: 48%;
+
+                    .menu-type-container {
+                        width: 100%;
+                        position: relative;
+                        margin: auto;
+                        transition: 0.5s;
+
+                        .type-container {
+                            width: 100%;
+                            position: relative;
+                            border: 1px solid $color-lightGray;
+                            height: 60px;
+                            background: $color-white;
+                            border-radius: 41px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            z-index: 980;
+                            cursor: pointer;
+
+                            .selected-item-container {
+                                // margin-left: 1%;
+                                width: 85%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+
+                                p {
+                                    font-family: helveticaNeueLight;
+                                    font-size: 18px;
+                                    color: $color-thickGray;
+                                    padding-left: 14px;
+                                    font-weight: 590;
+                                }
+                            }
+
+                            .des-drp-dwn-img {
+                                width: 6%;
+                                margin-right: 1%;
+                                display: flex;
+                                justify-content: center;
+                                // border: 1px dashed $color-violet;
+                                border-radius: 50%;
+                                height: 50%;
+
+                                img {
+                                    width: 12px;
+                                }
+                            }
+                        }
+
+                        .ticket-type-open-dropdown {
+                            height: 160px;
+                            overflow: auto;
+                            padding-top: 40px;
+                            transition: 0.5s;
+
+                        }
+
+                        .type-dropdown-menu-container {
+                            position: absolute;
+                            border-radius: 20px 20px 5px 5px;
+                            // top: 10px;
+                            // left: 0;
+                            top: 50%;
+                            width: 100%;
+                            background: $color-white;
+                            box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                            z-index: 975 !important;
+                            transition: 0.5s;
+                            overflow: hidden;
+
+                            .MuiButtonBase-root {
+                                width: 90% !important;
+                                margin: 0 auto !important;
+                                background-color: transparent !important;
+                                box-shadow: none !important;
+                                border-radius: 25px;
+                                height: 40px;
+                                min-height: 40px;
+                                padding: 0px !important;
+                                min-height: 30px !important;
+                                // margin: 1% auto;
+
+                            }
+                        }
+
+                        .custom-scroll {
+                            width: 98% !important;
+                        }
+                    }
+                }
+            }
+
+            // Tags and Types section ends
+
+            // Manager and assign section
+            .edit-ticket-drawer-ticket-manager-assign {
+                width: 95%;
+                height: 50px;
+                margin: 0 auto;
+                margin-top: 6%;
+
+                .edit-ticket-drawer-ticket-manager {
+                    width: 48%;
+
+                    .menu-manager-container {
+                        width: 100%;
+                        position: relative;
+                        margin: auto;
+                        transition: 0.5s;
+                        // padding: 7px;
+
+                        .edit-drawer-container-manager {
+                            width: 100%;
+                            position: relative;
+                            border: 1px solid $color-lightGray;
+                            height: 60px;
+                            background: $color-white;
+                            border-radius: 41px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            z-index: 984;
+                            cursor: pointer;
+
+                            .selected-item-container {
+                                // margin-left: 1%;
+                                width: 85%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+
+                                p {
+                                    font-family: helveticaNeueLight;
+                                    font-size: 18px;
+                                    color: $color-thickGray;
+                                    padding-left: 14px;
+                                    font-weight: 590;
+                                }
+                            }
+
+                            .ticket-drp-dwn-img {
+                                width: 6%;
+                                margin-right: 1%;
+                                display: flex;
+                                justify-content: center;
+                                // border: 1px dashed $color-violet;
+                                border-radius: 50%;
+                                height: 50%;
+
+                                img {
+                                    width: 12px;
+                                }
+                            }
+                        }
+
+                        .ticket-type-open-dropdown {
+                            height: 160px;
+                            overflow: auto;
+                            padding-top: 40px;
+                            transition: 0.5s;
+
+                        }
+
+                        .ticket-manager-dropdown-menu-container {
+                            position: absolute;
+                            border-radius: 20px 20px 5px 5px;
+                            // top: 10px;
+                            // left: 0;
+                            top: 50%;
+                            width: 100%;
+                            background: $color-white;
+                            box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                            z-index: 983 !important;
+                            transition: 0.5s;
+                            overflow: auto;
+
+                            .MuiButtonBase-root {
+                                width: 90% !important;
+                                margin: 0 auto !important;
+                                background-color: transparent !important;
+                                box-shadow: none !important;
+                                border-radius: 25px;
+                                height: 40px;
+                                min-height: 40px;
+                                padding: 0px !important;
+                                min-height: 30px !important;
+                                // margin: 1% auto;
+
+                            }
+                        }
+
+                        .custom-scroll {
+                            width: 98% !important;
+                        }
+                    }
+                }
+
+                .edit-ticket-drawer-ticket-assign {
+                    width: 48%;
+
+                    .menu-assign-container {
+                        width: 100%;
+                        position: relative;
+                        margin: auto;
+                        transition: 0.5s;
+
+                        .assign-container {
+                            width: 100%;
+                            position: relative;
+                            border: 1px solid $color-lightGray;
+                            height: 60px;
+                            background: $color-white;
+                            border-radius: 41px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            z-index: 974;
+                            cursor: pointer;
+
+                            .selected-item-container {
+                                // margin-left: 1%;
+                                width: 85%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+
+                                p {
+                                    font-size: 18px;
+                                    color: $color-thickGray;
+                                    padding-left: 14px;
+                                    font-weight: 590;
+                                }
+                            }
+
+                            .des-drp-dwn-img {
+                                width: 6%;
+                                margin-right: 1%;
+                                display: flex;
+                                justify-content: center;
+                                // border: 1px dashed $color-violet;
+                                border-radius: 50%;
+                                height: 50%;
+
+                                img {
+                                    width: 12px;
+                                }
+                            }
+                        }
+
+                        .ticket-type-open-dropdown {
+                            height: 160px;
+                            overflow: auto;
+                            padding-top: 40px;
+                            transition: 0.5s;
+
+                        }
+
+                        .assign-dropdown-menu-container {
+                            position: absolute;
+                            border-radius: 20px 20px 5px 5px;
+                            // top: 10px;
+                            // left: 0;
+                            top: 50%;
+                            width: 100%;
+                            background: $color-white;
+                            box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                            z-index: 973 !important;
+                            transition: 0.5s;
+                            overflow: hidden;
+
+                            .MuiButtonBase-root {
+                                width: 90% !important;
+                                margin: 0 auto !important;
+                                background-color: transparent !important;
+                                box-shadow: none !important;
+                                border-radius: 25px;
+                                height: 40px;
+                                min-height: 40px;
+                                padding: 0px !important;
+                                min-height: 30px !important;
+                                // margin: 1% auto;
+
+                            }
+                        }
+
+                        .custom-scroll {
+                            width: 98% !important;
+                        }
+                    }
+                }
+            }
+
+            // Manager and assign section ends
+
+            // Department and Team section
+            .edit-ticket-drawer-ticket-dept-team {
+                width: 95%;
+                height: 50px;
+                margin: 0 auto;
+                margin-top: 6%;
+
+                .edit-ticket-drawer-ticket-dept {
+                    width: 48%;
+
+                    .menu-dept-container {
+                        width: 100%;
+                        position: relative;
+                        margin: auto;
+                        transition: 0.5s;
+                        // padding: 7px;
+
+                        .edit-drawer-container-dept {
+                            width: 100%;
+                            position: relative;
+                            border: 1px solid $color-lightGray;
+                            height: 60px;
+                            background: $color-white;
+                            border-radius: 41px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            z-index: 980;
+                            cursor: pointer;
+
+                            .selected-item-container {
+                                // margin-left: 1%;
+                                width: 85%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+
+                                p {
+                                    font-family: helveticaNeueLight;
+                                    font-size: 18px;
+                                    color: $color-thickGray;
+                                    padding-left: 14px;
+                                    font-weight: 590;
+                                }
+                            }
+
+                            .ticket-drp-dwn-img {
+                                width: 6%;
+                                margin-right: 1%;
+                                display: flex;
+                                justify-content: center;
+                                // border: 1px dashed $color-violet;
+                                border-radius: 50%;
+                                height: 50%;
+
+                                img {
+                                    width: 12px;
+                                }
+                            }
+                        }
+
+                        .ticket-type-open-dropdown {
+                            height: 160px;
+                            overflow: auto;
+                            padding-top: 40px;
+                            transition: 0.5s;
+
+                        }
+
+                        .ticket-dept-dropdown-menu-container {
+                            position: absolute;
+                            border-radius: 20px 20px 5px 5px;
+                            // top: 10px;
+                            // left: 0;
+                            top: 50%;
+                            width: 100%;
+                            background: $color-white;
+                            box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                            z-index: 975 !important;
+                            transition: 0.5s;
+                            overflow: auto;
+
+                            .MuiButtonBase-root {
+                                width: 90% !important;
+                                margin: 0 auto !important;
+                                background-color: transparent !important;
+                                box-shadow: none !important;
+                                border-radius: 25px;
+                                height: 40px;
+                                min-height: 40px;
+                                padding: 0px !important;
+                                min-height: 30px !important;
+                                // margin: 1% auto;
+
+                            }
+                        }
+
+                        .custom-scroll {
+                            width: 98% !important;
+                        }
+                    }
+                }
+
+                .edit-ticket-drawer-ticket-team {
+                    width: 48%;
+
+                    .menu-team-container {
+                        width: 100%;
+                        position: relative;
+                        margin: auto;
+                        transition: 0.5s;
+
+                        .team-container {
+                            width: 100%;
+                            position: relative;
+                            border: 1px solid $color-lightGray;
+                            height: 60px;
+                            background: $color-white;
+                            border-radius: 41px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            z-index: 970;
+                            cursor: pointer;
+
+                            .selected-item-container {
+                                // margin-left: 1%;
+                                width: 85%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+
+                                p {
+                                    font-family: helveticaNeueLight;
+                                    font-size: 18px;
+                                    color: $color-thickGray;
+                                    padding-left: 14px;
+                                    font-weight: 590;
+                                }
+                            }
+
+                            .des-drp-dwn-img {
+                                width: 6%;
+                                margin-right: 1%;
+                                display: flex;
+                                justify-content: center;
+                                // border: 1px dashed $color-violet;
+                                border-radius: 50%;
+                                height: 50%;
+
+                                img {
+                                    width: 12px;
+                                }
+                            }
+                        }
+
+                        .ticket-type-open-dropdown {
+                            height: 160px;
+                            overflow: auto;
+                            padding-top: 40px;
+                            transition: 0.5s;
+
+                        }
+
+                        .team-dropdown-menu-container {
+                            position: absolute;
+                            border-radius: 20px 20px 5px 5px;
+                            // top: 10px;
+                            // left: 0;
+                            top: 50%;
+                            width: 100%;
+                            background: $color-white;
+                            box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                            z-index: 965 !important;
+                            transition: 0.5s;
+                            overflow: hidden;
+
+                            .MuiButtonBase-root {
+                                width: 90% !important;
+                                margin: 0 auto !important;
+                                background-color: transparent !important;
+                                box-shadow: none !important;
+                                border-radius: 25px;
+                                height: 40px;
+                                min-height: 40px;
+                                padding: 0px !important;
+                                min-height: 30px !important;
+                                // margin: 1% auto;
+
+                            }
+                        }
+
+                        .custom-scroll {
+                            width: 98% !important;
+                        }
+                    }
+                }
+            }
+
+            // Department and Team section ends
+
+            // Project and Contact section
+            .edit-ticket-drawer-ticket-pro-con {
+                width: 95%;
+                height: 50px;
+                margin: 0 auto;
+                margin-top: 6%;
+
+                .edit-ticket-drawer-ticket-pro {
+                    width: 48%;
+
+                    .menu-pro-container {
+                        width: 100%;
+                        position: relative;
+                        margin: auto;
+                        transition: 0.5s;
+                        // padding: 7px;
+
+                        .edit-drawer-container-pro {
+                            width: 100%;
+                            position: relative;
+                            border: 1px solid $color-lightGray;
+                            height: 60px;
+                            background: $color-white;
+                            border-radius: 41px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            z-index: 950;
+                            cursor: pointer;
+
+                            .selected-item-container {
+                                // margin-left: 1%;
+                                width: 85%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+
+                                p {
+                                    font-family: helveticaNeueLight;
+                                    font-size: 18px;
+                                    color: $color-thickGray;
+                                    padding-left: 14px;
+                                    font-weight: 590;
+                                }
+                            }
+
+                            .ticket-drp-dwn-img {
+                                width: 6%;
+                                margin-right: 1%;
+                                display: flex;
+                                justify-content: center;
+                                // border: 1px dashed $color-violet;
+                                border-radius: 50%;
+                                height: 50%;
+
+                                img {
+                                    width: 12px;
+                                }
+                            }
+                        }
+
+                        .ticket-type-open-dropdown {
+                            height: 160px;
+                            overflow: auto;
+                            padding-top: 40px;
+                            transition: 0.5s;
+
+                        }
+
+                        .ticket-pro-dropdown-menu-container {
+                            position: absolute;
+                            border-radius: 20px 20px 5px 5px;
+                            // top: 10px;
+                            // left: 0;
+                            top: 50%;
+                            width: 100%;
+                            background: $color-white;
+                            box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                            z-index: 945 !important;
+                            transition: 0.5s;
+                            overflow: auto;
+
+                            .MuiButtonBase-root {
+                                width: 90% !important;
+                                margin: 0 auto !important;
+                                background-color: transparent !important;
+                                box-shadow: none !important;
+                                border-radius: 25px;
+                                height: 40px;
+                                min-height: 40px;
+                                padding: 0px !important;
+                                min-height: 30px !important;
+                                // margin: 1% auto;
+
+                            }
+                        }
+
+                        .custom-scroll {
+                            width: 98% !important;
+                        }
+                    }
+                }
+
+                .edit-ticket-drawer-ticket-con {
+                    width: 48%;
+
+                    .menu-con-container {
+                        width: 100%;
+                        position: relative;
+                        margin: auto;
+                        transition: 0.5s;
+
+                        .con-container {
+                            width: 100%;
+                            position: relative;
+                            border: 1px solid $color-lightGray;
+                            height: 60px;
+                            background: $color-white;
+                            border-radius: 41px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            z-index: 960;
+                            cursor: pointer;
+
+                            .selected-item-container {
+                                // margin-left: 1%;
+                                width: 85%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+
+                                p {
+                                    font-family: helveticaNeueLight;
+                                    font-size: 18px;
+                                    color: $color-thickGray;
+                                    padding-left: 14px;
+                                    font-weight: 590;
+                                }
+                            }
+
+                            .des-drp-dwn-img {
+                                width: 6%;
+                                margin-right: 1%;
+                                display: flex;
+                                justify-content: center;
+                                // border: 1px dashed $color-violet;
+                                border-radius: 50%;
+                                height: 50%;
+
+                                img {
+                                    width: 12px;
+                                }
+                            }
+                        }
+
+                        .ticket-type-open-dropdown {
+                            height: 160px;
+                            overflow: auto;
+                            padding-top: 40px;
+                            transition: 0.5s;
+
+                        }
+
+                        .con-dropdown-menu-container {
+                            position: absolute;
+                            border-radius: 20px 20px 5px 5px;
+                            // top: 10px;
+                            // left: 0;
+                            top: 50%;
+                            width: 100%;
+                            background: $color-white;
+                            box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                            z-index: 955 !important;
+                            transition: 0.5s;
+                            overflow: hidden;
+
+                            .MuiButtonBase-root {
+                                width: 90% !important;
+                                margin: 0 auto !important;
+                                background-color: transparent !important;
+                                box-shadow: none !important;
+                                border-radius: 25px;
+                                height: 40px;
+                                min-height: 40px;
+                                padding: 0px !important;
+                                min-height: 30px !important;
+                                // margin: 1% auto;
+
+                            }
+                        }
+
+                        .custom-scroll {
+                            width: 98% !important;
+                        }
+                    }
+                }
+            }
+
+            // Project and Contact section ends
+
+            .edit-tkt-sidebar-header {
+                display: flex;
+                justify-content: space-between;
+                padding: 3% 0 3% 3%;
+
+                .edit-tkt-heading {
+                    text-align: left;
+                    font: Condensed Bold 18px/38px Helvetica Neue;
+                    letter-spacing: 0.6px;
+                    text-transform: uppercase;
+                    opacity: 1;
+                    font-family: helveticaNeueCondensedBold;
+                }
+
+                .edit-tkt-heading>span {
+                    color: $color-skyBlue;
+                }
+            }
+
+            .edit-ticket-body-input-base-two {
+                width: 95%;
+                margin: 0 auto;
+                margin-top: 3%;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .edit-tkt-footer {
+                font-family: helveticaNeueMedium;
+                display: flex;
+                justify-content: space-between;
+                width: 94%;
+                padding: 3%;
+            }
+        }
+    }
+}

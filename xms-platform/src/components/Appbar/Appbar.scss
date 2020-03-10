@@ -1,0 +1,155 @@
+@import '../../variables';
+
+.ticketing-appBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px 7px 5px;
+    width: 100%;
+    border-bottom: 1px solid $color-darkWhite;
+    .header-icon{
+        .MuiButtonBase-root{
+            .MuiIconButton-root{
+                padding: 0px;
+            }
+        }
+    }
+    .header-search{
+        width: 50%;
+        padding-top: 10px;
+        .search-bar{
+            position: relative;
+            border-radius: 30px;
+            border: 1px solid $color-darkWhite;
+            background-color: $color-white;
+            width: 90%;
+            height: 35px;
+            display: flex;
+            color: $color-lightGray;
+            margin-left: 10%;
+
+            .search-input{
+                width: 100%;
+            }
+
+            .search-icon{
+
+                .MuiSvgIcon-root{
+                    height: 1.5em;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+
+}
+
+
+.header-logo {
+    width: 10%;
+    padding-top: 5px;
+    img{
+        height: 40px;
+    }
+}
+
+
+
+.ticketing-text {
+    padding-left: 0px;
+    font-size: 1rem;
+    color: $color-thickGray;
+
+}
+
+.ticketing-system-appbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding-top: 10px;
+
+    .dropdown-button{
+        .btn{
+            box-shadow: none;
+            border: 1px solid $color-darkWhite;
+            height: 30px;
+            padding:  0!important;
+            border-radius: 15px; 
+            width: 105%;
+            margin-top: -2%;
+        }
+        .btn:hover{
+            box-shadow: none;
+        }
+    }
+}
+
+
+.btn {
+    border: 1px solid ;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+.MuiIconButton-colorInherit {
+    background-color: $color-white!important;
+}
+
+.MuiListItem-button:hover {
+    background-color: none !important;
+}
+
+.dropdown-menu {
+    min-width: 8rem !important;
+    padding: .3rem 0 !important;
+}
+
+
+.appbar-icon{
+    .fa{
+        font-size: 1.6rem;
+        padding: 0px;
+    }
+    img{
+        height: 25px;
+    }
+}
+
+
+.dots-icon{
+    img{
+        width: 30%;
+    }
+}
+.profile-image{
+    img {
+        width: 50%;
+        border-radius: 50px;
+    
+    }
+}
+
+.appbar-icon{
+    .notification-ellipse{
+        padding-bottom: 18px;
+        height: 25px;
+    }
+}
+
+
+
+.ticket-body {
+    border-left: 1px solid $color-lightWhite;
+    width: 100%;
+}
+
+
+
+
+
+

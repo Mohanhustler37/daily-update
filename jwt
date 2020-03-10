@@ -1,0 +1,61 @@
+In => routes/auth.js
+
+const router = require('express').Router();
+
+router.post('register', (req, res) => { res.send('Register'); });
+
+router.post('/login');
+
+module.exports = router;
+
+
+In => index.js
+
+const express = require('express');
+const app = express();
+
+// Import routes
+const authRoute = require('./routes/auth');
+
+// Route middlewares
+app.use('/api/user', authRoute);
+
+app.listen(3000, () => console.log('Server up and running'));
+
+Setting up express             => Router()
+Connecting to a database       => mongoose.connect(process.env.DB_CONNECT);
+.env files                     => dotenv
+Creating models in mongoose    => const userSchema = new mongoose.Schema({})
+                               => module.exports = mongoose.model('User', userSchema);
+Registering a user	       => const savedUser = await user.save(); => const user = new User({})
+Validation with Joi            => @hapi/joi => look in official documentation and API
+Hashing passwords              => 
+				await bcrypt.genSalt(10)
+				await bcrypt.hash()
+				await bcrypt.compare()
+
+Setting up the login route     => jwt.sign({ _id: user._id }, process.env.TOKEN_SECRET);
+                                
+Adding jwt to our auth         => jwt.verify()
+private routes with jwt        => router.get("/", verify, (req, res) => {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="66.961" height="71.425" viewBox="0 0 66.961 71.425">
+    <defs>
+        <style>
+            .cls-1{fill:#c8c8c8}
+        </style>
+    </defs>
+    <path id="Icon_metro-calendar" d="M24.891 28.712h8.928v8.928h-8.928zm13.392 0h8.928v8.928h-8.928zm13.392 0H60.6v8.928h-8.925zM11.5 55.5h8.928v8.928H11.5zm13.392 0h8.928v8.928h-8.929zm13.392 0h8.928v8.928h-8.929zM24.891 42.1h8.928v8.928h-8.928zm13.392 0h8.928v8.928h-8.928zm13.392 0H60.6v8.928h-8.925zm-40.175 0h8.928v8.928H11.5zM60.6 1.928v4.464h-8.925V1.928H20.427v4.464H11.5V1.928H2.571v71.425h66.96V1.928H60.6zm4.464 66.96H7.035v-49.1h58.032z" class="cls-1" data-name="Icon metro-calendar" transform="translate(-2.57 -1.928)"/>
+</svg>

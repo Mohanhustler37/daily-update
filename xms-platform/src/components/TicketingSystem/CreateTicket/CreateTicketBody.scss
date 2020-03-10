@@ -1,0 +1,861 @@
+@import '../../../variables';
+
+
+.create-ticket-body-container {
+    width: 100%;
+    border: 1px solid $color-thickWhite;
+    height: 650px;
+    display: flex;
+}
+
+.create-ticket-body-left {
+    width: 70%;
+    // border: 1px solid;
+
+}
+
+.create-ticket-body-right {
+    width: 30%;
+    border-left: 1px solid $color-darkWhite;
+}
+
+.create-ticket-body-input-base {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-ticket-using-template {
+    width: 48%;
+    height: 40px;
+    border: 1px solid $color-lightGray;
+    border-radius: 20px;
+    display: flex;
+}
+
+.create-ticket-using-template>img {
+    // margin: 0 auto;
+    margin: auto 14px;
+}
+
+
+.create-ticket-using-template>p {
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    margin-top: 8px !important;
+    font-size: 14px;
+    color: $color-thickGray;
+}
+
+.create-ticket-using-template>.WithStyles\(ForwardRef\(Switch\)\)-root-49 {
+    margin-left: 17px;
+}
+
+.choose-template {
+    width: 48%;
+}
+
+.choose-template-disabled {
+    width: 100%;
+    height: 40px;
+    border: 1px solid $color-thinGray;
+    border-radius: 20px;
+    color: $color-thickGray;
+    padding-left: 12px;
+    margin-left: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.choose-template-disabled>p {
+    margin-bottom: 0px !important;
+    margin-top: 10px !important;
+    font-size: 15px;
+}
+
+.choose-template-disabled>img {
+    margin-right: 15px;
+    width: 14px;
+}
+
+.break-in-create-ticket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-lightGray;
+    font-size: 14px;
+    margin-top: 2%;
+    // width: 80%;
+}
+
+.create-ticket-bottom-line {
+    width: 30%;
+    border: 1px solid $color-lightGray;
+    margin: 3% 1%;
+    margin-left: 3%;
+}
+
+.create-ticket-bottom-line1 {
+    width: 30%;
+    border: 1px solid $color-lightGray;
+    margin: 3% 1%;
+
+}
+
+.create-ticket-body-input-base-two {
+    width: 90% !important;
+    margin: 0 auto;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ticket-title-container,
+.ticket-type-container {
+    width: 48% !important;
+    margin-right: 0px !important;
+}
+
+.ticket-title-container>.MuiInputBase-root {
+    width: 100%;
+    height: 40px !important;
+    border: 1px solid $color-lightGray;
+    border-radius: 20px;
+}
+
+.ticket-title-container>.MuiInputBase-root>.MuiInputBase-input {
+    padding-left: 16px;
+    font-size: 15px;
+    color: $color-thickGray !important;
+}
+
+
+.ticket-type-container>.dropdown-button>.btn {
+    width: 100%;
+    height: 40px;
+    border: 1px solid $color-lightGray;
+    border-radius: 20px;
+    margin-left: 6%;
+    text-align: left;
+    font-size: 15px;
+    color: $color-thickGray;
+}
+
+
+.ticket-type-container>.dropdown-button>.dropdown-toggle::after {
+    margin-left: 64%;
+}
+
+.create-ticket-text-area {
+    width: 90% !important;
+    margin: 0 auto;
+    margin-top: 4%;
+    outline: none !important;
+}
+
+.create-ticket-text-area>textarea {
+    width: 100% !important;
+    border-radius: 22px;
+    border: 1px solid $color-lightGray;
+    padding: 12px;
+    font-size: 14px;
+    color: $color-thickGray;
+}
+
+.create-ticket-body-input-base-three {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.priority-container {
+    width: 48%;
+    height: 40px;
+    display: flex;
+}
+
+.priority-container>.MuiFormControl-root {
+    width: 100%;
+    margin-left: 0px !important;
+}
+
+.priority-container>.dropdown-button {
+    width: 100%;
+}
+
+.priority-container>.dropdown-button>.btn {
+    width: 100%;
+    height: 40px;
+    margin-left: 0%;
+    text-align: left;
+    font-size: 15px;
+    color: $color-thickGray;
+}
+
+.priority-container>.dropdown-button>.dropdown-toggle::after {
+    margin-left: 72%;
+}
+
+.tags-container-body {
+    width: 90%;
+    height: 40px;
+    border: 1px solid $color-lightGray;
+    border-radius: 20px;
+    margin-left: 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tag-container-tag>p {
+    margin-bottom: 0px !important;
+    margin-top: 0px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: $color-thickGray;
+}
+
+.tag-container-add>.fa {
+    width: 40px;
+    padding: 10px;
+}
+
+.attachment-container {
+    width: 90%;
+    height: 90px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.attachment-container>p {
+    font-size: 14px;
+    font-weight: bolder;
+    color: $color-lightGray;
+    text-align: left;
+    margin: 0px !important;
+}
+
+.attachment-container-field {
+    width: 102%;
+    height: 60px;
+    border: 1px dashed $color-lightGray;
+    border-radius: 8px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.attachment-container-field>p {
+    margin: 0px !important;
+    color: $color-lightGray;
+}
+
+.attachment-container-field>p>span {
+    color: $color-skyBlue;
+}
+
+.create-ticket-email-section {
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 6%;
+    display: flex;
+}
+
+.create-ticket-email-section>.PrivateSwitchBase-root-66 {
+    padding: 0px;
+}
+
+.create-ticket-email-section>.email-section-check-box>.MuiButtonBase-root>.MuiIconButton-label>.MuiSvgIcon-root {
+    color: $color-skyBlue;
+}
+
+.email-section-check-box>span {
+    font-size: 12px;
+    color: $color-thickGray;
+}
+
+.create-ticket-email-section>p {
+    margin: opx !important;
+}
+
+.create-ticket-email-section>.MuiInputBase-root {
+    width: 40%;
+    height: 40px;
+    border: 1px solid $color-skyBlue;
+    border-radius: 20px;
+    font-size: 14px;
+    padding-left: 20px;
+    margin-left: 35px;
+}
+
+.create-ticket-company-details {
+    width: 80%;
+    height: 160px;
+    border: 1px dashed $color-skyBlue;
+    margin: 10% auto;
+    border-radius: 8px;
+}
+
+.create-ticket-company-description {
+    margin-top: 3%;
+    margin-left: 3%;
+    display: flex;
+}
+
+.create-ticket-company-description>img {
+    width: 14%;
+}
+
+.create-ticket-company-text>p {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 5px !important;
+}
+
+.create-ticket-company-text-one {
+    font-size: 16px;
+    font-weight: bolder;
+    color: $color-thickGray;
+}
+
+.create-ticket-company-text-two {
+    color: $color-lightGray;
+}
+
+.create-ticket-company-details-edit {
+    margin-left: 40px;
+}
+
+.department-and-team-name {
+    display: flex;
+}
+
+.department-and-team-name>p {
+    margin-top: 5px !important;
+    margin-bottom: 0px !important;
+    margin-left: 12px !important;
+    // margin-right: 15px!important;
+    color: $color-lightGray;
+}
+
+.team-name {
+    border-left: 1px solid $color-lightGray;
+    padding-left: 10px;
+}
+
+.create-ticket-company-details>p {
+    margin-left: 15px !important;
+    color: $color-skyBlue;
+}
+
+.requestor-container {
+    width: 53%;
+    height: 30px;
+    border: 1px dashed $color-lightGray;
+    border-radius: 15px;
+    margin-left: 15px;
+    display: flex;
+    margin-bottom: 1%;
+}
+
+.requestor-container>img {
+    width: 18%;
+    margin-left: 4px;
+    border-radius: 50px;
+    margin: 2px 3px;
+}
+
+.requestor-text>p {
+    margin: 0px !important;
+    font-size: 9px;
+}
+
+.requestor-text-one {
+    font-weight: bolder;
+    color: $color-lightGray;
+}
+
+.requestor-drop-down>img {
+    width: 30%;
+    margin-left: 20px;
+}
+
+.assign-to-container {
+    width: 80%;
+    height: 33px;
+    border: 1px dashed $color-lightGray;
+    margin: 10% auto;
+    border-radius: 20px;
+    display: flex;
+}
+
+.assign-to-container>img {
+    width: 12%;
+    margin-left: 4px;
+    border-radius: 100px;
+    margin: 2px 3px;
+}
+
+.assign-text>p {
+    margin: 0px !important;
+    font-size: 7px;
+}
+
+.assign-text-one {
+    font-weight: bolder;
+    color: $color-lightGray;
+    padding-top: 5px;
+}
+
+.assign-drop-down>img {
+    width: 8%;
+    margin-left: 145px;
+    margin-top: 10px;
+}
+
+.web-container {
+    width: 80%;
+    height: 33px;
+    border: 1px dashed $color-lightGray;
+    margin: 10% auto;
+    border-radius: 20px;
+    display: flex;
+}
+
+.web-container>img {
+    width: 12%;
+    margin-left: 4px;
+    border-radius: 100px;
+    margin: 2px 3px;
+}
+
+.web-text>p {
+    margin: 0px !important;
+    font-size: 7px;
+}
+
+.web-text-one {
+    font-weight: bolder;
+    color: $color-lightGray;
+    padding-top: 5px;
+}
+
+.web-drop-down>img {
+    width: 8%;
+    margin-left: 145px;
+    margin-top: 10px;
+}
+
+.knowledge-container {
+    width: 80%;
+    margin: 10% auto;
+    border-radius: 10px;
+    background-color: $color-lightWhite;
+}
+
+.knowledge-base {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+}
+
+.knowledge-base>img {
+    width: 12px;
+    margin-top: 10px;
+}
+
+.knowledge-base>p {
+    margin-top: 10px !important;
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+    font-size: 15px;
+    padding-left: 5px;
+    color: $color-dimGray;
+}
+
+.knowledge-questions {
+    display: flex;
+}
+
+.knowledge-value {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color: $color-white;
+}
+
+.knowledge-value>p {
+    margin-left: 4px;
+    margin-top: 3px;
+    color: $color-dimGray;
+}
+
+.knowledge-text {
+    margin-top: 8px;
+}
+
+.knowledge-text>p {
+    margin-bottom: 0px !important;
+    margin-left: 7px !important;
+    margin-top: 0px !important;
+    color: $color-dimGray;
+}
+
+.knowledge-text>.knowledge-text-next {
+    padding-top: 0px;
+}
+
+.ticket-type-container {
+    .dropdown-button {
+        .dropdown-menu {
+            top: 0px !important;
+            left: 164px !important;
+        }
+    }
+}
+
+.priority-container {
+    .dropdown-button {
+        .dropdown-menu {
+            top: 0px !important;
+            left: 164px !important;
+        }
+    }
+}
+
+.create-ticket-using-template {
+    .MuiSwitch-root>.WithStyles\(ForwardRef\(Switch\)\)-switchBase-50.WithStyles\(ForwardRef\(Switch\)\)-checked-53+.WithStyles\(ForwardRef\(Switch\)\)-track-52 {
+        background-color: $color-skyBlue;
+        border-color: $color-skyBlue;
+    }
+}
+
+.break-for-submit-section {
+    width: 80%;
+    border: 1px solid $color-darkWhite !important;
+    margin: 0 auto;
+}
+
+.save-template-submit-section {
+    width: 80%;
+    height: 50px;
+    margin: 3% auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.save-template-submit-section-button-one,
+.save-template-submit-section-button-two {
+    width: 50%;
+}
+
+.save-template-submit-section-button-one {
+    .MuiButton-outlinedPrimary {
+        width: 41%;
+        height: 40px;
+        border: 1px dashed $color-lightGray !important;
+        border-radius: 20px;
+        color: $color-lightGray;
+        font-size: 12px;
+
+    }
+}
+
+.save-template-submit-section-button-one {
+    .MuiButton-root {
+        text-transform: none;
+    }
+}
+
+.save-template-submit-section-button-one {
+    .MuiButton-outlined {
+        padding: 5px 0px;
+    }
+
+}
+
+.save-template-submit-section-button-two {
+    .MuiButton-outlinedPrimary {
+        width: 84%;
+        height: 40px;
+        border: 1px solid $color-green !important;
+        border-radius: 20px;
+        color: $color-white;
+        font-size: 12px;
+        background-color: $color-green;
+        margin-left: 16%;
+    }
+}
+
+.save-template-submit-section-button-two {
+    .MuiButton-outlinedPrimary:hover {
+        width: 90%;
+        height: 40px;
+        border: 1px solid $color-green !important;
+        border-radius: 20px;
+        color: $color-white;
+        font-size: 12px;
+        background-color: $color-green;
+        margin-left: 16%;
+    }
+}
+
+.save-template-submit-section-button-two {
+    .MuiButton-root {
+        text-transform: none;
+    }
+
+}
+
+.save-template-submit-section-button-two {
+    .MuiButton-outlined {
+        padding: 5px 0px;
+    }
+}
+
+.sell-All {
+    p {
+        float: right;
+        margin-right: 10px;
+        color: $color-skyBlue;
+    }
+}
+
+
+/////////////////////////////////////////////
+
+
+
+.choose-template {
+    .MuiFormControl-root {
+        .create-ticket-menu-item {
+            .MuiInput-underline:hover:not(.Mui-disabled):before {
+                border-bottom: none;
+            }
+
+            .MuiInput-underline:before {
+                border-bottom: none;
+            }
+
+            .MuiInput-underline:after {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+
+.choose-template {
+    .MuiFormControl-root {
+        width: 100%;
+    }
+}
+
+.choose-template {
+    .MuiFormControl-root {
+        .create-ticket-menu-item {
+            .MuiInputBase-root {
+                border: 1px solid $color-lightGray;
+                width: 100%;
+                height: 40px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.choose-template>.MuiFormControl-root>.create-ticket-menu-item>.MuiInputBase-root>.MuiInputBase-input {
+    padding: 6px 12px 7px;
+}
+
+
+
+.choose-template {
+    .MuiFormControl-root {
+        .MuiInputLabel-formControl {
+            top: -11px;
+            left: 12px;
+            font-size: 14px;
+            color: $color-thickGray;
+        }
+    }
+}
+
+
+///////////////////////////////
+
+.ticket-type-container {
+    .MuiFormControl-root {
+        .create-ticket-menu-item {
+            .MuiInput-underline:hover:not(.Mui-disabled):before {
+                border-bottom: none;
+            }
+
+            .MuiInput-underline:before {
+                border-bottom: none;
+            }
+
+            .MuiInput-underline:after {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+
+.ticket-type-container>.MuiFormControl-root {
+    width: 100%;
+
+}
+
+.ticket-type-container {
+    .MuiFormControl-root {
+        .create-ticket-menu-item {
+            .MuiInputBase-root {
+                border: 1px solid $color-lightGray;
+                width: 100%;
+                height: 40px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.ticket-type-container>.MuiFormControl-root>.create-ticket-menu-item>.MuiInputBase-root>.MuiInputBase-input {
+    padding: 6px 12px 7px;
+}
+
+
+.ticket-type-container {
+    .MuiFormControl-root {
+        .MuiInputLabel-formControl {
+            top: -11px;
+            left: 12px;
+            font-size: 15px;
+            color: $color-thickGray;
+        }
+    }
+}
+
+
+//////////////////////////////priority
+
+.priority-container {
+    .MuiFormControl-root {
+        .create-ticket-menu-item {
+            .MuiInput-underline:hover:not(.Mui-disabled):before {
+                border-bottom: none;
+            }
+
+            .MuiInput-underline:before {
+                border-bottom: none;
+            }
+
+            .MuiInput-underline:after {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+
+
+.priority-container>.MuiFormControl-root {
+    width: 100%;
+    margin-left: 8%;
+}
+
+.priority-container {
+    .MuiFormControl-root {
+        .create-ticket-menu-item {
+            .MuiInputBase-root {
+                border: 1px solid $color-lightGray;
+                width: 100%;
+                height: 40px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.priority-container>.MuiFormControl-root>.create-ticket-menu-item>.MuiInputBase-root>.MuiInputBase-input {
+    padding: 6px 12px 7px;
+}
+
+
+.priority-container>.MuiFormControl-root {
+    .MuiInputLabel-formControl {
+        top: -11px;
+        left: 12px;
+        font-size: 15px;
+        color: $color-thickGray;
+    }
+}
+
+
+.create-ticket-company-details>p {
+    margin-top: 5px !important;
+}
+
+.requestor-container {
+    margin-top: 10px !important;
+}
+
+
+
+.custom-file-label-upload::after {
+    display: none !important;
+}
+
+.custom-file-label-upload-text-two {
+    padding-top: 0px !important;
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    margin-left: -7% !important;
+    color: $color-lightGray;
+}
+
+.custom-file-label-upload-image-icon>.custom-file-label-upload-text-one {
+    padding-bottom: 0px !important;
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    margin-left: -10% !important;
+}
+
+.custom-file-label-upload-image-icon>.custom-file-label-upload-text-two>span {
+    color: $color-skyBlue;
+}
+
+.custom-file-label-upload-image-icon {
+    margin-top: -12%;
+    margin-left: 50%;
+    z-index: 1;
+}
+
+.custom-file-upload>.MuiButton-root {
+    border: 1px dashed $color-lightGray;
+    width: 102%;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.project-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    padding: 1%;
+
+    .MuiFormControl-root {
+        .list-project {
+            .MuiInput-underline:hover:not(.Mui-disabled):before {
+                border-bottom: none;
+            }
+        }
+    }
+}

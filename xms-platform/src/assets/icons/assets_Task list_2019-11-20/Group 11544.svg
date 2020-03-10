@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24">
+    <defs>
+        <style>
+            .cls-1{fill:#d0cfec}.cls-2{fill:#ea7f7f;stroke:#fff}.cls-3{stroke:none}.cls-4{fill:none}
+        </style>
+    </defs>
+    <g id="Group_11544" data-name="Group 11544" transform="translate(-1261 -347)">
+        <path id="Icon_awesome-comment-dots" d="M13.143 2.25C5.883 2.25 0 7.03 0 12.929a9.478 9.478 0 0 0 2.926 6.71 13.061 13.061 0 0 1-2.813 4.918.408.408 0 0 0-.077.443.4.4 0 0 0 .375.246 11.741 11.741 0 0 0 7.218-2.639 15.657 15.657 0 0 0 5.514 1c7.259 0 13.143-4.78 13.143-10.679S20.4 2.25 13.143 2.25zM6.571 14.571a1.643 1.643 0 1 1 1.643-1.643 1.641 1.641 0 0 1-1.643 1.643zm6.571 0a1.643 1.643 0 1 1 1.643-1.643 1.641 1.641 0 0 1-1.642 1.643zm6.571 0a1.643 1.643 0 1 1 1.643-1.643 1.641 1.641 0 0 1-1.642 1.643z" class="cls-1" data-name="Icon awesome-comment-dots" transform="translate(1261 345.75)"/>
+        <g id="Ellipse_3271" class="cls-2" data-name="Ellipse 3271" transform="translate(1281 348)">
+            <circle cx="4" cy="4" r="4" class="cls-3"/>
+            <circle cx="4" cy="4" r="4.5" class="cls-4"/>
+        </g>
+    </g>
+</svg>

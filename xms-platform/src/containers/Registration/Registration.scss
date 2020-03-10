@@ -1,0 +1,3185 @@
+@import '../../variables';
+@import '../../extends';
+@import '../../mixins';
+
+/*------------------Media Queries Start--------------*/
+
+@media screen and (max-width: 1279px) and (min-width: 320px) {
+  
+}
+
+@media screen and (min-width: 1280px) and (max-width:1335px) {
+    .registration-heading{
+        .main-heading{
+            font-size: rem(45px);
+        }
+    }
+    .sub-heading{
+        font-size: rem(18px);
+    }
+    .registration-company-details-container{
+        .reg-cmp-dtls-mainheading{
+            font-size: rem(45px);
+        }
+        .reg-cmp-dtls-subheading{
+            font-size: rem(18px);
+        }
+    }
+
+    .user-container-text-field{
+        .reg-your-details{
+            font-size: rem(45px);
+        }
+        .reg-tell-me-about{
+            font-size: rem(18px);
+        }
+    }
+    .congratulation-header-field{
+        .congratulation-mainheading{
+            font-size: rem(45px);
+        }
+        .congratulation-subheading{
+            font-size: rem(18px);
+        }
+    }
+    .registrationStepperZero, .registrationStepperOne, .registrationStepperTwo{
+        .MuiStep-root {
+            span:nth-child(1) {
+                font-size: rem(16px);
+            }
+        }
+    }
+    .registration-button{
+        .MuiButtonBase-root{
+            .MuiButton-label{
+                font-size: rem(16px);
+            }
+        }
+    }
+    .reg-or-seperator {
+        span{
+            font-size: rem(14px);
+        }
+    }
+    .reg-with-google-button{
+        button{
+            span{
+                font-size: rem(20px);
+            }
+        }
+    }
+    .registration-container{
+        .registration-bottom-text{
+            p{
+                font-size: rem(18px);
+            }
+            nav{
+                a{
+                    font-size: rem(18px);  
+                }
+            }
+        }
+    }
+    .registration-email-field{
+        i{
+            font-size: rem(14px);
+        }
+        .error-valid-email-popup{
+            font-size: rem(13px);
+        }
+    }
+    .registration-page{
+        .registration-container{
+            .registration-field-three{
+                i{
+                    font-size: rem(14px);
+                }
+                .registerErrorPasswordPopup{
+                    font-size: rem(13px);
+                }
+            }
+        }
+    }
+    .on-boarding-input-field {
+        .MuiFormLabel-root{
+            font-size: rem(18px);
+          }
+          .MuiInputBase-root{
+            input{
+                font-size: rem(18px);
+            }
+          }
+    }
+    .reg-company-field-three{
+        .MuiButtonBase-root{
+            .MuiButton-label{
+                font-size: rem(18px);
+            }
+        }
+    }
+    .registration-company-details-field-two{
+        .company-details-button-one{
+            .menu-container{
+                .industry-container{
+                    .selected-item-container{
+                        p{
+                            font-size: rem(18px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .registration-ur-cmpny-button-filed, .registration-ur-details-button-filed{
+        .button-three-company,.button-five-company{
+            button{
+                .MuiButton-label{
+                    font-size: rem(20px);
+                }
+            }
+        }
+    }
+    .ur-cmpny-button-filed-click-section {
+        p{
+            font-size: rem(18px);
+        }
+    }
+    .choose-your-domain{
+        p{
+            font-size: rem(18px);
+        }
+    }
+    .congratulation-design-field{
+        .MuiInputBase-root{
+            .MuiInputBase-input{
+                font-size: rem(18px);
+            }
+        }
+    }
+    .congratulation-text-field-three{
+        .cngrlts-txt{
+            font-size: rem(16px)
+        }
+    }
+    .congratulation-field-four{
+        .MuiButton-outlined{
+            .MuiButton-label{
+                font-size : rem(18px)
+            }
+        }
+    } 
+    .congratulation-field-five{
+        .cngrts-sbcrtn-txt{
+            font-size: rem(16px);
+        }
+    }
+}
+
+@media screen and (min-width: 1336px) and (max-width:1439px) {
+    .registration-heading{
+        .main-heading{
+            font-size: rem(35px);
+        }
+    }
+    .sub-heading{
+        font-size: rem(15px);
+    }
+
+    .registration-company-details-container{
+        .reg-cmp-dtls-mainheading{
+            font-size: rem(35px);
+        }
+        .reg-cmp-dtls-subheading{
+            font-size: rem(15px);
+        }
+    }
+
+    .user-container-text-field{
+        .reg-your-details{
+            font-size: rem(35px);
+        }
+        .reg-tell-me-about{
+            font-size: rem(15px);
+        }
+    }
+
+    .congratulation-header-field{
+        .congratulation-mainheading{
+            font-size: rem(35px);
+        }
+        .congratulation-subheading{
+            font-size: rem(15px);
+        }
+    }
+
+    .registrationStepperZero, .registrationStepperOne, .registrationStepperTwo{
+        .MuiStep-root {
+            span:nth-child(1) {
+                font-size: rem(14px);
+            }
+        }
+    }
+    .registration-button{
+        .MuiButtonBase-root{
+            .MuiButton-label{
+                font-size: rem(20px);
+            }
+        }
+    }
+    .reg-or-seperator {
+        span{
+            font-size: rem(14px);
+        }
+    }
+    .reg-with-google-button{
+        button{
+            span{
+                font-size: rem(18px);
+            }
+        }
+    }
+    .registration-container{
+        .registration-bottom-text{
+            p{
+                font-size: rem(15px);
+            }
+            nav{
+                a{
+                    font-size: rem(15px);  
+                }
+            }
+        }
+    }
+    .registration-email-field{
+        i{
+            font-size: rem(16px);
+        }
+        .error-valid-email-popup{
+            font-size: rem(15px);
+        }
+    }
+    .registration-page{
+        .registration-container{
+            .registration-field-three{
+                i{
+                    font-size: rem(16px);
+                }
+                .registerErrorPasswordPopup{
+                    font-size: rem(15px);
+                }
+            }
+        }
+    }
+    .on-boarding-input-field {
+        .MuiFormLabel-root{
+            font-size: rem(18px);
+          }
+          .MuiInputBase-root{
+            input{
+                font-size: rem(18px);
+            }
+          }
+    }
+    .reg-company-field-three{
+        .MuiButtonBase-root{
+            .MuiButton-label{
+                font-size: rem(18px);
+            }
+        }
+    }
+    .registration-company-details-field-two{
+        .company-details-button-one{
+            .menu-container{
+                .industry-container{
+                    .selected-item-container{
+                        p{
+                            font-size: rem(16px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .registration-ur-cmpny-button-filed, .registration-ur-details-button-filed{
+        .button-three-company,.button-five-company{
+            button{
+                .MuiButton-label{
+                    font-size: rem(16px);
+                }
+            }
+        }
+    }
+    .ur-cmpny-button-filed-click-section {
+        p{
+            font-size: rem(15px);
+        }
+    }
+    .choose-your-domain{
+        p{
+            font-size: rem(15px);
+        }
+    }
+    .congratulation-design-field{
+        .MuiInputBase-root{
+            .MuiInputBase-input{
+                font-size: rem(18px);
+            }
+        }
+    }
+    .congratulation-text-field-three{
+        .cngrlts-txt{
+            font-size: rem(15px)
+        }
+    }
+    .congratulation-field-four{
+        .MuiButton-outlined{
+            .MuiButton-label{
+                font-size : rem(18px)
+            }
+        }
+    } 
+    .congratulation-field-five{
+        .cngrts-sbcrtn-txt{
+            font-size: rem(15px);
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width:1679px){
+    .registration-heading{
+        .main-heading{
+            font-size: rem(40px);
+        }
+        .sub-heading{
+            font-size: rem(16px);
+        }
+    }
+
+    .registration-company-details-container{
+        .reg-cmp-dtls-mainheading{
+            font-size: rem(40px);
+        }
+        .reg-cmp-dtls-subheading{
+            font-size: rem(16px);
+        }
+    }
+
+    .user-container-text-field{
+        .reg-your-details{
+            font-size: rem(40px);
+        }
+        .reg-tell-me-about{
+            font-size: rem(16px);
+        }
+    }
+
+    .congratulation-header-field{
+        .congratulation-mainheading{
+            font-size: rem(40px);
+        }
+        .congratulation-subheading{
+            font-size: rem(16px);
+        }
+    }
+
+    .registrationStepperZero, .registrationStepperOne, .registrationStepperTwo{
+        .MuiStep-root {
+            span:nth-child(1) {
+                font-size: rem(16px);
+            }
+        }
+    }
+    .registration-button{
+        .MuiButtonBase-root{
+            .MuiButton-label{
+                font-size: rem(20px);
+            }
+        }
+    }
+    .reg-or-seperator {
+        span{
+            font-size: rem(20px);
+        }
+    }
+    .reg-with-google-button{
+        button{
+            span{
+                font-size: rem(20px);
+            }
+        }
+    }
+    .registration-container{
+        .registration-bottom-text{
+            p{
+                font-size: rem(16px);
+            }
+            nav{
+                a{
+                    font-size: rem(16px);  
+                }
+            }
+        }
+    }
+    .registration-email-field{
+        i{
+            font-size: rem(18px);
+        }
+        .error-valid-email-popup{
+            font-size: rem(16px);
+        }
+    }
+    .registration-page{
+        .registration-container{
+            .registration-field-three{
+                i{
+                    font-size: rem(18px);
+                }
+                .registerErrorPasswordPopup{
+                    font-size: rem(16px);
+                }
+            }
+        }
+    }
+    .on-boarding-input-field {
+        .MuiFormLabel-root{
+            font-size: rem(18px);
+          }
+          .MuiInputBase-root{
+            input{
+                font-size: rem(18px);
+            }
+          }
+    }
+    .reg-company-field-three{
+        .MuiButtonBase-root{
+            .MuiButton-label{
+                font-size: rem(18px);
+            }
+        }
+    }
+    .registration-company-details-field-two{
+        .company-details-button-one{
+            .menu-container{
+                .industry-container{
+                    .selected-item-container{
+                        p{
+                            font-size: rem(18px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .registration-ur-cmpny-button-filed, .registration-ur-details-button-filed{
+        .button-three-company,.button-five-company{
+            button{
+                .MuiButton-label{
+                    font-size: rem(18px);
+                }
+            }
+        }
+    }
+    .ur-cmpny-button-filed-click-section {
+        p{
+            font-size: rem(17px);
+        }
+    }
+    .choose-your-domain{
+        p{
+            font-size: rem(17px);
+        }
+    }
+    .congratulation-design-field{
+        .MuiInputBase-root{
+            .MuiInputBase-input{
+                font-size: rem(22px);
+            }
+        }
+    }
+    .congratulation-text-field-three{
+        .cngrlts-txt{
+            font-size: rem(16px)
+        }
+    }
+    .congratulation-field-four{
+        .MuiButton-outlined{
+            .MuiButton-label{
+                font-size : rem(20px)
+            }
+        }
+    } 
+    .congratulation-field-five{
+        .cngrts-sbcrtn-txt{
+            font-size: rem(16px);
+        }
+    }
+}
+
+@media (min-width: 1680px){
+    .registration-heading{
+        .main-heading{
+            font-size: rem(45px);
+        }
+        .sub-heading{
+            font-size: rem(18px);
+        }
+    }
+
+    .registration-company-details-container{
+        .reg-cmp-dtls-mainheading{
+            font-size: rem(45px);
+        }
+        .reg-cmp-dtls-subheading{
+            font-size: rem(18px);
+        }
+    }
+
+    .user-container-text-field{
+        .reg-your-details{
+            font-size: rem(45px);
+        }
+        .reg-tell-me-about{
+            font-size: rem(18px);
+        }
+    }
+
+    .congratulation-header-field{
+        .congratulation-mainheading{
+            font-size: rem(45px);
+        }
+        .congratulation-subheading{
+            font-size: rem(18px);
+        }
+    }
+
+    .registrationStepperZero, .registrationStepperOne, .registrationStepperTwo{
+        .MuiStep-root {
+            span:nth-child(1) {
+                font-size: rem(18px);
+            }
+        }
+    }
+    .registration-button{
+        .MuiButtonBase-root{
+            .MuiButton-label{
+                font-size: rem(22px);
+            }
+        }
+    }
+    .reg-or-seperator {
+        span{
+            font-size: rem(22px);
+        }
+    }
+    .reg-with-google-button{
+        button{
+            span{
+                font-size: rem(22px);
+            }
+        }
+    }
+    .registration-container{
+        .registration-bottom-text{
+            p{
+                font-size: rem(18px);
+            }
+            nav{
+                a{
+                    font-size: rem(18px);  
+                }
+            }
+        }
+    }
+    .registration-email-field{
+        i{
+            font-size: rem(20px);
+        }
+        .error-valid-email-popup{
+            font-size: rem(18px);
+        }
+    }
+    .registration-page{
+        .registration-container{
+            .registration-field-three{
+                i{
+                    font-size: rem(20px);
+                }
+                .registerErrorPasswordPopup{
+                    font-size: rem(18px);
+                }
+            }
+        }
+    }
+    .on-boarding-input-field {
+        .MuiFormLabel-root{
+            font-size: rem(22px);
+          }
+          .MuiInputBase-root{
+            input{
+                font-size: rem(22px);
+            }
+          }
+    }
+    .reg-company-field-three{
+        .MuiButtonBase-root{
+            .MuiButton-label{
+                font-size: rem(22px);
+            }
+        }
+    }
+    .registration-company-details-field-two{
+        .company-details-button-one{
+            .menu-container{
+                .industry-container{
+                    .selected-item-container{
+                        p{
+                            font-size: rem(22px);
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .registration-ur-cmpny-button-filed, .registration-ur-details-button-filed{
+        .button-three-company,.button-five-company{
+            button{
+                .MuiButton-label{
+                    font-size: rem(22px);
+                }
+            }
+        }
+    }
+    .ur-cmpny-button-filed-click-section {
+        p{
+            font-size: rem(18px);
+        }
+    }
+    .choose-your-domain{
+        p{
+            font-size: rem(18px);
+        }
+    }
+    .congratulation-design-field{
+        .MuiInputBase-root{
+            .MuiInputBase-input{
+                font-size: rem(25px);
+            }
+        }
+    }
+
+    .congratulation-text-field-three{
+        .cngrlts-txt{
+            font-size: rem(18px)
+        }
+    }
+    .congratulation-field-four{
+        .MuiButton-outlined{
+            .MuiButton-label{
+                font-size : rem(22px)
+            }
+        }
+    }    
+    .congratulation-field-five{
+        .cngrts-sbcrtn-txt{
+            font-size: rem(18px);
+        }
+    }
+    
+}
+ /*------------------Media Queries End--------------*/
+
+@font-face {
+    font-family: 'Helvetica Neue Condensed Bold';
+    src: local('Helvetica Neue Condensed Bold'), url(/HelveticaNeue/HelveticaNeueCondensedBold.ttf) format('truetype');
+}
+
+$lockIcon: url('../../assets/icons/SVG/Icon-material-lock-outline.svg');
+$progresWireIcon: url('../../assets/icons/SVG/Icon-simple-processwire.svg');
+$doneIcon: url('../../assets/icons/SVG/okicon.svg');
+
+
+%reg-main-heading {
+    font-family: helveticaNeueCondensedBold;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 0.89;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #656565;
+    margin-bottom: 0.5%;
+}
+%reg-sub-heading {
+    font-family: helveticaNeueLight;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: 0.36px;
+    text-align: center;
+    color: #656565;
+}
+%reg-cmp-dtls-font-style {
+    font-family: helveticaNeueLight;
+    // font-size: 1.375rem;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+    text-align: left;
+    color: #656565;
+}
+%stepper-conContainer-style {
+    // background: #ffc089;
+    border-radius: 100px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    z-index: 10;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+    align-items: center;
+    justify-content: center;
+}
+%stepperSvgStyle {
+    height: 1.5px;
+    width: 1.5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #ffffff;
+    padding: 18px;
+    border-radius: 100px;
+    margin: 3px;
+}
+%stepper-labelContainer {
+    font-family: helveticaNeueLight;
+    // font-size: 1.125rem;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: 0.36px;
+    text-align: center;
+    color: #656565;
+}
+%input-field-specific-style {
+    .MuiFormControl-root {
+        height: 100%;
+        .MuiInputBase-root{
+            height: 100%;
+        }
+    }
+}
+%input-field-padding {
+    .MuiFormControl-root {
+        .MuiInputBase-root {
+            input {
+                padding: 6% 8% !important;
+            }
+        }
+    }
+}
+%input-field-label {
+    .MuiInputLabel-outlined {
+        z-index: 1;
+        -webkit-transform: translate(26px, 28px) scale(1);
+        transform: translate(26px, calc(2.7vh + 4px)) scale(1);
+        pointer-events: none;
+    }
+    .MuiInputLabel-outlined.MuiInputLabel-shrink {
+        transform: translate(19px, -6px) scale(0.75)
+    }
+}
+
+.registration-component{
+    height: 100%;
+    .registration-body-section  {
+        height: 82%;
+
+        .registration-heading {
+            padding-top: 4.3vh;
+            .main-heading {
+                font-family: helveticaNeueCondensedBold;
+                font-stretch: condensed;
+                font-style: normal;
+                line-height: 0.89;
+                letter-spacing: 0.9px;
+                text-align: center;
+                color: #656565;
+                margin-bottom: 0.5%;
+            }
+            .sub-heading {
+                font-family: helveticaNeueLight;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.11;
+                letter-spacing: 0.36px;
+                text-align: center;
+                color: #656565;
+            }
+        }   
+
+        // .registration-stepper{
+        //     padding: 1%;
+        //     max-width: 685px;
+        //     width: 48%;
+        //     .MuiStep-root {
+        //         span:nth-child(1){
+        //             .MuiStepLabel-iconContainer{
+        //                 @extend %stepper-conContainer-style;
+        //                 background: #ffc089;
+        //                 svg {
+        //                     background-image: url('../../assets/icons/SVG/Icon-simple-processwire.svg');
+        //                     @extend %stepper-svg-style;
+        //                     circle, text {
+        //                         display: none;
+        //                     }
+        //                 }
+        //             }
+        //             .MuiStepLabel-labelContainer {
+        //                 span {
+        //                     @extend %stepper-labelContainer;
+        //                     margin: 2% auto 0 auto ;
+        //                 }
+        //             }
+        //         }
+        //         span:nth-child(2){
+        //             .MuiStepLabel-iconContainer{
+        //                 background: #C8C8C8;
+        //                 @extend %stepper-conContainer-style;
+        //                 svg {
+        //                     background-image: url('../../assets/icons/SVG/Icon-material-lock-outline.svg');
+        //                     @extend %stepper-svg-style;
+        //                     circle, text {
+        //                         display: none;
+        //                     }
+        //                 }
+        //             }
+        //             .MuiStepLabel-labelContainer {
+        //                 span {
+        //                     @extend %stepper-labelContainer;
+        //                     margin: 2% auto 0 auto ;
+        //                 }
+        //             }
+        //         }
+        //         .MuiStepConnector-line {
+        //             border-color: transparent;
+        //             height: 10px;
+        //             margin-top: 6px;
+        //             background: #f9f9f9;
+        //             z-index: 0;
+        //             display: block;
+        //         }
+        //         span:nth-child(3){
+        //             .MuiStepLabel-iconContainer{
+        //                 background: #C8C8C8;
+        //                 @extend %stepper-conContainer-style;
+        //                 svg {
+        //                     background-image: url('../../assets/icons/SVG/Icon-material-lock-outline.svg');
+        //                     @extend %stepper-svg-style;
+        //                     circle, text {
+        //                         display: none;
+        //                     }
+        //                 }
+        //             }
+        //             .MuiStepLabel-labelContainer {
+        //                 span {
+        //                     @extend %stepper-labelContainer;
+        //                     margin: 2% auto 0 auto ;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+
+        %stepperBodyCustomisation {
+            padding: 1%;
+            max-width: 685px;
+            width: 48%;
+        }
+        %stepperConnectorLine {
+            border-color: transparent;
+            height: 10px;
+            margin-top: 6px;
+            background: #f9f9f9;
+            z-index: 0;
+            display: block;
+        }
+
+        @mixin  customiseStepperIcon($bgColor, $bgImage){
+                .MuiStepLabel-iconContainer{
+                    @extend %stepper-conContainer-style;
+                    background: $bgColor;
+                    svg {
+                        background-image: $bgImage;
+                        @extend %stepperSvgStyle;
+                        circle, text {
+                            display: none;
+                        }
+                    }
+                }
+                .MuiStepLabel-labelContainer {
+                    span {
+                        @extend %stepper-labelContainer;
+                        margin: 2% auto 0 auto ;
+                        }
+                }
+        }
+
+        .registrationStepperZero{
+            @extend %stepperBodyCustomisation;
+            .MuiStep-root {
+                span:nth-child(1) {
+                    @include customiseStepperIcon(#ffc089, $progresWireIcon);
+                }
+                span:nth-child(2){
+                    @include customiseStepperIcon(#C8C8C8, $lockIcon);
+                }
+                .MuiStepConnector-line {
+                    @extend %stepperConnectorLine;
+                }
+                span:nth-child(3){
+                    @include customiseStepperIcon(#C8C8C8, $lockIcon);
+                }
+            }
+        }
+
+        .registrationStepperOne{
+            @extend %stepperBodyCustomisation;
+            .MuiStep-root {
+                span:nth-child(1) {
+                    @include customiseStepperIcon(#41e590, $doneIcon );
+                }
+                span:nth-child(2){
+                    @include customiseStepperIcon(#ffc089, $progresWireIcon);
+                }
+                .MuiStepConnector-line {
+                    @extend %stepperConnectorLine;
+                }
+                span:nth-child(3){
+                    @include customiseStepperIcon(#C8C8C8, $lockIcon);
+                }
+            }
+        }
+
+        .registrationStepperTwo{
+            @extend %stepperBodyCustomisation;
+            .MuiStep-root {
+                span:nth-child(1) {
+                    @include customiseStepperIcon(#41e590, $doneIcon);
+                }
+                span:nth-child(2){
+                    @include customiseStepperIcon(#41e590, $doneIcon);
+                }
+                .MuiStepConnector-line {
+                    @extend %stepperConnectorLine;
+                }
+                .MuiStepLabel-root{
+                    @include customiseStepperIcon(#C8C8C8, $lockIcon);
+                }
+            }
+        }        
+
+//////////////////////////////////////// Registration Step 1 Begins ////////////////////////////////////////
+.registration-page {
+    height: 50%;
+    margin: auto;
+    .registration-container {
+        height: 100%;
+        min-width: 300px;
+        max-width: 24.4%;
+        margin: auto;
+        text-align: center;
+        h1 { margin: 0; padding: 0}
+
+
+        .registration-field-three {
+            margin-bottom: 3.4vh;
+            position: relative;
+            @extend %input-field-specific-style;
+            @extend %input-field-padding;
+            .MuiFormControl-marginNormal {
+                width: 100%;
+            }
+        
+            .MuiFormControl-root {
+                @extend %input-field-label;
+                .MuiOutlinedInput-notchedOutline {
+                    border-radius: 100px;
+                }
+                .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+                    border-width: 1px;
+                    border-radius: 100px;
+                }
+            }
+            i {
+                position: absolute;
+                top: 30%;
+                right: 7%;
+            }
+        
+            .registerErrorPasswordPopup {
+                position: absolute;
+                width: 290px;
+                height: 84px;
+                border-radius: 10px;
+                right: -321px;
+                top: -21px;
+                padding: 10px;
+                display: flex;
+                text-align: left;
+                box-shadow: 0px 0px 15px #00000029;
+                align-items: center;
+                justify-content: center;
+                z-index: 2;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.22;
+                letter-spacing: normal;
+                text-align: left;
+                color: #fd673a;
+                background: white;
+            }
+        
+            .registerErrorPasswordPopup::before {
+                content: '';
+                background: url('../../assets/icons/15-10-2019/Path 184.svg');
+                background-position: center;
+                position: absolute;
+                background-size: cover;
+                height: 20px;
+                width: 20px;
+                top: 41px;
+                left: -9px;
+                -webkit-transform: rotate(-54deg);
+                transform: rotate(-132deg);
+            }
+            .error-user-popup {
+                position: absolute;
+                width: 22%;
+                border-radius: 10px;
+                right: 15%;
+                top: -7px;
+                padding: 10px;
+                display: flex;
+                color: #fd673a;
+                text-align: left;
+                box-shadow: 0px 0px 15px #00000029;
+                align-items: center;
+                justify-content: center;
+            }
+            .error-user-popup::before {
+                content: '';
+                width: 0;
+                height: 0;
+                position: relative;
+                left: -21px;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-right: 10px solid #e1e1e6;
+            }
+        }
+        .registration-button {
+            position: relative;
+            .MuiButtonBase-root {
+                padding: 6%;
+                width: 100%;
+                background-color: $color-green;
+                border-radius: 100px;
+                border: 1px solid transparent;
+                .MuiButton-label {
+                    font-family: helveticaNeueMedium;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.18;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #ffffff;
+                    border: 1px solid transparent;
+                    text-transform: capitalize;
+                    i {
+                        margin-top: -2px !important;
+                        color: #FFFFFF;
+                        font-size: inherit;
+                        padding-left: 5.5%;
+                    }
+                }
+            }
+            .click-here-login-arrow-container{
+                right: -143px;
+                top: -20px;
+                width: 130px;
+                @extend %click-here-arrow-custome-style;
+            }
+        }
+
+        .reg-or-seperator {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color-thickGray;
+            margin: 3% 0;
+            hr {
+                background: rgb(230, 230, 230);
+                width: 100%;
+                margin: 0 !important;
+            }
+            span {
+                font-family: helveticaNeueLight;
+                padding: 0 5px;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.18;
+                letter-spacing: normal;
+                text-align: left;
+                color: #656565;
+                cursor: default;
+            }
+        }
+
+        .reg-with-google-button {
+            width: 100%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100px;
+            button {
+                width: 100%;
+                font-weight: normal !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: none !important;
+                border-radius: 100px !important;
+                border: solid 1px #c8c8c8 !important;
+                background-color: #ffffff !important; 
+                padding: 3.5% !important;
+                div {
+                    padding: 0 !important;
+                    svg {
+                        transform: scale(2);
+                        position: relative;
+                        top: -1px;
+                    }
+                }
+                span {
+                    font-weight: normal !important;
+                    font-family: helveticaNeueLight;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.23;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color:$color-thickGray;
+                    padding-left: 20px !important;
+                }
+            }
+        }
+
+
+
+        .registration-with-google {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 30px;
+                box-shadow: rgba(0, 0, 0, 0) 0px 2px 2px 0px, rgba(0, 0, 0, 0.24) 0px 0px 1px 0px !important;
+                border: 1px solid #C8C8C8 !important;
+                border-radius: 30px !important;
+            }
+        }
+        .registration-bottom-text {
+            margin: 3vh 0 4.1vh 0;
+            cursor: default;
+            p {
+                font-family: 'helveticaNeueLight';
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.17;
+                letter-spacing: normal;
+                text-align: left;
+                color:$color-thickGray;
+            }
+            nav > a { 
+                font-family: 'helveticaNeueMedium';
+                line-height: 1.17;
+                letter-spacing: normal;
+                text-align: left;
+                color:$color-strongPurple;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+//////////////////////////////////////// Registration Step 1 Ends ////////////////////////////////////////
+
+
+
+
+
+//////////////////////////////////////// Registration Step 2 Begins ////////////////////////////////////////
+.registration-company-details-page {
+    .registration-company-details-fields {
+        padding-top: 5.6vh;
+        flex-direction: column;
+        width: 27%;
+        max-width: 527px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+
+        .registration-company-details-field-one {
+            width: 100%;
+            position: relative;
+            @extend %input-field-padding; 
+            %input-field-label
+            .MuiFormControl-marginNormal {
+                width: 100%;
+            }
+            
+            .MuiFormControl-root {
+                .MuiFormLabel-root {
+                    @extend %reg-cmp-dtls-font-style;
+                }
+                .MuiInputBase-root {
+                    input {
+                        @extend %reg-cmp-dtls-font-style;
+                    }
+                    fieldset {
+                        border-radius: 100px;
+                    }
+                }
+            }
+            .MuiFormControl-root {
+                .MuiFormLabel-root {
+                    color: $color-thickGray;
+                }
+
+                span {
+                    color: red;
+                    font-size: 20px;
+                }
+            }
+            .MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+                color: #000;
+            }
+            .error-company-popup {
+                position: absolute;
+                height: 70px;
+                width: 200px;
+                border-radius: 10px;
+                right: -65%;
+                top: 2%;
+                padding: 10px;
+                display: flex;
+                color: $color-errorPopUpColor;
+                text-align: left;
+                box-shadow: 0px 0px 15px #00000029;
+                align-items: center;
+                justify-content: center;
+            }
+            .error-company-popup::before {
+                content: '';
+                width: 0;
+                height: 0;
+                position: relative;
+                left: -21px;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-right: 10px solid #e1e1e6;
+            }
+        }
+        .registration-company-details-field-two {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 2.8vh 0 2.8vh 0;
+            .company-details-button-one {
+                width: 49%;
+                .menu-container{
+                    width: 100%;
+                    position: relative;
+                    margin: auto ;
+                    transition: 0.5s;
+                    .industry-container{
+                        cursor: pointer;
+                        width: 100%;
+                        position: relative;
+                        border: 1px solid $color-lightGray;
+                        // height: 45px;
+                        background: $color-white;
+                        border-radius: 100px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        z-index: 998;
+                        .selected-item-container{ 
+                            // margin-left: 1%;
+                            width: 85%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            p{
+                                @extend %reg-cmp-dtls-font-style;
+                                padding: 13% 8%;
+                                white-space: nowrap;
+                            }
+                          }
+                          .industry-drp-dwn-img{
+                            width: 6%;
+                            margin-right: 5%;
+                            display: flex;
+                            justify-content: center;
+                            // border: 1px dashed $color-violet;
+                            border-radius: 50%;
+                          height: 50%;
+                          img{
+                              width: 12px;
+                          }
+                        }
+                    }
+                    .industry-open-dropdown {
+                        height: 21vh;
+                        overflow: auto;
+                        max-height: 143px;
+                        padding-top: 40px;
+                        -webkit-transition: 0.5s;
+                        transition: 0.5s;
+                      }
+                    .industry-dropdown-menu-container{
+                        position: absolute;
+                        border-radius: 20px 20px 5px 5px;
+                        top: 52%;
+                        left: 0;
+                        width: 100%;
+                        background: $color-white;
+                        box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                        z-index: 997 !important;
+                        transition: 0.5s;
+                        overflow: hidden;
+                        .MuiButtonBase-root{
+                            width: 90%!important;
+                            margin: 0 auto!important;
+                            background-color:transparent!important;
+                            box-shadow: none!important;
+                            border-radius: 25px;
+                            height: 25px;
+                            min-height: 40px;
+                            padding: 0px!important;
+                            min-height: 30px!important;
+                        }
+                    }
+                    .custom-scroll{
+                        width: 98%!important;
+                        height: 92%;
+                    }
+                }
+            }
+        }
+        .create-ticket-one-industry:hover{
+            background-color: $color-lightWhite;
+        }
+        .create-ticket-one-industry{
+            height: 25px;
+            margin-top: 0%;
+            align-items: center;
+            border-radius: 100px;
+            width: 100%;
+            align-items: center!important;
+            .create-ticket-src-radio{
+                width: 10%;
+            }
+            .create-ticket-prio-img-text{
+                width: 85%;
+                img{
+                    margin-left: 3%;
+                    display: flex;
+                    align-items: center;
+                    width: 10px;
+                }
+                p{
+                    color:#c8c8c8!important;
+                    margin-bottom:  0px!important;
+                    margin-left: 2%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.17;
+                    letter-spacing: normal;
+                    font-family: "helveticaNeueLight"; 
+                }
+            }
+        }
+        .create-registration-one-tckt-typ:hover {
+            background-color: $color-lightWhite;
+        }
+        .create-registration-one-tckt-typ {
+            height: 35px;
+            margin-top: 0%;
+            align-items: center;
+            border-radius: 100px;
+            width: 100%;
+            align-items: center !important;
+            .create-registration-src-radio {
+                width: 10%;
+            }
+            .create-registration-tckt-img-text {
+                width: 90%;
+                img {
+                    margin-left: 3%;
+                    display: flex;
+                    align-items: center;
+                    width: 10px;
+                }
+                p {
+                    color: #c8c8c8 !important;
+                    margin-bottom: 0px !important;
+                    margin-left: 2%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.17;
+                    letter-spacing: normal;
+                    font-family: "helveticaNeueLight";
+                }
+            }
+        }
+        .reg-company-field-three {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            %reg-cmp-field-font {
+                font-family: helveticaNeueLight;
+                // font-size: 1.375rem;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.18;
+                letter-spacing: normal;
+                text-align: left;
+                color: #656565;
+            }
+            @extend %input-field-label;
+            .MuiFormControl-root {
+                .MuiFormLabel-root {
+                    @extend %reg-cmp-field-font;
+                }
+                .MuiInputBase-root{
+                    input {
+                        padding: 9% 8%;
+                    }
+                }
+                .MuiInputLabel-outlined {
+                    z-index: 1;
+                    transform: translate(14px, calc(3vh + 0px)) scale(1);
+                    pointer-events: none;
+                }
+                .MuiInputLabel-outlined.MuiInputLabel-shrink {
+                    transform: translate(14px, -6px) scale(0.75);
+                }
+                .MuiInputBase-root {
+                    input {
+                        @extend %reg-cmp-field-font;
+                    }
+                }
+            }
+            .MuiButtonBase-root {
+                border-left: 0;
+                border-radius: 0 100px 100px 0;
+                border: 1px solid #c8c8c8;
+                font-weight: normal;
+                max-width: none;
+                width: 57%;
+                .MuiButton-label {
+                    font-family: helveticaNeueMedium;
+                    // font-size: 1.375rem;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.18;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #656565;
+                    padding: 14% 35%;
+                    font-weight: normal !important;
+                }
+            }
+            .choose-your-domain {
+                position: absolute;
+                left: -153px;
+                top: -14px;
+
+                .MuiFormControl-root {
+                    width: 100%;
+                }
+                p {
+                    // font-size: 1.125rem;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.17;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #c8c8c8;
+                    width: 150px;
+                    white-space: nowrap;
+                }
+                img {
+                    transform: scaleX(-1);
+                    margin-left: auto;
+                    display: block;
+                    width: 36px;
+                    height: 24.8px;
+                }
+
+
+            }
+
+            .MuiFormControl-marginNormal {
+                margin: 0;
+                width: 100%;
+            }
+
+            .MuiFormControl-root {
+                .MuiFormLabel-root {
+                    span {
+                        color: red;
+                        font-size: 20px;
+                    }
+                }
+
+                .MuiInputBase-root {
+                    .MuiOutlinedInput-notchedOutline {
+                        border-radius: 30px 0 0 30px;
+                        border-color: $color-borderColor;
+                        border-width: 1px;
+                    }
+                }
+            }
+
+            .error-domain-popup {
+                position: absolute;
+                height: 70px;
+                width: 200px;
+                border-radius: 10px;
+                right: -69%;
+                top: 62%;
+                padding: 10px;
+                display: flex;
+                color: $color-errorPopUpColor;
+                text-align: left;
+                box-shadow: 0px 0px 15px #00000029;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .error-domain-popup::before {
+                content: '';
+                width: 0;
+                height: 0;
+                position: relative;
+                left: -21px;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-right: 10px solid #e1e1e6;
+            }
+        }
+    }
+}
+//////////////////////////////////////// Registration Step 2 Ends ////////////////////////////////////////
+
+
+
+//////////////////////////////////////// Registration Step 3 Begins ////////////////////////////////////////
+.user-details-step {
+    .user-container {
+        max-width: 527px;
+        margin: auto;
+        width: 27%;
+        .user-input-field-three {
+            margin-top: 2.8vh;
+            margin-bottom: 2.8vh;
+            // .user-birth-date-field {
+            //     width: 100%;
+            //     border-radius: 100px;
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: space-between;
+            //     border: 1px solid #c8c8c8;
+            //     padding: 5% 8%;
+            //     .label-date-container {
+            //         p {
+            //             font-family: helveticaNeueLight;
+            //             font-size: 22px;
+            //             font-weight: 300;
+            //             font-stretch: normal;
+            //             font-style: normal;
+            //             line-height: 1.18;
+            //             letter-spacing: normal;
+            //             text-align: left;
+            //             color: #656565;
+            //         }
+            //     }
+            //     .icon-and-date-picker-wrapper{
+            //         position: relative;
+            //         .react-datepicker-wrapper {
+            //             position: absolute;
+            //             left: 0;
+            //             .react-datepicker__input-container {
+            //                 input {
+            //                     background: transparent;
+            //                     font-size: 1px;
+            //                     width: 30px;
+            //                     height: 30px;
+            //                     box-shadow: none;
+            //                     border: 0;
+            //                     cursor: pointer;
+            //                 }
+            //             }
+            //         }
+            //     }
+
+            //     .user-birthday-picker {
+            //         width: 30px;
+            //         height: 30px;
+            //         border: 1px solid red;
+            //     }
+            //     .date-picker-style {
+            //         .react-date-picker__wrapper {
+            //           border: thin solid transparent;
+            //           .react-date-picker__inputGroup {
+            //             min-width: 0px;
+            //             width: 0;
+            //             flex-grow: 1;
+            //             display: flex;
+            //             padding: 0px 0px;
+            //             align-items: baseline;
+            //             box-sizing: content-box;
+            //             overflow: hidden;
+            //           }
+            //           .react-date-picker__calendar-button {
+            //             background: green;
+            //             background-repeat: no-repeat;
+            //             background-size: cover;
+            //             height: 27px;
+            //             width: 27px;
+            //             svg {
+            //               display: none;
+            //             }
+            //           }
+            //           .react-date-picker__calendar-button:focus {
+            //             border: 0;
+            //           }
+            //       }
+            //     }
+            // }
+            // .user-birthday-input-field {
+            //     width: 100%;
+            //     .react-datepicker-popper {
+            //         div:nth-child(1) {
+            //             .react-datepicker {
+            //                 width: 100%;
+            //                 .react-datepicker__triangle {
+            //                     display: none !important;
+            //                 }
+            //                 .react-datepicker__month-container {
+            //                     width: 100%;
+
+            //                     .react-datepicker__header {
+            //                         background-color: $color-white;
+            //                     }
+            //                     .react-datepicker__month {
+            //                         .react-datepicker__week {
+            //                             .react-datepicker__day--selected {
+            //                                 background-color: red !important;
+            //                             }
+            //                         }
+            //                     }
+
+            //                 }
+            //             }
+            //         }
+            //     }
+            //     .react-datepicker-wrapper {
+            //         width: 100%;
+            //         outline: none;
+            //         .react-datepicker__input-container {
+            //             width: 100%;
+
+            //             input {
+            //                 width: 100%;
+            //                 border-radius: 30px;
+            //                 border: 1px solid $color-borderColor;
+            //                 padding: 6px;
+            //                 outline: none;
+            //             }
+            //         }
+            //         .react-datepicker-ignore-onclickoutside {
+            //             width: 100%;
+            //             height: 50px;
+            //             border-radius: 30px;
+            //             border: 1px solid $color-borderColor;
+            //         }
+            //     }
+            //     .react-datepicker-popper {
+            //         z-index: 2 !important;
+            //         top: -5%;
+            //     }
+            // }
+
+
+
+            .userBirthdayCalenderDropdown {
+                width: 100%;
+                .menu-container{
+                    width: 100%;
+                    position: relative;
+                    margin: auto ;
+                    transition: 0.5s;
+                    .dateAndIconConainer{
+                        cursor: pointer;
+                        width: 100%;
+                        position: relative;
+                        border: 1px solid $color-lightGray;
+                        background: $color-white;
+                        border-radius: 100px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        z-index: 998;
+                        .selected-item-container{ 
+                            width: 85%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            p{
+                                @extend %reg-cmp-dtls-font-style;
+                                padding: 7% 8%;
+                                white-space: nowrap;
+                            }
+                          }
+                          .industry-drp-dwn-img{
+                            width: 6%;
+                            margin-right: 5%;
+                            display: flex;
+                            justify-content: center;
+                            border-radius: 50%;
+                          height: 50%;
+                          img{
+                              width: 5vh;
+                              height: 5vh;
+                          }
+                        }
+
+                        .iconAndDatePickerWrapper {
+                            position: relative;
+                            margin-right: 7%;
+                            .react-datepicker-wrapper {
+                                position: absolute;
+                                left: 0;
+                                .react-datepicker__input-container {
+                                    input {
+                                        background: transparent;
+                                        font-size: 1px;
+                                        width: 30px;
+                                        height: 30px;
+                                        box-shadow: none;
+                                        border: 0;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }                        
+                    }
+
+                    .userDOBDropDown{
+                        position: absolute;
+                        border-radius: 20px 20px 5px 5px;
+                        top: 52%;
+                        left: 0;
+                        width: 100%;
+                        background: $color-white;
+                        box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+                        z-index: 997 !important;
+                        transition: 0.5s;
+                        overflow: hidden;
+                        div {
+                            .react-datepicker{
+                                width: 96%;
+                                border: none;
+                                .react-datepicker__navigation--previous {
+                                    right: 54px !important;
+                                    left: auto; 
+                                }
+                                .react-datepicker__navigation--next {
+                                    right: 10px;
+                                }
+                                .react-datepicker__month-container {
+                                    float: none;
+                                    .react-datepicker__header {
+                                        border: none;
+                                        background: transparent;
+                                        .react-datepicker__current-month {
+                                            font-family: helveticaNeueMedium;
+                                            font-size: 25px;
+                                            font-stretch: normal;
+                                            font-style: normal;
+                                            letter-spacing: normal;
+                                            text-align: left;
+                                            color: #2d2f39;
+                                            padding-left: 16px;
+                                            font-weight: normal;
+                                        }
+                                        .react-datepicker__day-names {
+                                            display: flex;
+                                            margin-top: 10px;
+                                            font-family: helveticaNeueMedium;
+                                            font-size: 0.875rem;
+                                            // font-weight: 500;
+                                            font-stretch: normal;
+                                            font-style: normal;
+                                            line-height: 2.36;
+                                            letter-spacing: normal;
+                                            text-align: center;
+                                            color: #c8c8c8;
+                                            .react-datepicker__day-name {
+                                                flex-grow: 1;
+                                            }
+                                        }
+                                    }
+                                    .react-datepicker__month {
+                                        .react-datepicker__week {
+                                            display: flex;
+                                            .react-datepicker__day {
+                                                flex-grow: 1;
+                                                font-family: helveticaNeueLight;
+                                                font-size: 1.125rem;
+                                                // font-weight: 300;
+                                                font-stretch: normal;
+                                                font-style: normal;
+                                                line-height: 1.83;
+                                                letter-spacing: normal;
+                                                // text-align: left;
+                                                color: #656565;
+                                            }
+
+                                            .react-datepicker__day--selected {
+                                                background-color: rgba(78, 88, 169, 0.5);
+                                                border-radius: 100px;
+                                                color: #ffffff;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .dobOpenDropDown {
+                        height: 49vh;
+                        overflow: auto;
+                        padding-top: 6vh;
+                        -webkit-transition: 0.5s;
+                        transition: 0.5s;
+                        max-height: 321px
+                      }
+                    .dobCloseDropdown {
+                        height: 0;
+                        transition: 0.5s;
+                        overflow: hidden;
+                        max-height: 321px
+                    }
+                    .custom-scroll{
+                        width: 98%!important;
+                        height: 92%;
+                    }
+                }
+            }            
+        }
+        .user-input-field-four {
+            .user-phone-number-input-field {
+                position: relative;
+                width: 100%;
+                @extend %input-field-label;
+                @extend %input-field-padding;
+                .error-phone-popup {
+                    position: absolute;
+                    height: 65px;
+                    width: 272px;
+                    border-radius: 10px;
+                    right: -302px;
+                    top: -11px;
+                    padding: 10px;
+                    display: flex;
+                    text-align: left;
+                    box-shadow: 0px 0px 15px #00000029;
+                    align-items: center;
+                    z-index: 8;
+                    background: #ffffff;
+                    justify-content: center;
+                    font-size: 18px;
+                    // font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.22;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #fd673a;
+                }
+                .error-phone-popup::before {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    position: relative;
+                    left: -21px;
+                    border-top: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+                    border-right: 10px solid #e1e1e6;
+                }
+            }
+        }    
+    }
+}
+
+//////////////////////////////////////// Registration Step 3 Ends ////////////////////////////////////////
+
+
+
+
+
+
+
+//////////////////////////////////////// Registration Step 4 Begins ////////////////////////////////////////
+
+.congratulations-page {
+    .congratulations-container {
+        .congratulation-header-field {
+            width: 100%;
+            text-align: center;
+            padding-top: 17.8vh;
+            .congratulation-mainheading{
+                @extend %reg-main-heading;
+            }
+            .congratulation-subheading{
+                @extend %reg-sub-heading;
+            }
+        }
+        .congratulation-field-two {
+            text-align: center;
+            margin: 3.6vh auto;
+        
+            .congratulation-design-field {
+                width: 27.4%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                position: relative;
+                .MuiInputBase-root {
+                    border: 1px solid $color-lightGray;
+                    border-radius: 12px;
+                    width: 100%;
+                    position: relative;
+                    .MuiInputBase-input {
+                        padding: 5% 18.8%;
+                        font-family: helveticaNeueMedium;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.2;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #656565;
+                    }
+                }
+                .Congratulation-input-tag{
+                    position: absolute;
+                    left: 90%;
+                    width: 1rem;
+                }
+                .click-here-login-arrow-container {
+                    @extend %click-here-arrow-custome-style;
+                    right: -138px;
+                    top: -17px;
+                    width: 130px;
+                }
+            }
+            .congratulation-bookmark-page{
+                position: absolute;
+                left: 64%;
+                top: 26%;
+                text-align: left;
+                p {
+                    font-size: 10px;
+                    color: $color-lightGray;
+                    padding-left: 20px;
+                }
+                img {
+                    width: 25px;
+                }
+            }
+        }   
+        .congratulation-text-field-three {
+            width: 100%;
+            text-align: center;
+            .cngrlts-txt{
+                // font-size: 1.125rem;
+                font-family: helveticaNeueLight;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.11;
+                letter-spacing: 0.36px;
+                text-align: center;
+                color: #656565;
+            }
+        }
+        .congratulation-field-four{
+            width: 24.1%;
+            max-width: 329px;
+            margin: 5vh auto 2.1vh auto;
+            text-align: center;
+            .MuiButton-outlined{
+                padding: 6.9% 14.8%;
+                border-radius: 100px;
+                background:$color-borderLightGray;
+                color:$color-white;
+                border: 1px dashed $color-strongPurple;
+                width: 100%;
+                text-transform: lowercase;
+                display: flex;
+                justify-content: space-evenly;
+                .MuiButton-label{
+                    // font-size: 1.375rem;
+                    font-family: helveticaNeueLight;
+                    font-weight: normal !important;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.18;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #4e58a9;
+                    .trail-icon {
+                        width: 6px;
+                    }
+                }
+            }
+        }
+        .congratulation-field-five{
+            width: 13.3%;
+            text-align:center;
+            margin: auto auto 32.1vh auto;
+            .cngrts-sbcrtn-txt{
+                font-family: helveticaNeueLight;
+                // font-size: 1.125rem;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.17;
+                letter-spacing: normal;
+                text-align: left;
+                color: #656565;
+                text-align: center;
+                img{
+                    height:10px;
+                }
+            }
+        }
+    }
+}
+//////////////////////////////////////// Registration Step 4 Ends ////////////////////////////////////////
+
+
+
+        .registration-company-details-field-four-section {
+            width: 27%;
+            margin: 2% auto;
+        
+            .registration-ur-cmpny-button-filed {
+                width: 100%;
+                position: relative;
+        
+                .button-three-company {
+                    width: 45%;
+                    .MuiButtonBase-root {
+                        .MuiButton-label {
+                            font-family: helveticaNeueMedium;
+                            // font-size: 1.375rem;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.18;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #656565;
+                            padding: 12% 8%;
+                        }
+                    }
+                    .MuiButton-outlinedPrimary {
+                        width: 100%;
+                        // border: 1px solid $color-skyBlue !important;
+                        border: 1px solid $color-borderColor !important;
+                        border-radius: 100px;
+                        color: $color-thickGray;
+        
+                        .MuiButton-label {
+                            text-transform: capitalize;
+        
+                            span {
+                                margin-right: 20px;
+                                text-transform: capitalize;
+        
+                                img {
+                                    width: 55%;
+                                }
+                            }
+                        }
+                    }
+                }
+        
+                .button-five-company {
+                    width: 45%;
+                    text-transform: capitalize;
+                    .MuiButtonBase-root {
+                        border-radius: 100px;
+                        .MuiButton-label {
+                            font-family: helveticaNeueMedium;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.18;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #ffffff;
+                            padding: 12% 8%;
+        
+                        }
+                    }
+                    .MuiButton-outlinedPrimary {
+                        width: 100%;
+                        border: 1px solid !important;
+        
+                        background-color: $color-green;
+                        color: $color-white;
+                        text-transform: capitalize;
+        
+                        .MuiButton-label {
+                            text-transform: capitalize;
+                            span {
+                                img {
+                                    width: 10px;
+                                    padding-left: 5px;
+                                }
+        
+                            }
+                        }
+                    }
+                }
+            }
+        
+            .ur-cmpny-button-filed-click-section {
+                position: absolute;
+                right: -162px;
+                top: -17px;
+                text-align: left;
+                width: 160px;
+        
+                img {
+                    width: 25px;
+                    cursor: pointer;
+                }
+        
+                p {
+                    white-space: nowrap;
+                    font-family: helveticaNeueLight;
+                    // font-size: 1.125rem;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.17;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #c8c8c8;
+                }
+            }
+        }
+
+
+
+
+
+        .registration-your-details-field-four-section {
+            padding-top: 6.3%;
+        
+            .registration-ur-details-button-filed {
+                width: 100%;
+                position: relative;
+        
+                .button-three-company {
+                    width: 45%;
+                    .MuiButtonBase-root {
+                        border-radius: 100px;
+                        .MuiButton-label {
+                            font-family: helveticaNeueMedium;
+                            padding: 12% 8%;
+                            // font-size: 1.375rem;
+                            // font-weight: 300;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.18;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #656565;
+                        }
+                    }
+        
+                    .MuiButton-outlinedPrimary {
+                        width: 100%;
+                        border: 1px solid $color-borderColor !important;
+                        color: $color-thickGray;
+        
+                        .MuiButton-label {
+                            text-transform: capitalize;
+        
+                            span {
+                                margin-right: 20px;
+                                text-transform: capitalize;
+        
+                                img {
+                                    width: 55%;
+                                }
+                            }
+                        }
+                    }
+                }
+        
+                .button-five-company {
+                    width: 45%;
+                    text-transform: capitalize;
+        
+                    .MuiButtonBase-root {
+                        width: 100%;
+                        border: 1px solid !important;
+                        border-radius: 100px;
+                        background-color: $color-green;
+                        color: $color-white;
+                        text-transform: capitalize;
+        
+                        .MuiButton-label {
+                            text-transform: capitalize;
+                            font-family: helveticaNeueMedium;
+                            padding: 12% 8%;
+                            // font-size: 1.375rem;
+                            // font-weight: 500;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.18;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #ffffff;
+                            span {
+                                img {
+                                    width: 10px;
+                                    padding-left: 5px;
+                                }
+        
+                            }
+                        }
+                    }
+                    .click-here-login-arrow-container{
+                        // position: absolute;
+                        // cursor: default;
+                        right: -143px;
+                        top: -20px;
+                        // text-align: left;
+                        width: 130px;
+                        
+                        @extend %click-here-arrow-custome-style;
+                    }
+        
+                }
+        
+            }
+        
+            .ur-details-button-filed-click-section {
+                position: absolute;
+                left: 62.5%;
+                top: 76%;
+                text-align: left;
+        
+                img {
+                    width: 25px;
+                    cursor: pointer;
+                }
+        
+                p {
+                    font-size: 10px;
+                    color: $color-lightGray;
+                }
+            }
+        }
+
+
+
+
+
+    }
+}
+
+
+
+.user-container-text-field {
+
+    padding-right: 0px;
+    margin-top: 2%;
+    .reg-your-details {
+        @extend %reg-main-heading;
+    }
+    .reg-tell-me-about {
+        @extend %reg-sub-heading; 
+    }
+}
+
+.reg-user-dtls-fields {
+    padding-top: 4.7%;
+    .user-first-last-name {
+        display: flex;
+        justify-content: space-between;
+        .MuiFormControl-root {
+            .MuiInputBase-root {
+                input {
+                    padding: 12% 8%;
+                }
+            }   
+        }
+        @extend %input-field-label;
+        .first-last-name-field {
+            width: 49%;
+        }
+    }
+}
+
+
+.registration-company-details-container {
+    .reg-cmp-dtls-mainheading {
+        padding-top: 3.5vh;
+       @extend %reg-main-heading; 
+    }
+    .reg-cmp-dtls-subheading {
+        @extend %reg-sub-heading
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.create-registration-drawer-registration-type-priority {
+    width: 95%;
+    margin: 2% auto;
+
+    .create-registration-drawer-priority {
+        width: 48%;
+        height: 40px;
+
+        .MuiFormControl-root {
+            width: 100%;
+            height: 40px;
+
+            .MuiInputLabel-formControl {
+                top: -14px !important;
+                left: 14px !important;
+                font-size: 18px;
+
+                .MuiFormLabel-asterisk {
+                    color: $color-red;
+                }
+            }
+
+            .MuiInputBase-root {
+                margin-top: 0px !important;
+
+                .MuiSelect-select {
+                    padding-left: 10px;
+                    color: $color-thickGray;
+                }
+
+                .MuiSelect-icon {
+                    right: 12px;
+                }
+            }
+
+            .MuiInput-underline:before {
+                border-bottom: none !important;
+            }
+
+            .MuiInput-underline:after {
+                border-bottom: none !important;
+            }
+
+            .MuiInput-underline {
+                border: 1px solid $color-borderLightGray;
+                border-radius: 20px;
+                height: 40px;
+            }
+        }
+
+    }
+}
+
+.create-registration-drawer-registration-type {
+    width: 100%;
+    height: 50px;
+
+    .menu-container {
+        width: 100%;
+        position: relative;
+        margin: auto;
+        transition: 0.5s;
+
+        .registration-drawer-container {
+            width: 100%;
+            position: relative;
+            border: 1px solid $color-lightGray;
+            height: 45px;
+            background: $color-white;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            z-index: 998;
+
+            .selected-item-container {
+                // margin-left: 1%;
+                width: 85%;
+  
+                // height: 100%;
+                display: flex;
+                align-items: center;
+
+                p {
+                    // font-size: 18px;
+                    color: $color-thickGray;
+                    padding-left: 14px;
+                }
+            }
+
+            .registration-drp-dwn-img {
+                width: 6%;
+                margin-right: 1%;
+                display: flex;
+                justify-content: center;
+                // border: 1px dashed $color-violet;
+                border-radius: 50%;
+                height: 50%;
+
+                img {
+                    width: 12px;
+                }
+            }
+        }
+
+        .registration-type-open-dropdown {
+            height: 160px;
+            overflow: auto;
+            padding-top: 40px;
+            transition: 0.5s;
+
+        }
+
+        .registration-type-dropdown-menu-container {
+            position: absolute;
+            border-radius: 30px;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            background: $color-white;
+            box-shadow: 0 0 30px rgba(131, 131, 131, 0.5);
+            z-index: 997 !important;
+            transition: 0.5s;
+            overflow: hidden;
+
+            .MuiButtonBase-root {
+                width: 90% !important;
+                margin: 0 auto !important;
+                background-color: transparent !important;
+                box-shadow: none !important;
+                border-radius: 25px;
+                height: 40px;
+                min-height: 40px;
+                padding: 0px !important;
+                min-height: 30px !important;
+                // margin: 1% auto;
+
+            }
+        }
+
+        .custom-scroll {
+            width: 98% !important;
+        }
+    }
+}
+
+.menu-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+// .registration-page {
+//     .registration-header-logo {
+//         .MuiPaper-elevation4 {
+//             box-shadow: none;
+//         }
+//     }
+// }
+
+.registration-logo {
+    width: 25px;
+}
+
+.registration-header-logo {
+    .MuiAppBar-root {
+        .MuiToolbar-root {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.account-icon,
+.company-icon,
+.personal-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-left: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.account-icon>img,
+.company-icon>img,
+.personal-icon>img {
+    width: 15px;
+    // margin-left:90px;
+}
+
+.account-icon {
+    background-color: $color-orange;
+}
+
+.company-icon,
+.personal-icon {
+    background-color: $color-lightGray;
+}
+
+
+
+
+.registration-icons {
+    display: inline;
+    align-items: center;
+    margin-right: -40px;
+    margin-top: 3%;
+}
+
+
+
+
+.registration-connecting-icon {
+    width: 10%;
+    padding: 3px;
+    background-color: $color-lightWhite;
+    margin-right: -25px;
+    // margin-left:1%;
+    margin-right: -3%;
+    margin-left: 20px;
+    margin-top: 23px;
+}
+
+
+
+.registration-icon-text {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: $color-thickGray;
+}
+
+
+
+
+.registration-email-field {
+    margin-bottom: 2.7%;
+    position: relative;
+    @extend %input-field-specific-style;
+    @extend %input-field-padding;
+    
+    .MuiFormControl-root {
+        // .MuiFormLabel-root{
+
+        // }
+        @extend %input-field-label;
+        // .MuiInputLabel-outlined {
+        //     z-index: 1;
+        //     -webkit-transform: translate(26px, 28px) scale(1);
+        //     transform: translate(26px, calc(3vh + 4px)) scale(1);
+        //     pointer-events: none;
+        // }
+        // .MuiInputLabel-outlined.MuiInputLabel-shrink {
+        //     transform: translate(14px, -6px) scale(0.75);
+        // }
+
+    }
+
+    i {
+        position: absolute;
+        top: 39%;
+        right: 6%;
+        color: $color-errorPopUpColor;
+    }
+    .error-valid-email-popup {
+        position: absolute;
+        // height: 83.8px;
+        width: 50%;
+        border-radius: 10px;
+        right: -55%;
+        top: -4%;
+        padding: 16px 6px 10px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: helveticaNeueLight;
+        box-shadow: 0px 0px 15px #00000029;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fd673a;
+    }
+
+    .error-valid-email-popup::before {
+        content: '';
+        width: 0;
+        height: 0;
+        position: relative;
+        left: -15px;
+        border-top: 12px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-right: 10px solid #FFFFFF;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+.registration-field-one >.MuiInputBase-root {
+    border: 1px solid $color-lightGray;
+    padding: 9px 100px 9px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.registration-field-one {
+    margin-top: 2%;
+    position: relative;
+
+    .MuiFormControl-marginNormal {
+        width: 25%;
+    }
+
+    .MuiFormControl-root {
+        // .MuiInputBase-root {
+        // }
+
+        .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+            border-color: #000;
+            border-width: 1px;
+            border-radius: 30px;
+        }
+
+        .MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+            border-color: $color-warningError;
+        }
+
+
+        .MuiFormLabel-root {
+
+            span {
+                color: red;
+                font-size: 20px;
+            }
+        }
+
+        .MuiFormLabel-root.Mui-focused {
+            color: #656565
+        }
+
+        .MuiOutlinedInput-notchedOutline {
+            border-radius: 30px;
+        }
+    }
+
+
+}
+
+
+
+.show-password-eye {
+    color: $color-borderLightGray;
+    cursor: pointer;
+    right: 34px;
+}
+
+.registration-field-two>.MuiInputBase-root {
+    border: 1px solid $color-lightGray;
+    padding: 9px 100px 9px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+
+
+.registration-field-two {
+    margin-top: 1%;
+}
+
+%button-specific-style{
+    .MuiButtonBase-root {
+        height: 100%;
+    }
+}
+
+
+.registration-button {
+    .MuiButton-outlinedPrimary:hover {
+        background-color: $color-green;
+        border: 1px solid $color-green;
+    }
+}
+.break {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-thickGray;
+}
+.registration-with-google >.MuiButton-outlined {
+    margin-top: -1%;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    padding: 1px 70px;
+    border-radius: 50px;
+    background-color: $color-white;
+    color: $color-thickGray;
+    border: 1px solid $color-lightGray;
+}
+
+.registration-with-google>.MuiButton-root>.MuiButton-label {
+    height: 40px;
+}
+
+.registration-with-google>button>.MuiButton-label>span>img {
+    width: 25px;
+    padding-left: 5px;
+}
+
+.google-button {
+    display: flex;
+}
+
+.registration-with-google>button>.MuiButton-label>span>p {
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 12px;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+    text-transform: none;
+}
+
+
+
+.registration-bottom-line {
+    width: 10%;
+    border: 1px solid $color-lightGray;
+    margin: 3% 1%;
+}
+
+.registrationfootercontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5%;
+}
+
+.registrationleftcontainer {
+    width: 20%;
+}
+
+.registrationfootercontainer>.registrationleftcontainer>p {
+    font-size: 12px;
+    margin-left: 0%;
+}
+
+.registrationfootercontainer>.registrationrightcontainer>.list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    font-size: 10px;
+}
+
+
+li {
+    padding-right: 20px;
+}
+
+.registration-icons>p {
+    padding-left: 20px;
+    padding-right: 8px;
+}
+
+.registration-left-container {
+    // width: 30%;
+
+    p {
+        margin-left: 2%;
+    }
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+
+
+
+
+.registration-Start-footer-container {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+
+    .registration-start-left-container {
+        width: 50%;
+        color: $color-lightGray;
+        font-size: 15px;
+
+        p {
+            padding-left: 10px;
+            font-size: 15px;
+            font-size : 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            font-family: "helveticaNeueLight";
+        }
+    }
+
+    .registration-start-right-container {
+        width: 50%;
+        display: flex;
+
+        .start-list {
+            display: flex;
+            list-style: none;
+
+            a {
+                li {
+                    font-size: 15px;
+                    color: $color-lightGray;
+                    font-size : 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.2;
+                    letter-spacing: normal;
+                    font-family: "helveticaNeueLight";
+                }
+            }
+        }
+    }
+}
+
+.registration-company-footer-container {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+
+    .registration-company-left-container {
+        width: 50%;
+        color: $color-lightGray;
+        font-size: 15px;
+
+        p {
+            padding-left: 10px;
+            font-size: 15px;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            font-family: "helveticaNeueLight";
+        }
+    }
+
+    .registration-company-right-container {
+        width: 50%;
+        display: flex;
+
+        .company-list {
+            display: flex;
+            list-style: none;
+
+            a {
+                li {
+                    font-size: 15px;
+                    color: $color-lightGray;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.2;
+                    letter-spacing: normal;
+                    font-family: "helveticaNeueLight";
+                }
+            }
+        }
+    }
+}
+
+.registration-user-footer-container {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+
+    .registration-user-left-container {
+        width: 50%;
+        color: $color-lightGray;
+        font-size: 15px;
+
+        p {
+            padding-left: 10px;
+            font-size: 15px;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            font-family: "helveticaNeueLight";
+        }
+    }
+
+    .registration-user-right-container {
+        width: 50%;
+        display: flex;
+
+        .user-list {
+            display: flex;
+            list-style: none;
+
+            a {
+                li {
+                    font-size: 15px;
+                    color: $color-lightGray;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.2;
+                    letter-spacing: normal;
+                    font-family: "helveticaNeueLight";
+                }
+            }
+        }
+    }
+}
+
+
+.registration-congratulations-footer-container {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+
+    .registration-congratulations-left-container {
+        width: 50%;
+        color: $color-lightGray;
+        font-size: 15px;
+
+        p {
+            padding-left: 10px;
+            font-size: 15px;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            font-family: "helveticaNeueLight";
+        }
+    }
+
+    .registration-congratulations-right-container {
+        width: 50%;
+        display: flex;
+
+        .congratulations-list {
+            display: flex;
+            list-style: none;
+
+            a {
+                li {
+                    font-size: 15px;
+                    color: $color-lightGray;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.2;
+                    letter-spacing: normal;
+                    font-family: "helveticaNeueLight";
+                }
+            }
+        }
+    }
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+
+    #menu-noOfEmployees {
+        .MuiPaper-root {
+            width: 12% !important;
+            top: 50% !important;
+
+            .MuiList-root {
+                .MuiButtonBase-root {
+                    div {
+                        display: flex;
+                        justify-content: flex-end;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+.recaptchasection {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: 5%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.recaptchasection div {
+    width: auto;
+    display: flex;
+    margin-left: 3%;
+    margin-top: 2%;
+}

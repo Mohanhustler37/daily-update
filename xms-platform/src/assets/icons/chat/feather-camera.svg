@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="44.728" viewBox="0 0 54 44.728">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#d0cfec;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="Icon_feather-camera" data-name="Icon feather-camera" transform="translate(0 -3)">
+        <path id="Path_910" d="M52.5 41.591a4.636 4.636 0 0 1-4.636 4.636H6.136A4.636 4.636 0 0 1 1.5 41.591v-25.5a4.636 4.636 0 0 1 4.636-4.636h9.273L20.045 4.5h13.91l4.636 6.955h9.273a4.636 4.636 0 0 1 4.636 4.636z" class="cls-1" data-name="Path 910"/>
+        <path id="Path_911" d="M30.545 22.773a9.273 9.273 0 1 1-9.272-9.273 9.273 9.273 0 0 1 9.272 9.273z" class="cls-1" data-name="Path 911" transform="translate(5.727 4.909)"/>
+    </g>
+</svg>

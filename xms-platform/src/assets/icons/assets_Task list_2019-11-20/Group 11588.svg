@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+    <defs>
+        <style>
+            .cls-1{fill:#d0cfec}.cls-2{fill:#4e58a9}
+        </style>
+    </defs>
+    <g id="Group_11588" data-name="Group 11588" transform="translate(-1870 -342)">
+        <circle id="Ellipse_3398" cx="17.5" cy="17.5" r="17.5" class="cls-1" data-name="Ellipse 3398" transform="translate(1870 342)"/>
+        <path id="Icon_awesome-ellipsis-v" d="M4.188 6.674a2.5 2.5 0 1 1-2.5 2.5 2.5 2.5 0 0 1 2.5-2.5zm-2.5-3.611a2.5 2.5 0 1 0 2.5-2.5 2.5 2.5 0 0 0-2.5 2.5zm0 12.222a2.5 2.5 0 1 0 2.5-2.5 2.5 2.5 0 0 0-2.5 2.5z" class="cls-2" data-name="Icon awesome-ellipsis-v" transform="translate(1883.313 350.438)"/>
+    </g>
+</svg>

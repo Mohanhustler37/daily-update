@@ -1,0 +1,100 @@
+react-hot-loader/root
+
+SSH keys
+GPG keys
+
+https://www.ssh.com/ssh/keygen/
+
+ssh-keygen -t rsa -b 4096
+ssh-keygen -t dsa
+ssh-keygen -t ecdsa -b 521
+ssh-keygen -t ed25519
+
+how to create branch
+Create separete User dev-mohan
+Email
+pull data
+slash => to undo changes
+
+
+
+$ git pull origin dev-anish
+$ git stash
+$ git config --global user.name "mohan"
+$ git config --global user.email "mohan@sketchbrahma.com"
+$ sudo npm install p-limit
+$ git branch
+$ git checkout -b dev-mohan
+$ git log
+$ git checkout dev-anish
+$ git fetch --all
+$ git clone git@github.com:pSenthil202/rida-frontend.git
+$ cat id_rsa.pub
+$ cd .ssh/
+$ cat id_rsa.pub
+$ cd .ssh/
+$ ssh-keygen -t rsa -b 4096
+
+To Push
+-- ----
+$ git add .
+$ git commit -m 'Service details'
+$ git push origin dev-mohan
+
+
+
+git checkout dev-bala
+git checkout -b dev-mohan-new
+git log
+git branch
+
+
+
+Git and Github
+--- --- ------
+
+1 => version control
+it keep tracks the entire history of things that you working on teh computer.
+
+2 => Collaboration
+two or multiple people working on a same file or document on the same time.
+
+git => version control sowftware
+
+github => Web service
+
+i) Repository or Repo
+
+ii) Commit (or) Save 
+
+Unique identifier for a particular commit
+
+Branch => its used to create a new branch from Master
+
+Pull Request and Merge
+---- ------- --- -----
+branch to master (Pull Request) Merge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

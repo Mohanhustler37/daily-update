@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_3140" data-name="Ellipse 3140" cx="19" cy="19" r="19" transform="translate(269 796)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(-269 -796)" clip-path="url(#clip-path)">
+    <g id="search" transform="translate(269 796)">
+      <path id="Path_135" data-name="Path 135" d="M8.422,26.2,7.1,31.142l-4.835.1A19.033,19.033,0,0,1,2.124,13.5h0l4.3.789L8.315,18.57A11.339,11.339,0,0,0,8.422,26.2Z" transform="translate(0 -3.241)" fill="#fbbb00"/>
+      <path id="Path_136" data-name="Path 136" d="M43.8,20.33A18.993,18.993,0,0,1,37.027,38.7h0L31.6,38.418l-.767-4.79a11.324,11.324,0,0,0,4.872-5.782H25.55V20.33H43.8Z" transform="translate(-6.132 -4.879)" fill="#518ef8"/>
+      <path id="Path_137" data-name="Path 137" d="M31.609,41.068h0a19.006,19.006,0,0,1-28.63-5.813l6.157-5.04A11.3,11.3,0,0,0,25.42,36Z" transform="translate(-0.715 -7.252)" fill="#28b446"/>
+      <path id="Path_138" data-name="Path 138" d="M31.8,4.374,25.643,9.413A11.3,11.3,0,0,0,8.986,15.329L2.8,10.262h0a19,19,0,0,1,29-5.888Z" transform="translate(-0.671)" fill="#f14336"/>
+    </g>
+  </g>
+</svg>

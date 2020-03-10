@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 30 24">
+    <defs>
+        <style>
+            .cls-1{fill:#d0cfec}
+        </style>
+    </defs>
+    <path id="Icon_awesome-project-diagram" d="M18 15h-6a1.5 1.5 0 0 0-1.5 1.5v6A1.5 1.5 0 0 0 12 24h6a1.5 1.5 0 0 0 1.5-1.5v-6A1.5 1.5 0 0 0 18 15zM9 1.5A1.5 1.5 0 0 0 7.5 0h-6A1.5 1.5 0 0 0 0 1.5v6A1.5 1.5 0 0 0 1.5 9h4.487l3.429 6A2.99 2.99 0 0 1 12 13.5h.013L9 8.227V6h10.5V3H9zM28.5 0h-6A1.5 1.5 0 0 0 21 1.5v6A1.5 1.5 0 0 0 22.5 9h6A1.5 1.5 0 0 0 30 7.5v-6A1.5 1.5 0 0 0 28.5 0z" class="cls-1" data-name="Icon awesome-project-diagram"/>
+</svg>

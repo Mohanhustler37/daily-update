@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.556" height="19.507" viewBox="0 0 17.556 19.507">
+    <defs>
+        <style>
+            .cls-1{fill:#d0cfec}
+        </style>
+    </defs>
+    <path id="Icon_material-assignment" d="M20.105 3.451h-4.077a2.914 2.914 0 0 0-5.5 0H6.451A1.956 1.956 0 0 0 4.5 5.4v13.656a1.956 1.956 0 0 0 1.951 1.951h13.654a1.956 1.956 0 0 0 1.951-1.951V5.4a1.956 1.956 0 0 0-1.951-1.949zm-6.827 0a.975.975 0 1 1-.975.975.978.978 0 0 1 .975-.975zm1.951 13.655H8.4v-1.951h6.827zm2.926-3.9H8.4v-1.953h9.753zm0-3.9H8.4V7.352h9.753z" class="cls-1" data-name="Icon material-assignment" transform="translate(-4.5 -1.5)"/>
+</svg>

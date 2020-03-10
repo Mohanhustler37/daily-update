@@ -1,0 +1,1168 @@
+NODE
+----
+
+Node.js is a server-side platform built on Google Chrome's JavaScript V8 Engine
+used for developing server-side and networking applications.
+
+
+Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
+
+latest version is 10.16.3
+
+Node.js = Runtime Environment + JavaScript Library
+
+Features:
+
+1.Asynchronous and Event Driven => 
+  
+  All APIs of Node.js library are asynchronous, that is, non-blocking
+  never waits for an API to return data, The server moves to the next API after calling it and 
+  a notification mechanism of Events of Node.js helps the server to get a response from 
+  the previous API call
+  
+  Eg: Sends the task to the computer's file system. Ready to handle next request.
+
+2.very fast in code execution.
+
+3.Single Threaded but Highly Scalable => 
+  
+  uses a single threaded model with event looping.
+  single threaded program provide service to a much larger number of requests than 
+  traditional servers like Apache HTTP Server.
+
+4.No Buffering => 
+  Node.js applications never buffer any data. 
+  These applications simply output the data in chunks.
+
+The source code written in source file is simply javascript. 
+The Node.js interpreter will be used to interpret and execute your javascript code.
+
+-------------------------------------------------------------------------------------
+1.Import required modules => We use the require directive to load Node.js modules.
+
+const http = require('http');
+
+2.Create server => A server which will listen to client's requests
+
+let server = http.createServer((req, res) => {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('Hello World!');
+});
+
+server.listen(8080);
+
+
+What is a Module in Node.js?
+
+Consider modules to be the same as JavaScript libraries.
+A set of functions you want to include in your application
+
+REPL stands for Read Eval Print Loop => like a console
+----
+
+Read − Read's user input, parses the input into JavaScript data-structure, and stores in memory.
+Eval − Takes and evaluates the data structure.
+Print − Prints the result.
+Loop − Loops the above command until the user presses ctrl-c twice.
+
+To start REPL => $ node
+ctrl + c − terminate the current command.
+ctrl + c twice − terminate the Node REPL.
+ctrl + d − terminate the Node REPL.
+Up/Down Keys − see command history and modify previous commands.
+tab tab − list of current commands.
+.help − list of all commands.
+.break − exit from multiline expression.
+.clear − exit from multiline expression.
+.save filename − save the current Node REPL session to a file.
+.load filename − load file content in current Node REPL session.
+
+Callback
+--------
+Callback is an asynchronous equivalent for a function.
+It is called at the completion of a given task. 
+
+Eg: fs.readFile('input.txt', (err, data) => {});
+
+a function to read a file may start reading file and return the control to the next instruction so that can be executed. 
+Once file I/O is complete, it will call the callback function so there is no blocking or wait for File I/O.
+
+Nodjs Traversy Crash course
+----- -------- ----- ------
+
+Going to build webserver using nodejs
+
+we can use javascript as server side language
+
+asnchronous won't wait for one process to complete.
+
+Anything that are not CPU-intensive
+
+REPL
+
+Create package.json => $ npm init (or) $ npm init -y
+
+dependencies
+$ npm i uuid
+
+Dev dependencies (to restart server on every file save)
+$ npm i --save-dev nodemon (or) $ npm i -D nodemon
+
+Create index.js file and run (node index.js (or) node index)
+
+person.js
+
+const person = {
+  name: 'Mohan',
+  age: 25
+}
+module.exports = person;
+
+index.js => const person = require('./person');
+
+// Module wrapper function (IIFE)
+(function (exports, require, module, __filename, __dirname){
+ 
+  This is the wrapper of every module so we can use 
+  exports, require, module, __filename, __dirname
+
+})
+
+-----------------------------------------------------------------------------------------------
+
+Core Module  => ( path, fs, os, url, events, http)
+---- ------
+
+path module
+-- ------
+const path = require('path');
+
+path.basename(__filename)
+path.dirname(__filename)
+path.extname(__filename)
+path.parse(__filename)   => gives object
+path.join(__dirname, 'test', 'hello.html')
+
+-----------------------------------------------------------------------------------------------
+
+fs module
+-- ------
+const fs = require('fs');
+
+// ASYNC FUNCTIONS
+// create folder
+
+fs.mkdir(path.join(__dirname, '/test'), {}, err => { 
+  if(err) throw err; console.log('success');
+})
+
+// Create and write file (override the data if file already have data)
+
+fs.writeFile(path.join(__dirname, '/test', 'hello.txt'), 'Hello World!', err => { 
+  if(err) throw err; console.log('success');
+})
+
+// append file
+
+fs.appendFile(path.join(__dirname, '/test', 'hello.txt'), ' I Love nodejs', err => { 
+  if(err) throw err; console.log('success');
+})
+
+
+// read file
+
+fs.readFile(path.join(__dirname, '/test', 'hello.txt'), 'utf8', (err,data) => { 
+  if(err) throw err; console.log(data);
+})
+
+
+// Rename file
+
+fs.rename(path.join(__dirname, '/test', 'hello.txt'), path.join(__dirname, '/test', 'helloWorld.txt'), err => { 
+  if(err) throw err; console.log('success');
+})
+
+-----------------------------------------------------------------------------------------------
+
+OS module => gives info about environment and operating system
+-- ------
+
+const os = require('os');
+os.platform();
+os.arch();
+os.cpus();
+os.freemem();
+os.totalmem();
+os.homedir();
+os.uptime();
+
+-----------------------------------------------------------------------------------------------
+
+URL module => 
+--- ------
+
+const url = require('url');
+
+const myUrl = new URL('http://mywebsite.com/hello.html?id=100&status=active');
+
+// Serialized url
+myUrl.href;
+myUrl.toString;
+myUrl.host;    => with port number
+myUrl.hostname;
+myUrl.pathname; => file name
+myUrl.search;   => after the question mark
+myUrl.searchParams; => returns object
+myUrl.searchParams.append('abc', '123'); => add new parameter with value in URL
+myUrl.searchParams.forEach((value, name) => console.log(`${name}: ${value}`));
+
+-----------------------------------------------------------------------------------------------
+
+EVENTS module
+------ ------
+
+const EventEmitter = require('events');
+
+// Create class
+class MyEmitter extends EventEmitter {}
+
+// Init object
+const myEmitter = new MyEmitter();
+
+// Event Listener
+myEmitter.on('event', () => console.log('Event Fired!'));
+
+// Init Event
+myEmitter.emit('event');
+
+LOGGER
+------
+logger.js
+------
+
+const EventEmitter = require('events');
+const uuid = require('uuid');
+
+class Logger extends EventEmmiter {
+
+log(msg){
+ this.emit('message', {id: uuid.v4(), msg});
+}  
+
+}
+module.exports = Logger;
+
+index.js
+-----
+
+const Logger = require('./logger');
+
+const logger = new Logger();
+
+logger.on('message', data => console.log('Called Listener', data));
+
+logger.log('Hello world');
+logger.log('Hai');
+
+-----------------------------------------------------------------------------------------------
+
+HTTP module
+---- ------
+
+const http = require('http');
+
+http.createServer((req, res) => {
+res.write('Hello world');
+res.end();
+}).listen(8080, () => console.log('Server running'));
+
+
+-----------------------------------------------------
+create index.html and about.html in public folder
+
+const http = require('http');
+const path = require('path');
+const fs = require('fs');
+
+const server = http.createServer((req, res) => {
+
+if(req.url === '/'){
+ 
+ fs.readFile(path.join(__dirname, 'public', 'index.html'), (err, data) => {
+      if(err) throw err;
+      res.writeHead(200, {'Content-Type': 'text/html'});
+      res.end(data);      
+ });
+
+}
+if(req.url === '/api/users'){
+ const users = [ {name: 'mohan', age:25}, {name: 'guna', age:28}];
+ res.writeHead(200, {'Content-Type': 'application/json'});
+ res.end(JSON.stringify(users));
+}
+
+
+let filepath = path.join(__dirname, 'public', req.url === '/' ? index.html : req.url);
+
+let extname = path.extname(filepath);
+
+contentType =   'text/html' 
+		'text/javascript' 
+		'text/css' 
+		'application/json' 
+		'image/jpg' 
+		'image/png' 
+
+});
+
+const PORT = process.env.PORT || 8080;
+
+server.listen(PORT, () => console.log(`server running on port ${PORT}`));
+
+
+For global nodemon => $ nodemon index 
+
+package.json
+
+"scripts": { "start": "node index", "dev": "nodemon index"} => $ npm run dev
+
+heroku
+
+-----------------------------------------------------------------------------------------------
+
+8/10/2019 (tuesday)
+Shopmatic Interview preparation
+
+-----------------------------------------------------------------------------------------------
+
+9/10/2019 (wednesday)
+
+EXPRESS Traversy Crash course
+------- -------- ----- ------
+
+EXPRESSS
+--------
+
+WHAT?
+-----
+Express in the most popular web framework for node
+Express is fast, unopinionated and minimalist web framework.
+
+fast => high performance
+unopinionated => Its not high level framework like laravel for php.Full control over handle req and res over the server.
+
+minimalist => 
+
+Express is a server-side or back-end framework
+
+Many time we build api with express
+
+-----------------------------------------------------------------------------------------------
+
+WHY?
+----
+Building web application with Node.js is much easier using express
+Used for render pages on the server as well as API/Microservices  
+Other frameworks cawa, happyjs, donar
+
+-----------------------------------------------------------------------------------------------
+
+Basic server syntax:
+----- ------ ------
+const express = require('express');
+
+// init
+const app = express();
+
+// Create endpoints/route handlers
+app.get('/', (req, res) => {
+
+res.send('Hello World!');
+
+});
+
+// listen on port
+app.listen(5000);
+
+-----------------------------------------------------------------------------------------------
+
+Basic Route Handling:
+----- ----- --------
+
+Fetch data from db
+db like mango(popular with nodejs) and mysql, postgres
+load pages
+return json
+full access to req and res
+req => url parameter, query string, http header and body
+res => json, redirect, error message
+
+-----------------------------------------------------------------------------------------------
+
+Express Middleware:
+------- ----------
+
+Middleware functions are functions that has access to the request and response object.
+Express has built in middleware and 3rd party middleware also available and custom middleware.
+
+used for:
+execute code
+changes to req, res objects
+End res cycle
+call next middleware in the stack	
+
+Postman => http clicent which is help to make req to the server and get response
+
+create folder and package.json
+$ npm init -y
+$ npm i express
+$ npm i -D nodemon
+$ npm i uuid
+
+"scripts" : {"start": "node index", "dev": "nodemon index"}
+
+inside root folder index.js
+
+const PORT = process.env.PORT || 5000;
+
+app.get('/', (req, res) => {
+
+res.send('Hello World!');
+res.json();
+res.sendFile(path.join(__dirname, 'public', 'index.html'));
+res.render(); // template engine(render an html template)
+
+});
+
+-----------------------------------------------------------------------------------------------
+
+set static folder
+--- ------ ------
+// use() is a method when we use middleware
+
+app.use(express.static(path.join(__dirname, 'public')))
+
+-----------------------------------------------------------------------------------------------
+
+Get All Members
+--- --- -------
+members is an array of object which contains id, name, email, status
+
+app.get('api/members', (req, res) => res.json(members))
+
+module.exports = members;
+
+-----------------------------------------------------------------------------------------------
+
+CREATE MIDDLEWARE:
+------ ----------
+const logger = (req, res, next) => { 
+
+console.log('Hello from middleware');
+console.log(`${req.protocol}://${req.get('host')}${req.originalUrl}`);
+next();
+}
+
+init middleware
+---- ----------
+app.use(logger);
+
+moment => for date formats
+
+$ npm i moment
+const moment = require('moment');
+
+usage => moment().format()
+
+Get single Member
+--- ------ ------
+
+app.get('/api/members/:id', (req, res) => {
+ // some returns true or false depends on the condition
+    ----
+ const found = members.some(member => member.id === parseInt(req.params.id));
+
+ if(found)
+  // filter returns an array if certain conditions met
+		       -----
+  res.json(members.filter(member => meber.id === paresInt(req.params.id)));
+ }
+ else{
+ // status(400) is bad request
+  res.status(400).json({msg: `No member with the id of ${req.params.id}`});
+ }
+});
+
+---------------------------------------------------------------------------------------------
+
+ROUTER:
+------
+router that comes with an express, we can put all our similar routes in a single file
+
+const express = require('express');
+const router = express.Router();
+
+before:
+------
+router.get('/api/members', (req, res) => res.json(members))  
+
+after:
+-----
+router.get('/'           , (req, res) => res.json(members))
+
+in index.js
+app.use('/api/members', require('./routes/api/members'));
+
+------------------------------------------------------------------------------
+
+READ A MEMBER:
+------ - ------
+router.get('/', (req, res) => res.json(members))
+
+-------------------------------------------------------------------------------------------------
+
+CREATE A MEMBER:
+------ - ------
+// body parser middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: false })); // form data
+
+router.post('/', (req, res) => {
+ res.send(req.body);
+ const newMember = {
+  id: uuid.v4(),
+  name: req.body.name
+ }
+});
+
+members.push(newMember);
+
+-------------------------------------------------------------------------------------------------
+
+UPDATE MEMBER
+------ ------
+router.put('/:id', (req, res) => {
+  const found = members.some(member => member.id === parseInt(req.params.id));
+});
+
+-------------------------------------------------------------------------------------------------
+
+DELETE MEMBER
+------ ------
+router.delete('/:id', (req, res) => {
+  const found = members.some(member => member.id === parseInt(req.params.id));
+});
+
+-------------------------------------------------------------------------------------------------
+
+RENDERING TEMPLATE (using template engine)
+--------- --------
+search => express handlebars
+
+$ npm i express-handlebars
+
+in index.js
+-- ----- --
+const exphbs = require('express-handlebars');
+
+app.engine('handlebars', exphbs());
+app.set('view engine', 'handlebars');
+
+FOLDER & FILE:
+views -> layouts -> main.handlebars
+{{{body}}}
+
+we want to output other views so => {{{body}}}
+
+FILE:
+----
+create index.handlers inside views folder
+
+To render:
+-- ------
+app.get('/', (req, res) => res.render('index', {title: 'Member App'}));
+
+In index.handlers
+
+<h1>{{title}}</h1>
+<h4>{{title}}</h4>
+<ul>
+{{#each members}}
+<li>{{this.name}}: {{this.email}}</li>
+{{/each}}
+</ul>
+
+
+<form action="/api/members" method="POST">
+// It will Create the member after submit 
+res.redirect('/');
+
+-----------------------------------------------------------------------------------------
+
+Express Official Document
+------- -------- --------
+
+Methods:
+-------
+express.json()
+express.static()
+express.Router()
+express.urlencoded()
+
+------------------------------------------------------------------------------------------------
+18/11/2019
+
+Tutorialspoint ExpessJS
+-------------- --------
+
+Pug
+---
+Pug (earlier known as Jade) is a terse language for writing HTML templates. 
+It −
+Produces HTML
+Supports dynamic code
+Supports reusability (DRY)
+It is one of the most popular template language used with Express.
+
+Mongodb
+-------
+MongoDB is an open-source, document database designed for ease of development and scaling. This database is also used to store data.
+
+Mongoose
+--------
+Mongoose is a client API for node.js which makes it easy to access our database from our Express
+	      ------ ---
+application.
+
+Prerequisites
+-------------
+node -v
+npm -v
+
+NPM 
+---
+
+create folder and package.json (npm init -y)
+
+Global
+------
+npm i -g nodemon
+
+Local
+-----
+npm i express
+
+index.js
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) =>
+   res.send("Hello world!");
+);
+
+app.listen(3000);
+
+$ nodemon index.js
+
+http://localhost:3000
+
+----------------------------------------------------------------------------------------------
+=> EG 1:
+
+app.post('/hello', (req, res) =>
+   res.send("You just called the post method at '/hello'!\n");
+);
+
+To test POST request, open up your terminal and use cURL to execute the following request −
+
+$ curl -X POST "http://localhost:3000/hello"
+
+A special method =>  all  => is provided by Express to handle all types of http methods at a particular route using the same function.
+
+=> EG 2:
+
+app.all('/test', (req, res) => 
+   res.send("HTTP method doesn't have any effect on this route!");
+);
+
+Defining routes like above is very tedious to maintain. To separate the routes from our main index.js file, we will use Express.Router 
+
+=> EG 3:
+
+things.js
+------ --
+const express = require('express');
+const router = express.Router();
+
+router.get('/', (req, res) =>
+   res.send('GET route on things.');
+);
+router.post('/', (req, res) =>
+   res.send('POST route on things.');
+);
+
+//here '/' means '/things'
+
+//export this router to use in our index.js
+module.exports = router;
+
+-------------------------------------------
+index.js
+----- --
+const express = require('Express');
+const app = express();
+
+const things = require('./things.js');
+
+//both index.js and things.js should be in same directory
+app.use('/things', things);
+
+app.listen(3000);
+
+----------------------------------------------------------------------------------------------
+
+HTTP Methods
+---- -------
+
+GET, POST, PUT, DELETE
+
+----------------------------------------------------------------------------------------------
+
+URL Building
+--- --------
+We can now define routes, but those are static or fixed. To use the dynamic routes, we SHOULD provide different types of routes. 
+
+=> EG 1:
+
+app.get('/:id', (req, res) =>
+   res.send('The id you specified is ' + req.params.id);
+);
+
+=> EG 2:
+
+app.get('/things/:name/:id', (req, res) =>
+   res.send('id: ' + req.params.id + ' and name: ' + req.params.name);
+);
+
+http://localhost:3000/things/tutorialspoint/12345.
+
+=> EG 3:
+
+you can also use regex to restrict URL parameter matching. Let us assume you need the id to be a 5-digit long number.
+
+app.get('/things/:id([0-9]{5})', (req, res) =>
+   res.send('id: ' + req.params.id);
+);
+
+//Other routes here => 404
+
+app.get('*', (req, res) =>
+   res.send('Sorry, this is an invalid URL.');
+);
+
+----------------------------------------------------------------------------------------------
+Middleware
+----------
+
+Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. These functions are used to modify req and res objects for tasks like parsing request bodies, adding response headers.
+
+//Middleware function to log request protocol
+
+app.use('/things', (req, res, next) => {
+   console.log("A request for things received at " + Date.now());
+   next();
+});
+
+// Route handler that sends the response
+app.get('/things', (req, res) =>
+   res.send('Things');
+);
+
+-----------------------------------------
+
+use middleware before and after route handler
+	       ------     -----
+
+//First middleware before response is sent
+app.use((req, res, next) => {
+   console.log("Start");
+   next();
+});
+
+//Route handler
+app.get('/', (req, res, next) => {
+   res.send("Middle");
+   next();
+});
+
+//Last middleware after response is sent
+app.use('/', (req, res) => {
+   console.log('End');
+});
+
+-----------------------------------------
+
+body-parser used to parse the body of requests:
+
+$ npm i body-parser
+
+var bodyParser = require('body-parser');
+
+//To parse URL encoded data
+app.use(bodyParser.urlencoded({ extended: false }))
+
+//To parse json data
+app.use(bodyParser.json())
+
+-----------------------------------------
+
+cookie-parser
+------ ------
+$ npm i cookie-parser
+var cookieParser = require('cookie-parser');
+app.use(cookieParser())
+
+-----------------------------------------
+express-session
+------- -------
+----------------------------------------------------------------------------------------------
+
+Templating
+----------
+Pug is a templating engine for Express
+$ npm i pug
+
+// don't need to 'require' it
+
+index.js
+----- --
+app.set('view engine', 'pug');
+app.set('views','./views');
+
+views/first_view.pug
+----- ----- ---- ---
+doctype html
+html
+   head
+      title = "Hello Pug"
+   body
+      p.greetings#people Hello World!
+
+---------------------------------------
+
+app.get('/first_template', function(req, res){
+   res.render('first_view');
+});
+
+----------------------------------------------------------------------------------------------
+
+Space seperated
+----- ---------
+h1 Welcome to Pug
+
+Piped text
+----- ----
+div
+   | To insert multiline text, 
+   | You can use the pipe operator.
+
+Block of text
+----- -- ----
+div.
+   But that gets tedious if you have a lot of text.
+   You can use "." at the end of tag to denote block of text.
+   To put tags inside this block, simply enter tag in a new line and 
+   indent it accordingly.
+
+----------------------------------------------------------------------------------------------
+
+Attributes
+----------
+To define attributes, we use a comma separated list of attributes, in parenthesis.
+
+div.container.column.main#division(width = "100", height = "100")
+
+----------------------------------------------------------------------------------------------
+
+Passing Values to Templates
+------- ------ -- ---------
+index.js
+----- --
+app.get('/dynamic_view', function(req, res){
+   res.render('dynamic', {
+      name: "TutorialsPoint", 
+      url:"http://www.tutorialspoint.com"
+   });
+});
+
+dynamic.pug
+------- ---
+html
+   head
+      title=name
+   body
+      h1=name
+      a(href = url) URL
+
+
+
+To insert passed variables in between text of a tag, we use #{variableName} syntax
+=> EG:
+
+h1 Greetings from #{name}
+
+----------------------------------------------------------------------------------------------
+
+Conditionals
+------------
+html
+   head
+      title Simple template
+   body
+      if(user)
+         h1 Hi, #{user.name}
+      else
+         a(href = "/sign_up") Sign Up
+
+
+res.render('/dynamic',{
+   user: {name: "Ayush", age: "20"}
+});
+
+----------------------------------------------------------------------------------------------
+
+Include and Components
+------- --- ----------
+HEADER.PUG
+------ ---
+div.header.
+   I'm the header for this website.
+
+
+CONTENT.PUG
+------- ---
+html
+   head
+      title Simple template
+   body
+      include ./header.pug
+      h3 I'm the main content
+      include ./footer.pug
+
+
+FOOTER.PUG
+------ ---
+div.footer.
+   I'm the footer for this website.
+
+
+index.js
+----- --
+app.get('/components', function(req, res){
+    res.render('content');
+});
+
+include can also be used to include plaintext, css and JavaScript.
+----------------------------------------------------------------------------------------------
+
+Serving static files
+------- ------ -----
+
+Express, by default does not allow you to serve static files. You need to enable it using the following built-in middleware.
+
+app.use(express.static('public'));
+
+html
+   head
+   body
+      h3 Testing static file serving:
+      img(src = "/testimage.jpg", alt = "Testing Image
+
+
+
+Virtual Path Prefix
+------- ---- ------
+app.use('/static', express.static('public'));
+
+<script src = "/static/main.js" />
+
+----------------------------------------------------------------------------------------------
+
+Form data
+---- ----
+To get started with forms, we will first install the body-parser(for parsing JSON and url-encoded data) and multer(for parsing multipart/form data) middleware.
+
+$ npm i body-parser multer
+
+var express = require('express');
+var bodyParser = require('body-parser');
+var multer = require('multer');
+var upload = multer();
+var app = express();
+
+app.get('/', function(req, res){
+   res.render('form');
+});
+
+// To set pug in application
+
+app.set('view engine', 'pug');
+app.set('views', './views');
+
+// for parsing application/json
+app.use(bodyParser.json()); 
+
+// for parsing application/xwww-
+app.use(bodyParser.urlencoded({ extended: true })); 
+//form-urlencoded
+
+// for parsing multipart/form-data
+app.use(upload.array());
+app.use(express.static('public'));
+
+app.post('/', function(req, res){
+   console.log(req.body);
+   res.send("recieved your request!");
+});
+
+-------------------------------------------
+
+form.pug
+---- ---
+html
+html
+   head
+      title Form Tester
+   body
+      form(action = "/", method = "POST")
+         div
+            label(for = "say") Say:
+            input(name = "say" value = "Hi")
+         br
+         div
+            label(for = "to") To:
+            input(name = "to" value = "Express forms")
+         br
+         button(type = "submit") Send my greetings
+
+----------------------------------------------------------------------------------------------
+
+MongoDB
+-------
+In order to use Mongo with Express, we need a client API for node
+
+Setting up Mongoose
+------- -- --------
+$ npm i mongoose
+
+create a database using the Mongo shell. 
+To create a new database, open your terminal and enter "mongo". 
+A Mongo shell will start, enter the following code −
+
+$ use my_db
+
+index.js
+----- --
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/my_db');
+
+var personSchema = mongoose.Schema({
+   name: String,
+   age: Number,
+   nationality: String
+});
+var Person = mongoose.model("Person", personSchema);
+
+person.pug
+------ ---
+html
+head
+   title Person
+   body
+      form(action = "/person", method = "POST")
+      div
+         label(for = "name") Name: 
+         input(name = "name")
+      br
+      div
+         label(for = "age") Age: 
+         input(name = "age")
+      br
+      div
+         label(for = "nationality") Nationality: 
+         input(name = "nationality")
+      br
+      button(type = "submit") Create new person
+
+
+index.js
+----- --
+app.get('/person', function(req, res){
+   res.render('person');
+});
+
+app.post('/person', function(req, res){
+   var personInfo = req.body; //Get the parsed information
+   
+   if(!personInfo.name || !personInfo.age || !personInfo.nationality){
+      res.render('show_message', {
+         message: "Sorry, you provided worng info", type: "error"});
+   } else {
+      var newPerson = new Person({
+         name: personInfo.name,
+         age: personInfo.age,
+         nationality: personInfo.nationality
+      });
+		
+      newPerson.save(function(err, Person){
+         if(err)
+            res.render('show_message', {message: "Database error", type: "error"});
+         else
+            res.render('show_message', {
+               message: "New person added", type: "success", person: personInfo});
+      });
+   }
+});
+
+
+show_message.pug
+------------ ---
+html
+   head
+      title Person
+   body
+      if(type == "error")
+         h3(style = "color:red") #{message}
+      else
+         h3 New person, 
+            name: #{person.name}, 
+            age: #{person.age} and 
+            nationality: #{person.nationality} added!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+MongoDB Crash Course:
+------- ----- ------
+MongoDB is NoSQL database, we can store data as collection of documents, these documents
+are very similar to javascript object.
+
+-----------------------------------------------------------------------------------------
+

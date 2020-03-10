@@ -1,0 +1,21 @@
+.ticket-type{
+    font-size: 10px;
+    font-weight:800;
+    /* margin: 0px!important; */
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 0.71;
+    letter-spacing: 0.28px;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: left;
+}
+
+.service-request {
+    color: #2a3ebc;
+}
+.incident {
+    color: #ff7700;
+}
+.problem {
+    color: #d50000;
+}
