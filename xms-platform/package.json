@@ -61,7 +61,7 @@
     "react-time-picker": "^3.7.2",
     "react-tooltip": "^3.11.1",
     "socket.io-client": "^2.3.0",
-    "validator": "^11.1.0",
+    "validator": "^13.7.0",
     "yarn": "^1.19.1"
   },
   "scripts": {
